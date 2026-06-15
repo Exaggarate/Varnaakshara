@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varnaakshara — Indian Script IME for Windows</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09090b;--s1:#111113;--s2:#18181b;--card:#1c1c1f;
+  --border:rgba(255,255,255,.07);--text:#fafafa;--dim:#a1a1aa;--dim2:#71717a;
+  --orange:#ea580c;--amber:#f59e0b;
+  --sans:'Inter',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;
+  --mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth;background:var(--bg);color:var(--text);font-family:var(--sans)}
+body{overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(234,88,12,.3)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:#333;border-radius:99px}
+
+#c3d{position:fixed;inset:0;z-index:0;pointer-events:none}
+.z{position:relative;z-index:1}
+
+/* ---- NAV ---- */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
+  display:flex;align-items:center;justify-content:space-between;padding:0 40px;
+  background:rgba(9,9,11,.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border)}
+.nl{font-weight:700;font-size:.9rem;letter-spacing:-.02em}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:.8rem;color:var(--dim2);transition:color .2s}
+.nr a:hover{color:var(--text)}
+.nr .cta{color:var(--bg);background:var(--text);padding:6px 18px;border-radius:8px;font-weight:600;font-size:.78rem;transition:all .2s}
+.nr .cta:hover{background:var(--orange);color:#fff}
+
+/* ---- HERO ---- */
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 40px 60px;position:relative}
+.hero-wrap{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.hero-left{max-width:540px}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:6px;
+  background:rgba(234,88,12,.08);border:1px solid rgba(234,88,12,.15);
+  font-size:.68rem;color:var(--orange);letter-spacing:.06em;text-transform:uppercase;margin-bottom:28px}
+.hero h1{font-size:clamp(2.8rem,5vw,4.2rem);font-weight:800;letter-spacing:-.04em;line-height:1;margin-bottom:20px}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--orange)}
+.hero-p{font-size:1.05rem;color:var(--dim);line-height:1.7;margin-bottom:36px;max-width:440px}
+.hero-btns{display:flex;gap:12px}
+.hb{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:10px;
+  font-size:.88rem;font-weight:600;transition:all .25s}
+.hb svg{width:16px;height:16px}
+.hb-f{background:var(--text);color:var(--bg)}
+.hb-f:hover{background:var(--orange);color:#fff;transform:translateY(-2px);box-shadow:0 8px 30px rgba(234,88,12,.3)}
+.hb-o{border:1px solid var(--border);color:var(--dim)}
+.hb-o:hover{border-color:#444;color:var(--text)}
+.hero-stats{display:flex;gap:32px;margin-top:40px}
+.hero-stat{display:flex;flex-direction:column}
+.hero-stat .num{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+.hero-stat .lbl{font-size:.72rem;color:var(--dim2);margin-top:2px}
+
+/* ---- INTERACTIVE PLAYGROUND (hero right) ---- */
+.playground{background:var(--s1);border:1px solid var(--border);border-radius:16px;
+  overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.5)}
+.pg-bar{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--border);background:var(--s2)}
+.pg-dot{width:10px;height:10px;border-radius:50%}
+.pg-dot:nth-child(1){background:#ef4444}
+.pg-dot:nth-child(2){background:#eab308}
+.pg-dot:nth-child(3){background:#22c55e}
+.pg-title{font-size:.7rem;color:var(--dim2);margin-left:8px;font-family:var(--mono)}
+.pg-body{padding:24px}
+.pg-lang-row{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+.pg-lang{padding:5px 12px;border-radius:6px;font-size:.72rem;cursor:pointer;
+  border:1px solid var(--border);color:var(--dim2);transition:all .2s;background:transparent}
+.pg-lang:hover{border-color:#444;color:var(--dim)}
+.pg-lang.active{background:rgba(234,88,12,.1);border-color:rgba(234,88,12,.3);color:var(--orange)}
+.pg-input-area{position:relative;margin-bottom:16px}
+.pg-input{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;
+  padding:14px 16px;font-family:var(--mono);font-size:.95rem;color:var(--text);
+  outline:none;transition:border-color .2s}
+.pg-input:focus{border-color:rgba(234,88,12,.4)}
+.pg-input::placeholder{color:#333}
+.pg-output-area{min-height:80px;padding:16px;background:var(--bg);border-radius:10px;border:1px solid var(--border)}
+.pg-output-label{font-size:.6rem;color:var(--dim2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.pg-output{font-size:2rem;font-weight:500;min-height:2.4rem;line-height:1.3;
+  word-break:break-word;transition:opacity .2s}
+.pg-hint{font-size:.68rem;color:#333;margin-top:12px;font-family:var(--mono)}
+
+/* ---- MARQUEE ---- */
+.marquee-wrap{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:20px 0;background:var(--s1)}
+.marquee{display:flex;gap:48px;animation:scroll 30s linear infinite;width:max-content}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marquee span{font-size:1.8rem;color:#1a1a1a;white-space:nowrap;font-weight:300}
+
+/* ---- SECTIONS ---- */
+section{padding:120px 40px}
+.mx{max-width:1100px;margin:0 auto}
+.stag{font-size:.65rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;font-weight:500}
+.sh{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:12px}
+.sh em{font-family:var(--serif);font-style:italic;font-weight:400}
+.sp{color:var(--dim);font-size:.95rem;max-width:460px;line-height:1.7}
+
+.sep{max-width:1100px;margin:0 auto;height:1px;background:var(--border)}
+
+/* Steps */
+.steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;
+  background:var(--border);border-radius:14px;overflow:hidden}
+.stp{padding:40px 32px;background:var(--s1);transition:background .3s}
+.stp:hover{background:var(--s2)}
+.stp-n{font-size:.7rem;font-weight:600;color:var(--orange);margin-bottom:16px;
+  font-family:var(--mono);letter-spacing:.05em}
+.stp h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+.stp p{font-size:.85rem;color:var(--dim);line-height:1.6}
+.stp kbd{display:inline;padding:2px 7px;background:var(--bg);border:1px solid #333;
+  border-radius:4px;font-size:.72rem;font-family:var(--mono);color:var(--orange)}
+
+/* Demo */
+.demo-g{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:48px;
+  background:var(--border);border-radius:14px;overflow:hidden}
+.dc{padding:28px 20px;background:var(--s1);transition:background .3s}
+.dc:hover{background:var(--s2)}
+.dc-t{font-size:.6rem;color:var(--orange);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-weight:500}
+.dc-e{font-size:.75rem;color:#333;margin-bottom:6px;font-family:var(--mono)}
+.dc-s{font-size:1.6rem;font-weight:500}
+
+/* Features */
+.feat-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:48px;
+  background:var(--border);border-radius:14px;overflow:hidden}
+.ft{padding:36px 28px;background:var(--s1);transition:background .3s}
+.ft:hover{background:var(--s2)}
+.ft-ic{font-size:1.3rem;margin-bottom:14px}
+.ft h3{font-size:.95rem;font-weight:600;margin-bottom:6px}
+.ft p{font-size:.82rem;color:var(--dim);line-height:1.6}
+
+/* Languages */
+.lang-g{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;margin-top:48px;
+  background:var(--border);border-radius:14px;overflow:hidden}
+.lg{padding:24px 12px;text-align:center;background:var(--s1);transition:background .3s;cursor:default}
+.lg:hover{background:var(--s2)}
+.lg-s{font-size:1.4rem;display:block;margin-bottom:4px}
+.lg-n{font-size:.65rem;color:var(--dim2)}
+
+/* Shortcuts */
+.sc-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;margin-top:40px}
+.sci{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;
+  background:var(--s1);border:1px solid var(--border)}
+.sci .k{font-family:var(--mono);font-size:.72rem;color:var(--orange);padding:3px 8px;
+  background:var(--bg);border:1px solid #262626;border-radius:4px;white-space:nowrap}
+.sci .v{font-size:.78rem;color:var(--dim2)}
+
+/* CTA */
+.cta-sec{text-align:center;padding:160px 40px;position:relative}
+.cta-sec::before{content:'';position:absolute;bottom:40%;left:50%;transform:translateX(-50%);
+  width:500px;height:300px;border-radius:50%;filter:blur(100px);opacity:.06;
+  background:var(--orange);pointer-events:none}
+.cta-sec h2{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:16px}
+.cta-sec h2 em{font-family:var(--serif);font-style:italic;color:var(--orange)}
+.cta-sec>p{color:var(--dim);font-size:1rem;max-width:380px;margin:0 auto 40px}
+.cta-m{display:flex;gap:16px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.cta-m span{font-size:.72rem;color:var(--dim2);padding:5px 12px;border:1px solid var(--border);border-radius:6px}
+.cta-n{margin-top:28px;font-size:.72rem;color:#333;max-width:400px;margin-left:auto;margin-right:auto}
+
+footer{border-top:1px solid var(--border);padding:32px 40px;text-align:center}
+footer p{font-size:.72rem;color:#333}
+footer a{color:#444}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.rv.v{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .hero-wrap{grid-template-columns:1fr;gap:40px}
+  .hero{padding:100px 20px 60px}
+  .hero-left{max-width:100%;text-align:center}
+  .hero-p{margin-left:auto;margin-right:auto}
+  .hero-btns{justify-content:center}
+  .hero-stats{justify-content:center}
+  .steps-row,.feat-g{grid-template-columns:1fr}
+  .demo-g{grid-template-columns:repeat(2,1fr)}
+  .lang-g{grid-template-columns:repeat(3,1fr)}
+  nav{padding:0 16px}
+  section{padding:80px 20px}
+  .nr a:not(.cta){display:none}
+}
+@media(max-width:480px){
+  .demo-g,.lang-g{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<canvas id="c3d"></canvas>
+<div class="z">
+
+<nav>
+  <div class="nl">Varnaakshara</div>
+  <div class="nr">
+    <a href="#how">How it works</a>
+    <a href="#demo">Demo</a>
+    <a href="#features">Features</a>
+    <a href="https://github.com/Exaggarate/varnaakshara-releases/releases/download/v1.0.0/Varnaakshara_Setup_v1.0.0.exe" class="cta">Download v1.0.0</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-wrap">
+    <div class="hero-left">
+      <div class="hero-tag">✦ Free &amp; open source</div>
+      <h1>Type English.<br>Get <em>Indian scripts.</em></h1>
+      <p class="hero-p">A system tray IME for Windows. Phonetic transliteration that works in every app — Word, Chrome, WhatsApp, everywhere.</p>
+      <div class="hero-btns">
+        <a href="https://github.com/Exaggarate/varnaakshara-releases/releases/download/v1.0.0/Varnaakshara_Setup_v1.0.0.exe" class="hb hb-f">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download</a>
+        <a href="https://github.com/Exaggarate/varnaakshara-releases" class="hb hb-o" target="_blank">GitHub →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num">12</span><span class="lbl">Languages</span></div>
+        <div class="hero-stat"><span class="num">&lt;50MB</span><span class="lbl">Install size</span></div>
+        <div class="hero-stat"><span class="num">MIT</span><span class="lbl">License</span></div>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE PLAYGROUND -->
+    <div class="playground" id="pg">
+      <div class="pg-bar">
+        <div class="pg-dot"></div><div class="pg-dot"></div><div class="pg-dot"></div>
+        <span class="pg-title">try it — live transliteration</span>
+      </div>
+      <div class="pg-body">
+        <div class="pg-lang-row" id="pgLangs"></div>
+        <div class="pg-input-area">
+          <input class="pg-input" id="pgIn" type="text" placeholder="Type here... try 'namaste' or 'vanakkam'" spellcheck="false" autocomplete="off">
+        </div>
+        <div class="pg-output-area">
+          <div class="pg-output-label">Output</div>
+          <div class="pg-output" id="pgOut"></div>
+        </div>
+        <div class="pg-hint">Try: namaste → नमस्ते &nbsp;|&nbsp; vanakkam → வணக்கம் &nbsp;|&nbsp; dharmah → धर्मः</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee" id="mq">
+    <span>ನಮಸ್ಕಾರ</span><span>नमस्ते</span><span>வணக்கம்</span><span>నమస్కారం</span>
+    <span>নমস্কার</span><span>નમસ્તે</span><span>നമസ്കാരം</span><span>धर्मः</span>
+    <span>ନମସ୍କାର</span><span>ਸਤ ਸ੍ਰੀ ਅਕਾਲ</span><span>নমস্কাৰ</span><span>नमस्कार</span>
+    <!-- duplicate for seamless loop -->
+    <span>ನಮಸ್ಕಾರ</span><span>नमस्ते</span><span>வணக்கம்</span><span>నమస్కారం</span>
+    <span>নমস্কার</span><span>નમસ્તે</span><span>നമസ്കാരം</span><span>धर्मः</span>
+    <span>ନମସ୍କାର</span><span>ਸਤ ਸ੍ਰੀ ਅਕਾਲ</span><span>নমস্কাৰ</span><span>नमस्कार</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="mx">
+    <div class="rv"><div class="stag">Getting started</div>
+    <div class="sh">Three steps. <em>That's it.</em></div>
+    <p class="sp">No language packs, no admin rights, no complex setup.</p></div>
+    <div class="steps-row rv">
+      <div class="stp"><div class="stp-n">01 — Install</div><h3>Run the installer</h3><p>All 12 languages bundled with Indic fonts. Under 50 MB total.</p></div>
+      <div class="stp"><div class="stp-n">02 — Toggle</div><h3>Press F11 or F12</h3><p>Switch between English and your chosen Indic script. Or press <kbd>Ctrl+1-9</kbd> for a specific language.</p></div>
+      <div class="stp"><div class="stp-n">03 — Type</div><h3>Type naturally</h3><p>Type <code>namaste</code> and get नमस्ते. Works in every Windows app — Word, Chrome, WhatsApp, Notepad.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- DEMO -->
+<section id="demo">
+  <div class="mx">
+    <div class="rv"><div class="stag">Transliteration examples</div>
+    <div class="sh">One keyboard. <em>Twelve scripts.</em></div>
+    <p class="sp">Phonetic transliteration — type the sound in English, get the correct Indic character.</p></div>
+    <div class="demo-g rv">
+      <div class="dc"><div class="dc-t">Kannada</div><div class="dc-e">namaskAra →</div><div class="dc-s">ನಮಸ್ಕಾರ</div></div>
+      <div class="dc"><div class="dc-t">Hindi</div><div class="dc-e">namaste →</div><div class="dc-s">नमस्ते</div></div>
+      <div class="dc"><div class="dc-t">Tamil</div><div class="dc-e">vanakkam →</div><div class="dc-s">வணக்கம்</div></div>
+      <div class="dc"><div class="dc-t">Telugu</div><div class="dc-e">namaskAram →</div><div class="dc-s">నమస్కారం</div></div>
+      <div class="dc"><div class="dc-t">Bengali</div><div class="dc-e">namaskar →</div><div class="dc-s">নমস্কার</div></div>
+      <div class="dc"><div class="dc-t">Gujarati</div><div class="dc-e">namaste →</div><div class="dc-s">નમસ્તે</div></div>
+      <div class="dc"><div class="dc-t">Malayalam</div><div class="dc-e">namaskAram →</div><div class="dc-s">നമസ്കാരം</div></div>
+      <div class="dc"><div class="dc-t">Sanskrit</div><div class="dc-e">dharmah →</div><div class="dc-s">धर्मः</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="mx">
+    <div class="rv"><div class="stag">Features</div>
+    <div class="sh">Built for <em>real typing.</em></div></div>
+    <div class="feat-g rv">
+      <div class="ft"><div class="ft-ic">🖥️</div><h3>System tray app</h3><p>Lives in your taskbar. Auto-starts with Windows. No window needed.</p></div>
+      <div class="ft"><div class="ft-ic">⚡</div><h3>Instant switching</h3><p>F11/F12 toggle. Ctrl+1 through Ctrl+= for direct language pick. Toast notification confirms.</p></div>
+      <div class="ft"><div class="ft-ic">🔗</div><h3>Conjuncts</h3><p>kka → क्क, shri → श्री, jña → ज्ञ. Full conjunct and ligature support.</p></div>
+      <div class="ft"><div class="ft-ic">🧠</div><h3>Smart schwa</h3><p>Hindi-family: implicit schwa (no trailing halant). Sanskrit: explicit halant. Per-language behavior.</p></div>
+      <div class="ft"><div class="ft-ic">🌍</div><h3>Works everywhere</h3><p>Any Windows app — Word, Notepad, Chrome, WhatsApp Desktop, VS Code. If it takes text, it works.</p></div>
+      <div class="ft"><div class="ft-ic">📖</div><h3>Open source</h3><p>MIT licensed. Read, fork, modify. No telemetry, no ads, no accounts.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- LANGUAGES -->
+<section>
+  <div class="mx">
+    <div class="rv"><div class="stag">Supported scripts</div>
+    <div class="sh">Every major <em>Indian script.</em></div></div>
+    <div class="lang-g rv">
+      <div class="lg"><span class="lg-s">ಕನ್ನಡ</span><span class="lg-n">Kannada</span></div>
+      <div class="lg"><span class="lg-s">हिन्दी</span><span class="lg-n">Hindi</span></div>
+      <div class="lg"><span class="lg-s">संस्कृतम्</span><span class="lg-n">Sanskrit</span></div>
+      <div class="lg"><span class="lg-s">తెలుగు</span><span class="lg-n">Telugu</span></div>
+      <div class="lg"><span class="lg-s">தமிழ்</span><span class="lg-n">Tamil</span></div>
+      <div class="lg"><span class="lg-s">বাংলা</span><span class="lg-n">Bengali</span></div>
+      <div class="lg"><span class="lg-s">ગુજરાતી</span><span class="lg-n">Gujarati</span></div>
+      <div class="lg"><span class="lg-s">മലയാളം</span><span class="lg-n">Malayalam</span></div>
+      <div class="lg"><span class="lg-s">ଓଡ଼ିଆ</span><span class="lg-n">Odia</span></div>
+      <div class="lg"><span class="lg-s">ਪੰਜਾਬੀ</span><span class="lg-n">Punjabi</span></div>
+      <div class="lg"><span class="lg-s">অসমীয়া</span><span class="lg-n">Assamese</span></div>
+      <div class="lg"><span class="lg-s">मराठी</span><span class="lg-n">Marathi</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- SHORTCUTS -->
+<section>
+  <div class="mx">
+    <div class="rv"><div class="stag">Keyboard shortcuts</div>
+    <div class="sh"><em>Muscle</em> memory.</div></div>
+    <div class="sc-g rv">
+      <div class="sci"><span class="k">F11 / F12</span><span class="v">Toggle IME</span></div>
+      <div class="sci"><span class="k">Ctrl+1</span><span class="v">Kannada</span></div>
+      <div class="sci"><span class="k">Ctrl+2</span><span class="v">Hindi</span></div>
+      <div class="sci"><span class="k">Ctrl+3</span><span class="v">Sanskrit</span></div>
+      <div class="sci"><span class="k">Ctrl+4</span><span class="v">Telugu</span></div>
+      <div class="sci"><span class="k">Ctrl+5</span><span class="v">Tamil</span></div>
+      <div class="sci"><span class="k">Ctrl+6</span><span class="v">Bengali</span></div>
+      <div class="sci"><span class="k">Ctrl+7</span><span class="v">Gujarati</span></div>
+      <div class="sci"><span class="k">Ctrl+8</span><span class="v">Malayalam</span></div>
+      <div class="sci"><span class="k">Ctrl+9</span><span class="v">Odia</span></div>
+      <div class="sci"><span class="k">Ctrl+0</span><span class="v">Punjabi</span></div>
+      <div class="sci"><span class="k">Ctrl+-</span><span class="v">Assamese</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="mx rv">
+    <h2>Start typing in<br>your <em>mother tongue</em></h2>
+    <p>Free. Open source. No ads, telemetry, or accounts.</p>
+    <div style="display:flex;justify-content:center">
+      <a href="https://github.com/Exaggarate/varnaakshara-releases/releases/download/v1.0.0/Varnaakshara_Setup_v1.0.0.exe" class="hb hb-f">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download Varnaakshara</a>
+    </div>
+    <div class="cta-m">
+      <span>43 MB</span><span>Windows 10/11</span><span>MIT License</span><span>v1.0.0</span>
+    </div>
+    <p class="cta-n">SmartScreen may warn — click "More info" → "Run anyway".</p>
+  </div>
+</section>
+
+<footer><p>Varnaakshara · <a href="https://github.com/Exaggarate/varnaakshara-releases" target="_blank">GitHub</a> · MIT License · Made for भारत</p></footer>
+
+</div>
+
+<script>
+// ===== 3D BACKGROUND — subtle morphing sphere =====
+(function(){
+const c=document.getElementById('c3d');
+const r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true});
+r.setSize(window.innerWidth,window.innerHeight);
+r.setPixelRatio(Math.min(window.devicePixelRatio,2));
+const s=new THREE.Scene();
+const cam=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,.1,100);
+cam.position.set(3,0,5);
+
+const geo=new THREE.IcosahedronGeometry(2,80);
+const mat=new THREE.ShaderMaterial({
+  uniforms:{uTime:{value:0},uMouse:{value:new THREE.Vector2(0,0)},
+    uC1:{value:new THREE.Color('#ea580c')},uC2:{value:new THREE.Color('#f59e0b')},uC3:{value:new THREE.Color('#dc2626')}},
+  vertexShader:`
+    uniform float uTime;uniform vec2 uMouse;
+    varying vec3 vN;varying float vD;
+    vec3 mod289(vec3 x){return x-floor(x/289.)*289.;}
+    vec4 mod289(vec4 x){return x-floor(x/289.)*289.;}
+    vec4 perm(vec4 x){return mod289(((x*34.)+1.)*x);}
+    vec4 tISqrt(vec4 r){return 1.79284-.85373*r;}
+    float snoise(vec3 v){
+      const vec2 C=vec2(1./6.,1./3.);
+      vec3 i=floor(v+dot(v,C.yyy)),x0=v-i+dot(i,C.xxx);
+      vec3 g=step(x0.yzx,x0.xyz),l=1.-g,i1=min(g,l.zxy),i2=max(g,l.zxy);
+      vec3 x1=x0-i1+C.x,x2=x0-i2+C.y,x3=x0-.5;
+      i=mod289(i);
+      vec4 p=perm(perm(perm(i.z+vec4(0,i1.z,i2.z,1))+i.y+vec4(0,i1.y,i2.y,1))+i.x+vec4(0,i1.x,i2.x,1));
+      vec4 j=p-49.*floor(p/49.);
+      vec4 x_=floor(j/7.),y_=floor(j-7.*x_);
+      vec4 x=x_/7.-.5,y=y_/7.-.5,h=1.-abs(x)-abs(y);
+      vec4 b0=vec4(x.xy,y.xy),b1=vec4(x.zw,y.zw);
+      vec4 s0=floor(b0)*2.+1.,s1=floor(b1)*2.+1.;
+      vec4 sh=-step(h,vec4(0));
+      vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy,a1=b1.xzyw+s1.xzyw*sh.zzww;
+      vec3 p0=vec3(a0.xy,h.x),p1=vec3(a0.zw,h.y),p2=vec3(a1.xy,h.z),p3=vec3(a1.zw,h.w);
+      vec4 nr=tISqrt(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3)));
+      p0*=nr.x;p1*=nr.y;p2*=nr.z;p3*=nr.w;
+      vec4 m=max(.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.);
+      return 42.*dot(m*m*m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)));
+    }
+    void main(){
+      vN=normal;
+      float n=snoise(position*.8+uTime*.2)*.35+snoise(position*1.6+uTime*.1)*.15;
+      n+=snoise(position*.4+vec3(uMouse*.3,uTime*.05))*.2;
+      vD=n;
+      gl_Position=projectionMatrix*modelViewMatrix*vec4(position+normal*n,1.);
+    }`,
+  fragmentShader:`
+    uniform vec3 uC1,uC2,uC3;
+    varying vec3 vN;varying float vD;
+    void main(){
+      float f=pow(1.-abs(dot(vN,vec3(0,0,1))),3.);
+      vec3 col=mix(uC1,uC2,vD*2.+.5);
+      col=mix(col,uC3,f);
+      float a=mix(.06,.2,f)*smoothstep(-.3,.3,vD+.2);
+      gl_FragColor=vec4(col,a);
+    }`,
+  transparent:true,depthWrite:false,side:THREE.DoubleSide
+});
+const mesh=new THREE.Mesh(geo,mat);
+mesh.position.set(2,0,-1);
+s.add(mesh);
+
+let mx=0,my=0,sy=0;
+document.addEventListener('mousemove',e=>{mx=(e.clientX/window.innerWidth-.5)*2;my=-(e.clientY/window.innerHeight-.5)*2});
+window.addEventListener('scroll',()=>{sy=window.scrollY},{passive:true});
+window.addEventListener('resize',()=>{cam.aspect=window.innerWidth/window.innerHeight;cam.updateProjectionMatrix();r.setSize(window.innerWidth,window.innerHeight)});
+
+const clk=new THREE.Clock();
+(function tick(){
+  requestAnimationFrame(tick);
+  const t=clk.getElapsedTime();
+  mat.uniforms.uTime.value=t;
+  mat.uniforms.uMouse.value.set(mx,my);
+  mesh.rotation.x=t*.04+my*.15;
+  mesh.rotation.y=t*.03+mx*.15;
+  mesh.position.y=-sy*.0015;
+  r.render(s,cam);
+})();
+})();
+
+// ===== INTERACTIVE PLAYGROUND with basic transliteration =====
+(function(){
+// Simplified phonetic transliteration maps for web demo
+const MAPS={
+hindi:{
+  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',e:'ए',ai:'ऐ',o:'ओ',au:'औ',aM:'अं',aH:'अः'},
+  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ','~g':'ङ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ','~j':'ञ',
+    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
+    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ',ksh:'क्ष',x:'क्ष',jn:'ज्ञ','GY':'ज्ञ',
+    q:'क़',z:'ज़',f:'फ़'},
+  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',e:'े',ai:'ै',o:'ो',au:'ौ'},
+  virama:'्',anusvara:'ं',visarga:'ः',
+  nums:{'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'}
+},
+kannada:{
+  vowels:{a:'ಅ',aa:'ಆ',A:'ಆ',i:'ಇ',ee:'ಈ',I:'ಈ',u:'ಉ',oo:'ಊ',U:'ಊ',e:'ಎ',E:'ಏ',ai:'ಐ',o:'ಒ',O:'ಓ',au:'ಔ'},
+  consonants:{k:'ಕ',kh:'ಖ',K:'ಖ',g:'ಗ',gh:'ಘ',G:'ಘ',ch:'ಚ',Ch:'ಛ',j:'ಜ',jh:'ಝ',J:'ಝ',
+    T:'ಟ',Th:'ಠ',D:'ಡ',Dh:'ಢ',N:'ಣ',t:'ತ',th:'ಥ',d:'ದ',dh:'ಧ',n:'ನ',p:'ಪ',ph:'ಫ',b:'ಬ',bh:'ಭ',m:'ಮ',
+    y:'ಯ',r:'ರ',l:'ಲ',v:'ವ',w:'ವ',sh:'ಶ',Sh:'ಷ',s:'ಸ',h:'ಹ',L:'ಳ'},
+  signs:{a:'',aa:'ಾ',A:'ಾ',i:'ಿ',ee:'ೀ',I:'ೀ',u:'ು',oo:'ೂ',U:'ೂ',e:'ೆ',E:'ೇ',ai:'ೈ',o:'ೊ',O:'ೋ',au:'ೌ'},
+  virama:'್',anusvara:'ಂ',visarga:'ಃ',
+  nums:{'0':'೦','1':'೧','2':'೨','3':'೩','4':'೪','5':'೫','6':'೬','7':'೭','8':'೮','9':'೯'}
+},
+tamil:{
+  vowels:{a:'அ',aa:'ஆ',A:'ஆ',i:'இ',ee:'ஈ',I:'ஈ',u:'உ',oo:'ஊ',U:'ஊ',e:'எ',E:'ஏ',ai:'ஐ',o:'ஒ',O:'ஓ',au:'ஔ'},
+  consonants:{k:'க',g:'க',ch:'ச',j:'ஜ',T:'ட',D:'ட',N:'ண',t:'த',d:'த',n:'ந',p:'ப',b:'ப',m:'ம',
+    y:'ய',r:'ர',l:'ல',v:'வ',w:'வ',sh:'ஶ',s:'ஸ',h:'ஹ',L:'ள',zh:'ழ',R:'ற'},
+  signs:{a:'',aa:'ா',A:'ா',i:'ி',ee:'ீ',I:'ீ',u:'ு',oo:'ூ',U:'ூ',e:'ெ',E:'ே',ai:'ை',o:'ொ',O:'ோ',au:'ௌ'},
+  virama:'்',anusvara:'ம்',visarga:'ஃ',
+  nums:{'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8','9':'9'}
+},
+telugu:{
+  vowels:{a:'అ',aa:'ఆ',A:'ఆ',i:'ఇ',ee:'ఈ',I:'ఈ',u:'ఉ',oo:'ఊ',U:'ఊ',e:'ఎ',E:'ఏ',ai:'ఐ',o:'ఒ',O:'ఓ',au:'ఔ'},
+  consonants:{k:'క',kh:'ఖ',K:'ఖ',g:'గ',gh:'ఘ',G:'ఘ',ch:'చ',Ch:'ఛ',j:'జ',jh:'ఝ',J:'ఝ',
+    T:'ట',Th:'ఠ',D:'డ',Dh:'ఢ',N:'ణ',t:'త',th:'థ',d:'ద',dh:'ధ',n:'న',p:'ప',ph:'ఫ',b:'బ',bh:'భ',m:'మ',
+    y:'య',r:'ర',l:'ల',v:'వ',w:'వ',sh:'శ',Sh:'ష',s:'స',h:'హ',L:'ళ'},
+  signs:{a:'',aa:'ా',A:'ా',i:'ి',ee:'ీ',I:'ీ',u:'ు',oo:'ూ',U:'ూ',e:'ె',E:'ే',ai:'ై',o:'ొ',O:'ో',au:'ౌ'},
+  virama:'్',anusvara:'ం',visarga:'ః',
+  nums:{}
+},
+bengali:{
+  vowels:{a:'অ',aa:'আ',A:'আ',i:'ই',ee:'ঈ',I:'ঈ',u:'উ',oo:'ঊ',U:'ঊ',e:'এ',ai:'ঐ',o:'ও',au:'ঔ'},
+  consonants:{k:'ক',kh:'খ',K:'খ',g:'গ',gh:'ঘ',G:'ঘ',ch:'চ',Ch:'ছ',j:'জ',jh:'ঝ',J:'ঝ',
+    T:'ট',Th:'ঠ',D:'ড',Dh:'ঢ',N:'ণ',t:'ত',th:'থ',d:'দ',dh:'ধ',n:'ন',p:'প',ph:'ফ',b:'ব',bh:'ভ',m:'ম',
+    y:'য',r:'র',l:'ল',v:'ব',w:'ব',sh:'শ',Sh:'ষ',s:'স',h:'হ'},
+  signs:{a:'',aa:'া',A:'া',i:'ি',ee:'ী',I:'ী',u:'ু',oo:'ূ',U:'ূ',e:'ে',ai:'ৈ',o:'ো',au:'ৌ'},
+  virama:'্',anusvara:'ং',visarga:'ঃ',
+  nums:{}
+},
+gujarati:{
+  vowels:{a:'અ',aa:'આ',A:'આ',i:'ઇ',ee:'ઈ',I:'ઈ',u:'ઉ',oo:'ઊ',U:'ઊ',e:'એ',ai:'ઐ',o:'ઓ',au:'ઔ'},
+  consonants:{k:'ક',kh:'ખ',K:'ખ',g:'ગ',gh:'ઘ',G:'ઘ',ch:'ચ',Ch:'છ',j:'જ',jh:'ઝ',J:'ઝ',
+    T:'ટ',Th:'ઠ',D:'ડ',Dh:'ઢ',N:'ણ',t:'ત',th:'થ',d:'દ',dh:'ધ',n:'ન',p:'પ',ph:'ફ',b:'બ',bh:'ભ',m:'મ',
+    y:'ય',r:'ર',l:'લ',v:'વ',w:'વ',sh:'શ',Sh:'ષ',s:'સ',h:'હ',L:'ળ'},
+  signs:{a:'',aa:'ા',A:'ા',i:'િ',ee:'ી',I:'ી',u:'ુ',oo:'ૂ',U:'ૂ',e:'ે',ai:'ૈ',o:'ો',au:'ૌ'},
+  virama:'્',anusvara:'ં',visarga:'ઃ',
+  nums:{}
+}
+};
+
+const langs=Object.keys(MAPS);
+let curLang='hindi';
+const pgLangs=document.getElementById('pgLangs');
+const pgIn=document.getElementById('pgIn');
+const pgOut=document.getElementById('pgOut');
+
+// Build language buttons
+langs.forEach(l=>{
+  const btn=document.createElement('button');
+  btn.className='pg-lang'+(l===curLang?' active':'');
+  btn.textContent=l.charAt(0).toUpperCase()+l.slice(1);
+  btn.onclick=()=>{
+    curLang=l;
+    document.querySelectorAll('.pg-lang').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    transliterate();
+  };
+  pgLangs.appendChild(btn);
+});
+
+function transliterate(){
+  const input=pgIn.value;
+  if(!input){pgOut.textContent='';return;}
+  const map=MAPS[curLang];
+  if(!map){pgOut.textContent=input;return;}
+  
+  let result='',i=0;
+  const len=input.length;
+  let afterConsonant=false;
+  
+  while(i<len){
+    let matched=false;
+    
+    // Try longer matches first (3, 2, 1 chars)
+    for(let ml=3;ml>=1;ml--){
+      const chunk=input.substr(i,ml);
+      
+      // Check anusvara/visarga
+      if(chunk==='M'&&afterConsonant){result+=map.anusvara;i++;matched=true;afterConsonant=false;break;}
+      if(chunk==='H'&&afterConsonant){result+=map.visarga;i++;matched=true;afterConsonant=false;break;}
+      
+      // Check consonant
+      if(map.consonants[chunk]){
+        // If after another consonant, add virama first
+        if(afterConsonant)result+=map.virama;
+        result+=map.consonants[chunk];
+        afterConsonant=true;
+        i+=ml;matched=true;break;
+      }
+      
+      // Check vowel
+      if(afterConsonant&&map.signs[chunk]!==undefined){
+        result+=map.signs[chunk];
+        afterConsonant=false;
+        i+=ml;matched=true;break;
+      }
+      if(!afterConsonant&&map.vowels[chunk]){
+        result+=map.vowels[chunk];
+        afterConsonant=false;
+        i+=ml;matched=true;break;
+      }
+    }
+    
+    if(!matched){
+      // Number?
+      if(map.nums&&map.nums[input[i]]){
+        if(afterConsonant){result+=map.signs['a']||'';afterConsonant=false;}
+        result+=map.nums[input[i]];
+      }else{
+        if(afterConsonant&&input[i]===' '){afterConsonant=false;}
+        else if(afterConsonant&&!/[a-zA-Z]/.test(input[i])){afterConsonant=false;}
+        result+=input[i];
+      }
+      i++;
+    }
+  }
+  
+  pgOut.textContent=result;
+}
+
+pgIn.addEventListener('input',transliterate);
+
+// Auto-type demo on load
+const demoText='namaste';
+let di=0;
+function autoType(){
+  if(di<=demoText.length){
+    pgIn.value=demoText.slice(0,di);
+    transliterate();
+    di++;
+    setTimeout(autoType,120);
+  }
+}
+setTimeout(autoType,1500);
+})();
+
+// ===== SCROLL REVEAL =====
+const io=new IntersectionObserver(es=>{es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}
+})},{threshold:.05});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// ===== NAV HIDE =====
+let ly=0;
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  document.querySelector('nav').style.transform=y>ly&&y>80?'translateY(-100%)':'none';
+  ly=y;
+},{passive:true});
+</script>
+</body>
+</html>
