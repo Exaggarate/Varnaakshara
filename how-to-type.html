@@ -41,69 +41,41 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
 .nr .cta:hover{background:var(--orange);color:#fff}
 
 /* ---- PAGE HEADER ---- */
-.page-header{padding:100px 40px 48px;text-align:center}
+.page-header{padding:100px 40px 36px;text-align:center}
 .page-header h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:12px}
 .page-header h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--orange)}
-.page-header p{color:var(--dim);font-size:1rem;max-width:520px;margin:0 auto;line-height:1.7}
+.page-header p{color:var(--dim);font-size:1rem;max-width:540px;margin:0 auto;line-height:1.7}
 
 /* ---- MAIN CONTENT ---- */
 .mx{max-width:1100px;margin:0 auto;padding:0 40px}
 .sep{max-width:1100px;margin:0 auto;height:1px;background:var(--border)}
+.section-title{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+.section-title em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--orange)}
+.section-sub{font-size:.82rem;color:var(--dim2);margin-bottom:24px;line-height:1.6}
 
-/* ---- KEYBOARD MAP ---- */
+/* ---- QUICK START ---- */
+.qs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:0}
+.qs-card{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:16px 20px}
+.qs-card .qs-label{font-size:.62rem;font-weight:600;color:var(--orange);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.qs-card .qs-text{font-size:.82rem;color:var(--dim);line-height:1.6}
+.qs-card code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:4px}
+
+/* ---- LANGUAGE SELECTOR ---- */
 .km-lang-row{display:flex;gap:6px;margin-bottom:28px;flex-wrap:wrap;justify-content:center}
 .km-lang{padding:5px 12px;border-radius:6px;font-size:.72rem;cursor:pointer;
-  border:1px solid var(--border);color:var(--dim2);transition:all .2s;background:transparent}
+  border:1px solid var(--border);color:var(--dim2);transition:all .2s;background:transparent;font-family:var(--sans)}
 .km-lang:hover{border-color:#444;color:var(--dim)}
 .km-lang.active{background:rgba(234,88,12,.1);border-color:rgba(234,88,12,.3);color:var(--orange)}
 
-.kb-wrap{max-width:840px;margin:0 auto 48px;perspective:800px}
-.kb-row{display:flex;gap:4px;margin-bottom:4px;justify-content:center}
-.kb-key{position:relative;min-width:48px;height:52px;border-radius:7px;cursor:pointer;
-  background:var(--s2);border:1px solid var(--border);border-bottom:3px solid #222;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  transition:all .12s ease;user-select:none;padding:2px 4px}
-.kb-key:hover{background:var(--card);border-color:#444;transform:translateY(-1px)}
-.kb-key:active,.kb-key.pressed{transform:translateY(2px);border-bottom-width:1px;
-  background:var(--s1);box-shadow:inset 0 1px 4px rgba(0,0,0,.3)}
-.kb-key .kb-en{font-size:.55rem;color:var(--dim2);font-family:var(--mono);line-height:1.1}
-.kb-key .kb-in{font-size:.95rem;line-height:1.2;min-height:1.1em}
-.kb-key.vowel{border-color:rgba(234,88,12,.2);background:rgba(234,88,12,.06)}
-.kb-key.vowel:hover{background:rgba(234,88,12,.12);border-color:rgba(234,88,12,.4)}
-.kb-key.consonant{border-color:rgba(245,158,11,.15);background:rgba(245,158,11,.04)}
-.kb-key.consonant:hover{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.35)}
-.kb-key.special{border-color:rgba(139,92,246,.15);background:rgba(139,92,246,.04)}
-.kb-key.special:hover{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.35)}
-.kb-key .kb-tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);
-  background:#222;color:var(--text);padding:6px 10px;border-radius:6px;font-size:.7rem;
-  white-space:nowrap;z-index:10;pointer-events:none;
-  box-shadow:0 4px 16px rgba(0,0,0,.5);border:1px solid #333}
-.kb-key .kb-tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);
-  border:5px solid transparent;border-top-color:#222}
-.kb-key:hover .kb-tip{display:block}
-.kb-space{flex:1;max-width:280px;min-width:120px}
-
-.kb-preview{text-align:center;margin-bottom:32px;padding:16px 20px;background:var(--bg);
-  border:1px solid var(--border);border-radius:10px;max-width:600px;margin-left:auto;margin-right:auto}
-.kb-preview-label{font-size:.6rem;color:var(--dim2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
-.kb-preview-text{font-size:1.6rem;min-height:2rem;word-break:break-word;font-family:var(--sans);
-  color:var(--text);transition:opacity .15s}
-.kb-preview-hint{font-size:.65rem;color:#333;margin-top:6px}
-
-.kb-legend{display:flex;gap:16px;justify-content:center;margin-bottom:28px;flex-wrap:wrap}
-.kb-legend-item{display:flex;align-items:center;gap:6px;font-size:.7rem;color:var(--dim2)}
-.kb-legend-dot{width:10px;height:10px;border-radius:3px}
-.kb-legend-dot.lg-v{background:rgba(234,88,12,.25);border:1px solid rgba(234,88,12,.4)}
-.kb-legend-dot.lg-c{background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.35)}
-.kb-legend-dot.lg-s{background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.35)}
-
+/* ---- REFERENCE TABLES ---- */
 .ref-tabs{display:flex;gap:4px;margin-bottom:20px;flex-wrap:wrap}
 .ref-tab{padding:6px 14px;border-radius:6px;font-size:.72rem;cursor:pointer;
-  border:1px solid var(--border);color:var(--dim2);transition:all .2s;background:transparent}
+  border:1px solid var(--border);color:var(--dim2);transition:all .2s;background:transparent;font-family:var(--sans)}
 .ref-tab:hover{border-color:#444;color:var(--dim)}
 .ref-tab.active{background:rgba(234,88,12,.1);border-color:rgba(234,88,12,.3);color:var(--orange)}
 .ref-panel{display:none}
 .ref-panel.active{display:block}
+
 .ref-table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);
   border-radius:10px;overflow:hidden}
 .ref-table th{text-align:left;padding:10px 14px;font-size:.68rem;font-weight:600;
@@ -114,11 +86,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
 .ref-table tr:last-child td{border-bottom:none}
 .ref-table tr:hover td{background:var(--s2)}
 .ref-table .rt-en{font-family:var(--mono);color:var(--dim);font-size:.78rem}
-.ref-table .rt-sc{font-size:1.05rem}
-.ref-table .rt-varga{font-size:.6rem;color:var(--dim2);font-weight:500;letter-spacing:.08em;
+.ref-table .rt-sc{font-size:1.1rem}
+.ref-table .rt-desc{font-size:.72rem;color:var(--dim2)}
+.ref-table .rt-varga{font-size:.6rem;color:var(--dim2);font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;padding:6px 14px;background:var(--bg);border-bottom:1px solid var(--border)}
 
-.km-try{max-width:600px;margin:48px auto 0;padding:28px;background:var(--s1);
+/* ---- PRACTICE AREA ---- */
+.km-try{max-width:640px;margin:0 auto;padding:28px;background:var(--s1);
   border:1px solid var(--border);border-radius:14px}
 .km-try-title{font-size:.72rem;font-weight:600;color:var(--dim);margin-bottom:14px;
   letter-spacing:.04em;text-transform:uppercase}
@@ -127,9 +101,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
   outline:none;transition:border-color .2s;margin-bottom:12px}
 .km-try-input:focus{border-color:rgba(234,88,12,.4)}
 .km-try-input::placeholder{color:#333}
-.km-try-output{min-height:48px;padding:14px 16px;background:var(--bg);
-  border-radius:10px;border:1px solid var(--border);font-size:1.5rem;word-break:break-word}
-.km-try-output-label{font-size:.6rem;color:var(--dim2);letter-spacing:.1em;
+.km-try-output-label{font-size:.6rem;color:var(--dim2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.km-try-output{min-height:52px;padding:14px 16px;background:var(--bg);
+  border-radius:10px;border:1px solid var(--border);font-size:1.5rem;word-break:break-word;line-height:1.6}
+.km-try-hint{font-size:.62rem;color:#333;margin-top:10px;text-align:center}
 
 /* ---- FOOTER ---- */
 footer{text-align:center;padding:48px 40px;border-top:1px solid var(--border);
@@ -145,13 +120,16 @@ footer a:hover{color:var(--orange)}
 @media(max-width:768px){
   nav{padding:0 16px}
   .nr{gap:12px}
-  .page-header{padding:80px 20px 32px}
+  .page-header{padding:80px 16px 24px}
   .mx{padding:0 16px}
-  .kb-wrap{display:none}
-  .kb-preview{display:none}
-  .kb-legend{display:none}
   .ref-table{font-size:.75rem}
   .ref-table td,.ref-table th{padding:6px 8px}
+  .ref-table .rt-sc{font-size:.95rem}
+  .qs-grid{grid-template-columns:1fr}
+  .km-try{padding:20px 16px}
+}
+@media(max-width:480px){
+  .ref-table .rt-desc{display:none}
 }
 </style>
 </head>
@@ -168,49 +146,70 @@ footer a:hover{color:var(--orange)}
 
 <div class="page-header">
   <h1>How to <em>Type</em></h1>
-  <p>Explore the phonetic keyboard mapping — see exactly which English keys produce which Indic characters in each language.</p>
+  <p>A complete reference for Varnaakshara's phonetic input system. Type English letters, get Indian script — see every mapping below.</p>
 </div>
 
 <div class="mx">
 
-  <div class="rv" style="margin-top:24px">
-    <div class="km-lang-row" id="kmLangs"></div>
-
-    <div class="kb-legend">
-      <div class="kb-legend-item"><div class="kb-legend-dot lg-v"></div>Vowels</div>
-      <div class="kb-legend-item"><div class="kb-legend-dot lg-c"></div>Consonants</div>
-      <div class="kb-legend-item"><div class="kb-legend-dot lg-s"></div>Special</div>
+  <!-- ===== QUICK START ===== -->
+  <div class="rv" style="margin-bottom:48px">
+    <div class="section-title">Quick <em>Start</em></div>
+    <div class="section-sub">Type English letters phonetically to produce Indic script output.</div>
+    <div class="qs-grid">
+      <div class="qs-card">
+        <div class="qs-label">Basics</div>
+        <div class="qs-text">Type phonetically: <code>namaste</code> → नमस्ते<br>Use <code>aa</code> or <code>A</code> for long vowels: <code>rAma</code> → राम</div>
+      </div>
+      <div class="qs-card">
+        <div class="qs-label">Capitals = Retroflex / Aspirated</div>
+        <div class="qs-text"><code>T</code>=ट <code>Th</code>=ठ <code>D</code>=ड <code>Dh</code>=ढ <code>N</code>=ण<br><code>K</code>=ख <code>G</code>=घ <code>S</code>=श <code>Sh</code>=ष</div>
+      </div>
+      <div class="qs-card">
+        <div class="qs-label">Long Vowels</div>
+        <div class="qs-text">Double the vowel: <code>aa</code>=आ <code>ee</code>=ई <code>oo</code>=ऊ<br>Or capitalize: <code>A</code>=आ <code>I</code>=ई <code>U</code>=ऊ</div>
+      </div>
+      <div class="qs-card">
+        <div class="qs-label">Conjuncts</div>
+        <div class="qs-text">Type consonants together: <code>kka</code>=क्क <code>shri</code>=श्री<br>Special: <code>kSh</code>=क्ष <code>j~j</code>=ज्ञ</div>
+      </div>
     </div>
-
-    <div class="kb-preview" id="kbPreview">
-      <div class="kb-preview-label">Click keys to type</div>
-      <div class="kb-preview-text" id="kbPreviewText"></div>
-      <div class="kb-preview-hint">Click keys or use your keyboard · Backspace to delete</div>
-    </div>
-
-    <div class="kb-wrap" id="kbWrap"></div>
   </div>
 
-  <div class="sep" style="margin:48px auto"></div>
+  <div class="sep"></div>
 
+  <!-- ===== LANGUAGE SELECTOR ===== -->
+  <div class="rv" style="margin-top:48px;margin-bottom:8px;text-align:center">
+    <div class="section-title">Choose <em>Language</em></div>
+    <div class="section-sub">Select a language to see its character mappings and practice typing.</div>
+    <div class="km-lang-row" id="kmLangs"></div>
+  </div>
+
+  <!-- ===== REFERENCE TABLES ===== -->
   <div class="rv">
     <div class="ref-tabs" id="refTabs">
       <button class="ref-tab active" data-tab="vowels">Vowels</button>
       <button class="ref-tab" data-tab="consonants">Consonants</button>
-      <button class="ref-tab" data-tab="special">Special</button>
+      <button class="ref-tab" data-tab="special">Special Characters</button>
       <button class="ref-tab" data-tab="conjuncts">Conjuncts</button>
+      <button class="ref-tab" data-tab="nukta">Nukta Consonants</button>
     </div>
     <div id="refPanels"></div>
   </div>
 
   <div class="sep" style="margin:48px auto"></div>
 
+  <!-- ===== PRACTICE AREA ===== -->
   <div class="rv">
+    <div style="text-align:center;margin-bottom:24px">
+      <div class="section-title">Practice <em>Here</em></div>
+      <div class="section-sub">Type phonetically and see real-time transliteration — identical to the Varnaakshara IME engine.</div>
+    </div>
     <div class="km-try">
-      <div class="km-try-title">⌨ Practice here</div>
-      <input class="km-try-input" id="kmTryIn" type="text" placeholder="Type phonetically… try 'namaste' or 'bharata'" spellcheck="false" autocomplete="off">
+      <div class="km-try-title">⌨ Interactive Practice</div>
+      <input class="km-try-input" id="kmTryIn" type="text" placeholder="Try typing: namaste, kannaDa, bhaarat, kRuShNa, shrii" spellcheck="false" autocomplete="off">
       <div class="km-try-output-label">Output</div>
       <div class="km-try-output" id="kmTryOut"></div>
+      <div class="km-try-hint">Uses the same greedy longest-match transliteration engine as the real Varnaakshara IME</div>
     </div>
   </div>
 
@@ -221,463 +220,913 @@ footer a:hover{color:var(--orange)}
 </footer>
 
 <script>
-// ===== KEYBOARD MAP SECTION =====
+// ================================================================
+// FULL TRANSLITERATION ENGINE — ported from transliteration.py
+// Stage 1: Roman (Baraha) → Devanagari (greedy longest-match)
+// Stage 2: Devanagari → Target script (character mapping)
+// ================================================================
 (function(){
+"use strict";
 
-// --- Extended MAPS for all 12 languages ---
-const KM_MAPS={
-hindi:{
-  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',Ru:'ऋ',e:'ए',ai:'ऐ',o:'ओ',au:'औ'},
-  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ','~g':'ङ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ','~j':'ञ',
-    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
-    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ'},
-  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',Ru:'ृ',e:'े',ai:'ै',o:'ो',au:'ौ'},
-  virama:'्',anusvara:'ं',visarga:'ः',danda:'।',ddanda:'॥',avagraha:'ऽ',
-  nums:{'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'}
-},
-kannada:{
-  vowels:{a:'ಅ',aa:'ಆ',A:'ಆ',i:'ಇ',ee:'ಈ',I:'ಈ',u:'ಉ',oo:'ಊ',U:'ಊ',Ru:'ಋ',e:'ಎ',E:'ಏ',ai:'ಐ',o:'ಒ',O:'ಓ',au:'ಔ'},
-  consonants:{k:'ಕ',kh:'ಖ',K:'ಖ',g:'ಗ',gh:'ಘ',G:'ಘ','~g':'ಙ',ch:'ಚ',Ch:'ಛ',j:'ಜ',jh:'ಝ',J:'ಝ','~j':'ಞ',
-    T:'ಟ',Th:'ಠ',D:'ಡ',Dh:'ಢ',N:'ಣ',t:'ತ',th:'ಥ',d:'ದ',dh:'ಧ',n:'ನ',p:'ಪ',ph:'ಫ',b:'ಬ',bh:'ಭ',m:'ಮ',
-    y:'ಯ',r:'ರ',l:'ಲ',v:'ವ',w:'ವ',sh:'ಶ',Sh:'ಷ',s:'ಸ',h:'ಹ',L:'ಳ'},
-  signs:{a:'',aa:'ಾ',A:'ಾ',i:'ಿ',ee:'ೀ',I:'ೀ',u:'ು',oo:'ೂ',U:'ೂ',Ru:'ೃ',e:'ೆ',E:'ೇ',ai:'ೈ',o:'ೊ',O:'ೋ',au:'ೌ'},
-  virama:'್',anusvara:'ಂ',visarga:'ಃ',danda:'।',ddanda:'॥',avagraha:'ಽ',
-  nums:{'0':'೦','1':'೧','2':'೨','3':'೩','4':'೪','5':'೫','6':'೬','7':'೭','8':'೮','9':'೯'}
-},
-tamil:{
-  vowels:{a:'அ',aa:'ஆ',A:'ஆ',i:'இ',ee:'ஈ',I:'ஈ',u:'உ',oo:'ஊ',U:'ஊ',e:'எ',E:'ஏ',ai:'ஐ',o:'ஒ',O:'ஓ',au:'ஔ'},
-  consonants:{k:'க',g:'க',ch:'ச',j:'ஜ',T:'ட',D:'ட',N:'ண',t:'த',d:'த',n:'ந',p:'ப',b:'ப',m:'ம',
-    y:'ய',r:'ர',l:'ல',v:'வ',w:'வ',sh:'ஶ',Sh:'ஷ',s:'ஸ',h:'ஹ',L:'ள',zh:'ழ',R:'ற',nn:'ன'},
-  signs:{a:'',aa:'ா',A:'ா',i:'ி',ee:'ீ',I:'ீ',u:'ு',oo:'ூ',U:'ூ',e:'ெ',E:'ே',ai:'ை',o:'ொ',O:'ோ',au:'ௌ'},
-  virama:'்',anusvara:'ம்',visarga:'ஃ',danda:'।',ddanda:'॥',avagraha:'',
-  nums:{'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8','9':'9'}
-},
-telugu:{
-  vowels:{a:'అ',aa:'ఆ',A:'ఆ',i:'ఇ',ee:'ఈ',I:'ఈ',u:'ఉ',oo:'ఊ',U:'ఊ',Ru:'ఋ',e:'ఎ',E:'ఏ',ai:'ఐ',o:'ఒ',O:'ఓ',au:'ఔ'},
-  consonants:{k:'క',kh:'ఖ',K:'ఖ',g:'గ',gh:'ఘ',G:'ఘ','~g':'ఙ',ch:'చ',Ch:'ఛ',j:'జ',jh:'ఝ',J:'ఝ','~j':'ఞ',
-    T:'ట',Th:'ఠ',D:'డ',Dh:'ఢ',N:'ణ',t:'త',th:'థ',d:'ద',dh:'ధ',n:'న',p:'ప',ph:'ఫ',b:'బ',bh:'భ',m:'మ',
-    y:'య',r:'ర',l:'ల',v:'వ',w:'వ',sh:'శ',Sh:'ష',s:'స',h:'హ',L:'ళ'},
-  signs:{a:'',aa:'ా',A:'ా',i:'ి',ee:'ీ',I:'ీ',u:'ు',oo:'ూ',U:'ూ',Ru:'ృ',e:'ె',E:'ే',ai:'ై',o:'ొ',O:'ో',au:'ౌ'},
-  virama:'్',anusvara:'ం',visarga:'ః',danda:'।',ddanda:'॥',avagraha:'ఽ',
-  nums:{'0':'౦','1':'౧','2':'౨','3':'౩','4':'౪','5':'౫','6':'౬','7':'౭','8':'౮','9':'౯'}
-},
-bengali:{
-  vowels:{a:'অ',aa:'আ',A:'আ',i:'ই',ee:'ঈ',I:'ঈ',u:'উ',oo:'ঊ',U:'ঊ',Ru:'ঋ',e:'এ',ai:'ঐ',o:'ও',au:'ঔ'},
-  consonants:{k:'ক',kh:'খ',K:'খ',g:'গ',gh:'ঘ',G:'ঘ','~g':'ঙ',ch:'চ',Ch:'ছ',j:'জ',jh:'ঝ',J:'ঝ','~j':'ঞ',
-    T:'ট',Th:'ঠ',D:'ড',Dh:'ঢ',N:'ণ',t:'ত',th:'থ',d:'দ',dh:'ধ',n:'ন',p:'প',ph:'ফ',b:'ব',bh:'ভ',m:'ম',
-    y:'য',r:'র',l:'ল',v:'ব',w:'ব',sh:'শ',Sh:'ষ',s:'স',h:'হ'},
-  signs:{a:'',aa:'া',A:'া',i:'ি',ee:'ী',I:'ী',u:'ু',oo:'ূ',U:'ূ',Ru:'ৃ',e:'ে',ai:'ৈ',o:'ো',au:'ৌ'},
-  virama:'্',anusvara:'ং',visarga:'ঃ',danda:'।',ddanda:'॥',avagraha:'ঽ',
-  nums:{'0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯'}
-},
-gujarati:{
-  vowels:{a:'અ',aa:'આ',A:'આ',i:'ઇ',ee:'ઈ',I:'ઈ',u:'ઉ',oo:'ઊ',U:'ઊ',Ru:'ઋ',e:'એ',ai:'ઐ',o:'ઓ',au:'ઔ'},
-  consonants:{k:'ક',kh:'ખ',K:'ખ',g:'ગ',gh:'ઘ',G:'ઘ','~g':'ઙ',ch:'ચ',Ch:'છ',j:'જ',jh:'ઝ',J:'ઝ','~j':'ઞ',
-    T:'ટ',Th:'ઠ',D:'ડ',Dh:'ઢ',N:'ણ',t:'ત',th:'થ',d:'દ',dh:'ધ',n:'ન',p:'પ',ph:'ફ',b:'બ',bh:'ભ',m:'મ',
-    y:'ય',r:'ર',l:'લ',v:'વ',w:'વ',sh:'શ',Sh:'ષ',s:'સ',h:'હ',L:'ળ'},
-  signs:{a:'',aa:'ા',A:'ા',i:'િ',ee:'ી',I:'ી',u:'ુ',oo:'ૂ',U:'ૂ',Ru:'ૃ',e:'ે',ai:'ૈ',o:'ો',au:'ૌ'},
-  virama:'્',anusvara:'ં',visarga:'ઃ',danda:'।',ddanda:'॥',avagraha:'ઽ',
-  nums:{'0':'૦','1':'૧','2':'૨','3':'૩','4':'૪','5':'૫','6':'૬','7':'૭','8':'૮','9':'૯'}
-},
-malayalam:{
-  vowels:{a:'അ',aa:'ആ',A:'ആ',i:'ഇ',ee:'ഈ',I:'ഈ',u:'ഉ',oo:'ഊ',U:'ഊ',Ru:'ഋ',e:'എ',E:'ഏ',ai:'ഐ',o:'ഒ',O:'ഓ',au:'ഔ'},
-  consonants:{k:'ക',kh:'ഖ',K:'ഖ',g:'ഗ',gh:'ഘ',G:'ഘ','~g':'ങ',ch:'ച',Ch:'ഛ',j:'ജ',jh:'ഝ',J:'ഝ','~j':'ഞ',
-    T:'ട',Th:'ഠ',D:'ഡ',Dh:'ഢ',N:'ണ',t:'ത',th:'ഥ',d:'ദ',dh:'ധ',n:'ന',p:'പ',ph:'ഫ',b:'ബ',bh:'ഭ',m:'മ',
-    y:'യ',r:'ര',l:'ല',v:'വ',w:'വ',sh:'ശ',Sh:'ഷ',s:'സ',h:'ഹ',L:'ള',zh:'ഴ',R:'റ'},
-  signs:{a:'',aa:'ാ',A:'ാ',i:'ി',ee:'ീ',I:'ീ',u:'ു',oo:'ൂ',U:'ൂ',Ru:'ൃ',e:'െ',E:'േ',ai:'ൈ',o:'ൊ',O:'ോ',au:'ൌ'},
-  virama:'്',anusvara:'ം',visarga:'ഃ',danda:'।',ddanda:'॥',avagraha:'ഽ',
-  nums:{'0':'൦','1':'൧','2':'൨','3':'൩','4':'൪','5':'൫','6':'൬','7':'൭','8':'൮','9':'൯'}
-},
-sanskrit:{
-  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',Ru:'ऋ',e:'ए',ai:'ऐ',o:'ओ',au:'औ'},
-  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ','~g':'ङ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ','~j':'ञ',
-    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
-    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ'},
-  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',Ru:'ृ',e:'े',ai:'ै',o:'ो',au:'ौ'},
-  virama:'्',anusvara:'ं',visarga:'ः',danda:'।',ddanda:'॥',avagraha:'ऽ',
-  nums:{'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'}
-},
-marathi:{
-  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',Ru:'ऋ',e:'ए',ai:'ऐ',o:'ओ',au:'औ'},
-  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ','~g':'ङ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ','~j':'ञ',
-    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
-    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ'},
-  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',Ru:'ृ',e:'े',ai:'ै',o:'ो',au:'ौ'},
-  virama:'्',anusvara:'ं',visarga:'ः',danda:'।',ddanda:'॥',avagraha:'ऽ',
-  nums:{'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'}
-},
-odia:{
-  vowels:{a:'ଅ',aa:'ଆ',A:'ଆ',i:'ଇ',ee:'ଈ',I:'ଈ',u:'ଉ',oo:'ଊ',U:'ଊ',Ru:'ଋ',e:'ଏ',ai:'ଐ',o:'ଓ',au:'ଔ'},
-  consonants:{k:'କ',kh:'ଖ',K:'ଖ',g:'ଗ',gh:'ଘ',G:'ଘ','~g':'ଙ',ch:'ଚ',Ch:'ଛ',j:'ଜ',jh:'ଝ',J:'ଝ','~j':'ଞ',
-    T:'ଟ',Th:'ଠ',D:'ଡ',Dh:'ଢ',N:'ଣ',t:'ତ',th:'ଥ',d:'ଦ',dh:'ଧ',n:'ନ',p:'ପ',ph:'ଫ',b:'ବ',bh:'ଭ',m:'ମ',
-    y:'ଯ',r:'ର',l:'ଲ',v:'ୱ',w:'ୱ',sh:'ଶ',Sh:'ଷ',s:'ସ',h:'ହ',L:'ଳ'},
-  signs:{a:'',aa:'ା',A:'ା',i:'ି',ee:'ୀ',I:'ୀ',u:'ୁ',oo:'ୂ',U:'ୂ',Ru:'ୃ',e:'େ',ai:'ୈ',o:'ୋ',au:'ୌ'},
-  virama:'୍',anusvara:'ଂ',visarga:'ଃ',danda:'।',ddanda:'॥',avagraha:'ଽ',
-  nums:{'0':'୦','1':'୧','2':'୨','3':'୩','4':'୪','5':'୫','6':'୬','7':'୭','8':'୮','9':'୯'}
-},
-punjabi:{
-  vowels:{a:'ਅ',aa:'ਆ',A:'ਆ',i:'ਇ',ee:'ਈ',I:'ਈ',u:'ਉ',oo:'ਊ',U:'ਊ',e:'ਏ',ai:'ਐ',o:'ਓ',au:'ਔ'},
-  consonants:{k:'ਕ',kh:'ਖ',K:'ਖ',g:'ਗ',gh:'ਘ',G:'ਘ','~g':'ਙ',ch:'ਚ',Ch:'ਛ',j:'ਜ',jh:'ਝ',J:'ਝ','~j':'ਞ',
-    T:'ਟ',Th:'ਠ',D:'ਡ',Dh:'ਢ',N:'ਣ',t:'ਤ',th:'ਥ',d:'ਦ',dh:'ਧ',n:'ਨ',p:'ਪ',ph:'ਫ',b:'ਬ',bh:'ਭ',m:'ਮ',
-    y:'ਯ',r:'ਰ',l:'ਲ',v:'ਵ',w:'ਵ',sh:'ਸ਼',Sh:'ਸ਼',s:'ਸ',h:'ਹ',L:'ਲ਼'},
-  signs:{a:'',aa:'ਾ',A:'ਾ',i:'ਿ',ee:'ੀ',I:'ੀ',u:'ੁ',oo:'ੂ',U:'ੂ',e:'ੇ',ai:'ੈ',o:'ੋ',au:'ੌ'},
-  virama:'੍',anusvara:'ਂ',visarga:'ਃ',danda:'।',ddanda:'॥',avagraha:'',
-  nums:{'0':'੦','1':'੧','2':'੨','3':'੩','4':'੪','5':'੫','6':'੬','7':'੭','8':'੮','9':'੯'}
-},
-assamese:{
-  vowels:{a:'অ',aa:'আ',A:'আ',i:'ই',ee:'ঈ',I:'ঈ',u:'উ',oo:'ঊ',U:'ঊ',Ru:'ঋ',e:'এ',ai:'ঐ',o:'ও',au:'ঔ'},
-  consonants:{k:'ক',kh:'খ',K:'খ',g:'গ',gh:'ঘ',G:'ঘ','~g':'ঙ',ch:'চ',Ch:'ছ',j:'জ',jh:'ঝ',J:'ঝ','~j':'ঞ',
-    T:'ট',Th:'ঠ',D:'ড',Dh:'ঢ',N:'ণ',t:'ত',th:'থ',d:'দ',dh:'ধ',n:'ন',p:'প',ph:'ফ',b:'ব',bh:'ভ',m:'ম',
-    y:'য',r:'ৰ',l:'ল',v:'ৱ',w:'ৱ',sh:'শ',Sh:'ষ',s:'স',h:'হ'},
-  signs:{a:'',aa:'া',A:'া',i:'ি',ee:'ী',I:'ী',u:'ু',oo:'ূ',U:'ূ',Ru:'ৃ',e:'ে',ai:'ৈ',o:'ো',au:'ৌ'},
-  virama:'্',anusvara:'ং',visarga:'ঃ',danda:'।',ddanda:'॥',avagraha:'ঽ',
-  nums:{'0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯'}
-}
+// ---- BARAHA → DEVANAGARI MAPPINGS ----
+
+const BARAHA_VOWELS = {
+  'a':    '\u0905', 'A':    '\u0906', 'aa':   '\u0906',
+  'i':    '\u0907', 'I':    '\u0908', 'ee':   '\u090F',
+  'ii':   '\u0908', 'u':    '\u0909', 'U':    '\u090A',
+  'oo':   '\u0913', 'Ru':   '\u090B', 'RU':   '\u0960',
+  '~lu':  '\u090C', '~lU':  '\u0961',
+  'e':    '\u090E', 'E':    '\u090F', 'ai':   '\u0910',
+  'o':    '\u0912', 'O':    '\u0913', 'au':   '\u0914', 'ou':   '\u0914',
+  '~e':   '\u090D', '~o':   '\u0911'
 };
 
-const LANG_ORDER=['kannada','hindi','sanskrit','telugu','tamil','bengali','gujarati','malayalam','odia','punjabi','assamese','marathi'];
-let kmLang='kannada';
+const BARAHA_VOWEL_SIGNS = {
+  'a':    '',        'A':    '\u093E', 'aa':   '\u093E',
+  'i':    '\u093F', 'I':    '\u0940', 'ee':   '\u0947',
+  'ii':   '\u0940', 'u':    '\u0941', 'U':    '\u0942',
+  'oo':   '\u094B', 'Ru':   '\u0943', 'RU':   '\u0944',
+  '~lu':  '\u0962', '~lU':  '\u0963',
+  'e':    '\u0946', 'E':    '\u0947', 'ai':   '\u0948',
+  'o':    '\u094A', 'O':    '\u094B', 'au':   '\u094C', 'ou':   '\u094C',
+  '~e':   '\u0945', '~o':   '\u0949'
+};
 
-// Keyboard layout: each key is [englishLabel, translitKey, type]
-// type: 'v'=vowel, 'c'=consonant, 's'=special
-const KB_ROWS=[
-  // Row 1: number row
-  [{en:'`',tk:'`',ty:'s'},{en:'1',tk:'1',ty:'s'},{en:'2',tk:'2',ty:'s'},{en:'3',tk:'3',ty:'s'},
-   {en:'4',tk:'4',ty:'s'},{en:'5',tk:'5',ty:'s'},{en:'6',tk:'6',ty:'s'},{en:'7',tk:'7',ty:'s'},
-   {en:'8',tk:'8',ty:'s'},{en:'9',tk:'9',ty:'s'},{en:'0',tk:'0',ty:'s'}],
-  // Row 2: qwerty
-  [{en:'q',tk:'',ty:'s'},{en:'w',tk:'w',ty:'c'},{en:'e',tk:'e',ty:'v'},{en:'r',tk:'r',ty:'c'},
-   {en:'t',tk:'t',ty:'c'},{en:'y',tk:'y',ty:'c'},{en:'u',tk:'u',ty:'v'},{en:'i',tk:'i',ty:'v'},
-   {en:'o',tk:'o',ty:'v'},{en:'p',tk:'p',ty:'c'}],
-  // Row 3: home row
-  [{en:'a',tk:'a',ty:'v'},{en:'s',tk:'s',ty:'c'},{en:'d',tk:'d',ty:'c'},{en:'f',tk:'f',ty:'c'},
-   {en:'g',tk:'g',ty:'c'},{en:'h',tk:'h',ty:'c'},{en:'j',tk:'j',ty:'c'},{en:'k',tk:'k',ty:'c'},
-   {en:'l',tk:'l',ty:'c'}],
-  // Row 4: bottom
-  [{en:'z',tk:'z',ty:'c'},{en:'x',tk:'x',ty:'c'},{en:'c',tk:'c',ty:'c'},{en:'v',tk:'v',ty:'c'},
-   {en:'b',tk:'b',ty:'c'},{en:'n',tk:'n',ty:'c'},{en:'m',tk:'m',ty:'c'}],
-  // Row 5: space
-  [{en:'Space',tk:' ',ty:'s',cls:'kb-space'}]
-];
+const BARAHA_CONSONANTS = {
+  'k':'\u0915','kh':'\u0916','K':'\u0916',
+  'g':'\u0917','gh':'\u0918','G':'\u0918','~g':'\u0919',
+  'ch':'\u091A','c':'\u091A','Ch':'\u091B','C':'\u091B',
+  'j':'\u091C','jh':'\u091D','J':'\u091D','~j':'\u091E',
+  'T':'\u091F','Th':'\u0920','D':'\u0921','Dh':'\u0922','N':'\u0923',
+  't':'\u0924','th':'\u0925','d':'\u0926','dh':'\u0927','n':'\u0928',
+  'p':'\u092A','ph':'\u092B','P':'\u092B',
+  'b':'\u092C','bh':'\u092D','B':'\u092D','m':'\u092E',
+  'y':'\u092F','r':'\u0930','l':'\u0932','v':'\u0935','w':'\u0935',
+  'sh':'\u0936','S':'\u0936','Sh':'\u0937','s':'\u0938','h':'\u0939','~h':'\u0939',
+  'L':'\u0933',
+  'kSh':'\u0915\u094D\u0937',
+  'j~j':'\u091C\u094D\u091E',
+  'kx':'\u0958','Kx':'\u0959','gx':'\u095A',
+  'z':'\u095B','jx':'\u095B',
+  'Dx':'\u095C','Dhx':'\u095D',
+  'f':'\u095E','Px':'\u095E',
+  'Y':'\u095F','yx':'\u095F',
+  'rx':'\u0931','Lx':'\u0934','zh':'\u0934',
+  'nx':'\u0929'
+};
 
-function getIndicChar(lang, key){
-  const m=KM_MAPS[lang];
-  if(!m)return '';
-  // number keys
-  if(m.nums&&m.nums[key])return m.nums[key];
-  // vowel
-  if(m.vowels[key])return m.vowels[key];
-  // consonant → show base+a (inherent vowel)
-  if(m.consonants[key])return m.consonants[key];
-  return '';
+const BARAHA_YOGAVAAHAS = {
+  'M':  '\u0902',
+  'H':  '\u0903',
+  '~M': '\u0901'
+};
+
+const BARAHA_DIGITS = {
+  '0':'\u0966','1':'\u0967','2':'\u0968','3':'\u0969','4':'\u096A',
+  '5':'\u096B','6':'\u096C','7':'\u096D','8':'\u096E','9':'\u096F'
+};
+
+const BARAHA_SYMBOLS = {
+  'OM': '\u0950',
+  '&':  '\u093D',
+  '||': '\u0965',
+  '|':  '\u0964'
+};
+
+const DEVANAGARI_VIRAMA = '\u094D';
+
+const WORD_BOUNDARY = new Set(' \n\t\r.,;:!?()-[]{}\"\'/\\<>@#$%^*+=~`');
+
+// Pre-sort keys by length descending for greedy matching
+function sortedKeys(obj) {
+  return Object.keys(obj).sort((a,b) => b.length - a.length);
 }
 
-function buildKeyboard(){
-  const wrap=document.getElementById('kbWrap');
-  wrap.innerHTML='';
-  const m=KM_MAPS[kmLang];
-  KB_ROWS.forEach(row=>{
-    const rowEl=document.createElement('div');
-    rowEl.className='kb-row';
-    row.forEach(k=>{
-      const keyEl=document.createElement('div');
-      let cls='kb-key';
-      if(k.cls)cls+=' '+k.cls;
-      // Determine type color
-      const indic=getIndicChar(kmLang,k.tk);
-      if(k.ty==='v')cls+=' vowel';
-      else if(k.ty==='c'&&indic)cls+=' consonant';
-      else cls+=' special';
-      keyEl.className=cls;
-      keyEl.dataset.tk=k.tk;
-      // Content
-      const enSpan=document.createElement('span');
-      enSpan.className='kb-en';
-      enSpan.textContent=k.en;
-      const inSpan=document.createElement('span');
-      inSpan.className='kb-in';
-      inSpan.textContent=indic;
-      keyEl.appendChild(enSpan);
-      keyEl.appendChild(inSpan);
-      // Tooltip
-      if(indic||k.en==='Space'){
-        const tip=document.createElement('div');
-        tip.className='kb-tip';
-        if(k.en==='Space')tip.textContent='Space';
-        else tip.textContent=k.en+' → '+indic;
-        keyEl.appendChild(tip);
-      }
-      // Click handler
-      keyEl.addEventListener('click',()=>{
-        keyEl.classList.add('pressed');
-        setTimeout(()=>keyEl.classList.remove('pressed'),150);
-        appendToPreview(k.tk);
-      });
-      rowEl.appendChild(keyEl);
-    });
-    wrap.appendChild(rowEl);
-  });
-}
+const SORTED_CONSONANTS = sortedKeys(BARAHA_CONSONANTS);
+const SORTED_VOWELS = sortedKeys(BARAHA_VOWELS);
+const SORTED_VOWEL_SIGNS = sortedKeys(BARAHA_VOWEL_SIGNS);
+const SORTED_YOGAVAAHAS = sortedKeys(BARAHA_YOGAVAAHAS);
+const SORTED_SYMBOLS = sortedKeys(BARAHA_SYMBOLS);
 
-let previewBuffer='';
-const previewText=document.getElementById('kbPreviewText');
-function appendToPreview(ch){
-  previewBuffer+=ch;
-  previewText.textContent=kmTransliterate(previewBuffer);
-}
+// ---- DEVANAGARI → TARGET SCRIPT MAPPINGS ----
 
-// Handle physical keyboard in preview
-document.addEventListener('keydown',(e)=>{
-  const kbWrap=document.getElementById('kbWrap');
-  if(!kbWrap)return;
-  const rect=kbWrap.getBoundingClientRect();
-  // Only handle if keyboard map section is roughly visible
-  const sec=document.getElementById('keyboard-map');
-  if(!sec)return;
-  const sr=sec.getBoundingClientRect();
-  if(sr.bottom<0||sr.top>window.innerHeight)return;
-  // Don't capture if typing in an input
-  if(document.activeElement&&(document.activeElement.tagName==='INPUT'||document.activeElement.tagName==='TEXTAREA'))return;
-  if(e.key==='Backspace'){
-    previewBuffer=previewBuffer.slice(0,-1);
-    previewText.textContent=kmTransliterate(previewBuffer);
-    // Highlight backspace visually
-    return;
-  }
-  if(e.key.length===1&&!e.ctrlKey&&!e.metaKey){
-    appendToPreview(e.key);
-    // Highlight the pressed key
-    const keys=kbWrap.querySelectorAll('.kb-key');
-    keys.forEach(k=>{
-      if(k.querySelector('.kb-en')&&k.querySelector('.kb-en').textContent.toLowerCase()===e.key.toLowerCase()){
-        k.classList.add('pressed');
-        setTimeout(()=>k.classList.remove('pressed'),150);
-      }
-    });
-  }
-});
+const DEVA_TO_KANNADA = {
+  '\u0905':'\u0C85','\u0906':'\u0C86','\u0907':'\u0C87','\u0908':'\u0C88',
+  '\u0909':'\u0C89','\u090A':'\u0C8A','\u090B':'\u0C8B','\u0960':'\u0CE0',
+  '\u090C':'\u0C8C','\u0961':'\u0CE1',
+  '\u090E':'\u0C8E','\u090F':'\u0C8F','\u0910':'\u0C90',
+  '\u0912':'\u0C92','\u0913':'\u0C93','\u0914':'\u0C94',
+  '\u090D':'\u0C8D','\u0911':'\u0C91',
+  '\u093E':'\u0CBE','\u093F':'\u0CBF','\u0940':'\u0CC0',
+  '\u0941':'\u0CC1','\u0942':'\u0CC2','\u0943':'\u0CC3','\u0944':'\u0CC4',
+  '\u0962':'\u0CE2','\u0963':'\u0CE3',
+  '\u0946':'\u0CC6','\u0947':'\u0CC7','\u0948':'\u0CC8',
+  '\u094A':'\u0CCA','\u094B':'\u0CCB','\u094C':'\u0CCC',
+  '\u0945':'\u0CC5','\u0949':'\u0CC9',
+  '\u0902':'\u0C82','\u0903':'\u0C83','\u0901':'\u0C81',
+  '\u094D':'\u0CCD',
+  '\u0915':'\u0C95','\u0916':'\u0C96','\u0917':'\u0C97','\u0918':'\u0C98','\u0919':'\u0C99',
+  '\u091A':'\u0C9A','\u091B':'\u0C9B','\u091C':'\u0C9C','\u091D':'\u0C9D','\u091E':'\u0C9E',
+  '\u091F':'\u0C9F','\u0920':'\u0CA0','\u0921':'\u0CA1','\u0922':'\u0CA2','\u0923':'\u0CA3',
+  '\u0924':'\u0CA4','\u0925':'\u0CA5','\u0926':'\u0CA6','\u0927':'\u0CA7','\u0928':'\u0CA8',
+  '\u0929':'\u0CA9',
+  '\u092A':'\u0CAA','\u092B':'\u0CAB','\u092C':'\u0CAC','\u092D':'\u0CAD','\u092E':'\u0CAE',
+  '\u092F':'\u0CAF','\u0930':'\u0CB0','\u0931':'\u0CB1','\u0932':'\u0CB2','\u0933':'\u0CB3',
+  '\u0934':'\u0CB4','\u0935':'\u0CB5',
+  '\u0936':'\u0CB6','\u0937':'\u0CB7','\u0938':'\u0CB8','\u0939':'\u0CB9',
+  '\u0958':'\u0C95','\u0959':'\u0C96','\u095A':'\u0C97','\u095B':'\u0C9C',
+  '\u095C':'\u0CA1','\u095D':'\u0CA2','\u095E':'\u0CAB','\u095F':'\u0CAF',
+  '\u0966':'\u0CE6','\u0967':'\u0CE7','\u0968':'\u0CE8','\u0969':'\u0CE9','\u096A':'\u0CEA',
+  '\u096B':'\u0CEB','\u096C':'\u0CEC','\u096D':'\u0CED','\u096E':'\u0CEE','\u096F':'\u0CEF',
+  '\u0950':'\u0CD5','\u093D':'\u0CBD','\u0964':'\u0964','\u0965':'\u0965'
+};
 
-// Transliteration engine (reuses same logic as playground)
-function kmTransliterate(input){
-  const map=KM_MAPS[kmLang];
-  if(!map||!input)return '';
-  let result='',i=0;
-  const len=input.length;
-  let afterConsonant=false;
-  while(i<len){
-    let matched=false;
-    for(let ml=3;ml>=1;ml--){
-      const chunk=input.substr(i,ml);
-      if(chunk==='M'&&afterConsonant){result+=map.anusvara;i++;matched=true;afterConsonant=false;break;}
-      if(chunk==='H'&&afterConsonant){result+=map.visarga;i++;matched=true;afterConsonant=false;break;}
-      if(map.consonants[chunk]){
-        if(afterConsonant)result+=map.virama;
-        result+=map.consonants[chunk];
-        afterConsonant=true;i+=ml;matched=true;break;
-      }
-      if(afterConsonant&&map.signs[chunk]!==undefined){
-        result+=map.signs[chunk];afterConsonant=false;i+=ml;matched=true;break;
-      }
-      if(!afterConsonant&&map.vowels[chunk]){
-        result+=map.vowels[chunk];afterConsonant=false;i+=ml;matched=true;break;
-      }
+const DEVA_TO_TELUGU = {
+  '\u0905':'\u0C05','\u0906':'\u0C06','\u0907':'\u0C07','\u0908':'\u0C08',
+  '\u0909':'\u0C09','\u090A':'\u0C0A','\u090B':'\u0C0B','\u0960':'\u0C60',
+  '\u090C':'\u0C0C','\u0961':'\u0C61',
+  '\u090E':'\u0C0E','\u090F':'\u0C0F','\u0910':'\u0C10',
+  '\u0912':'\u0C12','\u0913':'\u0C13','\u0914':'\u0C14',
+  '\u093E':'\u0C3E','\u093F':'\u0C3F','\u0940':'\u0C40',
+  '\u0941':'\u0C41','\u0942':'\u0C42','\u0943':'\u0C43','\u0944':'\u0C44',
+  '\u0946':'\u0C46','\u0947':'\u0C47','\u0948':'\u0C48',
+  '\u094A':'\u0C4A','\u094B':'\u0C4B','\u094C':'\u0C4C',
+  '\u0902':'\u0C02','\u0903':'\u0C03','\u0901':'\u0C01',
+  '\u094D':'\u0C4D',
+  '\u0915':'\u0C15','\u0916':'\u0C16','\u0917':'\u0C17','\u0918':'\u0C18','\u0919':'\u0C19',
+  '\u091A':'\u0C1A','\u091B':'\u0C1B','\u091C':'\u0C1C','\u091D':'\u0C1D','\u091E':'\u0C1E',
+  '\u091F':'\u0C1F','\u0920':'\u0C20','\u0921':'\u0C21','\u0922':'\u0C22','\u0923':'\u0C23',
+  '\u0924':'\u0C24','\u0925':'\u0C25','\u0926':'\u0C26','\u0927':'\u0C27','\u0928':'\u0C28',
+  '\u092A':'\u0C2A','\u092B':'\u0C2B','\u092C':'\u0C2C','\u092D':'\u0C2D','\u092E':'\u0C2E',
+  '\u092F':'\u0C2F','\u0930':'\u0C30','\u0931':'\u0C31','\u0932':'\u0C32','\u0933':'\u0C33',
+  '\u0934':'\u0C34','\u0935':'\u0C35',
+  '\u0936':'\u0C36','\u0937':'\u0C37','\u0938':'\u0C38','\u0939':'\u0C39',
+  '\u0958':'\u0C15','\u0959':'\u0C16','\u095A':'\u0C17','\u095B':'\u0C1C',
+  '\u095C':'\u0C21','\u095D':'\u0C22','\u095E':'\u0C2B','\u095F':'\u0C2F',
+  '\u0966':'\u0C66','\u0967':'\u0C67','\u0968':'\u0C68','\u0969':'\u0C69','\u096A':'\u0C6A',
+  '\u096B':'\u0C6B','\u096C':'\u0C6C','\u096D':'\u0C6D','\u096E':'\u0C6E','\u096F':'\u0C6F',
+  '\u0964':'\u0964','\u0965':'\u0965','\u093D':'\u0C3D'
+};
+
+const DEVA_TO_TAMIL = {
+  '\u0905':'\u0B85','\u0906':'\u0B86','\u0907':'\u0B87','\u0908':'\u0B88',
+  '\u0909':'\u0B89','\u090A':'\u0B8A',
+  '\u090E':'\u0B8E','\u090F':'\u0B8F','\u0910':'\u0B90',
+  '\u0912':'\u0B92','\u0913':'\u0B93','\u0914':'\u0B94',
+  '\u093E':'\u0BBE','\u093F':'\u0BBF','\u0940':'\u0BC0',
+  '\u0941':'\u0BC1','\u0942':'\u0BC2',
+  '\u0946':'\u0BC6','\u0947':'\u0BC7','\u0948':'\u0BC8',
+  '\u094A':'\u0BCA','\u094B':'\u0BCB','\u094C':'\u0BCC',
+  '\u0902':'\u0B82','\u0903':'\u0B83',
+  '\u094D':'\u0BCD',
+  '\u0915':'\u0B95','\u0916':'\u0B95','\u0917':'\u0B95','\u0918':'\u0B95','\u0919':'\u0B99',
+  '\u091A':'\u0B9A','\u091B':'\u0B9A','\u091C':'\u0B9C','\u091D':'\u0B9A','\u091E':'\u0B9E',
+  '\u091F':'\u0B9F','\u0920':'\u0B9F','\u0921':'\u0B9F','\u0922':'\u0B9F','\u0923':'\u0BA3',
+  '\u0924':'\u0BA4','\u0925':'\u0BA4','\u0926':'\u0BA4','\u0927':'\u0BA4','\u0928':'\u0BA8',
+  '\u0929':'\u0BA9',
+  '\u092A':'\u0BAA','\u092B':'\u0BAA','\u092C':'\u0BAA','\u092D':'\u0BAA','\u092E':'\u0BAE',
+  '\u092F':'\u0BAF','\u0930':'\u0BB0','\u0931':'\u0BB1','\u0932':'\u0BB2','\u0933':'\u0BB3',
+  '\u0934':'\u0BB4','\u0935':'\u0BB5',
+  '\u0936':'\u0BB6','\u0937':'\u0BB7','\u0938':'\u0BB8','\u0939':'\u0BB9',
+  '\u0966':'\u0BE6','\u0967':'\u0BE7','\u0968':'\u0BE8','\u0969':'\u0BE9','\u096A':'\u0BEA',
+  '\u096B':'\u0BEB','\u096C':'\u0BEC','\u096D':'\u0BED','\u096E':'\u0BEE','\u096F':'\u0BEF',
+  '\u0964':'\u0964','\u0965':'\u0965'
+};
+
+const DEVA_TO_MALAYALAM = {
+  '\u0905':'\u0D05','\u0906':'\u0D06','\u0907':'\u0D07','\u0908':'\u0D08',
+  '\u0909':'\u0D09','\u090A':'\u0D0A','\u090B':'\u0D0B','\u0960':'\u0D60',
+  '\u090C':'\u0D0C','\u0961':'\u0D61',
+  '\u090E':'\u0D0E','\u090F':'\u0D0F','\u0910':'\u0D10',
+  '\u0912':'\u0D12','\u0913':'\u0D13','\u0914':'\u0D14',
+  '\u093E':'\u0D3E','\u093F':'\u0D3F','\u0940':'\u0D40',
+  '\u0941':'\u0D41','\u0942':'\u0D42','\u0943':'\u0D43','\u0944':'\u0D44',
+  '\u0962':'\u0D62','\u0963':'\u0D63',
+  '\u0946':'\u0D46','\u0947':'\u0D47','\u0948':'\u0D48',
+  '\u094A':'\u0D4A','\u094B':'\u0D4B','\u094C':'\u0D4C',
+  '\u0902':'\u0D02','\u0903':'\u0D03','\u0901':'\u0D01',
+  '\u094D':'\u0D4D',
+  '\u0915':'\u0D15','\u0916':'\u0D16','\u0917':'\u0D17','\u0918':'\u0D18','\u0919':'\u0D19',
+  '\u091A':'\u0D1A','\u091B':'\u0D1B','\u091C':'\u0D1C','\u091D':'\u0D1D','\u091E':'\u0D1E',
+  '\u091F':'\u0D1F','\u0920':'\u0D20','\u0921':'\u0D21','\u0922':'\u0D22','\u0923':'\u0D23',
+  '\u0924':'\u0D24','\u0925':'\u0D25','\u0926':'\u0D26','\u0927':'\u0D27','\u0928':'\u0D28',
+  '\u092A':'\u0D2A','\u092B':'\u0D2B','\u092C':'\u0D2C','\u092D':'\u0D2D','\u092E':'\u0D2E',
+  '\u092F':'\u0D2F','\u0930':'\u0D30','\u0931':'\u0D31','\u0932':'\u0D32','\u0933':'\u0D33',
+  '\u0934':'\u0D34','\u0935':'\u0D35',
+  '\u0936':'\u0D36','\u0937':'\u0D37','\u0938':'\u0D38','\u0939':'\u0D39',
+  '\u0966':'\u0D66','\u0967':'\u0D67','\u0968':'\u0D68','\u0969':'\u0D69','\u096A':'\u0D6A',
+  '\u096B':'\u0D6B','\u096C':'\u0D6C','\u096D':'\u0D6D','\u096E':'\u0D6E','\u096F':'\u0D6F',
+  '\u0964':'\u0964','\u0965':'\u0965','\u093D':'\u0D3D'
+};
+
+const DEVA_TO_BENGALI = {
+  '\u0905':'\u0985','\u0906':'\u0986','\u0907':'\u0987','\u0908':'\u0988',
+  '\u0909':'\u0989','\u090A':'\u098A','\u090B':'\u098B','\u0960':'\u09E0',
+  '\u090C':'\u098C','\u0961':'\u09E1',
+  '\u090F':'\u098F','\u0910':'\u0990','\u0913':'\u0993','\u0914':'\u0994',
+  '\u090E':'\u098F','\u0912':'\u0993',
+  '\u093E':'\u09BE','\u093F':'\u09BF','\u0940':'\u09C0',
+  '\u0941':'\u09C1','\u0942':'\u09C2','\u0943':'\u09C3','\u0944':'\u09C4',
+  '\u0962':'\u09E2','\u0963':'\u09E3',
+  '\u0947':'\u09C7','\u0948':'\u09C8','\u094B':'\u09CB','\u094C':'\u09CC',
+  '\u0946':'\u09C7','\u094A':'\u09CB',
+  '\u0902':'\u0982','\u0903':'\u0983','\u0901':'\u0981',
+  '\u094D':'\u09CD',
+  '\u0915':'\u0995','\u0916':'\u0996','\u0917':'\u0997','\u0918':'\u0998','\u0919':'\u0999',
+  '\u091A':'\u099A','\u091B':'\u099B','\u091C':'\u099C','\u091D':'\u099D','\u091E':'\u099E',
+  '\u091F':'\u09A0','\u0920':'\u09A1','\u0921':'\u09A2','\u0922':'\u09A3','\u0923':'\u09A3',
+  '\u0924':'\u09A4','\u0925':'\u09A5','\u0926':'\u09A6','\u0927':'\u09A7','\u0928':'\u09A8',
+  '\u092A':'\u09AA','\u092B':'\u09AB','\u092C':'\u09AC','\u092D':'\u09AD','\u092E':'\u09AE',
+  '\u092F':'\u09AF','\u0930':'\u09B0','\u0932':'\u09B2','\u0935':'\u09AC',
+  '\u0936':'\u09B6','\u0937':'\u09B7','\u0938':'\u09B8','\u0939':'\u09B9',
+  '\u0933':'\u09B2\u09BC',
+  '\u0958':'\u0995\u09BC','\u0959':'\u0996\u09BC','\u095A':'\u0997\u09BC',
+  '\u095B':'\u099C\u09BC','\u095C':'\u09A1\u09BC','\u095D':'\u09A2\u09BC',
+  '\u095E':'\u09AB\u09BC','\u095F':'\u09AF\u09BC',
+  '\u0966':'\u09E6','\u0967':'\u09E7','\u0968':'\u09E8','\u0969':'\u09E9','\u096A':'\u09EA',
+  '\u096B':'\u09EB','\u096C':'\u09EC','\u096D':'\u09ED','\u096E':'\u09EE','\u096F':'\u09EF',
+  '\u0964':'\u0964','\u0965':'\u0965','\u093D':'\u09BD'
+};
+
+const DEVA_TO_GUJARATI = {
+  '\u0905':'\u0A85','\u0906':'\u0A86','\u0907':'\u0A87','\u0908':'\u0A88',
+  '\u0909':'\u0A89','\u090A':'\u0A8A','\u090B':'\u0A8B','\u0960':'\u0AE0',
+  '\u090C':'\u0A8C','\u0961':'\u0AE1',
+  '\u090F':'\u0A8F','\u0910':'\u0A90','\u0913':'\u0A93','\u0914':'\u0A94',
+  '\u090E':'\u0A8F','\u0912':'\u0A93',
+  '\u093E':'\u0ABE','\u093F':'\u0ABF','\u0940':'\u0AC0',
+  '\u0941':'\u0AC1','\u0942':'\u0AC2','\u0943':'\u0AC3','\u0944':'\u0AC4',
+  '\u0962':'\u0AE2','\u0963':'\u0AE3',
+  '\u0947':'\u0AC7','\u0948':'\u0AC8','\u094B':'\u0ACB','\u094C':'\u0ACC',
+  '\u0946':'\u0AC7','\u094A':'\u0ACB',
+  '\u0902':'\u0A82','\u0903':'\u0A83','\u0901':'\u0A81',
+  '\u094D':'\u0ACD',
+  '\u0915':'\u0A95','\u0916':'\u0A96','\u0917':'\u0A97','\u0918':'\u0A98','\u0919':'\u0A99',
+  '\u091A':'\u0A9A','\u091B':'\u0A9B','\u091C':'\u0A9C','\u091D':'\u0A9D','\u091E':'\u0A9E',
+  '\u091F':'\u0A9F','\u0920':'\u0AA0','\u0921':'\u0AA1','\u0922':'\u0AA2','\u0923':'\u0AA3',
+  '\u0924':'\u0AA4','\u0925':'\u0AA5','\u0926':'\u0AA6','\u0927':'\u0AA7','\u0928':'\u0AA8',
+  '\u092A':'\u0AAA','\u092B':'\u0AAB','\u092C':'\u0AAC','\u092D':'\u0AAD','\u092E':'\u0AAE',
+  '\u092F':'\u0AAF','\u0930':'\u0AB0','\u0932':'\u0AB2','\u0935':'\u0AB5',
+  '\u0936':'\u0AB6','\u0937':'\u0AB7','\u0938':'\u0AB8','\u0939':'\u0AB9',
+  '\u0933':'\u0AB3',
+  '\u0966':'\u0AE6','\u0967':'\u0AE7','\u0968':'\u0AE8','\u0969':'\u0AE9','\u096A':'\u0AEA',
+  '\u096B':'\u0AEB','\u096C':'\u0AEC','\u096D':'\u0AED','\u096E':'\u0AEE','\u096F':'\u0AEF',
+  '\u0964':'\u0964','\u0965':'\u0965','\u093D':'\u0ABD'
+};
+
+const DEVA_TO_GURMUKHI = {
+  '\u0905':'\u0A05','\u0906':'\u0A06','\u0907':'\u0A07','\u0908':'\u0A08',
+  '\u0909':'\u0A09','\u090A':'\u0A0A',
+  '\u090F':'\u0A0F','\u0910':'\u0A10','\u0913':'\u0A13','\u0914':'\u0A14',
+  '\u090E':'\u0A0F','\u0912':'\u0A13',
+  '\u090B':'','\u0960':'','\u090C':'','\u0961':'',
+  '\u093E':'\u0A3E','\u093F':'\u0A3F','\u0940':'\u0A40',
+  '\u0941':'\u0A41','\u0942':'\u0A42',
+  '\u0947':'\u0A47','\u0948':'\u0A48','\u094B':'\u0A4B','\u094C':'\u0A4C',
+  '\u0946':'\u0A47','\u094A':'\u0A4B',
+  '\u0943':'','\u0944':'',
+  '\u0902':'\u0A02','\u0903':'\u0A03','\u0901':'\u0A01',
+  '\u094D':'\u0A4D',
+  '\u0915':'\u0A15','\u0916':'\u0A16','\u0917':'\u0A17','\u0918':'\u0A18','\u0919':'\u0A19',
+  '\u091A':'\u0A1A','\u091B':'\u0A1B','\u091C':'\u0A1C','\u091D':'\u0A1D','\u091E':'\u0A1E',
+  '\u091F':'\u0A1F','\u0920':'\u0A20','\u0921':'\u0A21','\u0922':'\u0A22','\u0923':'\u0A23',
+  '\u0924':'\u0A24','\u0925':'\u0A25','\u0926':'\u0A26','\u0927':'\u0A27','\u0928':'\u0A28',
+  '\u092A':'\u0A2A','\u092B':'\u0A2B','\u092C':'\u0A2C','\u092D':'\u0A2D','\u092E':'\u0A2E',
+  '\u092F':'\u0A2F','\u0930':'\u0A30','\u0932':'\u0A32','\u0935':'\u0A35',
+  '\u0936':'\u0A36','\u0937':'\u0A36\u0A3C','\u0938':'\u0A38','\u0939':'\u0A39',
+  '\u0933':'\u0A32\u0A3C',
+  '\u0958':'\u0A15\u0A3C','\u0959':'\u0A16\u0A3C','\u095A':'\u0A17\u0A3C',
+  '\u095B':'\u0A1C\u0A3C','\u095C':'\u0A5C','\u095D':'\u0A5C\u0A4D\u0A39',
+  '\u095E':'\u0A2B\u0A3C',
+  '\u0966':'\u0A66','\u0967':'\u0A67','\u0968':'\u0A68','\u0969':'\u0A69','\u096A':'\u0A6A',
+  '\u096B':'\u0A6B','\u096C':'\u0A6C','\u096D':'\u0A6D','\u096E':'\u0A6E','\u096F':'\u0A6F',
+  '\u0964':'\u0964','\u0965':'\u0965'
+};
+
+const DEVA_TO_ODIA = {
+  '\u0905':'\u0B05','\u0906':'\u0B06','\u0907':'\u0B07','\u0908':'\u0B08',
+  '\u0909':'\u0B09','\u090A':'\u0B0A','\u090B':'\u0B0B','\u0960':'\u0B60',
+  '\u090C':'\u0B0C','\u0961':'\u0B61',
+  '\u090F':'\u0B0F','\u0910':'\u0B10','\u0913':'\u0B13','\u0914':'\u0B14',
+  '\u090E':'\u0B0F','\u0912':'\u0B13',
+  '\u093E':'\u0B3E','\u093F':'\u0B3F','\u0940':'\u0B40',
+  '\u0941':'\u0B41','\u0942':'\u0B42','\u0943':'\u0B43','\u0944':'\u0B44',
+  '\u0962':'\u0B62','\u0963':'\u0B63',
+  '\u0947':'\u0B47','\u0948':'\u0B48','\u094B':'\u0B4B','\u094C':'\u0B4C',
+  '\u0946':'\u0B47','\u094A':'\u0B4B',
+  '\u0902':'\u0B02','\u0903':'\u0B03','\u0901':'\u0B01',
+  '\u094D':'\u0B4D',
+  '\u0915':'\u0B15','\u0916':'\u0B16','\u0917':'\u0B17','\u0918':'\u0B18','\u0919':'\u0B19',
+  '\u091A':'\u0B1A','\u091B':'\u0B1B','\u091C':'\u0B1C','\u091D':'\u0B1D','\u091E':'\u0B1E',
+  '\u091F':'\u0B1F','\u0920':'\u0B20','\u0921':'\u0B21','\u0922':'\u0B22','\u0923':'\u0B23',
+  '\u0924':'\u0B24','\u0925':'\u0B25','\u0926':'\u0B26','\u0927':'\u0B27','\u0928':'\u0B28',
+  '\u092A':'\u0B2A','\u092B':'\u0B2B','\u092C':'\u0B2C','\u092D':'\u0B2D','\u092E':'\u0B2E',
+  '\u092F':'\u0B2F','\u0930':'\u0B30','\u0932':'\u0B32','\u0935':'\u0B35',
+  '\u0936':'\u0B36','\u0937':'\u0B37','\u0938':'\u0B38','\u0939':'\u0B39',
+  '\u0933':'\u0B33',
+  '\u0966':'\u0B66','\u0967':'\u0B67','\u0968':'\u0B68','\u0969':'\u0B69','\u096A':'\u0B6A',
+  '\u096B':'\u0B6B','\u096C':'\u0B6C','\u096D':'\u0B6D','\u096E':'\u0B6E','\u096F':'\u0B6F',
+  '\u0964':'\u0964','\u0965':'\u0965','\u093D':'\u0B3D'
+};
+
+// Assamese = Bengali + র→ৰ
+const DEVA_TO_ASSAMESE = Object.assign({}, DEVA_TO_BENGALI, {'\u0930':'\u09F0'});
+
+// ---- LANGUAGE REGISTRY ----
+
+const NO_SHORT_EO = new Set(['sanskrit','hindi','marathi','bengali','assamese','gujarati','punjabi','odia']);
+const IMPLICIT_SCHWA = new Set(['hindi','marathi','bengali','assamese','gujarati','punjabi','odia']);
+
+const LANGUAGES = {
+  kannada:   { name:'Kannada',   scriptMap: DEVA_TO_KANNADA },
+  hindi:     { name:'Hindi',     scriptMap: {'\u090E':'\u090F','\u0912':'\u0913','\u0946':'\u0947','\u094A':'\u094B'} },
+  sanskrit:  { name:'Sanskrit',  scriptMap: {} },
+  telugu:    { name:'Telugu',    scriptMap: DEVA_TO_TELUGU },
+  tamil:     { name:'Tamil',     scriptMap: DEVA_TO_TAMIL },
+  bengali:   { name:'Bengali',   scriptMap: DEVA_TO_BENGALI },
+  gujarati:  { name:'Gujarati',  scriptMap: DEVA_TO_GUJARATI },
+  malayalam: { name:'Malayalam',  scriptMap: DEVA_TO_MALAYALAM },
+  odia:      { name:'Odia',      scriptMap: DEVA_TO_ODIA },
+  punjabi:   { name:'Punjabi',   scriptMap: DEVA_TO_GURMUKHI },
+  assamese:  { name:'Assamese',  scriptMap: DEVA_TO_ASSAMESE },
+  marathi:   { name:'Marathi',   scriptMap: {'\u090E':'\u090F','\u0912':'\u0913','\u0946':'\u0947','\u094A':'\u094B'} }
+};
+
+const LANG_ORDER = ['kannada','hindi','sanskrit','telugu','tamil','bengali','gujarati','malayalam','odia','punjabi','assamese','marathi'];
+
+// ---- TRANSLITERATION ENGINE ----
+
+function matchToken(text, pos, sortedKeys, table) {
+  for (let ki = 0; ki < sortedKeys.length; ki++) {
+    const key = sortedKeys[ki];
+    const end = pos + key.length;
+    if (end <= text.length && text.substring(pos, end) === key) {
+      return [key, table[key]];
     }
-    if(!matched){
-      if(map.nums&&map.nums[input[i]]){
-        if(afterConsonant){result+=map.signs['a']||'';afterConsonant=false;}
-        result+=map.nums[input[i]];
-      }else{
-        if(afterConsonant&&input[i]===' '){afterConsonant=false;}
-        else if(afterConsonant&&!/[a-zA-Z]/.test(input[i])){afterConsonant=false;}
-        result+=input[i];
+  }
+  return [null, null];
+}
+
+function isConsonantStart(text, pos, sortedCons) {
+  for (let ki = 0; ki < sortedCons.length; ki++) {
+    const key = sortedCons[ki];
+    const end = pos + key.length;
+    if (end <= text.length && text.substring(pos, end) === key) return true;
+  }
+  return false;
+}
+
+function transliterateToDevanagari(text, vowels, vowelSigns) {
+  const result = [];
+  let i = 0;
+  const n = text.length;
+
+  // Pre-sort vowel-related keys
+  const sortedVowels = sortedKeys(vowels);
+  const sortedVowelSigns = sortedKeys(vowelSigns);
+
+  while (i < n) {
+    const ch = text[i];
+
+    // Skip _
+    if (ch === '_') { i++; continue; }
+
+    // ZWJ / ZWNJ
+    if (ch === '^') {
+      if (i + 1 < n && text[i + 1] === '^') {
+        result.push('\u200C'); i += 2;
+      } else {
+        result.push('\u200D'); i += 1;
       }
+      continue;
+    }
+
+    // Try consonant
+    const [consKey, consDeva] = matchToken(text, i, SORTED_CONSONANTS, BARAHA_CONSONANTS);
+    if (consKey !== null) {
+      i += consKey.length;
+      result.push(consDeva);
+
+      // After consonant, look for vowel sign
+      const [vsKey, vsDeva] = matchToken(text, i, sortedVowelSigns, vowelSigns);
+      if (vsKey !== null) {
+        if (vsKey === 'a') {
+          // inherent vowel, just consume
+          i += vsKey.length;
+        } else {
+          result.push(vsDeva);
+          i += vsKey.length;
+        }
+      } else {
+        // No vowel follows
+        if (i >= n || WORD_BOUNDARY.has(text[i])) {
+          // End of input or word boundary
+          if (!window._implicitSchwa) {
+            result.push(DEVANAGARI_VIRAMA);
+          }
+          // implicit schwa: keep inherent 'a'
+        } else if (isConsonantStart(text, i, SORTED_CONSONANTS)) {
+          // Next is consonant → virama for conjunct
+          result.push(DEVANAGARI_VIRAMA);
+        } else if (text[i] === '_') {
+          result.push(DEVANAGARI_VIRAMA);
+        } else {
+          // Check for yogavaaha
+          const [yogKey] = matchToken(text, i, SORTED_YOGAVAAHAS, BARAHA_YOGAVAAHAS);
+          if (yogKey !== null) {
+            // Yogavaaha follows, consonant keeps inherent 'a'
+          } else if (text[i] === '^') {
+            result.push(DEVANAGARI_VIRAMA);
+          } else {
+            result.push(DEVANAGARI_VIRAMA);
+          }
+        }
+      }
+      continue;
+    }
+
+    // Try yogavaaha
+    const [yogKey2, yogDeva2] = matchToken(text, i, SORTED_YOGAVAAHAS, BARAHA_YOGAVAAHAS);
+    if (yogKey2 !== null) {
+      result.push(yogDeva2);
+      i += yogKey2.length;
+      continue;
+    }
+
+    // Try standalone vowel
+    const [vowKey, vowDeva] = matchToken(text, i, sortedVowels, vowels);
+    if (vowKey !== null) {
+      result.push(vowDeva);
+      i += vowKey.length;
+      continue;
+    }
+
+    // Try digit
+    if (BARAHA_DIGITS.hasOwnProperty(ch)) {
+      result.push(BARAHA_DIGITS[ch]);
       i++;
+      continue;
     }
+
+    // Try symbol
+    const [symKey, symDeva] = matchToken(text, i, SORTED_SYMBOLS, BARAHA_SYMBOLS);
+    if (symKey !== null) {
+      result.push(symDeva);
+      i += symKey.length;
+      continue;
+    }
+
+    // Pass through
+    result.push(ch);
+    i++;
   }
-  return result;
+
+  return result.join('');
 }
 
-// --- Language selector ---
-function buildKmLangs(){
-  const row=document.getElementById('kmLangs');
-  row.innerHTML='';
-  LANG_ORDER.forEach(l=>{
-    const btn=document.createElement('button');
-    btn.className='km-lang'+(l===kmLang?' active':'');
-    btn.textContent=l.charAt(0).toUpperCase()+l.slice(1);
-    btn.onclick=()=>{
-      kmLang=l;
-      row.querySelectorAll('.km-lang').forEach(b=>b.classList.remove('active'));
+function devanagariToTarget(devaText, scriptMap) {
+  if (!scriptMap || Object.keys(scriptMap).length === 0) return devaText;
+  const result = [];
+  for (let i = 0; i < devaText.length; i++) {
+    const ch = devaText[i];
+    if (scriptMap.hasOwnProperty(ch)) {
+      result.push(scriptMap[ch]);
+    } else {
+      result.push(ch);
+    }
+  }
+  return result.join('');
+}
+
+function transliterate(text, language) {
+  language = language || currentLang;
+  const noShortEO = NO_SHORT_EO.has(language);
+  window._implicitSchwa = IMPLICIT_SCHWA.has(language);
+
+  // Build per-language vowel tables
+  let vowels, vowelSigns;
+  if (noShortEO) {
+    vowels = Object.assign({}, BARAHA_VOWELS, {'e':'\u090F','o':'\u0913'});
+    vowelSigns = Object.assign({}, BARAHA_VOWEL_SIGNS, {'e':'\u0947','o':'\u094B'});
+  } else {
+    vowels = BARAHA_VOWELS;
+    vowelSigns = BARAHA_VOWEL_SIGNS;
+  }
+
+  const deva = transliterateToDevanagari(text, vowels, vowelSigns);
+  const langDef = LANGUAGES[language];
+  return devanagariToTarget(deva, langDef ? langDef.scriptMap : {});
+}
+
+// ---- UI STATE ----
+let currentLang = 'kannada';
+
+// ---- LANGUAGE SELECTOR ----
+function buildLangSelector() {
+  const row = document.getElementById('kmLangs');
+  row.innerHTML = '';
+  LANG_ORDER.forEach(lang => {
+    const btn = document.createElement('button');
+    btn.className = 'km-lang' + (lang === currentLang ? ' active' : '');
+    btn.textContent = LANGUAGES[lang].name;
+    btn.onclick = () => {
+      currentLang = lang;
+      row.querySelectorAll('.km-lang').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      previewBuffer='';
-      previewText.textContent='';
-      buildKeyboard();
       buildRefPanels();
+      updatePractice();
     };
     row.appendChild(btn);
   });
 }
 
-// --- Reference Tables ---
-function buildRefPanels(){
-  const container=document.getElementById('refPanels');
-  container.innerHTML='';
-  const m=KM_MAPS[kmLang];
-  if(!m)return;
+// ---- HELPER ----
+function escH(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  // Vowels panel
-  const vowelData=[
-    ['a','Short A'],['aa / A','Long Aa'],['i','Short I'],['ee / I','Long Ii'],
-    ['u','Short U'],['oo / U','Long Uu'],['Ru','Vocalic R'],
-    ['e','E'],['E','Long E (Kan/Tel)'],['ai','Ai'],
-    ['o','O'],['O','Long O (Kan/Tel)'],['au','Au']
-  ];
-  const vPanel=makePanel('vowels',true);
-  const vTable=document.createElement('table');
-  vTable.className='ref-table';
-  vTable.innerHTML='<thead><tr><th>Type</th><th>Vowel</th><th>Sign (on क/ka)</th><th>Description</th></tr></thead>';
-  const vBody=document.createElement('tbody');
-  vowelData.forEach(([keys,desc])=>{
-    const mainKey=keys.split('/')[0].trim();
-    const vowel=m.vowels[mainKey]||'';
-    const sign=m.signs[mainKey]!==undefined?(m.consonants['k']||'')+(m.signs[mainKey]||''):'';
-    const tr=document.createElement('tr');
-    tr.innerHTML='<td class="rt-en">'+escH(keys)+'</td><td class="rt-sc">'+escH(vowel)+'</td><td class="rt-sc">'+escH(sign)+'</td><td style="font-size:.78rem;color:var(--dim2)">'+escH(desc)+'</td>';
-    vBody.appendChild(tr);
-  });
-  vTable.appendChild(vBody);
-  vPanel.appendChild(vTable);
-  container.appendChild(vPanel);
+// Get a single character's transliteration for display (standalone vowel or consonant)
+function trSingle(input) { return transliterate(input, currentLang); }
 
-  // Consonants panel
-  const cPanel=makePanel('consonants',false);
-  const cTable=document.createElement('table');
-  cTable.className='ref-table';
-  cTable.innerHTML='<thead><tr><th>Type</th><th>Consonant</th><th>With ा (aa)</th></tr></thead>';
-  const cBody=document.createElement('tbody');
-  const vargas=[
-    {name:'Ka-varga (gutturals)',keys:[['k','ka'],['kh','kha'],['g','ga'],['gh','gha'],['~g','~ga (nga)']]},
-    {name:'Cha-varga (palatals)',keys:[['ch','cha'],['Ch','Cha'],['j','ja'],['jh','jha'],['~j','~ja (nya)']]},
-    {name:'Ta-varga (retroflex)',keys:[['T','Ta'],['Th','Tha'],['D','Da'],['Dh','Dha'],['N','Na']]},
-    {name:'ta-varga (dentals)',keys:[['t','ta'],['th','tha'],['d','da'],['dh','dha'],['n','na']]},
-    {name:'Pa-varga (labials)',keys:[['p','pa'],['ph','pha'],['b','ba'],['bh','bha'],['m','ma']]},
-    {name:'Antastha / Ushma',keys:[['y','ya'],['r','ra'],['l','la'],['v','va'],['sh','sha'],['Sh','Sha'],['s','sa'],['h','ha'],['L','La (if available)']]}
-  ];
-  vargas.forEach(vg=>{
-    const htr=document.createElement('tr');
-    htr.innerHTML='<td class="rt-varga" colspan="3">'+escH(vg.name)+'</td>';
-    cBody.appendChild(htr);
-    vg.keys.forEach(([key,label])=>{
-      const cons=m.consonants[key];
-      if(!cons)return;
-      const withAa=cons+(m.signs['aa']||'');
-      const tr=document.createElement('tr');
-      tr.innerHTML='<td class="rt-en">'+escH(label)+'</td><td class="rt-sc">'+escH(cons)+'</td><td class="rt-sc">'+escH(withAa)+'</td>';
-      cBody.appendChild(tr);
-    });
-  });
-  cTable.appendChild(cBody);
-  cPanel.appendChild(cTable);
-  container.appendChild(cPanel);
+// ---- REFERENCE TABLE BUILDERS ----
 
-  // Special panel
-  const sPanel=makePanel('special',false);
-  const sTable=document.createElement('table');
-  sTable.className='ref-table';
-  sTable.innerHTML='<thead><tr><th>Type</th><th>Output</th><th>Description</th></tr></thead>';
-  const sBody=document.createElement('tbody');
-  const specials=[
-    ['M (after consonant)',m.anusvara,'Anusvara (nasal)'],
-    ['H (after consonant)',m.visarga,'Visarga'],
-    ['|',m.danda||'।','Danda (full stop)'],
-    ['||',m.ddanda||'॥','Double danda'],
-    ['&',m.avagraha||'ऽ','Avagraha'],
-  ];
-  // Add digit mappings
-  if(m.nums){
-    const digitStr=Object.entries(m.nums).map(([e,i])=>e+'→'+i).join(' ');
-    specials.push(['0-9',digitStr,'Script numerals']);
-  }
-  specials.forEach(([key,out,desc])=>{
-    if(!out)return;
-    const tr=document.createElement('tr');
-    tr.innerHTML='<td class="rt-en">'+escH(key)+'</td><td class="rt-sc">'+escH(out)+'</td><td style="font-size:.78rem;color:var(--dim2)">'+escH(desc)+'</td>';
-    sBody.appendChild(tr);
-  });
-  sTable.appendChild(sBody);
-  sPanel.appendChild(sTable);
-  container.appendChild(sPanel);
+function buildRefPanels() {
+  const container = document.getElementById('refPanels');
+  container.innerHTML = '';
 
-  // Conjuncts panel
-  const jPanel=makePanel('conjuncts',false);
-  const jTable=document.createElement('table');
-  jTable.className='ref-table';
-  jTable.innerHTML='<thead><tr><th>Type</th><th>Result</th><th>Description</th></tr></thead>';
-  const jBody=document.createElement('tbody');
-  const conjuncts=[
-    ['kka',null,'Double ka'],
-    ['ksha',null,'Ksha'],
-    ['tra',null,'Tra'],
-    ['jna',null,'Jnya'],
-    ['shra',null,'Shra'],
-    ['shri',null,'Shri'],
-    ['ddha',null,'Ddha'],
-    ['nna',null,'Nna'],
-    ['tta',null,'Tta'],
-    ['ttha',null,'Ttha'],
-    ['nda',null,'Nda'],
-    ['mba',null,'Mba'],
-  ];
-  conjuncts.forEach(([input,,desc])=>{
-    const out=kmTransliterate(input);
-    const tr=document.createElement('tr');
-    tr.innerHTML='<td class="rt-en">'+escH(input)+'</td><td class="rt-sc">'+escH(out)+'</td><td style="font-size:.78rem;color:var(--dim2)">'+escH(desc)+'</td>';
-    jBody.appendChild(tr);
+  buildVowelsPanel(container);
+  buildConsonantsPanel(container);
+  buildSpecialPanel(container);
+  buildConjunctsPanel(container);
+  buildNuktaPanel(container);
+
+  // Restore active tab
+  const activeTab = document.querySelector('.ref-tab.active');
+  const tabId = activeTab ? activeTab.dataset.tab : 'vowels';
+  container.querySelectorAll('.ref-panel').forEach(p => {
+    p.classList.toggle('active', p.dataset.panel === tabId);
   });
-  jTable.appendChild(jBody);
-  jPanel.appendChild(jTable);
-  container.appendChild(jPanel);
 }
 
-function makePanel(id,active){
-  const div=document.createElement('div');
-  div.className='ref-panel'+(active?' active':'');
-  div.dataset.panel=id;
+function makePanel(id) {
+  const div = document.createElement('div');
+  div.className = 'ref-panel';
+  div.dataset.panel = id;
   return div;
 }
 
-function escH(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function buildVowelsPanel(container) {
+  const hasShortEO = !NO_SHORT_EO.has(currentLang);
 
-// Tab switching
-document.getElementById('refTabs').addEventListener('click',(e)=>{
-  const tab=e.target.closest('.ref-tab');
-  if(!tab)return;
-  const id=tab.dataset.tab;
-  document.querySelectorAll('.ref-tab').forEach(t=>t.classList.remove('active'));
+  const vowelRows = [
+    { roman: 'a',   desc: 'Short A' },
+    { roman: 'aa',  alt: 'A', desc: 'Long Aa' },
+    { roman: 'i',   desc: 'Short I' },
+    { roman: 'ii',  alt: 'I', desc: 'Long Ii' },
+    { roman: 'u',   desc: 'Short U' },
+    { roman: 'oo',  alt: 'U', desc: 'Long Uu' },
+    { roman: 'Ru',  desc: 'Vocalic R (ṛ)' },
+    { roman: 'RU',  desc: 'Long Vocalic R (ṝ)' },
+    { roman: '~lu', desc: 'Vocalic L (ḷ)' },
+    { roman: '~lU', desc: 'Long Vocalic L (ḹ)' },
+  ];
+  if (hasShortEO) {
+    vowelRows.push({ roman: 'e',  desc: 'Short E' });
+    vowelRows.push({ roman: 'E',  alt: 'ee', desc: 'Long E' });
+  } else {
+    vowelRows.push({ roman: 'e',  alt: 'E, ee', desc: 'E (long)' });
+  }
+  vowelRows.push({ roman: 'ai', desc: 'Ai' });
+  if (hasShortEO) {
+    vowelRows.push({ roman: 'o',  desc: 'Short O' });
+    vowelRows.push({ roman: 'O',  alt: 'oo', desc: 'Long O' });
+  } else {
+    vowelRows.push({ roman: 'o',  alt: 'O, oo', desc: 'O (long)' });
+  }
+  vowelRows.push({ roman: 'au', alt: 'ou', desc: 'Au' });
+  vowelRows.push({ roman: '~e', desc: 'Candra E (ऍ)' });
+  vowelRows.push({ roman: '~o', desc: 'Candra O (ऑ)' });
+
+  const panel = makePanel('vowels');
+  const table = document.createElement('table');
+  table.className = 'ref-table';
+  table.innerHTML = '<thead><tr><th>Roman Input</th><th>Vowel</th><th>Sign (on ka)</th><th>Description</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+
+  vowelRows.forEach(row => {
+    const standalone = trSingle(row.roman);
+    // Sign form: consonant 'ka' + vowel sign
+    const withKa = row.roman === 'a' ? trSingle('ka') : trSingle('k' + row.roman);
+    if (!standalone && !withKa) return; // Skip if this vowel doesn't exist in target script
+
+    const romanDisplay = row.alt ? row.roman + '  /  ' + row.alt : row.roman;
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(romanDisplay) + '</td><td class="rt-sc">' + escH(standalone) + '</td><td class="rt-sc">' + escH(withKa) + '</td><td class="rt-desc">' + escH(row.desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  panel.appendChild(table);
+  container.appendChild(panel);
+}
+
+function buildConsonantsPanel(container) {
+  const vargas = [
+    { name: 'Ka-varga (Gutturals)', keys: [
+      { roman: 'k', desc: 'ka' },
+      { roman: 'kh', alt: 'K', desc: 'kha' },
+      { roman: 'g', desc: 'ga' },
+      { roman: 'gh', alt: 'G', desc: 'gha' },
+      { roman: '~g', desc: 'ṅa (nga)' }
+    ]},
+    { name: 'Cha-varga (Palatals)', keys: [
+      { roman: 'ch', alt: 'c', desc: 'cha' },
+      { roman: 'Ch', alt: 'C', desc: 'Cha (aspirated)' },
+      { roman: 'j', desc: 'ja' },
+      { roman: 'jh', alt: 'J', desc: 'jha' },
+      { roman: '~j', desc: 'ña (nya)' }
+    ]},
+    { name: 'Ṭa-varga (Retroflexes)', keys: [
+      { roman: 'T', desc: 'Ṭa' },
+      { roman: 'Th', desc: 'Ṭha' },
+      { roman: 'D', desc: 'Ḍa' },
+      { roman: 'Dh', desc: 'Ḍha' },
+      { roman: 'N', desc: 'Ṇa' }
+    ]},
+    { name: 'ta-varga (Dentals)', keys: [
+      { roman: 't', desc: 'ta' },
+      { roman: 'th', desc: 'tha' },
+      { roman: 'd', desc: 'da' },
+      { roman: 'dh', desc: 'dha' },
+      { roman: 'n', desc: 'na' }
+    ]},
+    { name: 'Pa-varga (Labials)', keys: [
+      { roman: 'p', desc: 'pa' },
+      { roman: 'ph', alt: 'P', desc: 'pha' },
+      { roman: 'b', desc: 'ba' },
+      { roman: 'bh', alt: 'B', desc: 'bha' },
+      { roman: 'm', desc: 'ma' }
+    ]},
+    { name: 'Semivowels (Antahstha)', keys: [
+      { roman: 'y', desc: 'ya' },
+      { roman: 'r', desc: 'ra' },
+      { roman: 'l', desc: 'la' },
+      { roman: 'v', alt: 'w', desc: 'va' }
+    ]},
+    { name: 'Sibilants & Fricatives (Ushma)', keys: [
+      { roman: 'sh', alt: 'S', desc: 'śa (palatal)' },
+      { roman: 'Sh', desc: 'ṣa (retroflex)' },
+      { roman: 's', desc: 'sa (dental)' },
+      { roman: 'h', desc: 'ha' }
+    ]},
+    { name: 'Other', keys: [
+      { roman: 'L', desc: 'ḷa (Kannada/Marathi ळ)' },
+      { roman: 'Lx', alt: 'zh', desc: 'ḻa (Tamil ழ / Malayalam ഴ)' },
+      { roman: 'rx', desc: 'ṟa (Tamil ற / Malayalam റ)' },
+      { roman: 'nx', desc: 'ṉa (Tamil ன)' }
+    ]}
+  ];
+
+  const panel = makePanel('consonants');
+  const table = document.createElement('table');
+  table.className = 'ref-table';
+  table.innerHTML = '<thead><tr><th>Roman Input</th><th>Consonant</th><th>With ā (long a)</th><th>Description</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+
+  vargas.forEach(vg => {
+    const htr = document.createElement('tr');
+    htr.innerHTML = '<td class="rt-varga" colspan="4">' + escH(vg.name) + '</td>';
+    tbody.appendChild(htr);
+
+    vg.keys.forEach(k => {
+      const bare = trSingle(k.roman + 'a'); // consonant with inherent 'a'
+      const withAa = trSingle(k.roman + 'aa'); // consonant + long 'aa'
+      if (!bare && !withAa) return; // Skip if not available in this script
+
+      const romanDisplay = k.alt ? k.roman + '  /  ' + k.alt : k.roman;
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td class="rt-en">' + escH(romanDisplay) + '</td><td class="rt-sc">' + escH(bare) + '</td><td class="rt-sc">' + escH(withAa) + '</td><td class="rt-desc">' + escH(k.desc) + '</td>';
+      tbody.appendChild(tr);
+    });
+  });
+  table.appendChild(tbody);
+  panel.appendChild(table);
+  container.appendChild(panel);
+}
+
+function buildSpecialPanel(container) {
+  const panel = makePanel('special');
+  const table = document.createElement('table');
+  table.className = 'ref-table';
+  table.innerHTML = '<thead><tr><th>Roman Input</th><th>Output</th><th>Description</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+
+  // Yogavaahas
+  const htr1 = document.createElement('tr');
+  htr1.innerHTML = '<td class="rt-varga" colspan="3">Yogavaahas (Modifiers)</td>';
+  tbody.appendChild(htr1);
+
+  [
+    ['M', 'Anusvara (nasal)'],
+    ['H', 'Visarga'],
+    ['~M', 'Chandrabindu']
+  ].forEach(([roman, desc]) => {
+    // Show on 'ka' to demonstrate
+    const output = trSingle('ka' + roman);
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(roman) + '</td><td class="rt-sc">' + escH(output) + ' <span style="font-size:.7rem;color:var(--dim2)">(ka+' + escH(roman) + ')</span></td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  // Symbols
+  const htr2 = document.createElement('tr');
+  htr2.innerHTML = '<td class="rt-varga" colspan="3">Symbols</td>';
+  tbody.appendChild(htr2);
+
+  [
+    ['|', 'Danda (full stop)'],
+    ['||', 'Double danda'],
+    ['&', 'Avagraha'],
+    ['OM', 'Om (ॐ)']
+  ].forEach(([roman, desc]) => {
+    const output = trSingle(roman);
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(roman) + '</td><td class="rt-sc">' + escH(output) + '</td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  // Special inputs
+  const htr4 = document.createElement('tr');
+  htr4.innerHTML = '<td class="rt-varga" colspan="3">Special Inputs</td>';
+  tbody.appendChild(htr4);
+
+  [
+    ['_', 'Skip character (force break)'],
+    ['^', 'Zero-width joiner (ZWJ)'],
+    ['^^', 'Zero-width non-joiner (ZWNJ)']
+  ].forEach(([roman, desc]) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(roman) + '</td><td class="rt-sc" style="color:var(--dim2);font-size:.78rem">control</td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  // Digits
+  const htr3 = document.createElement('tr');
+  htr3.innerHTML = '<td class="rt-varga" colspan="3">Digits</td>';
+  tbody.appendChild(htr3);
+
+  for (let d = 0; d <= 9; d++) {
+    const output = trSingle(String(d));
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + d + '</td><td class="rt-sc">' + escH(output) + '</td><td class="rt-desc">Digit ' + d + '</td>';
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  panel.appendChild(table);
+  container.appendChild(panel);
+}
+
+function buildConjunctsPanel(container) {
+  const panel = makePanel('conjuncts');
+
+  // Intro text
+  const intro = document.createElement('p');
+  intro.style.cssText = 'font-size:.82rem;color:var(--dim);margin-bottom:16px;line-height:1.6';
+  intro.textContent = 'Conjuncts are formed by typing consonant clusters together. The engine automatically inserts virama (halant) between consecutive consonants to create conjunct ligatures.';
+  panel.appendChild(intro);
+
+  const table = document.createElement('table');
+  table.className = 'ref-table';
+  table.innerHTML = '<thead><tr><th>Roman Input</th><th>Result</th><th>Description</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+
+  // Pre-built conjuncts from BARAHA_CONSONANTS
+  const htr1 = document.createElement('tr');
+  htr1.innerHTML = '<td class="rt-varga" colspan="3">Special Conjunct Keys</td>';
+  tbody.appendChild(htr1);
+
+  [
+    ['kSha', 'kṣa — pre-mapped conjunct'],
+    ['j~ja', 'jña — pre-mapped conjunct']
+  ].forEach(([roman, desc]) => {
+    const output = trSingle(roman);
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(roman) + '</td><td class="rt-sc">' + escH(output) + '</td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  // Common conjuncts formed via virama insertion
+  const htr2 = document.createElement('tr');
+  htr2.innerHTML = '<td class="rt-varga" colspan="3">Common Conjuncts (via consonant clusters)</td>';
+  tbody.appendChild(htr2);
+
+  const conjuncts = [
+    ['kka', 'Double ka (geminate)'],
+    ['kta', 'kta'],
+    ['tta', 'Double Ṭa'],
+    ['ttha', 'Ṭṭha'],
+    ['tra', 'tra'],
+    ['dda', 'Double Ḍa'],
+    ['ddha', 'Ḍḍha'],
+    ['nna', 'Double na'],
+    ['nda', 'nda'],
+    ['mba', 'mba'],
+    ['lla', 'Double la'],
+    ['shcha', 'śca'],
+    ['shra', 'śra'],
+    ['shri', 'śrī'],
+    ['shva', 'śva'],
+    ['stra', 'stra'],
+    ['strii', 'strī'],
+    ['dya', 'dya'],
+    ['dvi', 'dvi'],
+    ['tva', 'tva'],
+    ['pra', 'pra'],
+    ['bra', 'bra'],
+    ['hma', 'hma'],
+    ['hna', 'hna'],
+    ['hya', 'hya'],
+  ];
+
+  conjuncts.forEach(([roman, desc]) => {
+    const output = trSingle(roman);
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(roman) + '</td><td class="rt-sc">' + escH(output) + '</td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  table.appendChild(tbody);
+  panel.appendChild(table);
+  container.appendChild(panel);
+}
+
+function buildNuktaPanel(container) {
+  const panel = makePanel('nukta');
+
+  const intro = document.createElement('p');
+  intro.style.cssText = 'font-size:.82rem;color:var(--dim);margin-bottom:16px;line-height:1.6';
+  intro.textContent = 'Nukta consonants are used for sounds in Hindi/Urdu loanwords (from Persian/Arabic). In Dravidian scripts, these typically map to the closest native consonant.';
+  panel.appendChild(intro);
+
+  const table = document.createElement('table');
+  table.className = 'ref-table';
+  table.innerHTML = '<thead><tr><th>Roman Input</th><th>Consonant</th><th>Devanagari</th><th>Description</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+
+  const nuktaConsonants = [
+    ['z',   'jx',  '\u095B', 'za (ज़) — as in ज़मीन'],
+    ['f',   'Px',  '\u095E', 'fa (फ़) — as in फ़ोन'],
+    ['Dx',  null,  '\u095C', 'ḍa with nukta (ड़)'],
+    ['Dhx', null,  '\u095D', 'ḍha with nukta (ढ़)'],
+    ['kx',  null,  '\u0958', 'qa (क़)'],
+    ['Kx',  null,  '\u0959', 'ḵha (ख़)'],
+    ['gx',  null,  '\u095A', 'ġa (ग़)'],
+    ['Y',   'yx',  '\u095F', 'ya with nukta (य़)'],
+  ];
+
+  nuktaConsonants.forEach(([roman, alt, devaChar, desc]) => {
+    const target = trSingle(roman + 'a');
+    const devaDisplay = devaChar + (IMPLICIT_SCHWA.has('hindi') ? '' : '\u094D');
+    const romanDisplay = alt ? roman + '  /  ' + alt : roman;
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="rt-en">' + escH(romanDisplay) + '</td><td class="rt-sc">' + escH(target) + '</td><td class="rt-sc">' + escH(devaChar) + '</td><td class="rt-desc">' + escH(desc) + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  table.appendChild(tbody);
+  panel.appendChild(table);
+  container.appendChild(panel);
+}
+
+// ---- TAB SWITCHING ----
+document.getElementById('refTabs').addEventListener('click', e => {
+  const tab = e.target.closest('.ref-tab');
+  if (!tab) return;
+  const id = tab.dataset.tab;
+  document.querySelectorAll('.ref-tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
-  document.querySelectorAll('.ref-panel').forEach(p=>p.classList.toggle('active',p.dataset.panel===id));
+  document.querySelectorAll('.ref-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === id));
 });
 
-// Practice area transliteration
-const kmTryIn=document.getElementById('kmTryIn');
-const kmTryOut=document.getElementById('kmTryOut');
-kmTryIn.addEventListener('input',()=>{
-  kmTryOut.textContent=kmTransliterate(kmTryIn.value);
-});
+// ---- PRACTICE AREA ----
+const kmTryIn = document.getElementById('kmTryIn');
+const kmTryOut = document.getElementById('kmTryOut');
 
-// Init
-buildKmLangs();
-buildKeyboard();
+function updatePractice() {
+  kmTryOut.textContent = transliterate(kmTryIn.value, currentLang);
+}
+
+kmTryIn.addEventListener('input', updatePractice);
+
+// ---- INIT ----
+buildLangSelector();
 buildRefPanels();
+
+// ---- SCROLL REVEAL ----
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('v'); io.unobserve(e.target); } });
+}, { threshold: 0.05 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
 })();
-
-// ===== SCROLL REVEAL =====
-
-// Scroll reveal
-const io=new IntersectionObserver(es=>{es.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}
-})},{threshold:.05});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
