@@ -1,4 +1,0 @@
-PyQt5>=5.15.0
-pyinstaller>=5.0
-pyobjc-framework-Quartz>=9.0; sys_platform == "darwin"
-pyobjc-framework-Cocoa>=9.0; sys_platform == "darwin"

@@ -1,1 +1,0 @@
-"""Varnaakshara IME core package."""
