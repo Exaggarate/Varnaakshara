@@ -1,0 +1,184 @@
+{
+  "ASS": {
+    "file": "KBD32ASS_ASS.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "BAN": {
+    "file": "KBD32BAN_BAN.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "GUJ": {
+    "file": "KBD32GUJ_GUJ.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "HIN": {
+    "file": "KBD32HIN_DEV.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "KAN": {
+    "file": "KBD32KAN_KAN.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "KOK": {
+    "file": "KBD32KOK_DEV.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "MAL": {
+    "file": "KBD32MAL_MAL.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "MAR": {
+    "file": "KBD32MAR_DEV.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "ORI": {
+    "file": "KBD32ORI_ORI.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "PUN": {
+    "file": "KBD32PUN_PUN.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "SLS": {
+    "file": "KBD32SLS_SLS.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "TAM": {
+    "file": "KBD32TAM_TAM.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  },
+  "TEL": {
+    "file": "KBD32TEL_TEL.dll",
+    "sections": [
+      "CODE",
+      "DATA",
+      "BSS",
+      ".idata",
+      ".reloc",
+      ".rsrc"
+    ],
+    "unicode_char_count": 1,
+    "unicode_range": "U+0A0D - U+0A0D",
+    "chars": "਍"
+  }
+}

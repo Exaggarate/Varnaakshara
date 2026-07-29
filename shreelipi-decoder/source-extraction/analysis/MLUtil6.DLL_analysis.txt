@@ -1,0 +1,2152 @@
+============================================================
+ MLUtil6.DLL — Full Source Analysis
+ Size: 378880 bytes | ImageBase: 0x00400000
+============================================================
+
+SECTIONS (7):
+  CODE     VA=0x00001000 Size=0x000500C8 Raw=0x00000400
+  DATA     VA=0x00052000 Size=0x00001030 Raw=0x00050600
+  BSS      VA=0x00054000 Size=0x000014DD Raw=0x00051800
+  .idata   VA=0x00056000 Size=0x000020E4 Raw=0x00051800
+  .edata   VA=0x00059000 Size=0x00000075 Raw=0x00053A00
+  .reloc   VA=0x0005A000 Size=0x0000554C Raw=0x00053C00
+  .rsrc    VA=0x00060000 Size=0x00003600 Raw=0x00059200
+
+IMPORTS (375 functions from 15 DLLs):
+
+  [kernel32.dll] (41 functions)
+    DeleteCriticalSection
+    LeaveCriticalSection
+    EnterCriticalSection
+    InitializeCriticalSection
+    VirtualFree
+    VirtualAlloc
+    LocalFree
+    LocalAlloc
+    GetCurrentThreadId
+    InterlockedDecrement
+    InterlockedIncrement
+    VirtualQuery
+    WideCharToMultiByte
+    MultiByteToWideChar
+    lstrlenA
+    lstrcpynA
+    LoadLibraryExA
+    GetThreadLocale
+    GetStartupInfoA
+    GetProcAddress
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetLastError
+    GetCommandLineA
+    FreeLibrary
+    FindFirstFileA
+    FindClose
+    ExitProcess
+    WriteFile
+    UnhandledExceptionFilter
+    SetFilePointer
+    SetEndOfFile
+    RtlUnwind
+    ReadFile
+    RaiseException
+    GetStdHandle
+    GetFileSize
+    GetFileType
+    CreateFileA
+    CloseHandle
+
+  [user32.dll] (4 functions)
+    GetKeyboardType
+    LoadStringA
+    MessageBoxA
+    CharNextA
+
+  [advapi32.dll] (3 functions)
+    RegQueryValueExA
+    RegOpenKeyExA
+    RegCloseKey
+
+  [oleaut32.dll] (3 functions)
+    SysFreeString
+    SysReAllocStringLen
+    SysAllocStringLen
+
+  [kernel32.dll] (6 functions)
+    TlsSetValue
+    TlsGetValue
+    TlsFree
+    TlsAlloc
+    LocalFree
+    LocalAlloc
+
+  [advapi32.dll] (3 functions)
+    RegQueryValueExA
+    RegOpenKeyExA
+    RegCloseKey
+
+  [kernel32.dll] (61 functions)
+    lstrcpyA
+    WriteFile
+    WaitForSingleObject
+    VirtualQuery
+    VirtualAlloc
+    Sleep
+    SizeofResource
+    SetThreadLocale
+    SetFilePointer
+    SetEvent
+    SetErrorMode
+    SetEndOfFile
+    ResetEvent
+    ReadFile
+    MultiByteToWideChar
+    MulDiv
+    LockResource
+    LoadResource
+    LoadLibraryA
+    LeaveCriticalSection
+    InitializeCriticalSection
+    GlobalUnlock
+    GlobalReAlloc
+    GlobalHandle
+    GlobalLock
+    GlobalFree
+    GlobalFindAtomA
+    GlobalDeleteAtom
+    GlobalAlloc
+    GlobalAddAtomA
+    GetVersionExA
+    GetVersion
+    GetTickCount
+    GetThreadLocale
+    GetTempPathA
+    GetSystemInfo
+    GetStringTypeExA
+    GetStdHandle
+    GetProcAddress
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetLastError
+    GetDiskFreeSpaceA
+    GetCurrentThreadId
+    GetCurrentProcessId
+    GetComputerNameA
+    GetCPInfo
+    GetACP
+    FreeResource
+    FreeLibrary
+    FormatMessageA
+    FindResourceA
+    EnumCalendarInfoA
+    EnterCriticalSection
+    DeleteCriticalSection
+    CreateThread
+    CreateFileA
+    CreateEventA
+    CompareStringA
+    CloseHandle
+
+  [gdi32.dll] (54 functions)
+    UnrealizeObject
+    StretchBlt
+    SetWindowOrgEx
+    SetViewportOrgEx
+    SetTextColor
+    SetStretchBltMode
+    SetROP2
+    SetPixel
+    SetDIBColorTable
+    SetBrushOrgEx
+    SetBkMode
+    SetBkColor
+    SelectPalette
+    SelectObject
+    SaveDC
+    RestoreDC
+    RectVisible
+    RealizePalette
+    PatBlt
+    MoveToEx
+    MaskBlt
+    LineTo
+    IntersectClipRect
+    GetWindowOrgEx
+    GetTextMetricsA
+    GetTextExtentPoint32A
+    GetSystemPaletteEntries
+    GetStockObject
+    GetPixel
+    GetPaletteEntries
+    GetObjectA
+    GetDeviceCaps
+    GetDIBits
+    GetDIBColorTable
+    GetDCOrgEx
+    GetCurrentPositionEx
+    GetClipBox
+    GetBrushOrgEx
+    GetBitmapBits
+    ExcludeClipRect
+    DeleteObject
+    DeleteDC
+    CreateSolidBrush
+    CreatePenIndirect
+    CreatePalette
+    CreateHalftonePalette
+    CreateFontIndirectA
+    CreateDIBitmap
+    CreateDIBSection
+    CreateCompatibleDC
+    CreateCompatibleBitmap
+    CreateBrushIndirect
+    CreateBitmap
+    BitBlt
+
+  [user32.dll] (151 functions)
+    WindowFromPoint
+    WinHelpA
+    WaitMessage
+    UpdateWindow
+    UnregisterClassA
+    UnhookWindowsHookEx
+    TranslateMessage
+    TranslateMDISysAccel
+    TrackPopupMenu
+    SystemParametersInfoA
+    ShowWindow
+    ShowScrollBar
+    ShowOwnedPopups
+    ShowCursor
+    SetWindowsHookExA
+    SetWindowPos
+    SetWindowPlacement
+    SetWindowLongA
+    SetTimer
+    SetScrollRange
+    SetScrollPos
+    SetScrollInfo
+    SetRect
+    SetPropA
+    SetMenuItemInfoA
+    SetMenu
+    SetForegroundWindow
+    SetFocus
+    SetCursor
+    SetClassLongA
+    SetCapture
+    SetActiveWindow
+    SendMessageA
+    ScrollWindow
+    ScreenToClient
+    RemovePropA
+    RemoveMenu
+    ReleaseDC
+    ReleaseCapture
+    RegisterWindowMessageA
+    RegisterClipboardFormatA
+    RegisterClassA
+    RedrawWindow
+    PtInRect
+    PostQuitMessage
+    PostMessageA
+    PeekMessageA
+    OffsetRect
+    OemToCharA
+    MessageBoxA
+    MapWindowPoints
+    MapVirtualKeyA
+    LoadStringA
+    LoadKeyboardLayoutA
+    LoadIconA
+    LoadCursorA
+    LoadBitmapA
+    KillTimer
+    IsZoomed
+    IsWindowVisible
+    IsWindowEnabled
+    IsWindow
+    IsRectEmpty
+    IsIconic
+    IsDialogMessageA
+    IsChild
+    InvalidateRect
+    IntersectRect
+    InsertMenuItemA
+    InsertMenuA
+    InflateRect
+    GetWindowThreadProcessId
+    GetWindowTextA
+    GetWindowRect
+    GetWindowPlacement
+    GetWindowLongA
+    GetWindowDC
+    GetTopWindow
+    GetSystemMetrics
+    GetSystemMenu
+    GetSysColor
+    GetSubMenu
+    GetScrollRange
+    GetScrollPos
+    GetScrollInfo
+    GetPropA
+    GetParent
+    GetWindow
+    GetMenuStringA
+    GetMenuState
+    GetMenuItemInfoA
+    GetMenuItemID
+    GetMenuItemCount
+    GetMenu
+    GetLastActivePopup
+    GetKeyboardState
+    GetKeyboardLayoutList
+    GetKeyboardLayout
+    GetKeyState
+    GetKeyNameTextA
+    GetIconInfo
+    GetForegroundWindow
+    GetFocus
+    GetDesktopWindow
+    GetDCEx
+    GetDC
+    GetCursorPos
+    GetCursor
+    GetClientRect
+    GetClassNameA
+    GetClassInfoA
+    GetCapture
+    GetActiveWindow
+    FrameRect
+    FindWindowA
+    FillRect
+    EqualRect
+    EnumWindows
+    EnumThreadWindows
+    EndPaint
+    EnableWindow
+    EnableScrollBar
+    EnableMenuItem
+    DrawTextA
+    DrawMenuBar
+    DrawIconEx
+    DrawIcon
+    DrawFrameControl
+    DrawEdge
+    DispatchMessageA
+    DestroyWindow
+    DestroyMenu
+    DestroyIcon
+    DestroyCursor
+    DeleteMenu
+    DefWindowProcA
+    DefMDIChildProcA
+    DefFrameProcA
+    CreateWindowExA
+    CreatePopupMenu
+    CreateMenu
+    CreateIcon
+    ClientToScreen
+    CheckMenuItem
+    CallWindowProcA
+    CallNextHookEx
+    BeginPaint
+    CharNextA
+    CharLowerA
+    AdjustWindowRectEx
+    ActivateKeyboardLayout
+
+  [kernel32.dll] (1 functions)
+    Sleep
+
+  [oleaut32.dll] (12 functions)
+    SafeArrayPtrOfIndex
+    SafeArrayPutElement
+    SafeArrayGetElement
+    SafeArrayGetUBound
+    SafeArrayGetLBound
+    SafeArrayRedim
+    SafeArrayCreate
+    VariantChangeTypeEx
+    VariantCopyInd
+    VariantCopy
+    VariantClear
+    VariantInit
+
+  [ole32.dll] (9 functions)
+    OleUninitialize
+    OleInitialize
+    CoTaskMemFree
+    ProgIDFromCLSID
+    StringFromCLSID
+    CoCreateInstance
+    CoUninitialize
+    CoInitialize
+    IsEqualGUID
+
+  [oleaut32.dll] (3 functions)
+    GetErrorInfo
+    GetActiveObject
+    SysFreeString
+
+  [comctl32.dll] (22 functions)
+    ImageList_SetIconSize
+    ImageList_GetIconSize
+    ImageList_Write
+    ImageList_Read
+    ImageList_GetDragImage
+    ImageList_DragShowNolock
+    ImageList_SetDragCursorImage
+    ImageList_DragMove
+    ImageList_DragLeave
+    ImageList_DragEnter
+    ImageList_EndDrag
+    ImageList_BeginDrag
+    ImageList_Remove
+    ImageList_DrawEx
+    ImageList_Draw
+    ImageList_GetBkColor
+    ImageList_SetBkColor
+    ImageList_ReplaceIcon
+    ImageList_Add
+    ImageList_GetImageCount
+    ImageList_Destroy
+    ImageList_Create
+
+  [MSVCRT.dll] (2 functions)
+    rand
+    srand
+
+EXPORTS (5 functions):
+  F1 @ 0x0044FA28
+  F2 @ 0x0044F9E4
+  F3 @ 0x0044F9C4
+  F4 @ 0x0044F2C4
+  F5 @ 0x0044F224
+
+DELPHI CLASSES (291 found):
+  TObject @ file 0x508
+  TObject @ file 0x515
+  TInterfacedObject @ file 0x628
+  TBoundArray @ file 0x641
+  TThreadLocalCounter @ file 0x74BC
+  TMultiReadExclusiveWriteSynchronizer @ file 0x7598
+  TErrorRec @ file 0x9305
+  TExceptRec @ file 0x9385
+  TCustomVariantType @ file 0xB164
+  TCustomVariantType @ file 0xB17D
+  TBiDiMode @ file 0x10319
+  THelpContext @ file 0x10389
+  THelpType @ file 0x103A5
+  TShortCut @ file 0x103DD
+  TNotifyEvent @ file 0x103F5
+  TObject @ file 0x1040C
+  TList @ file 0x10968
+  TThreadList @ file 0x109BC
+  TBits @ file 0x10A14
+  TPersistent @ file 0x10A82
+  TPersistent @ file 0x10A95
+  TInterfacedPersistent @ file 0x10B7A
+  TInterfacedPersistent @ file 0x10B95
+  TCollection @ file 0x10C60
+  TCollection @ file 0x10C71
+  TStrings @ file 0x10DAA
+  TStrings @ file 0x10DB9
+  TStringItem @ file 0x10DDD
+  TStringList @ file 0x10EE0
+  TStringList @ file 0x10EF1
+  TStream @ file 0x10F7C
+  THandleStream @ file 0x10FEC
+  TFileStream @ file 0x11064
+  TCustomMemoryStream @ file 0x110D8
+  TMemoryStream @ file 0x11158
+  TResourceStream @ file 0x111D0
+  TStreamAdapter @ file 0x11368
+  TClassFinder @ file 0x113C4
+  TFiler @ file 0x11430
+  TReader @ file 0x114BE
+  TWriter @ file 0x1153A
+  TComponentName @ file 0x1159D
+  TComponent @ file 0x1177C
+  TComponent @ file 0x1178D
+  TBasicActionLink @ file 0x11858
+  TBasicAction @ file 0x11908
+  TBasicAction @ file 0x1191D
+  TIdentMapEntry @ file 0x11945
+  TRegGroup @ file 0x11A3C
+  TRegGroups @ file 0x11A94
+  TIntConst @ file 0x12724
+  TPropFixup @ file 0x15A7E
+  TPropIntfFixup @ file 0x15ADC
+  TColor @ file 0x1BE19
+  TFontPitch @ file 0x1BEF5
+  TFontName @ file 0x1BF39
+  TFontCharset @ file 0x1BF49
+  TFontStyle @ file 0x1BF65
+  TFontStyles @ file 0x1BFB5
+  TPenStyle @ file 0x1BFCD
+  TPenMode @ file 0x1C035
+  TBrushStyle @ file 0x1C0F1
+  TGraphicsObject @ file 0x1C1C8
+  TGraphicsObject @ file 0x1C1DD
+  TFont @ file 0x1C2AE
+  TFont @ file 0x1C2B9
+  TPen @ file 0x1C410
+  TPen @ file 0x1C41D
+  TBrush @ file 0x1C510
+  TBrush @ file 0x1C51D
+  TCanvas @ file 0x1C5E0
+  TCanvas @ file 0x1C5ED
+  TGraphic @ file 0x1C7B8
+  TGraphic @ file 0x1C7C9
+  TSharedImage @ file 0x1C838
+  TBitmapImage @ file 0x1C898
+  TBitmap @ file 0x1C964
+  TBitmap @ file 0x1C971
+  TIconImage @ file 0x1C9E0
+  TIcon @ file 0x1CA9C
+  TIcon @ file 0x1CAA9
+  TResourceManager @ file 0x1CB24
+  TBitmapCanvas @ file 0x1FF6C
+  TBitmapCanvas @ file 0x1FF81
+  TPatternManager @ file 0x22BA0
+  TObjectList @ file 0x23104
+  TOrderedList @ file 0x23168
+  TStack @ file 0x231D0
+  THelpViewerNode @ file 0x23E32
+  THelpManager @ file 0x23FAA
+  TTimer @ file 0x25234
+  TTimer @ file 0x25241
+  TCommonDialog @ file 0x255D0
+  TCommonDialog @ file 0x255E5
+  THintAction @ file 0x25CEC
+  THintAction @ file 0x25CFD
+  TWinHelpViewer @ file 0x25F46
+  TCursor @ file 0x26A7D
+  TAlign @ file 0x26A95
+  TDragObject @ file 0x26B5C
+  TDragObjectEx @ file 0x26BD8
+  TBaseDragControlObject @ file 0x26C60
+  TDragControlObject @ file 0x26CF0
+  TDragControlObjectEx @ file 0x26D7C
+  TDragDockObject @ file 0x26E1C
+  TDragDockObjectEx @ file 0x26EB4
+  TControlCanvas @ file 0x26F2C
+  TControlCanvas @ file 0x26F41
+  TControlActionLink @ file 0x27030
+  TDragMode @ file 0x27049
+  TDragKind @ file 0x27085
+  TTabOrder @ file 0x270B9
+  TCaption @ file 0x270D1
+  TAnchorKind @ file 0x270E1
+  TAnchors @ file 0x27129
+  TConstraintSize @ file 0x2713D
+  TSizeConstraints @ file 0x271B8
+  TSizeConstraints @ file 0x271D1
+  TMouseEvent @ file 0x2728D
+  TObject @ file 0x272A3
+  TMouseButton @ file 0x272B3
+  TShiftState @ file 0x272C7
+  TMouseMoveEvent @ file 0x272F1
+  TObject @ file 0x2730B
+  TShiftState @ file 0x2731A
+  TKeyEvent @ file 0x27341
+  TObject @ file 0x27355
+  TShiftState @ file 0x2736E
+  TKeyPressEvent @ file 0x27381
+  TObject @ file 0x2739A
+  TDragOverEvent @ file 0x273B1
+  TObject @ file 0x273CA
+  TObject @ file 0x273DA
+  TDragState @ file 0x273FF
+  TDragDropEvent @ file 0x27421
+  TObject @ file 0x2743A
+  TObject @ file 0x2744A
+  TStartDragEvent @ file 0x2746D
+  TObject @ file 0x27487
+  TDragObject @ file 0x2749B
+  TEndDragEvent @ file 0x274AD
+  TObject @ file 0x274C5
+  TObject @ file 0x274D5
+  TDockDropEvent @ file 0x274F9
+  TObject @ file 0x27512
+  TDragDockObject @ file 0x27522
+  TDockOverEvent @ file 0x2754D
+  TObject @ file 0x27566
+  TDragDockObject @ file 0x27576
+  TDragState @ file 0x275A3
+  TUnDockEvent @ file 0x275C5
+  TObject @ file 0x275DC
+  TControl @ file 0x275EC
+  TWinControl @ file 0x27600
+  TStartDockEvent @ file 0x27621
+  TObject @ file 0x2763B
+  TDragDockObject @ file 0x2764F
+  TGetSiteInfoEvent @ file 0x27665
+  TObject @ file 0x27681
+  TControl @ file 0x27695
+  TRect @ file 0x276AD
+  TPoint @ file 0x276BD
+  TCanResizeEvent @ file 0x276DD
+  TObject @ file 0x276F7
+  TConstrainedResizeEvent @ file 0x27739
+  TObject @ file 0x2775B
+  TMouseWheelEvent @ file 0x277B5
+  TObject @ file 0x277D0
+  TShiftState @ file 0x277DF
+  TPoint @ file 0x27809
+  TMouseWheelUpDownEvent @ file 0x27829
+  TObject @ file 0x2784A
+  TShiftState @ file 0x27859
+  TPoint @ file 0x2786F
+  TContextPopupEvent @ file 0x2788D
+  TObject @ file 0x278AA
+  TPoint @ file 0x278BC
+  TControl @ file 0x27B8A
+  TControl @ file 0x27B99
+  TWinControlActionLink @ file 0x27DAC
+  TImeName @ file 0x27DC9
+  TBorderWidth @ file 0x27DD9
+  TBevelCut @ file 0x27DF5
+  TBevelEdge @ file 0x27E3D
+  TBevelEdges @ file 0x27E81
+  TBevelKind @ file 0x27E99
+  TBevelWidth @ file 0x27EDD
+  TWinControl @ file 0x282C4
+  TWinControl @ file 0x282D5
+  TCustomControl @ file 0x28414
+  TCustomControl @ file 0x28429
+  THintWindow @ file 0x28592
+  THintWindow @ file 0x285A5
+  TDockZone @ file 0x28614
+  TDockTree @ file 0x2878C
+  TMouse @ file 0x287E4
+  TSiteList @ file 0x28C44
+  TContainedAction @ file 0x36DB8
+  TContainedAction @ file 0x36DD1
+  TCustomActionList @ file 0x36EBA
+
+STRINGS (2093 found):
+  [00000050] This program must be run under Win32
+  [0000046E] Cardinal
+  [00000492] WideString
+  [000004B2] OleVariant
+  [00000536] IInterface
+  [00000566] IDispatch0
+  [00000629] TInterfacedObject
+  [00000642] TBoundArray
+  [000023F8]                                                                 
+  [00002840] SOFTWARE\Borland\Delphi\RTL
+  [0000285C] FPUMaskValue
+  [000030F2] ZTUWVSPRTj
+  [00005050] kernel32.dll
+  [00005060] GetLongPathNameA
+  [000052A4] Software\Borland\Locales
+  [000052C0] Software\Borland\Delphi\Locales
+  [00006674] Magellan MSWHEEL
+  [00006690] MSWHEEL_ROLLMSG
+  [000066A0] MSH_WHEELSUPPORT_MSG
+  [000066B8] MSH_SCROLL_LINES_MSG
+  [00006A2F] Exception
+  [00006AD9] EHeapException
+  [00006B35] EOutOfMemory
+  [00006B91] EInOutError
+  [00006BE9] EExternal
+  [00006C41] EExternalException
+  [00006CA1] EIntError
+  [00006CF9] EDivByZero
+  [00006D51] ERangeError
+  [00006DA9] EIntOverflow
+  [00006E05] EMathError
+  [00006E5D] EInvalidOp
+  [00006EB5] EZeroDivide
+  [00006F0D] EOverflow
+  [00006F65] EUnderflow
+  [00006FBD] EInvalidPointer
+  [00007019] EInvalidCast
+  [00007075] EConvertError
+  [000070D1] EAccessViolation
+  [00007131] EPrivilege
+  [00007189] EStackOverflow
+  [000071E5] EControlC
+  [0000723D] EVariantError
+  [00007299] EAssertionFailed
+  [000072F9] EAbstractError
+  [00007355] EIntfCastError
+  [000073B1] EOSError
+  [00007409] ESafecallException
+  [00007436] SysUtils
+  [0000745A] SysUtils
+  [000074BD] TThreadLocalCounter
+  [00007598] $TMultiReadExclusiveWriteSynchronizer
+  [00007F60] <*t"<0r=<9w9i
+  [00008693] $*@@@*$@@@$ *@@* $@@($*)@-$*@@$-*@@$*-@@(*$)@-*$@@*-$@@*$-@@-* $@-$ *@* $-@$ *-@$ -*@*- $@($ *)(* $)
+  [00008A2D] QQQQQQSVW3
+  [00008CB5] QQQQQSVW
+  [00009306] TErrorRec
+  [00009386] TExceptRec
+  [0000A14C] mmmm d, yyyy
+  [0000A2F0] kernel32.dll
+  [0000A300] GetDiskFreeSpaceExA
+  [0000B165] TCustomVariantType
+  [0000B17E] TCustomVariantType(
+  [0000B19B] Variants
+  [0000EC49] Variants
+  [000101EA] tagMULTI_QI
+  [0001020E] tagEXCEPINFO 
+  [00010242] IEnumVariant0
+  [0001031A] TBiDiMode
+  [00010331] bdLeftToRight
+  [0001033F] bdRightToLeft
+  [0001034D] bdRightToLeftNoAlign
+  [00010362] bdRightToLeftReadingOnly
+  [0001038A] THelpContext
+  [000103A6] THelpType
+  [000103BD] htKeyword
+  [000103C7] htContext
+  [000103DE] TShortCut
+  [000103F6] TNotifyEvent
+  [0001040D] TObject`
+  [00010461] EStreamError
+  [000104BD] EFCreateError
+  [00010519] EFOpenErrorp
+  [00010571] EFilerError
+  [000105C9] EReadError
+  [00010621] EWriteErrorx
+  [00010679] EClassNotFound
+  [000106D5] EResNotFound
+  [00010731] EListError
+  [00010789] EBitsError
+  [000107E1] EStringListError
+  [00010841] EComponentError
+  [0001089D] EOutOfResources
+  [000108F9] EInvalidOperation
+  [000109BD] TThreadList
+  [00010A83] TPersistent
+  [00010A96] TPersistenth
+  [00010B7B] TInterfacedPersistent
+  [00010B96] TInterfacedPersistentX
+  [00010C61] TCollectionp
+  [00010C72] TCollection
+  [00010C9A] IStringsAdapter0
+  [00010DAB] TStrings
+  [00010DBA] TStrings
+  [00010DDE] TStringItem
+  [00010EE1] TStringList
+  [00010EF2] TStringListH
+  [00010FED] THandleStream
+  [00011065] TFileStream
+  [000110D9] TCustomMemoryStream8
+  [00011159] TMemoryStream
+  [000111D1] TResourceStream
+  [00011369] TStreamAdapter
+  [000113C5] TClassFinder
+  [0001159E] TComponentName
+  [000115B2] IDesignerNotify0
+  [0001177D] TComponent
+  [0001178E] TComponent
+  [00011859] TBasicActionLink
+  [00011909] TBasicAction
+  [0001191E] TBasicAction
+  [00011946] TIdentMapEntry
+  [00011A3D] TRegGroup
+  [00011A95] TRegGroups
+  [00012725] TIntConst
+  [00015A7F] TPropFixup
+  [00015ADD] TPropIntfFixup
+  [000184C5] QQQQQQQSV
+  [0001B9DC] TPUtilWindow
+  [0001BE79] EInvalidGraphic
+  [0001BED5] EInvalidGraphicOperation
+  [0001BEF6] TFontPitch
+  [0001BF0E] fpDefault
+  [0001BF18] fpVariable
+  [0001BF2B] Graphics
+  [0001BF3A] TFontName
+  [0001BF4A] TFontCharset
+  [0001BF66] TFontStyle
+  [0001BF85] fsItalic
+  [0001BF8E] fsUnderline
+  [0001BF9A] fsStrikeOut
+  [0001BFA6] Graphics
+  [0001BFB6] TFontStyles
+  [0001BFCE] TPenStyle
+  [0001BFFA] psDashDot
+  [0001C004] psDashDotDot
+  [0001C019] psInsideFrame
+  [0001C027] Graphics
+  [0001C036] TPenMode
+  [0001C06F] pmNotCopy
+  [0001C079] pmMergePenNot
+  [0001C087] pmMaskPenNot
+  [0001C094] pmMergeNotPen
+  [0001C0A2] pmMaskNotPen
+  [0001C0B7] pmNotMerge
+  [0001C0C9] pmNotMask
+  [0001C0D9] pmNotXor
+  [0001C0E2] Graphics
+  [0001C0F2] TBrushStyle
+  [0001C11B] bsHorizontal
+  [0001C128] bsVertical
+  [0001C133] bsFDiagonal
+  [0001C13F] bsBDiagonal
+  [0001C153] bsDiagCross
+  [0001C15F] Graphics
+  [0001C1C9] TGraphicsObject
+  [0001C1DE] TGraphicsObject
+  [0001C1F8] Graphics
+  [0001C20A] IChangeNotifier0
+  [0001C22F] Graphics
+  [0001C2CA] Graphics
+  [0001C42D] Graphics
+  [0001C52F] Graphics
+  [0001C600] Graphics
+  [0001C645] CopyMode
+  [0001C7B9] TGraphic
+  [0001C7CA] TGraphicL
+  [0001C7DD] Graphics
+  [0001C839] TSharedImage
+  [0001C899] TBitmapImage
+  [0001C965] TBitmapp
+  [0001C984] Graphics
+  [0001C9E1] TIconImage
+  [0001CABA] Graphics
+  [0001CB25] TResourceManager
+  [0001CF6C] clMaroon
+  [0001CFB0] clPurple
+  [0001CFE4] clSilver
+  [0001D018] clYellow
+  [0001D03C] clFuchsia
+  [0001D070] clMoneyGreen
+  [0001D088] clSkyBlue
+  [0001D0AC] clMedGray
+  [0001D0C0] clActiveBorder
+  [0001D0D8] clActiveCaption
+  [0001D0F0] clAppWorkSpace
+  [0001D108] clBackground
+  [0001D120] clBtnFace
+  [0001D134] clBtnHighlight
+  [0001D14C] clBtnShadow
+  [0001D160] clBtnText
+  [0001D174] clCaptionText
+  [0001D18C] clDefault
+  [0001D1A0] clGradientActiveCaption
+  [0001D1C0] clGradientInactiveCaption
+  [0001D1E4] clGrayText
+  [0001D1F8] clHighlight
+  [0001D20C] clHighlightText
+  [0001D224] clInactiveBorder
+  [0001D240] clInactiveCaption
+  [0001D25C] clInactiveCaptionText
+  [0001D27C] clInfoBk
+  [0001D290] clInfoText
+  [0001D2B4] clMenuText
+  [0001D2D8] clScrollBar
+  [0001D2EC] cl3DDkShadow
+  [0001D304] cl3DLight
+  [0001D318] clWindow
+  [0001D32C] clWindowFrame
+  [0001D344] clWindowText
+  [0001D3C0] ANSI_CHARSET
+  [0001D3D8] DEFAULT_CHARSET
+  [0001D3F0] SYMBOL_CHARSET
+  [0001D408] MAC_CHARSET
+  [0001D41C] SHIFTJIS_CHARSET
+  [0001D438] HANGEUL_CHARSET
+  [0001D450] JOHAB_CHARSET
+  [0001D468] GB2312_CHARSET
+  [0001D480] CHINESEBIG5_CHARSET
+  [0001D49C] GREEK_CHARSET
+  [0001D4B4] TURKISH_CHARSET
+  [0001D4CC] HEBREW_CHARSET
+  [0001D4E4] ARABIC_CHARSET
+  [0001D4FC] BALTIC_CHARSET
+  [0001D514] RUSSIAN_CHARSET
+  [0001D52C] THAI_CHARSET
+  [0001D544] EASTEUROPE_CHARSET
+  [0001D560] OEM_CHARSET
+  [0001FF6D] TBitmapCanvas
+  [0001FF82] TBitmapCanvasT
+  [0001FF9A] Graphics
+  [00022BA1] TPatternManagerSV
+  [00023105] TObjectList\=B
+  [00023169] TOrderedList
+  [0002352C] GetMonitorInfoA
+  [000235B0] GetSystemMetrics
+  [00023644] MonitorFromRect
+  [000236D8] MonitorFromWindow
+  [00023770] MonitorFromPoint
+  [00023840] GetMonitorInfo
+  [00023914] GetMonitorInfoA
+  [000239E8] GetMonitorInfoW
+  [00023B1C] EnumDisplayMonitors
+  [00023B90] USER32.DLL
+  [00023C1A] IHelpSelector0
+  [00023C3D] HelpIntfs
+  [00023C52] IHelpSystem0
+  [00023C73] HelpIntfs
+  [00023C86] ICustomHelpViewer0
+  [00023CAD] HelpIntfs
+  [00023CC2] IExtendedHelpViewer
+  [00023CEB] HelpIntfs
+  [00023CFE] ISpecialWinHelpViewer
+  [00023D29] HelpIntfs
+  [00023D3E] IHelpManager0
+  [00023D60] HelpIntfs
+  [00023DBD] EHelpSystemException
+  [00023E33] THelpViewerNode
+  [00023FAB] THelpManager
+  [00024EC8] comctl32.dll
+  [00024ED8] InitializeFlatSB
+  [00024EEC] UninitializeFlatSB
+  [00024F00] FlatSB_GetScrollProp
+  [00024F18] FlatSB_SetScrollProp
+  [00024F30] FlatSB_EnableScrollBar
+  [00024F48] FlatSB_ShowScrollBar
+  [00024F60] FlatSB_GetScrollRange
+  [00024F78] FlatSB_GetScrollInfo
+  [00024F90] FlatSB_GetScrollPos
+  [00024FA4] FlatSB_SetScrollPos
+  [00024FB8] FlatSB_SetScrollInfo
+  [00024FD0] FlatSB_SetScrollRange
+  [00025253] ExtCtrls
+  [00025278] Enabledh
+  [0002529A] Interval
+  [000252BD] OnTimerSV
+  [000255D1] TCommonDialog
+  [000255E6] TCommonDialogpaB
+  [00025642] HelpContext
+  [0002568A] OnShowSV
+  [00025988] YesToAll
+  [00025A08] commdlg_help
+  [00025A18] commdlg_FindReplace
+  [00025A2C] WndProcPtr%.8X%.8X
+  [00025BF0] Delphi Picture
+  [00025C00] Delphi Component
+  [00025CED] THintAction
+  [00025CFE] THintAction
+  [00025D14] StdActns
+  [00025F47] TWinHelpViewer
+  [000262FC] IE(AL("%s",4),"AL(\"%0:s\",3)","JK(\"%1:s\",\"%0:s\")")
+  [000264F0] JumpID("","%s")
+  [00026764] MS_WINHELP
+  [00026AB7] alBottom
+  [00026ACF] alClient
+  [00026AD8] alCustom
+  [00026AE1] Controls
+  [00026B5D] TDragObject
+  [00026BD9] TDragObjectEx
+  [00026C61] TBaseDragControlObject
+  [00026CF1] TDragControlObject
+  [00026D7D] TDragControlObjectEx
+  [00026E1D] TDragDockObjectxzB
+  [00026EB5] TDragDockObjectEx
+  [00026F2D] TControlCanvas
+  [00026F42] TControlCanvas
+  [00026F5B] Controls
+  [00027031] TControlActionLink
+  [0002704A] TDragMode
+  [00027061] dmManual
+  [0002706A] dmAutomatic
+  [00027076] Controls
+  [00027086] TDragKind
+  [000270AB] Controls
+  [000270BA] TTabOrder
+  [000270D2] TCaption
+  [000270E2] TAnchorKind
+  [00027110] akBottom
+  [00027119] Controls
+  [0002712A] TAnchors
+  [0002713E] TConstraintSize
+  [000271B9] TSizeConstraints
+  [000271D2] TSizeConstraints
+  [000271ED] Controls
+  [00027212] MaxHeight8}B
+  [00027236] MaxWidth8}B
+  [00027259] MinHeight8}B
+  [0002727D] MinWidth
+  [0002728E] TMouseEvent
+  [000272B4] TMouseButton
+  [000272C8] TShiftState
+  [000272F2] TMouseMoveEvent
+  [0002731B] TShiftState
+  [00027335] Integer@
+  [00027342] TKeyEvent
+  [0002736F] TShiftState
+  [00027382] TKeyPressEvent
+  [000273B2] TDragOverEvent
+  [00027400] TDragState
+  [00027422] TDragDropEvent
+  [00027461] Integerl
+  [0002746E] TStartDragEvent
+  [00027491] DragObject
+  [0002749C] TDragObject
+  [000274AE] TEndDragEvent
+  [000274FA] TDockDropEvent
+  [00027523] TDragDockObject
+  [00027541] IntegerL
+  [0002754E] TDockOverEvent
+  [00027577] TDragDockObject
+  [000275A4] TDragState
+  [000275C6] TUnDockEvent
+  [000275ED] TControl
+  [000275F7] NewTarget
+  [00027601] TWinControl
+  [00027622] TStartDockEvent
+  [00027645] DragObject
+  [00027650] TDragDockObject
+  [00027666] TGetSiteInfoEvent
+  [0002768B] DockClient
+  [00027696] TControl
+  [000276A0] InfluenceRect
+  [000276B5] MousePos
+  [000276DE] TCanResizeEvent
+  [00027701] NewWidth
+  [00027713] NewHeight
+  [0002772D] Boolean8
+  [0002773A] TConstrainedResizeEvent
+  [00027765] MinWidth
+  [00027777] MinHeight
+  [0002778A] MaxWidth
+  [0002779C] MaxHeight
+  [000277B6] TMouseWheelEvent
+  [000277E0] TShiftState
+  [000277ED] WheelDelta
+  [00027801] MousePos
+  [0002782A] TMouseWheelUpDownEvent
+  [0002785A] TShiftState
+  [00027867] MousePos
+  [0002788E] TContextPopupEvent
+  [000278B4] MousePos
+  [000278CD] Boolean 
+  [00027B8B] TControl
+  [00027B9A] TControl 
+  [00027BAD] Controls
+  [00027C2F] HeightxvB
+  [00027C90] HelpType
+  [00027CB3] HelpKeyword
+  [00027CD9] HelpContext0
+  [00027DAD] TWinControlActionLink
+  [00027DCA] TImeName
+  [00027DDA] TBorderWidth
+  [00027DF6] TBevelCut
+  [00027E14] bvLowered
+  [00027E1E] bvRaised
+  [00027E2F] Controls
+  [00027E3E] TBevelEdge
+  [00027E6B] beBottom
+  [00027E74] Controls
+  [00027E82] TBevelEdges
+  [00027E9A] TBevelKind
+  [00027ECE] Controls
+  [00027EDE] TBevelWidth
+  [00027EFA] IDockManager0
+  [00027F1C] Controls
+  [000282C5] TWinControl
+  [000282D6] TWinControlt
+  [000282EC] Controls
+  [00028415] TCustomControl
+  [0002842A] TCustomControlD
+  [00028443] Controls
+  [00028593] THintWindow
+  [000285A6] THintWindow
+  [000285BC] Controls
+  [00028615] TDockZone
+  [0002878D] TDockTree
+  [00028940] crDefault
+  [00028984] crSizeNESW
+  [00028998] crSizeNS
+  [000289AC] crSizeNWSE
+  [000289C0] crSizeWE
+  [000289D4] crUpArrow
+  [000289E8] crHourGlass
+  [00028A0C] crNoDrop
+  [00028A20] crHSplit
+  [00028A34] crVSplit
+  [00028A48] crMultiDrag
+  [00028A5C] crSQLWait
+  [00028A80] crAppStart
+  [00028AA4] crHandPoint
+  [00028AB8] crSizeAll
+  [00028C45] TSiteList
+  [0002A66C] t%Jt?Jt[
+  [0002CED8] IsControl
+  [0002F35B] :GauOFKu
+  [0002F40C] DesignSize
+  [000367B4] WINNLSEnableIME
+  [000367C4] IMM32.DLL
+  [000367D0] ImmGetContext
+  [000367E0] ImmReleaseContext
+  [000367F4] ImmGetConversionStatus
+  [0003680C] ImmSetConversionStatus
+  [00036824] ImmSetOpenStatus
+  [00036838] ImmSetCompositionWindow
+  [00036850] ImmSetCompositionFontA
+  [00036868] ImmGetCompositionStringA
+  [00036884] ImmIsIME
+  [00036890] ImmNotifyIME
+  [00036BC0] Delphi%.8X
+  [00036BD4] ControlOfs%.8X%.8X
+  [00036BF0] AnimateWindow
+  [00036DB9] TContainedAction
+  [00036DD2] TContainedActionDyC
+  [00036DED] ActnList
+  [00036E12] Category
+  [00036EBB] TCustomActionList
+  [00036ED2] TCustomActionListhzC
+  [00036EEE] ActnList
+  [00036FDD] TShortCutList
+  [00036FF2] TShortCutListD{C
+  [0003700A] ActnList
+  [000370E5] TCustomAction
+  [000370FA] TCustomAction`|C
+  [00037112] ActnList
+  [000371E1] TActionLinkSV
+  [00037FC9] TChangeLink
+  [00037FDA] TImageIndex
+  [00038081] TCustomImageList
+  [0003809A] TCustomImageList<
+  [00039481] EMenuError
+  [00039492] TMenuBreak
+  [000394B9] mbBarBreak
+  [000394D2] TMenuChangeEvent
+  [000394FD] TMenuItem
+  [0003951E] TMenuDrawItemEvent
+  [00039562] Selected
+  [0003957A] TAdvancedMenuDrawItemEvent
+  [000395CC] TOwnerDrawState
+  [000395E2] TMenuMeasureItemEvent
+  [00039642] TMenuItemAutoFlag
+  [00039661] maAutomatic
+  [0003966D] maManual
+  [00039676] maParent
+  [0003968A] TMenuAutoFlag
+  [00039775] TMenuActionLink
+  [0003985F] TMenuIteml
+  [0003986E] TMenuItem
+  [000398C5] AutoCheck<
+  [000398E9] AutoHotkeys<
+  [0003990F] AutoLineReductionl
+  [000399C0] SubMenuImages
+  [00039A0A] Enabled@
+  [00039A2C] GroupIndex
+  [00039A51] HelpContext
+  [00039A96] ImageIndex
+  [00039ABB] RadioItem
+  [00039ADF] ShortCut
+  [00039B46] OnDrawItemt
+  [00039B6B] OnAdvancedDrawItem
+  [00039B98] OnMeasureItem
+  [00039D25] TMainMenu
+  [00039D36] TMainMenu
+  [00039D6C] AutoHotkeys
+  [00039D92] AutoLineReduction
+  [00039DBE] AutoMerge
+  [00039DE2] BiDiMode
+  [00039E26] OwnerDraw
+  [00039E4A] ParentBiDiMode
+  [00039E73] OnChange
+  [00039E82] TPopupAlignment
+  [00039EAE] paCenter
+  [00039EC2] TTrackButton
+  [00039EDC] tbRightButton
+  [00039EEA] tbLeftButton
+  [00039F02] TMenuAnimations
+  [00039F1F] maLeftToRight
+  [00039F2D] maRightToLeft
+  [00039F3B] maTopToBottom
+  [00039F49] maBottomToTop
+  [00039F6A] TMenuAnimation
+  [0003A011] TPopupMenu
+  [0003A022] TPopupMenu
+  [0003A059] Alignment
+  [0003A07D] AutoHotkeys
+  [0003A0A3] AutoLineReduction
+  [0003A0CF] AutoPopup
+  [0003A0F3] BiDiMode
+  [0003A116] HelpContext
+  [0003A15D] MenuAnimation
+  [0003A185] OwnerDraw
+  [0003A1A9] ParentBiDiMode
+  [0003A1D2] TrackButton
+  [0003A1F8] OnChange
+  [0003A285] TPopupList
+  [0003A2E9] TMenuItemStack
+  [0003A300] 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  [0003B32C] ShortCutText
+  [0003F8FE] TScrollBarInc
+  [0003F91A] TScrollBarStyle
+  [0003F937] ssRegular
+  [0003F948] ssHotTrack
+  [0003F9B1] TControlScrollBar
+  [0003F9CA] TControlScrollBar
+  [0003FA08] ButtonSize
+  [0003FA4D] IncrementT
+  [0003FA92] ParentColor(
+  [0003FAB8] Position(
+  [0003FB5B] ThumbSize
+  [0003FB7F] Tracking
+  [0003FBB2] TWindowState
+  [0003FBCC] wsNormal
+  [0003FBD5] wsMinimized
+  [0003FBE1] wsMaximized
+  [0003FD37] TScrollingWinControl
+  [0003FD52] TScrollingWinControl@
+  [0003FD93] HorzScrollBar
+  [0003FDBB] VertScrollBar
+  [0003FDCE] TFormBorderStyle
+  [0003FDF3] bsSingle
+  [0003FDFC] bsSizeable
+  [0003FE07] bsDialog
+  [0003FE10] bsToolWindow
+  [0003FE1D] bsSizeToolWin
+  [0003FE36] TBorderStyle
+  [0003FF83] TScrollBox
+  [0003FF96] TScrollBox
+  [0003FFCD] Align$}B
+  [0004000F] AutoScroll
+  [00040034] AutoSize|
+  [00040057] BevelEdges
+  [0004007C] BevelInner
+  [000400A1] BevelOuter
+  [000400C6] BevelKind
+  [000400EA] BevelWidth
+  [0004010F] BiDiMode0
+  [00040132] BorderStyle
+  [00040158] Constraints
+  [0004017E] DockSitexvB
+  [000401A1] DragCursor
+  [000401C6] DragKindD|B
+  [000401E9] DragMode
+  [0004028D] ParentBiDiMode
+  [000402B6] ParentColor
+  [000402DC] ParentCtl3D
+  [00040302] ParentFont
+  [00040327] ParentShowHint
+  [00040350] PopupMenu
+  [00040374] ShowHint
+  [00040397] TabOrder
+  [000403FE] OnCanResize
+  [00040424] OnClick4
+  [00040446] OnConstrainedResize
+  [00040474] OnContextPopup
+  [0004049D] OnDblClick
+  [000404C2] OnDockDropH
+  [000404E7] OnDockOver
+  [0004050C] OnDragDrop
+  [00040531] OnDragOver
+  [00040556] OnEndDock
+  [0004057A] OnEndDrag
+  [000405E1] OnGetSiteInfo
+  [00040609] OnMouseDown
+  [0004062F] OnMouseMove
+  [00040655] OnMouseUp
+  [00040679] OnMouseWheel$
+  [000406A0] OnMouseWheelDown$
+  [000406CB] OnMouseWheelUp
+  [000406F4] OnResize
+  [00040717] OnStartDockh
+  [0004073D] OnStartDrag
+  [00040763] OnUnDock
+  [00040772] IDesignerHook
+  [000407A6] IOleForm0
+  [000407D6] TFormStyle
+  [000407EE] fsNormal
+  [000407F7] fsMDIChild
+  [00040802] fsMDIForm
+  [0004080C] fsStayOnTop
+  [00040826] TBorderIcon
+  [0004083F] biSystemMenu
+  [0004084C] biMinimize
+  [00040857] biMaximize
+  [00040876] TBorderIcons
+  [0004088E] TPosition
+  [000408A5] poDesigned
+  [000408B0] poDefault
+  [000408BA] poDefaultPosOnly
+  [000408CB] poDefaultSizeOnly
+  [000408DD] poScreenCenter
+  [000408EC] poDesktopCenter
+  [000408FC] poMainFormCenter
+  [0004090D] poOwnerFormCenter
+  [0004092A] TDefaultMonitor
+  [00040947] dmDesktop
+  [00040951] dmPrimary
+  [0004095B] dmMainForm
+  [00040966] dmActiveForm
+  [0004097E] TPrintScale
+  [0004099E] poProportional
+  [000409AD] poPrintToFit
+  [000409C6] TCloseEvent
+  [000409EC] TCloseAction
+  [000409FE] TCloseQueryEvent
+  [00040A22] CanClose
+  [00040A3A] TShortCutEvent
+  [00040A6E] THelpEvent
+  [00040A98] CallHelp
+  [00040D7F] TCustomForm
+  [00040D92] TCustomForm
+  [00040F4D] ActiveControl
+  [00040F95] AlphaBlend@
+  [00040FBA] AlphaBlendValue$}B
+  [00041006] AutoScroll
+  [0004102B] AutoSize
+  [0004104E] BiDiModep
+  [00041071] BorderIcons
+  [00041097] BorderStyle
+  [000410BD] BorderWidth
+  [000410E3] Caption(
+  [00041105] ClientHeight(
+  [0004112C] ClientWidth
+  [00041172] TransparentColor
+  [0004119D] TransparentColorValue
+  [000411CD] Constraints
+  [00041213] UseDockManager$
+  [0004123C] DefaultMonitor
+  [00041265] DockSite
+  [00041288] DragKindD|B
+  [000412AB] DragMode
+  [000412F0] ParentFont
+  [00041334] FormStyle(
+  [00041379] HelpFile
+  [0004139C] HorzScrollBar
+  [000413E3] KeyPreview0
+  [00041427] OldCreateOrderh
+  [00041450] ObjectMenuItem
+  [00041479] ParentBiDiMode(
+  [000414A2] PixelsPerInch
+  [000414CA] PopupMenu
+  [000414EE] Positionx
+  [00041511] PrintScale
+  [00041557] ShowHint
+  [0004157A] VertScrollBar
+  [000415A2] Visible(
+  [000415E4] WindowStateh
+  [0004160A] WindowMenu
+  [0004162F] OnActivate
+  [00041654] OnCanResize
+  [000416BE] OnCloseQuery4
+  [000416E5] OnConstrainedResize
+  [00041713] OnContextPopup
+  [0004173C] OnCreate
+  [0004175F] OnDblClick
+  [00041784] OnDestroy
+  [000417A8] OnDeactivate
+  [000417CF] OnDockDropH
+  [000417F4] OnDockOver
+  [00041819] OnDragDrop
+  [0004183E] OnDragOver
+  [00041863] OnEndDock`
+  [00041887] OnGetSiteInfo
+  [000418F1] OnKeyDown|
+  [00041915] OnKeyPress<
+  [0004195C] OnMouseDown
+  [00041982] OnMouseMove
+  [000419A8] OnMouseUp
+  [000419CC] OnMouseWheel$
+  [000419F3] OnMouseWheelDown$
+  [00041A1E] OnMouseWheelUp
+  [00041A69] OnResize4
+  [00041A8C] OnShortCut
+  [00041AD2] OnStartDock
+  [00041AF8] OnUnDockL'D
+  [00041C75] TCustomDockForm
+  [00041C8A] TCustomDockFormL'D
+  [00041CC6] PixelsPerInch
+  [00041D21] TMonitor
+  [00041DCA] TScreenx)D
+  [00041DEA] THintInfo@
+  [00041EBB] TApplication
+  [00041ECE] TApplicationP*D
+  [0004424C] PixelsPerInch
+  [00044264] TextHeight
+  [00044278] IgnoreFontProperty
+  [00045E18] MDICLIENT
+  [00048F30] System\CurrentControlSet\Control\Keyboard Layouts\%.8x
+  [00048F68] layout text
+  [000490A9] CHYZ]_^[
+  [000499AC] TApplication
+  [00049B9C] MAINICON
+  [0004A894] vcltest3.dll
+  [0004A8A4] RegisterAutomation
+  [0004C138] User32.dll
+  [0004C144] SetLayeredWindowAttributes
+  [0004C230] TaskbarCreated
+  [0004C2ED] EOleError
+  [0004C345] EOleSysError
+  [0004C3BB] EOleException
+  [0004C3D0] Apartment
+  [0004C860] ole32.dll
+  [0004C86C] CoCreateInstanceEx
+  [0004C880] CoInitializeEx
+  [0004C890] CoAddRefServerProcess
+  [0004C8A8] CoReleaseServerProcess
+  [0004C8C0] CoResumeClassObjects
+  [0004C8D8] CoSuspendClassObjects
+  [0004C8F5] QQQQQQQQSV
+  [0004D342] TVariantArray
+  [0004D360] OleServer
+  [0004D372] TConnectKind
+  [0004D38C] ckRunningOrNew
+  [0004D39B] ckNewInstance
+  [0004D3A9] ckRunningInstance
+  [0004D3BB] ckRemote
+  [0004D3C4] ckAttachToInterface
+  [0004D3D8] OleServer
+  [0004D4D5] TServerEventDispatch
+  [0004D5DF] TOleServer
+  [0004D5F2] TOleServer
+  [0004D607] OleServer
+  [0004D62D] AutoConnectl
+  [0004D653] ConnectKind
+  [0004D679] RemoteMachineName
+  [0004DBC6] ISWbemLocator`
+  [0004DBE9] WbemScripting_TLB
+  [0004DCA3] TSWbemLocator
+  [0004DCB6] TSWbemLocatorL
+  [0004DCCE] WbemScripting_TLB
+  [0004DDB0] c:\Progra~1\Borland\delphi6\Imports\WbemScripting_TLB.pas
+  [0004DDF4] DefaultInterface is NULL. Component is not connected to Server. You must call 'Connect' or 'ConnectTo' before this operation
+  [0004ED7C] InterfaceType
+  [0004EDA0] PnpDeviceID
+  [00050100] Antecedent
+  [00050114] Dependent
+  [00050204] InterfaceType
+  [0005021C] PNPDeviceId
+  [00050654] Runtime error     at 00000000
+  [0005067C] 0123456789ABCDEF
+  [00050B10] MS Sans Serif
+  [00051F58] kernel32.dll
+  [00051F68] DeleteCriticalSection
+  [00051F80] LeaveCriticalSection
+  [00051F98] EnterCriticalSection
+  [00051FB0] InitializeCriticalSection
+  [00051FCC] VirtualFree
+  [00051FDA] VirtualAlloc
+  [00051FEA] LocalFree
+  [00051FF6] LocalAlloc
+  [00052004] GetCurrentThreadId
+  [0005201A] InterlockedDecrement
+  [00052032] InterlockedIncrement
+  [0005204A] VirtualQuery
+  [0005205A] WideCharToMultiByte
+  [00052070] MultiByteToWideChar
+  [00052086] lstrlenA
+  [00052092] lstrcpynA
+  [0005209E] LoadLibraryExA
+  [000520B0] GetThreadLocale
+  [000520C2] GetStartupInfoA
+  [000520D4] GetProcAddress
+  [000520E6] GetModuleHandleA
+  [000520FA] GetModuleFileNameA
+  [00052110] GetLocaleInfoA
+  [00052122] GetLastError
+  [00052132] GetCommandLineA
+  [00052144] FreeLibrary
+  [00052152] FindFirstFileA
+  [00052164] FindClose
+  [00052170] ExitProcess
+  [0005217E] WriteFile
+  [0005218A] UnhandledExceptionFilter
+  [000521A6] SetFilePointer
+  [000521B8] SetEndOfFile
+  [000521C8] RtlUnwind
+  [000521D4] ReadFile
+  [000521E0] RaiseException
+  [000521F2] GetStdHandle
+  [00052202] GetFileSize
+  [00052210] GetFileType
+  [0005221E] CreateFileA
+  [0005222C] CloseHandle
+  [00052238] user32.dll
+  [00052246] GetKeyboardType
+  [00052258] LoadStringA
+  [00052266] MessageBoxA
+  [00052274] CharNextA
+  [0005227E] advapi32.dll
+  [0005228E] RegQueryValueExA
+  [000522A2] RegOpenKeyExA
+  [000522B2] RegCloseKey
+  [000522BE] oleaut32.dll
+  [000522CE] SysFreeString
+  [000522DE] SysReAllocStringLen
+  [000522F4] SysAllocStringLen
+  [00052306] kernel32.dll
+  [00052316] TlsSetValue
+  [00052324] TlsGetValue
+  [0005233C] TlsAlloc
+  [00052348] LocalFree
+  [00052354] LocalAlloc
+  [00052360] advapi32.dll
+  [00052370] RegQueryValueExA
+  [00052384] RegOpenKeyExA
+  [00052394] RegCloseKey
+  [000523A0] kernel32.dll
+  [000523B0] lstrcpyA
+  [000523BC] WriteFile
+  [000523C8] WaitForSingleObject
+  [000523DE] VirtualQuery
+  [000523EE] VirtualAlloc
+  [00052406] SizeofResource
+  [00052418] SetThreadLocale
+  [0005242A] SetFilePointer
+  [0005243C] SetEvent
+  [00052448] SetErrorMode
+  [00052458] SetEndOfFile
+  [00052468] ResetEvent
+  [00052476] ReadFile
+  [00052482] MultiByteToWideChar
+  [000524A2] LockResource
+  [000524B2] LoadResource
+  [000524C2] LoadLibraryA
+  [000524D2] LeaveCriticalSection
+  [000524EA] InitializeCriticalSection
+  [00052506] GlobalUnlock
+  [00052516] GlobalReAlloc
+  [00052526] GlobalHandle
+  [00052536] GlobalLock
+  [00052544] GlobalFree
+  [00052552] GlobalFindAtomA
+  [00052564] GlobalDeleteAtom
+  [00052578] GlobalAlloc
+  [00052586] GlobalAddAtomA
+  [00052598] GetVersionExA
+  [000525A8] GetVersion
+  [000525B6] GetTickCount
+  [000525C6] GetThreadLocale
+  [000525D8] GetTempPathA
+  [000525E8] GetSystemInfo
+  [000525F8] GetStringTypeExA
+  [0005260C] GetStdHandle
+  [0005261C] GetProcAddress
+  [0005262E] GetModuleHandleA
+  [00052642] GetModuleFileNameA
+  [00052658] GetLocaleInfoA
+  [0005266A] GetLastError
+  [0005267A] GetDiskFreeSpaceA
+  [0005268E] GetCurrentThreadId
+  [000526A4] GetCurrentProcessId
+  [000526BA] GetComputerNameA
+  [000526CE] GetCPInfo
+  [000526E4] FreeResource
+  [000526F4] FreeLibrary
+  [00052702] FormatMessageA
+  [00052714] FindResourceA
+  [00052724] EnumCalendarInfoA
+  [00052738] EnterCriticalSection
+  [00052750] DeleteCriticalSection
+  [00052768] CreateThread
+  [00052778] CreateFileA
+  [00052786] CreateEventA
+  [00052796] CompareStringA
+  [000527A8] CloseHandle
+  [000527B4] gdi32.dll
+  [000527C0] UnrealizeObject
+  [000527D2] StretchBlt
+  [000527E0] SetWindowOrgEx
+  [000527F2] SetViewportOrgEx
+  [00052806] SetTextColor
+  [00052816] SetStretchBltMode
+  [00052834] SetPixel
+  [00052840] SetDIBColorTable
+  [00052854] SetBrushOrgEx
+  [00052864] SetBkMode
+  [00052870] SetBkColor
+  [0005287E] SelectPalette
+  [0005288E] SelectObject
+  [000528A8] RestoreDC
+  [000528B4] RectVisible
+  [000528C2] RealizePalette
+  [000528DE] MoveToEx
+  [000528FE] IntersectClipRect
+  [00052912] GetWindowOrgEx
+  [00052924] GetTextMetricsA
+  [00052936] GetTextExtentPoint32A
+  [0005294E] GetSystemPaletteEntries
+  [00052968] GetStockObject
+  [0005297A] GetPixel
+  [00052986] GetPaletteEntries
+  [0005299A] GetObjectA
+  [000529A8] GetDeviceCaps
+  [000529B8] GetDIBits
+  [000529C4] GetDIBColorTable
+  [000529D8] GetDCOrgEx
+  [000529E6] GetCurrentPositionEx
+  [000529FE] GetClipBox
+  [00052A0C] GetBrushOrgEx
+  [00052A1C] GetBitmapBits
+  [00052A2C] ExcludeClipRect
+  [00052A3E] DeleteObject
+  [00052A4E] DeleteDC
+  [00052A5A] CreateSolidBrush
+  [00052A6E] CreatePenIndirect
+  [00052A82] CreatePalette
+  [00052A92] CreateHalftonePalette
+  [00052AAA] CreateFontIndirectA
+  [00052AC0] CreateDIBitmap
+  [00052AD2] CreateDIBSection
+  [00052AE6] CreateCompatibleDC
+  [00052AFC] CreateCompatibleBitmap
+  [00052B16] CreateBrushIndirect
+  [00052B2C] CreateBitmap
+  [00052B44] user32.dll
+  [00052B52] WindowFromPoint
+  [00052B64] WinHelpA
+  [00052B70] WaitMessage
+  [00052B7E] UpdateWindow
+  [00052B8E] UnregisterClassA
+  [00052BA2] UnhookWindowsHookEx
+  [00052BB8] TranslateMessage
+  [00052BCC] TranslateMDISysAccel
+  [00052BE4] TrackPopupMenu
+  [00052BF6] SystemParametersInfoA
+  [00052C0E] ShowWindow
+  [00052C1C] ShowScrollBar
+  [00052C2C] ShowOwnedPopups
+  [00052C3E] ShowCursor
+  [00052C4C] SetWindowsHookExA
+  [00052C60] SetWindowPos
+  [00052C70] SetWindowPlacement
+  [00052C86] SetWindowLongA
+  [00052C98] SetTimer
+  [00052CA4] SetScrollRange
+  [00052CB6] SetScrollPos
+  [00052CC6] SetScrollInfo
+  [00052CE0] SetPropA
+  [00052CEC] SetMenuItemInfoA
+  [00052D0A] SetForegroundWindow
+  [00052D20] SetFocus
+  [00052D2C] SetCursor
+  [00052D38] SetClassLongA
+  [00052D48] SetCapture
+  [00052D56] SetActiveWindow
+  [00052D68] SendMessageA
+  [00052D78] ScrollWindow
+  [00052D88] ScreenToClient
+  [00052D9A] RemovePropA
+  [00052DA8] RemoveMenu
+  [00052DB6] ReleaseDC
+  [00052DC2] ReleaseCapture
+  [00052DD4] RegisterWindowMessageA
+  [00052DEE] RegisterClipboardFormatA
+  [00052E0A] RegisterClassA
+  [00052E1C] RedrawWindow
+  [00052E2C] PtInRect
+  [00052E38] PostQuitMessage
+  [00052E4A] PostMessageA
+  [00052E5A] PeekMessageA
+  [00052E6A] OffsetRect
+  [00052E78] OemToCharA
+  [00052E86] MessageBoxA
+  [00052E94] MapWindowPoints
+  [00052EA6] MapVirtualKeyA
+  [00052EB8] LoadStringA
+  [00052EC6] LoadKeyboardLayoutA
+  [00052EDC] LoadIconA
+  [00052EE8] LoadCursorA
+  [00052EF6] LoadBitmapA
+  [00052F04] KillTimer
+  [00052F10] IsZoomed
+  [00052F1C] IsWindowVisible
+  [00052F2E] IsWindowEnabled
+  [00052F40] IsWindow
+  [00052F4C] IsRectEmpty
+  [00052F5A] IsIconic
+  [00052F66] IsDialogMessageA
+  [00052F84] InvalidateRect
+  [00052F96] IntersectRect
+  [00052FA6] InsertMenuItemA
+  [00052FB8] InsertMenuA
+  [00052FC6] InflateRect
+  [00052FD4] GetWindowThreadProcessId
+  [00052FF0] GetWindowTextA
+  [00053002] GetWindowRect
+  [00053012] GetWindowPlacement
+  [00053028] GetWindowLongA
+  [0005303A] GetWindowDC
+  [00053048] GetTopWindow
+  [00053058] GetSystemMetrics
+  [0005306C] GetSystemMenu
+  [0005307C] GetSysColor
+  [0005308A] GetSubMenu
+  [00053098] GetScrollRange
+  [000530AA] GetScrollPos
+  [000530BA] GetScrollInfo
+  [000530CA] GetPropA
+  [000530D6] GetParent
+  [000530E2] GetWindow
+  [000530EE] GetMenuStringA
+  [00053100] GetMenuState
+  [00053110] GetMenuItemInfoA
+  [00053124] GetMenuItemID
+  [00053134] GetMenuItemCount
+  [00053152] GetLastActivePopup
+  [00053168] GetKeyboardState
+  [0005317C] GetKeyboardLayoutList
+  [00053194] GetKeyboardLayout
+  [000531A8] GetKeyState
+  [000531B6] GetKeyNameTextA
+  [000531C8] GetIconInfo
+  [000531D6] GetForegroundWindow
+  [000531EC] GetFocus
+  [000531F8] GetDesktopWindow
+  [0005321E] GetCursorPos
+  [0005322E] GetCursor
+  [0005323A] GetClientRect
+  [0005324A] GetClassNameA
+  [0005325A] GetClassInfoA
+  [0005326A] GetCapture
+  [00053278] GetActiveWindow
+  [0005328A] FrameRect
+  [00053296] FindWindowA
+  [000532A4] FillRect
+  [000532B0] EqualRect
+  [000532BC] EnumWindows
+  [000532CA] EnumThreadWindows
+  [000532DE] EndPaint
+  [000532EA] EnableWindow
+  [000532FA] EnableScrollBar
+  [0005330C] EnableMenuItem
+  [0005331E] DrawTextA
+  [0005332A] DrawMenuBar
+  [00053338] DrawIconEx
+  [00053346] DrawIcon
+  [00053352] DrawFrameControl
+  [00053366] DrawEdge
+  [00053372] DispatchMessageA
+  [00053386] DestroyWindow
+  [00053396] DestroyMenu
+  [000533A4] DestroyIcon
+  [000533B2] DestroyCursor
+  [000533C2] DeleteMenu
+  [000533D0] DefWindowProcA
+  [000533E2] DefMDIChildProcA
+  [000533F6] DefFrameProcA
+  [00053406] CreateWindowExA
+  [00053418] CreatePopupMenu
+  [0005342A] CreateMenu
+  [00053438] CreateIcon
+  [00053446] ClientToScreen
+  [00053458] CheckMenuItem
+  [00053468] CallWindowProcA
+  [0005347A] CallNextHookEx
+  [0005348C] BeginPaint
+  [0005349A] CharNextA
+  [000534A6] CharLowerA
+  [000534B4] AdjustWindowRectEx
+  [000534CA] ActivateKeyboardLayout
+  [000534E2] kernel32.dll
+  [000534F8] oleaut32.dll
+  [00053508] SafeArrayPtrOfIndex
+  [0005351E] SafeArrayPutElement
+  [00053534] SafeArrayGetElement
+  [0005354A] SafeArrayGetUBound
+  [00053560] SafeArrayGetLBound
+  [00053576] SafeArrayRedim
+  [00053588] SafeArrayCreate
+  [0005359A] VariantChangeTypeEx
+  [000535B0] VariantCopyInd
+  [000535C2] VariantCopy
+  [000535D0] VariantClear
+  [000535E0] VariantInit
+  [000535EC] ole32.dll
+  [000535F8] OleUninitialize
+  [0005360A] OleInitialize
+  [0005361A] CoTaskMemFree
+  [0005362A] ProgIDFromCLSID
+  [0005363C] StringFromCLSID
+  [0005364E] CoCreateInstance
+  [00053662] CoUninitialize
+  [00053674] CoInitialize
+  [00053684] IsEqualGUID
+  [00053690] oleaut32.dll
+  [000536A0] GetErrorInfo
+  [000536B0] GetActiveObject
+  [000536C2] SysFreeString
+  [000536D0] comctl32.dll
+  [000536E0] ImageList_SetIconSize
+  [000536F8] ImageList_GetIconSize
+  [00053710] ImageList_Write
+  [00053722] ImageList_Read
+  [00053734] ImageList_GetDragImage
+  [0005374E] ImageList_DragShowNolock
+  [0005376A] ImageList_SetDragCursorImage
+  [0005378A] ImageList_DragMove
+  [000537A0] ImageList_DragLeave
+  [000537B6] ImageList_DragEnter
+  [000537CC] ImageList_EndDrag
+  [000537E0] ImageList_BeginDrag
+  [000537F6] ImageList_Remove
+  [0005380A] ImageList_DrawEx
+  [0005381E] ImageList_Draw
+  [00053830] ImageList_GetBkColor
+  [00053848] ImageList_SetBkColor
+  [00053860] ImageList_ReplaceIcon
+  [00053878] ImageList_Add
+  [00053888] ImageList_GetImageCount
+  [000538A2] ImageList_Destroy
+  [000538B6] ImageList_Create
+  [000538C8] MSVCRT.dll
+  [00053A5A] MLUtil6.dll
+  [00053C0B] 0(0@0T0h0
+  [00053C55] 2 2$2<2Y2f2n2v2~2
+  [00053C8D] 3&3.363>3F3N3V3^3f3n3v3~3
+  [00053CFB] ;$;.;4;B;H;P;b;n;};
+  [00053D29] <"<*<4<K<V<w<
+  [00053D4D] ?!?:?C?L?W?`?g?v?}?
+  [00053D77] 1 10191~1
+  [00053DAB] 3,323D3\3h3p3
+  [00053DFF] 6-737;7_7
+  [00053E6F] 9(9@9N9b9
+  [00053ED9] 0!0*0:0?0D0I0N0\0f0
+  [00053EF5] 1<1G1d1n1
+  [00053F11] 2!2&2+2M2a2
+  [00053F57] 2&272B2J2R2Z2b2j2r2
+  [00053FCD] 6$6-6>6H6R6Z6b6j6r6z6
+  [00053FF1] 7D7L7Z7_7x7
+  [0005403B] 9&9.969>9F9N9V9^9f9n9v9~9
+  [0005407B] :&:.:6:>:F:N:V:^:f:n:v:~:
+  [000540BB] ;&;.;6;>;F;N;V;^;f;n;v;~;
+  [000540FB] <&<.<6<><F<N<V<^<f<n<v<~<
+  [0005413B] =&=.=6=>=F=N=V=^=f=n=v=~=
+  [0005417B] >&>.>6>>>F>N>V>^>f>n>v>~>
+  [000541BB] ?&?.?6?>?F?N?V?^?f?n?v?~?
+  [00054203] 0&0.060>0F0N0V0^0f0n0v0~0
+  [00054257] 3 3(30383@3H3P3X3`3h3p3x3
+  [00054297] 4 4(40484@4H4P4X4`4h4p4x4
+  [000542D7] 5 5(50585@5H5P5X5`5h5p5x5
+  [00054315] 6&686X6`6d6h6l6p6t6x6|6
+  [0005434F] 7 7$7(7,707D7d7l7p7t7x7|7
+  [0005438B] 8 8$8(8,8084888<8T8t8|8
+  [000543C9] 9$9,9094989<9@9D9H9L9\9|9
+  [0005440B] :0:8:<:@:D:H:L:P:T:X:h:
+  [0005444D] ;8;@;D;H;L;P;T;X;\;`;p;
+  [0005448D] <(<H<P<T<X<\<`<d<h<l<p<
+  [000544C7] = =$=(=,=<=\=d=h=l=p=t=x=|=
+  [00054503] > >$>(>,>0>4>8>L>l>t>x>|>
+  [0005453F] ?(?0?4?8?<?@?D?H?L?P?d?
+  [00054589] 0)010@0M0U0p0
+  [000545B1] 1 1$1(1@1L1P1l1t1x1|1
+  [00054619] 050=0E0M0U0
+  [00054639] 4:6R6W6c6
+  [00054679] :.:h:;;{;
+  [000546A1] ?9?G?N?f?m?
+  [000546C1] 0-0X0g0{0
+  [000546EB] 3&4-474=4D4N4S4Y4^4d4i4o4v4|4
+  [0005472B] 50595B5K5P5
+  [00054759] 9%90959:9G9]9d9v9{9
+  [0005478B] ;:;M;V;u;
+  [000547A3] <9<H<V<y<
+  [0005481B] 7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+  [0005488F] 8$8(80848<8@8H8L8T8X8`8d8l8p8x8|8
+  [000548E3] 9 9$9,90989<9D9H9P9T9\9`9h9l9t9x9
+  [00054927] :#:-:7:=:G:M:W:b:l:w:
+  [0005495B] ;,;C;O;W;a;l;t;y;
+  [00054981] <&<.<6<><F<N<[<g<t<
+  [000549B1] = =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=x=
+  [000549EF] 262:2>2B2F2J2N2R2V2Z2^2b2f2j2n2r2v2z2~2
+  [00054A6B] 9!9%9)9-9195999=9A9E9I9M9Q9U9Y9]9a9e9
+  [00054AAB] :!:%:):-:1:5:9:=:A:
+  [00054B19] = =2=D=V=r=
+  [00054B55] 1!1%1)1-1s2
+  [00054B79] 8*9K9Z9s9I:
+  [00054C23] 7>8N8R8V8Z8^8b8f8j8n8r8l9
+  [00054C99] 808D8Z8_8l8
+  [00054CBD] ;H;^;v;{;
+  [00054CEF] =#=(=-=2=7===B=G=N=V=^=f=n=v=~=
+  [00054D35] >&>.>6>>>F>Q>\>g>r>}>
+  [00054D65] ? ?(?0?8?@?H?P?X?`?h?p?x?
+  [00054DC9] 7T8X8\8`8d8h8
+  [00054E17] >">*>2><>N>r>z>
+  [00054E59] 040<0@0D0H0L0P0T0X0\0p0
+  [00054E99] 1$1D1L1P1T1X1\1`1d1h1l1|1
+  [00054EDB] 2,2L2T2X2\2`2d2h2l2p2t2
+  [00054F15] 3 3$3(3,3<3\3d3h3l3p3t3x3|3
+  [00054F4F] 4 4$4(4,4044484<4P4p4x4|4
+  [00054F8D] 5,54585<5@5D5H5L5P5T5X5\5`5d5p5
+  [00054FD7] 6,686<6D6H6L6P6T6X6\6`6d6h6l6p6z6~6
+  [0005500F] 7,74787<7@7D7H7L7P7T7X7\7`7d7r7
+  [00055059] 8 8$8(8,808>8P8T8X8\8l8}8
+  [00055095] 9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000550E3] :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [00055149] ;4;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;
+  [00055193] <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<p<
+  [000551E1] = =$=(=,=0=4=8=<=@=D=H=L=P=T=h=
+  [00055249] ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?x?
+  [000552A3] 0 0$0(0,080D0X0`0d0h0l0p0t0x0|0
+  [000552F7] 1 1$121D1d1l1p1t1x1|1
+  [00055319] 14282<2@2D2H2L2d2
+  [00055363] 3<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3
+  [00055397] 4 4$4(4,4044484<4@4D4H4L4P4T4l4|4
+  [000553F5] 5*5.5@5\5
+  [00055405] 6 6$6(6,6064686H6h6p6t6x6|6
+  [00055481] 0'141C1N1`1v1{1
+  [000554A3] 222?2N2`2e2
+  [000554E5] 5 5*535C5R5\5q5z5
+  [00055531] :$;G;a;s;
+  [0005563B] =>>E>v>}>
+  [00055679] 6 646<6@6D6H6L6P6T6X6\6`6n6v6
+  [000556E5] ;$<)<H<Y<w<~<y=
+  [00055741] :#:5:9:=:A:E:I:
+  [00055805] ;#;';+;/;3;7;;;?;C;G;B<h<
+  [00055861] 1"1&1*1.12161:1>1B1F1J1N1R1T2[2q2
+  [0005597D] 0/1Y1u1s2
+  [000559B3] 7C8I8Y8f8l8|8b9i96:=:
+  [000559F5] 475V5`5o5
+  [00055A0D] 6+616<6H6_6d6
+  [00055A27] 7(727<7F7P7b7r7z7
+  [00055A5D] 8$8,848<8D8L8T8\8d8l8t8|8
+  [00055A9D] 9$9,949<9D9L9T9\9d9l9t9|9
+  [00055AD5] :,:L:T:X:\:`:d:h:l:p:t:
+  [00055B05] ;4;D;`;y;
+  [00055B49] ><>H>L>X>\>d>h>l>p>t>x>|>
+  [00055B85] ?7?;???V?Z?^?v?z?~?
+  [00055BC5] 0"0&070;0?0W0_0v0z0~0
+  [00055BFF] 1$1(191=1A1Y1]1a1|1
+  [00055C3D] 2*2M2U2l2t2
+  [00055C5B] 3 3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [00055CB5] 4 4$4(4,40444H4h4p4t4x4|4
+  [00055D07] 5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5l5y5}5
+  [00055D53] 6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+  [00055DE1] 1U2Z2_2s2
+  [00055E83] 1E1J1q1~1
+  [00055E9D] 2Q3m3t3(4
+  [00055EAD] 545E5Q5e5s5
+  [00055F1D] 8)999P9`9
+  [00055F39] ;(;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;|;
+  [00055F67] <3<8<`<o<
+  [00055F95] 4"4X4`5(6F6p6
+  [0005604F] 7&757;7T7t7|7
+  [00056095] ;";-;7;B;T;f;w;
+  [000560BF] <!<(<2<7<<<A<K<P<U<w<
+  [000560F9] =0=8=<=@=D=H=L=P=T=X=\=`=d=x=
+  [00056131] >/?;?H?Z?b?j?r?z?
+  [0005616D] 0#0/0<0N0n0
+  [0005618D] 1E1M1S1_1f1
+  [000561A3] 2#2d2l2r2~2
+  [000561DD] 4=5E5K5W5_5
+  [000561F3] 6+6;6`6k617;7A7E7K7O7U7Y7_7c7i7m7s7w7}7
+  [00056297] ;7;D;H;P;d;l;p;t;x;|;
+  [000562E3] =(>>>g>}>
+  [0005633D] 6E7G8S8[8c8u8
+  [0005635F] 9&9A9N9g9{9
+  [00056391] :,:5:::?:M:V:[:`:n:w:|:
+  [000563BF] </<;<H<Z<g<s<
+  [000563E3] =(=:=G=S=`=r=
+  [00056423] > >$>(>0><>H>L>]>e>
+  [0005646B] 1$141@1D1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [000564C7] 314F4X4f4y4
+  [000564E3] 5D6H6P6T6\6`6h6l6t6x6
+  [00056527] 7(737E7V7^7n7s7
+  [0005654B] 8'848F8L8\8l8t8x8|8
+  [000565A5] 9D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [000565E1] ; ;$;(;6;>;
+  [00056667] 6)63686G6X6j6x6
+  [00056683] 7 7$7(7,7074787<7@7D7H7L7P7T7X7h7
+  [000566D5] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8x8
+  [00056723] 9$9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9
+  [00056781] :,:L:T:X:\:`:d:h:l:p:t:x:|:
+  [000567D3] ; ;$;(;<;P;T;h;
+  [0005682B] < <$<(<,<D<\<
+  [00056843] <$=3=8=X=h=x=
+  [00056877] >#>>>F>b>j>
+  [000568C9] 5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [00056913] 5^6b6f6j6n6r6v6z6~6
+  [00056975] 7"7&7*7.72767:7>7B7F7J7N7R7V7Z7^7b7f7j7n7r7v7z7~7
+  [000569BF] 858=8V8b8u8
+  [000569E3] 9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [00056A43] ;(;4;8;D;H;P;T;X;\;`;d;h;l;p;t;x;|;
+  [00056AB5] < <$<(<,<0<4<B<J<$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+  [00056B43] > >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+  [00056BA3] ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+  [00056C23] 0$080<0P0`0l0p0x0|0
+  [00056C85] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1
+  [00056CF7] 343<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [00056D3B] 4J4R4a4i4
+  [00056D73] 8 8$8(8,8084888<8@8
+  [00056DBD] 0B1]1p1z1
+  [00056DFF] 5.575?5M5R5\5k5y5
+  [00056E25] 606=6Q6[6s6
+  [00056E43] 7C7L7U7u7
+  [00056E81] 9"9*9;9Y9|9
+  [00056EA3] ;(;1;Z;f;x;
+  [00056EC9] < <=<L<o<
+  [00056EE7] ='=1=;=D=W=\=h=n=v=
+  [00056F34] 60Q0w0|0
+  [00056F3F] 061;1}1&2
+  [00056FCB] <6<?<\<t<{<
+  [00057103] 577?7R7!8
+  [00057139] 484C4Z4z4
+  [000571E9] 0)252J2Y2s2
+  [000572B1] 0>1[1>2]2i2q2}2
+  [000572E9] 3$3/34393D3I3N3Y3^3c3n3s3x3
+  [00057311] 5 555@5K5\5m5
+  [0005733D] 6'6G6g6t6~6
+  [0005735F] 7%707;7F7M7[7`7e7o7
+  [0005737D] 8)848>8H8Z8o8{8
+  [000573A9] 9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000573F7] :,:8:<:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [0005743F] ; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+  [000574A5] < <$<0<4<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+  [000574FB] =<=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+  [0005755C] +0:0N0'1
+  [0005759B] ;+;8;J;S;X;c;h;t;
+  [000575D1] < <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<|<
+  [00057661] :(:?:O:z:
+  [00057693] ?.?V?]?t?
+  [000576A9] 0.040T0\0`0d0h0l0p0t0x0|0
+  [000576FF] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3
+  [00057769] 4"4*4B4F4J4N4R4V4Z4h4w4{4
+  [00057791] 4 5$5(5A5I5a5i5m5
+  [000577B9] 666B6\6h6{6
+  [00057813] 8 8$8(8,8:8J8N8R8\8g8k8y8
+  [0005785F] 9 909?9C9Q9U9Y9w9{9
+  [00057885] :/:7:X:|:
+  [000578D7] <,<0<><b<f<j<
+  [000578F7] =!=)=B=j=r=
+  [0005790B] >$>D>L>P>T>X>\>`>d>h>l>p>t>x>|>
+  [000579E9] 2e4x4N5-7M8
+  [00057A5C] K0[1}1a2
+  [00057A7D] 4+484G4V4e4
+  [00057A8D] 546S6F7T7k7
+  [00057AD4] #0(0`0R2r2
+  [00057B47] 081B1L1i1&2A2
+  [00057B57] 3K3p3t3x3|3
+  [00057BA7] 4$4.484C4M4_4r4z4
+  [00057BD5] 525X5h5x5
+  [00057C03] 626>6V6w6
+  [00057C1D] 7 7(7@7H7d7
+  [00057C39] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+  [00057CB3] 9"9&9*9.929L9f9j9x9
+  [00057CCF] 90:K:X:h:t:x:
+  [00057D2B] ; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;z;~;
+  [00057D6F] <<<D<a<i<
+  [00057D8B] ===E=c=k=
+  [00057DA3] >3>;>?>S>[>_>r>
+  [00057DC1] ?5?=?Y?a?e?|?
+  [00057E6D] 7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+  [00057F25] 9"9&9*9.92969:9>9B9F9J9N9R9V9Z9^9b9f9j9n9r9v9z9
+  [00057F83] : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [00057FF3] ;2;:;>;Z;b;z;
+  [00058013] <3<?<V<^<b<|<
+  [0005803F] =7=?=C=W=_=
+  [0005805B] >!>->J>R>m>
+  [00058077] ?!?%?=?E?I?^?
+  [000580A5] 050=0A0^0
+  [000580C7] 1#1'1<1D1H1_1g1k1
+  [000580F1] 2 292E2_2k2
+  [00058107] 2!3-3D3P3i3u3
+  [0005811F] 4#4/4H4l4
+  [00058137] 5+5A5M5g5s5
+  [0005814B] 6,686N6Z6q6
+  [00058163] 7 7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+  [000581E1] 8 8$8(8,8084888P8T8X8\8`8d8h8l8p8
+  [00058223] 9,989<9L9T9X9\9`9d9h9l9p9t9x9|9
+  [00058267] :$:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [000582A9] :I;_;i;s;
+  [000582C5] <+<B<^<f<n<
+  [000582DB] =!=(=/=6=G=O=U=_=s=
+  [0005836B] 2'2B2U3d3
+  [0005839D] 72797T7{7
+  [00058445] 0%0<0P0q0
+  [00058489] 676I6h6z6
+  [000584CB] <8=^=i=q=
+  [000585A5] 8$8d8l8t8
+  [000585FD] 5(575F5U5d5
+  [0005862B] 8 8G8Z8h8
+  [00058691] 3#454?4V4e4u4
+  [000586F1] 9#9(9-9?9N9_9r9
+  [000587ED] =&=1=r={=
+  [00058811] >$>@>H>P>X>`>o>{>
+  [0005883F] ? ?$?(?,?0?4?8?<?@?T?`?t?|?
+  [000588A3] 4)4.494>4I4N4Y4
+  [000588F5] =!=%=)=-=1=5=9===A=
+  [0005891F] >+>7>?>E>O>X>a>k>x>
+  [00058953] ?$?6?<?S?[?l?
+  [0005896C] .02060:0>0B0F0^0z0
+  [0005899B] 1/1<1@1H1L1\1d1h1l1p1t1x1|1
+  [000589E9] 282<2@2^2
+  [00058A07] 6C7O7\7n7w7|7
+  [00058A25] 8 8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+  [00058A71] :4;W;c;p;
+  [00058A8D] <"<G<S<Z<e<w<
+  [00058AC7] ?0?:???N?R?Y?^?k?
+  [00058AF3] 0'040F0S0_0l0~0
+  [00058B3F] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [00058BA3] 2k2o2s2w2{2
+  [00058BC1] 3*353N3S3
+  [00058BE3] 6F7L7t7{7
+  [00058C09] :A:M:`:h:m:u:
+  [00058C7F] 8.969H9T9q9
+  [00058C9F] ;G>S>g>z>
+  [00058CDF] ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+  [00058D67] 0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+  [00058DCB] 0 1$181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [00058E21] 2 2(20282@2H2P2X2`2h2p2x2
+  [00058E51] 585@5H5P5X5`5h5p5x5
+  [00058E8B] 6 6(60686@6H6P6X6`6h6p6x6
+  [00058ECB] 7 7(70787@7H7
+  [00058EE7] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8p8
+  [00058F49] <@<D<H<L<T<X<\<`<d<h<l<p<t<x<|<
+  [00058FB7] = =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+  [00059037] > >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+  [000590B7] ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+  [0005913F] 0 0$0(0,0
+  [0005A33F] pfffffff
+  [0005C367] ,OURDIAG
+  [0005C372] SysUtils
+  [0005C38F] KWindows
+  [0005C3A2] SysConst
+  [0005C3AD] IdAntiFreeze
+  [0005C3C3] sActiveX
+  [0005C3CD] 3Messages
+  [0005C3E0] Printers
+  [0005C3F3] WWinSpool
+  [0005C3FE] ^Classes
+  [0005C408] "RTLConsts
+  [0005C414] CVariants
+  [0005C41F] $VarUtils
+  [0005C42A] QTypInfo
+  [0005C434] +Graphics
+  [0005C440] CommCtrl
+  [0005C454] StdActns
+  [0005C468] YStrUtils
+  [0005C473] *ShellAPI
+  [0005C47E] &Controls
+  [0005C48A] MultiMon
+  [0005C4B0] EActnList
+  [0005C4C1] dStdCtrls
+  [0005C4D7] ExtCtrls
+  [0005C4E8] 3CommDlg
+  [0005C504] ?WinInet
+  [0005C518] WinHelpViewer
+  [0005C527] RHelpIntfs
+  [0005C534] IdAntiFreezeBase
+  [0005C546] uIdGlobal
+  [0005C551] 8Registry
+  [0005C55D] IniFiles
+  [0005C567] |IdResourceStrings
+  [0005C584] IdException
+  [0005C592] IdBaseComponent
+  [0005C5A3] 1WbemScripting_TLB
+  [0005C5C0] qComConst
+  [0005C5D5] OleServer
+  [0005C5E1] OleConst
+  [0005C640] clBtnFace
+  [0005C64A] Font.Charset
+  [0005C658] DEFAULT_CHARSET
+  [0005C668] Font.Color
+  [0005C674] clWindowText
+  [0005C681] Font.Height
+  [0005C68F] Font.Name
+  [0005C69A] MS Sans Serif
+  [0005C6A8] Font.Style
+  [0005C6B5] OldCreateOrder
+  [0005C6C5] PixelsPerInch
+  [0005C6D5] TextHeight
+  [0005C6E3] TSWbemLocator
+  [0005C6F9] AutoConnect
+  [0005C706] ConnectKind
+  [0005C713] ckRunningOrNew

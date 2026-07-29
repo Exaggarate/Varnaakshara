@@ -1,0 +1,823 @@
+{
+  "description": "Devanagari dictionary sort order from Shree-Lipi Devsort.cdv",
+  "format": "ISCII byte sequences in dictionary order",
+  "total_entries": 79,
+  "entries": [
+    {
+      "position": 1,
+      "iscii_bytes": [
+        "0xA1",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "chandrabindu",
+        "nukta"
+      ],
+      "unicode": "ँ़"
+    },
+    {
+      "position": 2,
+      "iscii_bytes": [
+        "0xA4"
+      ],
+      "iscii_names": [
+        "a"
+      ],
+      "unicode": "अ"
+    },
+    {
+      "position": 3,
+      "iscii_bytes": [
+        "0xA5"
+      ],
+      "iscii_names": [
+        "aa"
+      ],
+      "unicode": "आ"
+    },
+    {
+      "position": 4,
+      "iscii_bytes": [
+        "0xA6"
+      ],
+      "iscii_names": [
+        "i"
+      ],
+      "unicode": "इ"
+    },
+    {
+      "position": 5,
+      "iscii_bytes": [
+        "0xA7"
+      ],
+      "iscii_names": [
+        "ii"
+      ],
+      "unicode": "ई"
+    },
+    {
+      "position": 6,
+      "iscii_bytes": [
+        "0xA8"
+      ],
+      "iscii_names": [
+        "u"
+      ],
+      "unicode": "उ"
+    },
+    {
+      "position": 7,
+      "iscii_bytes": [
+        "0xA9"
+      ],
+      "iscii_names": [
+        "uu"
+      ],
+      "unicode": "ऊ"
+    },
+    {
+      "position": 8,
+      "iscii_bytes": [
+        "0xAA"
+      ],
+      "iscii_names": [
+        "ri"
+      ],
+      "unicode": "ऋ"
+    },
+    {
+      "position": 9,
+      "iscii_bytes": [
+        "0xAC"
+      ],
+      "iscii_names": [
+        "e"
+      ],
+      "unicode": "ऎ"
+    },
+    {
+      "position": 10,
+      "iscii_bytes": [
+        "0xAD"
+      ],
+      "iscii_names": [
+        "ai"
+      ],
+      "unicode": "ऐ"
+    },
+    {
+      "position": 11,
+      "iscii_bytes": [
+        "0xAE"
+      ],
+      "iscii_names": [
+        "o_candra"
+      ],
+      "unicode": "ऑ"
+    },
+    {
+      "position": 12,
+      "iscii_bytes": [
+        "0xB0"
+      ],
+      "iscii_names": [
+        "au"
+      ],
+      "unicode": "औ"
+    },
+    {
+      "position": 13,
+      "iscii_bytes": [
+        "0xB1"
+      ],
+      "iscii_names": [
+        "om"
+      ],
+      "unicode": ""
+    },
+    {
+      "position": 14,
+      "iscii_bytes": [
+        "0xB2"
+      ],
+      "iscii_names": [
+        "half_ka"
+      ],
+      "unicode": "क़"
+    },
+    {
+      "position": 15,
+      "iscii_bytes": [
+        "0xA2"
+      ],
+      "iscii_names": [
+        "anuswar"
+      ],
+      "unicode": "ं"
+    },
+    {
+      "position": 16,
+      "iscii_bytes": [
+        "0xB3"
+      ],
+      "iscii_names": [
+        "ka"
+      ],
+      "unicode": "क"
+    },
+    {
+      "position": 17,
+      "iscii_bytes": [
+        "0xB3",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "ka",
+        "nukta"
+      ],
+      "unicode": "क़"
+    },
+    {
+      "position": 18,
+      "iscii_bytes": [
+        "0xB4"
+      ],
+      "iscii_names": [
+        "kha"
+      ],
+      "unicode": "ख"
+    },
+    {
+      "position": 19,
+      "iscii_bytes": [
+        "0xB4",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "kha",
+        "nukta"
+      ],
+      "unicode": "ख़"
+    },
+    {
+      "position": 20,
+      "iscii_bytes": [
+        "0xB5"
+      ],
+      "iscii_names": [
+        "ga"
+      ],
+      "unicode": "ग"
+    },
+    {
+      "position": 21,
+      "iscii_bytes": [
+        "0xB5",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "ga",
+        "nukta"
+      ],
+      "unicode": "ग़"
+    },
+    {
+      "position": 22,
+      "iscii_bytes": [
+        "0xB6"
+      ],
+      "iscii_names": [
+        "gha"
+      ],
+      "unicode": "घ"
+    },
+    {
+      "position": 23,
+      "iscii_bytes": [
+        "0xB7"
+      ],
+      "iscii_names": [
+        "nga"
+      ],
+      "unicode": "ङ"
+    },
+    {
+      "position": 24,
+      "iscii_bytes": [
+        "0xB8"
+      ],
+      "iscii_names": [
+        "cha"
+      ],
+      "unicode": "च"
+    },
+    {
+      "position": 25,
+      "iscii_bytes": [
+        "0xB9"
+      ],
+      "iscii_names": [
+        "chha"
+      ],
+      "unicode": "छ"
+    },
+    {
+      "position": 26,
+      "iscii_bytes": [
+        "0xBA"
+      ],
+      "iscii_names": [
+        "ja"
+      ],
+      "unicode": "ज"
+    },
+    {
+      "position": 27,
+      "iscii_bytes": [
+        "0xBA",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "ja",
+        "nukta"
+      ],
+      "unicode": "ज़"
+    },
+    {
+      "position": 28,
+      "iscii_bytes": [
+        "0xBB"
+      ],
+      "iscii_names": [
+        "jha"
+      ],
+      "unicode": "झ"
+    },
+    {
+      "position": 29,
+      "iscii_bytes": [
+        "0xBC"
+      ],
+      "iscii_names": [
+        "nya"
+      ],
+      "unicode": "ञ"
+    },
+    {
+      "position": 30,
+      "iscii_bytes": [
+        "0xBD"
+      ],
+      "iscii_names": [
+        "tta"
+      ],
+      "unicode": "ट"
+    },
+    {
+      "position": 31,
+      "iscii_bytes": [
+        "0xBE"
+      ],
+      "iscii_names": [
+        "ttha"
+      ],
+      "unicode": "ठ"
+    },
+    {
+      "position": 32,
+      "iscii_bytes": [
+        "0xBF"
+      ],
+      "iscii_names": [
+        "dda"
+      ],
+      "unicode": "ड"
+    },
+    {
+      "position": 33,
+      "iscii_bytes": [
+        "0xBF",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "dda",
+        "nukta"
+      ],
+      "unicode": "ड़"
+    },
+    {
+      "position": 34,
+      "iscii_bytes": [
+        "0xC0"
+      ],
+      "iscii_names": [
+        "ddha"
+      ],
+      "unicode": "ढ"
+    },
+    {
+      "position": 35,
+      "iscii_bytes": [
+        "0xC0",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "ddha",
+        "nukta"
+      ],
+      "unicode": "ढ़"
+    },
+    {
+      "position": 36,
+      "iscii_bytes": [
+        "0xC1"
+      ],
+      "iscii_names": [
+        "nna"
+      ],
+      "unicode": "ण"
+    },
+    {
+      "position": 37,
+      "iscii_bytes": [
+        "0xC2"
+      ],
+      "iscii_names": [
+        "ta"
+      ],
+      "unicode": "त"
+    },
+    {
+      "position": 38,
+      "iscii_bytes": [
+        "0xC3"
+      ],
+      "iscii_names": [
+        "tha"
+      ],
+      "unicode": "थ"
+    },
+    {
+      "position": 39,
+      "iscii_bytes": [
+        "0xC4"
+      ],
+      "iscii_names": [
+        "da"
+      ],
+      "unicode": "द"
+    },
+    {
+      "position": 40,
+      "iscii_bytes": [
+        "0xC5"
+      ],
+      "iscii_names": [
+        "dha"
+      ],
+      "unicode": "ध"
+    },
+    {
+      "position": 41,
+      "iscii_bytes": [
+        "0xC6"
+      ],
+      "iscii_names": [
+        "na"
+      ],
+      "unicode": "न"
+    },
+    {
+      "position": 42,
+      "iscii_bytes": [
+        "0xC8"
+      ],
+      "iscii_names": [
+        "pa"
+      ],
+      "unicode": "प"
+    },
+    {
+      "position": 43,
+      "iscii_bytes": [
+        "0xC9"
+      ],
+      "iscii_names": [
+        "pha"
+      ],
+      "unicode": "फ"
+    },
+    {
+      "position": 44,
+      "iscii_bytes": [
+        "0xC9",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "pha",
+        "nukta"
+      ],
+      "unicode": "फ़"
+    },
+    {
+      "position": 45,
+      "iscii_bytes": [
+        "0xCA"
+      ],
+      "iscii_names": [
+        "ba"
+      ],
+      "unicode": "ब"
+    },
+    {
+      "position": 46,
+      "iscii_bytes": [
+        "0xCB"
+      ],
+      "iscii_names": [
+        "bha"
+      ],
+      "unicode": "भ"
+    },
+    {
+      "position": 47,
+      "iscii_bytes": [
+        "0xCC"
+      ],
+      "iscii_names": [
+        "ma"
+      ],
+      "unicode": "म"
+    },
+    {
+      "position": 48,
+      "iscii_bytes": [
+        "0xCD"
+      ],
+      "iscii_names": [
+        "ya"
+      ],
+      "unicode": "य"
+    },
+    {
+      "position": 49,
+      "iscii_bytes": [
+        "0xCE"
+      ],
+      "iscii_names": [
+        "reserved_ce"
+      ],
+      "unicode": ""
+    },
+    {
+      "position": 50,
+      "iscii_bytes": [
+        "0xCF"
+      ],
+      "iscii_names": [
+        "ra"
+      ],
+      "unicode": "र"
+    },
+    {
+      "position": 51,
+      "iscii_bytes": [
+        "0xD0"
+      ],
+      "iscii_names": [
+        "reserved_d0"
+      ],
+      "unicode": ""
+    },
+    {
+      "position": 52,
+      "iscii_bytes": [
+        "0xD1"
+      ],
+      "iscii_names": [
+        "la"
+      ],
+      "unicode": "ल"
+    },
+    {
+      "position": 53,
+      "iscii_bytes": [
+        "0xD4"
+      ],
+      "iscii_names": [
+        "va"
+      ],
+      "unicode": "व"
+    },
+    {
+      "position": 54,
+      "iscii_bytes": [
+        "0xD5"
+      ],
+      "iscii_names": [
+        "sha"
+      ],
+      "unicode": "श"
+    },
+    {
+      "position": 55,
+      "iscii_bytes": [
+        "0xD6"
+      ],
+      "iscii_names": [
+        "ssa"
+      ],
+      "unicode": "ष"
+    },
+    {
+      "position": 56,
+      "iscii_bytes": [
+        "0xD7"
+      ],
+      "iscii_names": [
+        "sa"
+      ],
+      "unicode": "स"
+    },
+    {
+      "position": 57,
+      "iscii_bytes": [
+        "0xD8"
+      ],
+      "iscii_names": [
+        "ha"
+      ],
+      "unicode": "ह"
+    },
+    {
+      "position": 58,
+      "iscii_bytes": [
+        "0xD2"
+      ],
+      "iscii_names": [
+        "lla"
+      ],
+      "unicode": "ळ"
+    },
+    {
+      "position": 59,
+      "iscii_bytes": [
+        "0xB3",
+        "0xE8",
+        "0xD6"
+      ],
+      "iscii_names": [
+        "ka",
+        "halant",
+        "ssa"
+      ],
+      "unicode": "क्ष"
+    },
+    {
+      "position": 60,
+      "iscii_bytes": [
+        "0xBA",
+        "0xE8",
+        "0xBC"
+      ],
+      "iscii_names": [
+        "ja",
+        "halant",
+        "nya"
+      ],
+      "unicode": "ज्ञ"
+    },
+    {
+      "position": 61,
+      "iscii_bytes": [
+        "0xDA"
+      ],
+      "iscii_names": [
+        "matra_aa"
+      ],
+      "unicode": "ा"
+    },
+    {
+      "position": 62,
+      "iscii_bytes": [
+        "0xDB"
+      ],
+      "iscii_names": [
+        "matra_i"
+      ],
+      "unicode": "ि"
+    },
+    {
+      "position": 63,
+      "iscii_bytes": [
+        "0xDC"
+      ],
+      "iscii_names": [
+        "matra_ii"
+      ],
+      "unicode": "ी"
+    },
+    {
+      "position": 64,
+      "iscii_bytes": [
+        "0xDD"
+      ],
+      "iscii_names": [
+        "matra_u"
+      ],
+      "unicode": "ु"
+    },
+    {
+      "position": 65,
+      "iscii_bytes": [
+        "0xDE"
+      ],
+      "iscii_names": [
+        "matra_uu"
+      ],
+      "unicode": "ू"
+    },
+    {
+      "position": 66,
+      "iscii_bytes": [
+        "0xDF"
+      ],
+      "iscii_names": [
+        "matra_ri"
+      ],
+      "unicode": "ृ"
+    },
+    {
+      "position": 67,
+      "iscii_bytes": [
+        "0xDF",
+        "0xE9"
+      ],
+      "iscii_names": [
+        "matra_ri",
+        "nukta"
+      ],
+      "unicode": "ृ़"
+    },
+    {
+      "position": 68,
+      "iscii_bytes": [
+        "0xE1"
+      ],
+      "iscii_names": [
+        "matra_e"
+      ],
+      "unicode": "े"
+    },
+    {
+      "position": 69,
+      "iscii_bytes": [
+        "0xE2"
+      ],
+      "iscii_names": [
+        "matra_ai"
+      ],
+      "unicode": "ै"
+    },
+    {
+      "position": 70,
+      "iscii_bytes": [
+        "0xE3"
+      ],
+      "iscii_names": [
+        "matra_o_candra"
+      ],
+      "unicode": "ॉ"
+    },
+    {
+      "position": 71,
+      "iscii_bytes": [
+        "0xE5"
+      ],
+      "iscii_names": [
+        "matra_au"
+      ],
+      "unicode": "ौ"
+    },
+    {
+      "position": 72,
+      "iscii_bytes": [
+        "0xE6"
+      ],
+      "iscii_names": [
+        "halant_dep"
+      ],
+      "unicode": ""
+    },
+    {
+      "position": 73,
+      "iscii_bytes": [
+        "0xE7"
+      ],
+      "iscii_names": [
+        "unknown_e7"
+      ],
+      "unicode": ""
+    },
+    {
+      "position": 74,
+      "iscii_bytes": [
+        "0xA1"
+      ],
+      "iscii_names": [
+        "chandrabindu"
+      ],
+      "unicode": "ँ"
+    },
+    {
+      "position": 75,
+      "iscii_bytes": [
+        "0xA3"
+      ],
+      "iscii_names": [
+        "visarga"
+      ],
+      "unicode": "ः"
+    },
+    {
+      "position": 76,
+      "iscii_bytes": [
+        "0x80"
+      ],
+      "iscii_names": [
+        "reserved_80"
+      ],
+      "unicode": "‍"
+    },
+    {
+      "position": 77,
+      "iscii_bytes": [
+        "0xE8"
+      ],
+      "iscii_names": [
+        "halant"
+      ],
+      "unicode": "्"
+    },
+    {
+      "position": 78,
+      "iscii_bytes": [
+        "0xE8"
+      ],
+      "iscii_names": [
+        "halant"
+      ],
+      "unicode": "्"
+    },
+    {
+      "position": 79,
+      "iscii_bytes": [
+        "0xEA"
+      ],
+      "iscii_names": [
+        "om_sign"
+      ],
+      "unicode": "ॐ"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+object KeyBoardTutorForm: TKeyBoardTutorForm
+  Left = 325
+  Top = 292
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'Shree-Lipi Keyboard Tutor'
+  ClientHeight = 159
+  ClientWidth = 370
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = 245
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  Icon.Data = {binary 766 bytes}
+  KeyPreview = True
+  OldCreateOrder = True
+  Position = poDefaultPosOnly
+  ShowHint = True
+  OnActivate = FormActivate
+  OnClick = FormClick
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
+  PixelsPerInch = 96
+  TextHeight = 13
+end

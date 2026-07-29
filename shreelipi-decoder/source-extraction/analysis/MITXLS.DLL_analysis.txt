@@ -1,0 +1,6826 @@
+============================================================
+ MITXLS.DLL — Full Source Analysis
+ Size: 944640 bytes | ImageBase: 0x00010000
+============================================================
+
+SECTIONS (7):
+  CODE     VA=0x00001000 Size=0x00087F54 Raw=0x00000400
+  DATA     VA=0x00089000 Size=0x0001B4A8 Raw=0x00088400
+  BSS      VA=0x000A5000 Size=0x0000931D Raw=0x000A3A00
+  .idata   VA=0x000AF000 Size=0x000028DE Raw=0x000A3A00
+  .edata   VA=0x000B2000 Size=0x0000065C Raw=0x000A6400
+  .reloc   VA=0x000B3000 Size=0x00009D90 Raw=0x000A6C00
+  .rsrc    VA=0x000BD000 Size=0x00036000 Raw=0x000B0A00
+
+IMPORTS (471 functions from 19 DLLs):
+
+  [kernel32.dll] (44 functions)
+    GetCurrentThreadId
+    DeleteCriticalSection
+    LeaveCriticalSection
+    EnterCriticalSection
+    InitializeCriticalSection
+    VirtualFree
+    VirtualAlloc
+    LocalFree
+    LocalAlloc
+    InterlockedDecrement
+    InterlockedIncrement
+    VirtualQuery
+    WideCharToMultiByte
+    SetCurrentDirectoryA
+    MultiByteToWideChar
+    lstrlenA
+    lstrcpynA
+    lstrcpyA
+    LoadLibraryExA
+    GetThreadLocale
+    GetStartupInfoA
+    GetProcAddress
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetLastError
+    GetCurrentDirectoryA
+    GetCommandLineA
+    FreeLibrary
+    FindFirstFileA
+    FindClose
+    ExitProcess
+    WriteFile
+    UnhandledExceptionFilter
+    SetFilePointer
+    SetEndOfFile
+    RtlUnwind
+    ReadFile
+    RaiseException
+    GetStdHandle
+    GetFileSize
+    GetFileType
+    CreateFileA
+    CloseHandle
+
+  [user32.dll] (4 functions)
+    GetKeyboardType
+    LoadStringA
+    MessageBoxA
+    CharNextA
+
+  [advapi32.dll] (3 functions)
+    RegQueryValueExA
+    RegOpenKeyExA
+    RegCloseKey
+
+  [oleaut32.dll] (7 functions)
+    VariantChangeTypeEx
+    VariantCopyInd
+    VariantClear
+    SysStringLen
+    SysFreeString
+    SysReAllocStringLen
+    SysAllocStringLen
+
+  [kernel32.dll] (7 functions)
+    TlsSetValue
+    TlsGetValue
+    TlsFree
+    TlsAlloc
+    LocalFree
+    LocalAlloc
+    GetModuleFileNameA
+
+  [advapi32.dll] (10 functions)
+    RegSetValueExA
+    RegQueryValueExA
+    RegQueryInfoKeyA
+    RegOpenKeyExA
+    RegFlushKey
+    RegEnumValueA
+    RegEnumKeyExA
+    RegDeleteValueA
+    RegCreateKeyExA
+    RegCloseKey
+
+  [kernel32.dll] (96 functions)
+    lstrlenW
+    lstrlenA
+    lstrcpyA
+    lstrcmpiA
+    lstrcatA
+    WritePrivateProfileStringA
+    WriteFile
+    WinExec
+    WaitForSingleObject
+    VirtualQuery
+    VirtualAlloc
+    UnmapViewOfFile
+    Sleep
+    SizeofResource
+    SetThreadLocale
+    SetPriorityClass
+    SetLastError
+    SetFileTime
+    SetFilePointer
+    SetEvent
+    SetErrorMode
+    SetEndOfFile
+    ResetEvent
+    ReleaseMutex
+    ReadFile
+    OpenFileMappingA
+    MulDiv
+    MapViewOfFile
+    LockResource
+    LocalFileTimeToFileTime
+    LoadResource
+    LoadLibraryA
+    LeaveCriticalSection
+    InitializeCriticalSection
+    HeapFree
+    HeapAlloc
+    GlobalUnlock
+    GlobalSize
+    GlobalReAlloc
+    GlobalHandle
+    GlobalLock
+    GlobalFree
+    GlobalDeleteAtom
+    GlobalAlloc
+    GlobalAddAtomA
+    GetWindowsDirectoryA
+    GetVersionExA
+    GetVersion
+    GetTickCount
+    GetThreadLocale
+    GetSystemInfo
+    GetSystemDirectoryA
+    GetProfileStringA
+    GetProcessHeap
+    GetProcAddress
+    GetPrivateProfileStringA
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetLocalTime
+    GetLastError
+    GetFullPathNameA
+    GetFileTime
+    GetFileSize
+    GetFileAttributesA
+    GetDriveTypeA
+    GetDiskFreeSpaceA
+    GetDateFormatA
+    GetCurrentThreadId
+    GetCurrentProcessId
+    GetCurrentProcess
+    GetCPInfo
+    FreeResource
+    FreeLibrary
+    FormatMessageA
+    FindResourceA
+    FindNextFileA
+    FindFirstFileA
+    FindClose
+    FileTimeToLocalFileTime
+    FileTimeToDosDateTime
+    EnumCalendarInfoA
+    EnterCriticalSection
+    DosDateTimeToFileTime
+    DeviceIoControl
+    DeleteFileA
+    DeleteCriticalSection
+    CreateThread
+    CreateMutexA
+    CreateFileMappingA
+    CreateFileA
+    CreateEventA
+    CreateDirectoryA
+    CopyFileA
+    CompareStringA
+    CloseHandle
+
+  [gdi32.dll] (77 functions)
+    UnrealizeObject
+    StretchBlt
+    StartPage
+    StartDocA
+    SetWindowOrgEx
+    SetWinMetaFileBits
+    SetViewportOrgEx
+    SetTextColor
+    SetTextAlign
+    SetStretchBltMode
+    SetROP2
+    SetPixel
+    SetEnhMetaFileBits
+    SetDIBColorTable
+    SetBrushOrgEx
+    SetBkMode
+    SetBkColor
+    SetAbortProc
+    SelectPalette
+    SelectObject
+    SaveDC
+    RestoreDC
+    Rectangle
+    RectVisible
+    RealizePalette
+    Polyline
+    PlayEnhMetaFile
+    PatBlt
+    MoveToEx
+    MaskBlt
+    LineTo
+    IntersectClipRect
+    GetWindowOrgEx
+    GetWinMetaFileBits
+    GetTextMetricsA
+    GetTextExtentPoint32A
+    GetSystemPaletteEntries
+    GetStockObject
+    GetPixel
+    GetPaletteEntries
+    GetObjectA
+    GetFontData
+    GetEnhMetaFilePaletteEntries
+    GetEnhMetaFileHeader
+    GetEnhMetaFileBits
+    GetDeviceCaps
+    GetDIBits
+    GetDIBColorTable
+    GetDCOrgEx
+    GetCurrentPositionEx
+    GetClipBox
+    GetBrushOrgEx
+    GetBitmapBits
+    ExtTextOutW
+    ExtTextOutA
+    ExcludeClipRect
+    EnumFontFamiliesExA
+    EndPage
+    EndDoc
+    DeleteObject
+    DeleteEnhMetaFile
+    DeleteDC
+    CreateSolidBrush
+    CreatePenIndirect
+    CreatePalette
+    CreateICA
+    CreateHalftonePalette
+    CreateFontIndirectA
+    CreateDIBitmap
+    CreateDIBSection
+    CreateDCA
+    CreateCompatibleDC
+    CreateCompatibleBitmap
+    CreateBrushIndirect
+    CreateBitmap
+    CopyEnhMetaFileA
+    BitBlt
+
+  [user32.dll] (168 functions)
+    keybd_event
+    WindowFromPoint
+    WinHelpA
+    WaitMessage
+    UpdateWindow
+    UnregisterClassA
+    UnhookWindowsHookEx
+    TranslateMessage
+    TranslateMDISysAccel
+    TrackPopupMenu
+    SystemParametersInfoA
+    ShowWindow
+    ShowScrollBar
+    ShowOwnedPopups
+    ShowCursor
+    SetWindowsHookExA
+    SetWindowTextA
+    SetWindowPos
+    SetWindowPlacement
+    SetWindowLongW
+    SetWindowLongA
+    SetTimer
+    SetScrollRange
+    SetScrollPos
+    SetScrollInfo
+    SetRect
+    SetPropW
+    SetPropA
+    SetParent
+    SetMenuItemInfoA
+    SetMenu
+    SetKeyboardState
+    SetForegroundWindow
+    SetFocus
+    SetDlgItemTextA
+    SetCursor
+    SetClassLongA
+    SetCapture
+    SetActiveWindow
+    SendMessageA
+    SendDlgItemMessageW
+    ScrollWindow
+    ScreenToClient
+    RemovePropW
+    RemovePropA
+    RemoveMenu
+    ReleaseDC
+    ReleaseCapture
+    RegisterWindowMessageA
+    RegisterClipboardFormatA
+    RegisterClassA
+    RedrawWindow
+    PtInRect
+    PostQuitMessage
+    PostMessageA
+    PeekMessageA
+    OffsetRect
+    OemToCharA
+    OemKeyScan
+    MessageBoxA
+    MapWindowPoints
+    MapVirtualKeyA
+    LoadStringA
+    LoadKeyboardLayoutA
+    LoadIconA
+    LoadCursorA
+    LoadBitmapA
+    KillTimer
+    IsZoomed
+    IsWindowVisible
+    IsWindowEnabled
+    IsWindow
+    IsRectEmpty
+    IsIconic
+    IsDialogMessageA
+    IsChild
+    InvalidateRect
+    IntersectRect
+    InsertMenuItemA
+    InsertMenuA
+    InflateRect
+    GetWindowThreadProcessId
+    GetWindowTextA
+    GetWindowRect
+    GetWindowPlacement
+    GetWindowLongA
+    GetWindowDC
+    GetTopWindow
+    GetSystemMetrics
+    GetSystemMenu
+    GetSysColor
+    GetSubMenu
+    GetScrollRange
+    GetScrollPos
+    GetScrollInfo
+    GetPropW
+    GetPropA
+    GetParent
+    GetWindow
+    GetMenuStringA
+    GetMenuState
+    GetMenuItemInfoA
+    GetMenuItemID
+    GetMenuItemCount
+    GetMenu
+    GetLastActivePopup
+    GetKeyboardState
+    GetKeyboardLayoutList
+    GetKeyboardLayout
+    GetKeyState
+    GetKeyNameTextA
+    GetIconInfo
+    GetForegroundWindow
+    GetFocus
+    GetDlgItemTextA
+    GetDlgItem
+    GetDlgCtrlID
+    GetDesktopWindow
+    GetDCEx
+    GetDC
+    GetCursorPos
+    GetCursor
+    GetClipboardData
+    GetClientRect
+    GetClassInfoA
+    GetCapture
+    GetActiveWindow
+    FrameRect
+    FindWindowA
+    FillRect
+    EqualRect
+    EnumWindows
+    EnumThreadWindows
+    EndPaint
+    EnableWindow
+    EnableScrollBar
+    EnableMenuItem
+    DrawTextA
+    DrawMenuBar
+    DrawIconEx
+    DrawIcon
+    DrawFrameControl
+    DrawFocusRect
+    DrawEdge
+    DispatchMessageA
+    DestroyWindow
+    DestroyMenu
+    DestroyIcon
+    DestroyCursor
+    DeleteMenu
+    DefWindowProcA
+    DefMDIChildProcA
+    DefFrameProcA
+    CreateWindowExA
+    CreatePopupMenu
+    CreateMenu
+    CreateIcon
+    CreateDialogParamW
+    ClientToScreen
+    CheckMenuItem
+    CallWindowProcW
+    CallWindowProcA
+    CallNextHookEx
+    BeginPaint
+    CharLowerBuffA
+    CharLowerA
+    AdjustWindowRectEx
+    ActivateKeyboardLayout
+
+  [ole32.dll] (1 functions)
+    IsEqualGUID
+
+  [comctl32.dll] (24 functions)
+    ImageList_SetIconSize
+    ImageList_GetIconSize
+    ImageList_Write
+    ImageList_Read
+    ImageList_GetDragImage
+    ImageList_DragShowNolock
+    ImageList_SetDragCursorImage
+    ImageList_DragMove
+    ImageList_DragLeave
+    ImageList_DragEnter
+    ImageList_EndDrag
+    ImageList_BeginDrag
+    ImageList_Remove
+    ImageList_DrawEx
+    ImageList_Replace
+    ImageList_Draw
+    ImageList_GetBkColor
+    ImageList_SetBkColor
+    ImageList_ReplaceIcon
+    ImageList_Add
+    ImageList_GetImageCount
+    ImageList_Destroy
+    ImageList_Create
+    InitCommonControls
+
+  [winspool.drv] (4 functions)
+    OpenPrinterA
+    EnumPrintersA
+    DocumentPropertiesA
+    ClosePrinter
+
+  [comdlg32.dll] (1 functions)
+    PrintDlgA
+
+  [WNASPI32.DLL] (2 functions)
+    SendASPI32Command
+    GetASPI32SupportInfo
+
+  [Kernel32.dll] (1 functions)
+    GetVersionExA
+
+  [msvcrt.dll] (8 functions)
+    isprint
+    isspace
+    free
+    malloc
+    strcpy
+    strncpy
+    memset
+    sprintf
+
+  [MLUtil6.Dll] (2 functions)
+    F5
+    F1
+
+  [MSVCRT.dll] (2 functions)
+    rand
+    srand
+
+  [msvcrt.dll] (10 functions)
+    fflush
+    strcpy
+    free
+    malloc
+    ftell
+    fseek
+    fread
+    fwrite
+    fclose
+    fopen
+
+EXPORTS (51 functions):
+  CLOSE_SHREE @ 0x00097178
+  GETFONTLAYOUTSLIST @ 0x00097278
+  GET_SHREE_INSTALLED_SCRIPTS @ 0x00097478
+  GET_SHREE_STATUS @ 0x00096D00
+  NEW_WNDPROC @ 0x00096C60
+  SET_REGISTRY_ROOT_KEY @ 0x00097588
+  SHREE_COMMAND_HANDLER @ 0x000976D8
+  SHREE_ENABLE_IN_DIALOGS @ 0x00097818
+  SHREE_ENABLE_TOOLTIP @ 0x00097960
+  SHREE_FIRSTFONT_FORSCRIPT_EX @ 0x00097988
+  SHREE_FIRSTFONT_FOR_SCRIPT @ 0x00097A34
+  SHREE_FONTNAME_TO_SCRIPT @ 0x00098030
+  SHREE_GET_ACTIVATION_KEY @ 0x000980AC
+  SHREE_GET_DEFAULTFONT_FOR_SCRIPT @ 0x00072744
+  SHREE_GET_DEFAULTFONT_FOR_SCRIPT_LAYOUT @ 0x000727A0
+  SHREE_GET_FONTNAMES @ 0x0007280C
+  SHREE_GET_FONTNAMES_EX @ 0x00072BB4
+  SHREE_GET_FONTTYPE @ 0x00072E9C
+  SHREE_GET_ILSCRIPT @ 0x00073170
+  SHREE_GET_KEYBOARDS @ 0x000733FC
+  SHREE_GET_KEYBOARD_NAME @ 0x00097AC8
+  SHREE_GET_MAINSCRIPT @ 0x000982AC
+  SHREE_KBD_SETUP @ 0x00098368
+  SHREE_RESTORE_REGISTRY @ 0x0009839C
+  SHREE_SCRIPT_TO_SHORTSTR @ 0x000983F8
+  SHREE_SCRIPT_TO_STR @ 0x0009845C
+  SHREE_SETFONTTYPE @ 0x000729AC
+  SHREE_SETSCRIPT @ 0x000971CC
+  SHREE_SETUP @ 0x00097248
+  SHREE_SETUPEX @ 0x0009862C
+  SHREE_SET_ACTIVATION_KEY @ 0x00098730
+  SHREE_SET_AKSHAR @ 0x000983BC
+  SHREE_SET_APPLICATION_NAME @ 0x00072860
+  SHREE_SET_APPLICATION_TYPE @ 0x000986D0
+  SHREE_SET_DEFAULT_FONT @ 0x000981D4
+  SHREE_SET_ESCAPEMENT @ 0x00098794
+  SHREE_SET_HYPHENFLAG @ 0x00098800
+  SHREE_SET_KEYBOARD @ 0x000988A0
+  SHREE_SET_TUTOR_POSITION @ 0x000974F4
+  SHREE_SHORTSTR_TO_SCRIPT @ 0x000735C4
+  SHREE_STR_TO_SCRIPT @ 0x000739F8
+  SHREE_TUTOR_OFF @ 0x00096FA4
+  SHREE_TUTOR_ON @ 0x000739D4
+  SHREE_TUTOR_ON1 @ 0x00073AFC
+  START_SHREE @ 0x000988D8
+  START_SHREE1 @ 0x00098680
+  START_SHREE2 @ 0x00073C74
+  SUCHI_FIRSTFONT_FOR_SCRIPT @ 0x00098900
+  SUCHI_GET_FONTNAMES @ 0x00072A50
+  TAMIL99_FIRSTFONT @ 0x00098924
+  TAMIL99_GET_FONTNAMES @ 0x00098324
+
+DELPHI CLASSES (533 found):
+  TObject @ file 0x4EC
+  TObject @ file 0x4F9
+  TInterfacedObject @ file 0x5DC
+  TFileName @ file 0x7321
+  TSearchRec @ file 0x7331
+  TActiveThreadArray @ file 0x7DA9
+  TMultiReadExclusiveWriteSynchronizer @ file 0x7E26
+  TErrorRec @ file 0xB331
+  TExceptRec @ file 0xB3B1
+  TAlignment @ file 0xDC25
+  TLeftRight @ file 0xDC69
+  TBiDiMode @ file 0xDC89
+  THelpContext @ file 0xDCF1
+  TShortCut @ file 0xDD0D
+  TNotifyEvent @ file 0xDD25
+  TObject @ file 0xDD3C
+  THelpEvent @ file 0xDD49
+  TList @ file 0xE2E0
+  TThreadList @ file 0xE334
+  TBits @ file 0xE38C
+  TPersistent @ file 0xE3FA
+  TPersistent @ file 0xE40D
+  TStrings @ file 0xE532
+  TStrings @ file 0xE541
+  TStringItem @ file 0xE565
+  TStringList @ file 0xE654
+  TStringList @ file 0xE665
+  TStream @ file 0xE6E4
+  THandleStream @ file 0xE748
+  TFileStream @ file 0xE7B4
+  TCustomMemoryStream @ file 0xE81C
+  TMemoryStream @ file 0xE890
+  TResourceStream @ file 0xE8FC
+  TStreamAdapter @ file 0xEA98
+  TFiler @ file 0xEB04
+  TReader @ file 0xEB92
+  TComponentName @ file 0xEBA1
+  TComponent @ file 0xECCE
+  TComponent @ file 0xECE1
+  TBasicActionLink @ file 0xEDAC
+  TBasicAction @ file 0xEE5C
+  TBasicAction @ file 0xEE71
+  TIdentMapEntry @ file 0xEE99
+  TIntConst @ file 0xF360
+  TPropFixup @ file 0x11C72
+  TColor @ file 0x154F1
+  TFontPitch @ file 0x155CD
+  TFontName @ file 0x15609
+  TFontCharset @ file 0x15619
+  TFontStyle @ file 0x15635
+  TFontStyles @ file 0x1567D
+  TPenStyle @ file 0x15695
+  TPenMode @ file 0x156F5
+  TBrushStyle @ file 0x157A9
+  TGraphicsObject @ file 0x15878
+  TGraphicsObject @ file 0x1588D
+  TFont @ file 0x1595E
+  TFont @ file 0x15969
+  TPen @ file 0x15AC0
+  TPen @ file 0x15ACD
+  TBrush @ file 0x15BC0
+  TBrush @ file 0x15BCD
+  TCanvas @ file 0x15C90
+  TCanvas @ file 0x15C9D
+  TProgressEvent @ file 0x15D41
+  TObject @ file 0x15D5A
+  TProgressStage @ file 0x15D69
+  TRect @ file 0x15DA0
+  TGraphic @ file 0x15E68
+  TGraphic @ file 0x15E79
+  TPicture @ file 0x15F10
+  TPicture @ file 0x15F21
+  TSharedImage @ file 0x15F90
+  TMetafileImage @ file 0x15FF0
+  TMetafile @ file 0x160AC
+  TMetafile @ file 0x160BD
+  TBitmapImage @ file 0x1612C
+  TBitmap @ file 0x161F4
+  TBitmap @ file 0x16201
+  TIconImage @ file 0x16270
+  TIcon @ file 0x16328
+  TIcon @ file 0x16335
+  TResourceManager @ file 0x163B0
+  TFileFormat @ file 0x1988D
+  TFileFormatsList @ file 0x19910
+  TClipboardFormats @ file 0x19C14
+  TBitmapCanvas @ file 0x1AEBC
+  TBitmapCanvas @ file 0x1AED1
+  TPatternManager @ file 0x1D9D4
+  TOrderedList @ file 0x1DEEC
+  TStack @ file 0x1DF54
+  TPrinter @ file 0x1E376
+  TPrinterDevice @ file 0x1E45E
+  TPrinterCanvas @ file 0x1E601
+  TPrinterCanvas @ file 0x1E61D
+  TCustomGroupBox @ file 0x1F7A2
+  TCustomGroupBox @ file 0x1F7B9
+  TGroupBox @ file 0x1F8E4
+  TGroupBox @ file 0x1F8F5
+  TTextLayout @ file 0x1FEDD
+  TCustomLabel @ file 0x2000C
+  TCustomLabel @ file 0x20021
+  TLabel @ file 0x20120
+  TLabel @ file 0x2012D
+  TEditCharCase @ file 0x2068D
+  TCustomEdit @ file 0x20818
+  TCustomEdit @ file 0x20829
+  TEdit @ file 0x2098C
+  TEdit @ file 0x20999
+  TComboBoxStyle @ file 0x210C1
+  TDrawItemEvent @ file 0x2112D
+  TWinControl @ file 0x21147
+  TRect @ file 0x21168
+  TOwnerDrawState @ file 0x21175
+  TMeasureItemEvent @ file 0x2118D
+  TWinControl @ file 0x211AA
+  TCustomComboBox @ file 0x2134E
+  TCustomComboBox @ file 0x21365
+  TComboBox @ file 0x214C0
+  TComboBox @ file 0x214D1
+  TButtonActionLink @ file 0x21C30
+  TButtonControl @ file 0x21D5A
+  TButtonControl @ file 0x21D71
+  TButton @ file 0x21ED0
+  TButton @ file 0x21EDD
+  TCheckBoxState @ file 0x22431
+  TCustomCheckBox @ file 0x2259E
+  TCustomCheckBox @ file 0x225B5
+  TCheckBox @ file 0x22708
+  TCheckBox @ file 0x22719
+  TRadioButton @ file 0x22E3A
+  TRadioButton @ file 0x22E4D
+  TListBoxStyle @ file 0x23431
+  TCustomListBox @ file 0x235DA
+  TCustomListBox @ file 0x235F1
+  TListBox @ file 0x23740
+  TListBox @ file 0x23751
+  TComboBoxStrings @ file 0x23F94
+  TComboBoxStrings @ file 0x23FAD
+  TListBoxStrings @ file 0x24090
+  TListBoxStrings @ file 0x240A5
+  THintAction @ file 0x284F4
+  THintAction @ file 0x28505
+  TContainedAction @ file 0x2867C
+  TContainedAction @ file 0x28695
+  TCustomActionList @ file 0x2877A
+  TCustomActionList @ file 0x28791
+  TCustomAction @ file 0x28874
+  TCustomAction @ file 0x28889
+  TActionLink @ file 0x28958
+  TScrollBarInc @ file 0x293E9
+  TScrollBarStyle @ file 0x29405
+  TControlScrollBar @ file 0x29498
+  TControlScrollBar @ file 0x294B1
+  TWindowState @ file 0x29699
+  TScrollingWinControl @ file 0x29806
+  TScrollingWinControl @ file 0x29821
+  TFormBorderStyle @ file 0x2989D
+  TBorderStyle @ file 0x29901
+  TScrollBox @ file 0x29A36
+  TScrollBox @ file 0x29A49
+  TFormStyle @ file 0x2A1C5
+  TBorderIcon @ file 0x2A20D
+  TBorderIcons @ file 0x2A255
+  TPosition @ file 0x2A26D
+  TDefaultMonitor @ file 0x2A305
+  TPrintScale @ file 0x2A355
+  TModalResult @ file 0x2A399
+  TCloseEvent @ file 0x2A3B5
+  TObject @ file 0x2A3CB
+  TCloseAction @ file 0x2A3DB
+  TCloseQueryEvent @ file 0x2A3ED
+  TObject @ file 0x2A408
+  TShortCutEvent @ file 0x2A429
+  TWMKey @ file 0x2A43F
+  TCustomForm @ file 0x2A70A
+  TCustomForm @ file 0x2A71D
+  TForm @ file 0x2A868
+  TForm @ file 0x2A875
+  TCustomDockForm @ file 0x2B538
+  TCustomDockForm @ file 0x2B54D
+  TMonitor @ file 0x2B5E4
+  TScreen @ file 0x2B67E
+  TScreen @ file 0x2B68D
+  THintInfo @ file 0x2B6AD
+  TApplication @ file 0x2B776
+  TApplication @ file 0x2B789
+  TChangeLink @ file 0x354B0
+  TDrawingStyle @ file 0x354C1
+  TImageType @ file 0x3550D
+  TImageIndex @ file 0x35539
+  TCustomImageList @ file 0x355E0
+  TCustomImageList @ file 0x355F9
+  TMenuBreak @ file 0x36DF1
+  TMenuChangeEvent @ file 0x36E29
+  TObject @ file 0x36E44
+  TMenuItem @ file 0x36E54
+  TMenuDrawItemEvent @ file 0x36E75
+  TObject @ file 0x36E92
+  TCanvas @ file 0x36EA3
+
+STRINGS (8154 found):
+  [00000050] This program must be run under Win32
+  [00000442] Smallint
+  [0000051A] IUnknown
+  [000005DD] TInterfacedObject
+  [00002298] SOFTWARE\Borland\Delphi\RTL
+  [000022B4] FPUMaskValue
+  [00002AE8] ZTUWVSPRTj
+  [00003047] Portions Copyright (c) 1983,99 Borland
+  [000045E0] kernel32.dll
+  [000045F0] GetLongPathNameA
+  [000047C0] Software\Borland\Locales
+  [000047DC] Software\Borland\Delphi\Locales
+  [000067D4] Magellan MSWHEEL
+  [000067F0] MSWHEEL_ROLLMSG
+  [00006800] MSH_WHEELSUPPORT_MSG
+  [00006818] MSH_SCROLL_LINES_MSG
+  [00006978] GetMonitorInfoA
+  [000069FC] GetSystemMetrics
+  [00006A90] MonitorFromRect
+  [00006B24] MonitorFromWindow
+  [00006BBC] MonitorFromPoint
+  [00006C90] GetMonitorInfoA
+  [00006D68] GetMonitorInfoW
+  [00006E40] GetMonitorInfo
+  [00006F74] EnumDisplayMonitors
+  [00006FE8] USER32.DLL
+  [00007322] TFileName
+  [00007332] TSearchRecX
+  [000073AB] Exception
+  [00007455] EHeapException
+  [000074B1] EOutOfMemory
+  [0000750D] EInOutErrord
+  [00007565] EExternal
+  [000075BD] EExternalException
+  [0000761D] EIntError
+  [00007675] EDivByZero
+  [000076CD] ERangeError$
+  [00007725] EIntOverflow
+  [00007781] EMathError
+  [000077D9] EInvalidOp
+  [00007831] EZeroDivide
+  [00007889] EOverflow
+  [000078E1] EUnderflow
+  [00007939] EInvalidPointer
+  [00007995] EInvalidCast
+  [000079F1] EConvertError
+  [00007A4D] EAccessViolation
+  [00007AAD] EPrivilege
+  [00007B05] EStackOverflow
+  [00007B61] EControlC
+  [00007BB9] EVariantError
+  [00007C15] EAssertionFailed
+  [00007C75] EAbstractError
+  [00007CD1] EIntfCastError
+  [00007D2D] EWin32Error
+  [00007D85] ESafecallException
+  [00007DAA] TActiveThreadArray
+  [00007E26] $TMultiReadExclusiveWriteSynchronizer
+  [00009AB7] t%HtFHtg
+  [0000AAB5] QQQQQQSVW3
+  [0000B332] TErrorRec
+  [0000B3B2] TExceptRec
+  [0000C1C4] mmmm d, yyyy
+  [0000C35C] kernel32.dll
+  [0000C36C] GetDiskFreeSpaceExA
+  [0000CAC6] $*@@@*$@@@$ *@@* $@@($*)@-$*@@$-*@@$*-@@(*$)@-*$@@*-$@@*$-@@-* $@-$ *@* $-@$ *-@$ -*@*- $@($ *)(* $)U
+  [0000CBFC] <'t$<"t 
+  [0000CC4C] <#t&<0t%<.t,<,t3<'t5<"t1<Et:<et6<;tF
+  [0000CD1A] <#t'<0t#<.t
+  [0000CD32] <Et$<et <;tS
+  [0000DC26] TAlignment
+  [0000DC3E] taLeftJustify
+  [0000DC4C] taRightJustify
+  [0000DC5B] taCenter
+  [0000DC6A] TLeftRight
+  [0000DC8A] TBiDiMode
+  [0000DCA1] bdLeftToRight
+  [0000DCAF] bdRightToLeft
+  [0000DCBD] bdRightToLeftNoAlign
+  [0000DCD2] bdRightToLeftReadingOnly
+  [0000DCF2] THelpContext
+  [0000DD0E] TShortCut
+  [0000DD26] TNotifyEvent
+  [0000DD3D] TObjectH
+  [0000DD4A] THelpEvent
+  [0000DD74] CallHelp
+  [0000DDD9] EStreamError
+  [0000DE35] EFCreateError
+  [0000DE91] EFOpenError
+  [0000DEE9] EFilerError@
+  [0000DF41] EReadError
+  [0000DF99] EWriteError
+  [0000DFF1] EClassNotFound
+  [0000E04D] EResNotFound
+  [0000E0A9] EListError
+  [0000E101] EBitsError
+  [0000E159] EStringListError
+  [0000E1B9] EComponentError
+  [0000E215] EOutOfResourcesp
+  [0000E271] EInvalidOperation
+  [0000E335] TThreadList
+  [0000E3FB] TPersistent
+  [0000E40E] TPersistent
+  [0000E436] IStringsAdapter
+  [0000E533] TStrings
+  [0000E542] TStrings
+  [0000E566] TStringItem
+  [0000E655] TStringListd
+  [0000E666] TStringList
+  [0000E6E5] TStream8
+  [0000E749] THandleStream
+  [0000E7B5] TFileStream
+  [0000E81D] TCustomMemoryStream|
+  [0000E891] TMemoryStream
+  [0000E8FD] TResourceStream
+  [0000EA99] TStreamAdapter
+  [0000EBA2] TComponentName
+  [0000EBB6] IDesignerNotify
+  [0000ECCF] TComponent
+  [0000ECE2] TComponent0
+  [0000EDAD] TBasicActionLink
+  [0000EE5D] TBasicAction
+  [0000EE72] TBasicAction
+  [0000EE9A] TIdentMapEntry
+  [0000F361] TIntConst
+  [00011C73] TPropFixup
+  [00013419] QQQQQQS3
+  [00015551] EInvalidGraphic
+  [000155AD] EInvalidGraphicOperation
+  [000155CE] TFontPitch
+  [000155E6] fpDefault
+  [000155F0] fpVariable
+  [0001560A] TFontName
+  [0001561A] TFontCharset
+  [00015636] TFontStyle
+  [00015655] fsItalic
+  [0001565E] fsUnderline
+  [0001566A] fsStrikeOut
+  [0001567E] TFontStyles
+  [00015696] TPenStyle
+  [000156C2] psDashDot
+  [000156CC] psDashDotDot
+  [000156E1] psInsideFrame
+  [000156F6] TPenMode
+  [0001572F] pmNotCopy
+  [00015739] pmMergePenNot
+  [00015747] pmMaskPenNot
+  [00015754] pmMergeNotPen
+  [00015762] pmMaskNotPen
+  [00015777] pmNotMerge
+  [00015789] pmNotMask
+  [00015799] pmNotXor
+  [000157AA] TBrushStyle
+  [000157D3] bsHorizontal
+  [000157E0] bsVertical
+  [000157EB] bsFDiagonal
+  [000157F7] bsBDiagonal
+  [0001580B] bsDiagCross
+  [00015879] TGraphicsObject
+  [0001588E] TGraphicsObjectdd
+  [000158A8] Graphics
+  [000158BA] IChangeNotifier
+  [000158DF] Graphics
+  [0001597A] Graphics
+  [00015ADD] Graphics
+  [00015BDF] Graphics
+  [00015C9E] TCanvasxh
+  [00015CB0] Graphics
+  [00015CF5] CopyModede
+  [00015D42] TProgressEvent
+  [00015D6A] TProgressStage
+  [00015D7A] PercentDone
+  [00015D8C] RedrawNow
+  [00015E69] TGraphic
+  [00015E7A] TGraphic
+  [00015E8D] Graphics
+  [00015F11] TPicture
+  [00015F22] TPicture
+  [00015F35] Graphics
+  [00015F91] TSharedImage
+  [00015FF1] TMetafileImage
+  [000160AD] TMetafile
+  [000160BE] TMetafileLl
+  [000160D2] Graphics
+  [0001612D] TBitmapImage
+  [00016214] Graphics
+  [00016271] TIconImage
+  [00016346] Graphics
+  [000163B1] TResourceManager
+  [000167F8] clMaroon
+  [0001683C] clPurple
+  [00016870] clSilver
+  [000168A4] clYellow
+  [000168C8] clFuchsia
+  [000168FC] clScrollBar
+  [00016910] clBackground
+  [00016928] clActiveCaption
+  [00016940] clInactiveCaption
+  [0001696C] clWindow
+  [00016980] clWindowFrame
+  [00016998] clMenuText
+  [000169AC] clWindowText
+  [000169C4] clCaptionText
+  [000169DC] clActiveBorder
+  [000169F4] clInactiveBorder
+  [00016A10] clAppWorkSpace
+  [00016A28] clHighlight
+  [00016A3C] clHighlightText
+  [00016A54] clBtnFace
+  [00016A68] clBtnShadow
+  [00016A7C] clGrayText
+  [00016A90] clBtnText
+  [00016AA4] clInactiveCaptionText
+  [00016AC4] clBtnHighlight
+  [00016ADC] cl3DDkShadow
+  [00016AF4] cl3DLight
+  [00016B08] clInfoText
+  [00016B1C] clInfoBk
+  [00016BA4] ANSI_CHARSET
+  [00016BBC] DEFAULT_CHARSET
+  [00016BD4] SYMBOL_CHARSET
+  [00016BEC] MAC_CHARSET
+  [00016C00] SHIFTJIS_CHARSET
+  [00016C1C] HANGEUL_CHARSET
+  [00016C34] JOHAB_CHARSET
+  [00016C4C] GB2312_CHARSET
+  [00016C64] CHINESEBIG5_CHARSET
+  [00016C80] GREEK_CHARSET
+  [00016C98] TURKISH_CHARSET
+  [00016CB0] HEBREW_CHARSET
+  [00016CC8] ARABIC_CHARSET
+  [00016CE0] BALTIC_CHARSET
+  [00016CF8] RUSSIAN_CHARSET
+  [00016D10] THAI_CHARSET
+  [00016D28] EASTEUROPE_CHARSET
+  [00016D44] OEM_CHARSET
+  [0001988E] TFileFormat
+  [00019911] TFileFormatsList
+  [00019C15] TClipboardFormats
+  [0001A936] D$LPkD$XdPV
+  [0001AA26] D$HPkD$TdPV
+  [0001AAAD] |$( EMFt
+  [0001AEBD] TBitmapCanvas
+  [0001AED2] TBitmapCanvas
+  [0001AEEA] Graphics
+  [0001D9D5] TPatternManagerSV
+  [0001DEED] TOrderedList
+  [0001E098] comctl32.dll
+  [0001E0A8] InitCommonControlsEx
+  [0001E30D] EPrinter
+  [0001E377] TPrinter
+  [0001E45F] TPrinterDevice
+  [0001E5D5] CreateHandle
+  [0001E5E8] Changing
+  [0001E5F7] UpdateFont
+  [0001E602] TPrinterCanvas
+  [0001E61E] TPrinterCanvas
+  [0001E637] Printers
+  [0001F524] comctl32.dll
+  [0001F534] InitializeFlatSB
+  [0001F548] UninitializeFlatSB
+  [0001F55C] FlatSB_GetScrollProp
+  [0001F574] FlatSB_SetScrollProp
+  [0001F58C] FlatSB_EnableScrollBar
+  [0001F5A4] FlatSB_ShowScrollBar
+  [0001F5BC] FlatSB_GetScrollRange
+  [0001F5D4] FlatSB_GetScrollInfo
+  [0001F5EC] FlatSB_GetScrollPos
+  [0001F600] FlatSB_SetScrollPos
+  [0001F614] FlatSB_SetScrollInfo
+  [0001F62C] FlatSB_SetScrollRange
+  [0001F7A3] TCustomGroupBox
+  [0001F7BA] TCustomGroupBox
+  [0001F7D4] StdCtrls
+  [0001F8E5] TGroupBox
+  [0001F8F6] TGroupBox,
+  [0001F90A] StdCtrls)
+  [0001F971] BiDiMode
+  [0001F9D6] Constraints
+  [0001FA1C] DockSitel
+  [0001FA3F] DragCursor
+  [0001FA64] DragKindP
+  [0001FA87] DragMode
+  [0001FAAA] Enabledde
+  [0001FAEB] ParentBiDiMode
+  [0001FB14] ParentColor
+  [0001FB3A] ParentCtl3D
+  [0001FB60] ParentFont
+  [0001FB85] ParentShowHint
+  [0001FBAE] PopupMenu
+  [0001FBD2] ShowHint
+  [0001FBF5] TabOrder
+  [0001FC3A] Visible 
+  [0001FC5C] OnClick|
+  [0001FC7E] OnContextPopup 
+  [0001FCA7] OnDblClick
+  [0001FCCC] OnDragDrop
+  [0001FCF1] OnDockDrop<
+  [0001FD16] OnDockOver
+  [0001FD3B] OnDragOver
+  [0001FD60] OnEndDock
+  [0001FD84] OnEndDrag 
+  [0001FDA8] OnEnter 
+  [0001FDEB] OnGetSiteInfo|
+  [0001FE13] OnMouseDown
+  [0001FE39] OnMouseMove|
+  [0001FE5F] OnMouseUp
+  [0001FE83] OnStartDock\
+  [0001FEA9] OnStartDrag
+  [0001FECF] OnUnDock
+  [0001FEDE] TTextLayout
+  [0001FEFD] tlCenter
+  [0001FF06] tlBottom
+  [0002000D] TCustomLabel
+  [00020022] TCustomLabel\
+  [00020039] StdCtrls
+  [0002013F] StdCtrls%
+  [00020184] Alignment
+  [000201CA] AutoSize
+  [000201ED] BiDiMode
+  [00020252] Constraintsl
+  [00020278] DragCursor
+  [0002029D] DragKindP
+  [000202C0] DragMode
+  [00020305] FocusControlde
+  [0002034B] ParentBiDiMode
+  [00020374] ParentColor
+  [0002039A] ParentFont
+  [000203BF] ParentShowHint
+  [000203E8] PopupMenu
+  [0002040C] ShowAccelChar
+  [00020434] ShowHint
+  [00020457] Transparent
+  [000204C0] WordWrap 
+  [000204E3] OnClick|
+  [00020505] OnContextPopup 
+  [0002052E] OnDblClick
+  [00020553] OnDragDrop
+  [00020578] OnDragOver
+  [0002059D] OnEndDock
+  [000205C1] OnEndDrag|
+  [000205E5] OnMouseDown
+  [0002060B] OnMouseMove|
+  [00020631] OnMouseUp
+  [00020655] OnStartDock\
+  [0002067B] OnStartDrag
+  [0002068E] TEditCharCase
+  [000206A9] ecNormal
+  [000206B2] ecUpperCase
+  [000206BE] ecLowerCase
+  [00020819] TCustomEdit(
+  [0002082A] TCustomEdit
+  [00020840] StdCtrls
+  [000209AA] StdCtrls2
+  [000209F1] AutoSelect
+  [00020A16] AutoSize
+  [00020A39] BiDiMode
+  [00020A5C] BorderStyle
+  [00020A82] CharCase
+  [00020AC5] Constraints
+  [00020B0B] DragCursor
+  [00020B30] DragKindP
+  [00020B53] DragMode
+  [00020B76] Enabledde
+  [00020BB7] HideSelection
+  [00020C01] ImeNameT
+  [00020C23] MaxLength
+  [00020C47] OEMConvert
+  [00020C6C] ParentBiDiMode
+  [00020C95] ParentColor
+  [00020CBB] ParentCtl3D
+  [00020CE1] ParentFont
+  [00020D06] ParentShowHint(
+  [00020D2F] PasswordChar
+  [00020D56] PopupMenu
+  [00020D7A] ReadOnly
+  [00020D9D] ShowHint
+  [00020DC0] TabOrder
+  [00020E24] Visible 
+  [00020E46] OnChange 
+  [00020E69] OnClick|
+  [00020E8B] OnContextPopup 
+  [00020EB4] OnDblClick
+  [00020ED9] OnDragDrop
+  [00020EFE] OnDragOver
+  [00020F23] OnEndDock
+  [00020F47] OnEndDrag 
+  [00020F6B] OnEnter 
+  [00020FAE] OnKeyDownp
+  [00020FD2] OnKeyPress0
+  [00020FF7] OnKeyUp|
+  [00021019] OnMouseDown
+  [0002103F] OnMouseMove|
+  [00021065] OnMouseUp
+  [00021089] OnStartDock\
+  [000210AF] OnStartDrag
+  [000210C2] TComboBoxStyle
+  [000210DE] csDropDown
+  [000210E9] csSimple
+  [000210F2] csDropDownList
+  [00021101] csOwnerDrawFixed
+  [00021112] csOwnerDrawVariable
+  [0002112E] TDrawItemEvent
+  [00021148] TWinControl
+  [00021176] TOwnerDrawState
+  [0002118E] TMeasureItemEvent
+  [000211AB] TWinControl
+  [0002134F] TCustomComboBox
+  [00021366] TCustomComboBox$
+  [00021380] StdCtrls
+  [000214C1] TComboBox
+  [000214D2] TComboBox
+  [000214E6] StdCtrls/
+  [0002154D] BiDiMode
+  [00021590] Constraints
+  [000215D6] DragCursor
+  [000215FB] DragKindP
+  [0002161E] DragModeT
+  [00021641] DropDownCount
+  [00021669] Enabledde
+  [000216CC] ImeNameT
+  [000216EE] ItemHeightT
+  [00021713] MaxLength
+  [00021737] ParentBiDiMode
+  [00021760] ParentColor
+  [00021786] ParentCtl3D
+  [000217AC] ParentFont
+  [000217D1] ParentShowHint
+  [000217FA] PopupMenu
+  [0002181E] ShowHint
+  [00021862] TabOrder
+  [000218C6] Visible 
+  [000218E8] OnChange 
+  [0002190B] OnClick|
+  [0002192D] OnContextPopup 
+  [00021956] OnDblClick
+  [0002197B] OnDragDrop
+  [000219A0] OnDragOver(
+  [000219C5] OnDrawItem 
+  [000219EA] OnDropDown
+  [00021A0F] OnEndDock
+  [00021A33] OnEndDrag 
+  [00021A57] OnEnter 
+  [00021A9A] OnKeyDownp
+  [00021ABE] OnKeyPress0
+  [00021B05] OnMeasureItem
+  [00021B2D] OnStartDock\
+  [00021B53] OnStartDrag<
+  [00021C31] TButtonActionLink
+  [00021D5B] TButtonControl
+  [00021D72] TButtonControl
+  [00021D8B] StdCtrls
+  [00021EF0] StdCtrls%
+  [00021F58] BiDiMode
+  [00021FBE] Constraints
+  [00021FE4] Defaultl
+  [00022006] DragCursor
+  [0002202B] DragKindP
+  [0002204E] DragMode
+  [00022071] Enabledde
+  [000220B2] ModalResult
+  [000220D8] ParentBiDiMode
+  [00022101] ParentFont
+  [00022126] ParentShowHint
+  [0002214F] PopupMenu
+  [00022173] ShowHint
+  [00022196] TabOrder
+  [000221DB] Visible 
+  [000221FD] OnClick|
+  [0002221F] OnContextPopup
+  [00022248] OnDragDrop
+  [0002226D] OnDragOver
+  [00022292] OnEndDock
+  [000222B6] OnEndDrag 
+  [000222DA] OnEnter 
+  [0002231D] OnKeyDownp
+  [00022341] OnKeyPress0
+  [00022366] OnKeyUp|
+  [00022388] OnMouseDown
+  [000223AE] OnMouseMove|
+  [000223D4] OnMouseUp
+  [000223F8] OnStartDock\
+  [0002241E] OnStartDrag
+  [00022432] TCheckBoxState
+  [0002244E] cbUnchecked
+  [0002245A] cbChecked
+  [00022464] cbGrayed
+  [0002259F] TCustomCheckBox
+  [000225B6] TCustomCheckBox
+  [000225D0] StdCtrls
+  [000225F5] TabStopH2
+  [00022709] TCheckBox
+  [0002271A] TCheckBoxH2
+  [0002272E] StdCtrls*
+  [00022774] Alignment
+  [00022798] AllowGrayed
+  [000227E0] BiDiMode
+  [00022867] Constraints
+  [000228AD] DragCursor
+  [000228D2] DragKindP
+  [000228F5] DragMode
+  [00022918] Enabledde
+  [00022959] ParentBiDiMode
+  [00022982] ParentColor
+  [000229A8] ParentCtl3D
+  [000229CE] ParentFont
+  [000229F3] ParentShowHint
+  [00022A1C] PopupMenu
+  [00022A40] ShowHint,0
+  [00022A83] TabOrder
+  [00022AC8] Visible 
+  [00022AEA] OnClick|
+  [00022B0C] OnContextPopup
+  [00022B35] OnDragDrop
+  [00022B5A] OnDragOver
+  [00022B7F] OnEndDock
+  [00022BA3] OnEndDrag 
+  [00022BC7] OnEnter 
+  [00022C0A] OnKeyDownp
+  [00022C2E] OnKeyPress0
+  [00022C53] OnKeyUp|
+  [00022C75] OnMouseDown
+  [00022C9B] OnMouseMove|
+  [00022CC1] OnMouseUp
+  [00022CE5] OnStartDock\
+  [00022D0B] OnStartDrag
+  [00022E3B] TRadioButton
+  [00022E4E] TRadioButtond9
+  [00022E65] StdCtrls)
+  [00022EAB] Alignment
+  [00022EF1] BiDiMode
+  [00022F78] Constraints
+  [00022FBE] DragCursor
+  [00022FE3] DragKindP
+  [00023006] DragMode
+  [00023029] Enabledde
+  [0002306A] ParentBiDiMode
+  [00023093] ParentColor
+  [000230B9] ParentCtl3D
+  [000230DF] ParentFont
+  [00023104] ParentShowHint
+  [0002312D] PopupMenu
+  [00023151] ShowHint
+  [00023174] TabOrder
+  [000231B9] Visible 
+  [000231DB] OnClick|
+  [000231FD] OnContextPopup 
+  [00023226] OnDblClick
+  [0002324B] OnDragDrop
+  [00023270] OnDragOver
+  [00023295] OnEndDock
+  [000232B9] OnEndDrag 
+  [000232DD] OnEnter 
+  [00023320] OnKeyDownp
+  [00023344] OnKeyPress0
+  [00023369] OnKeyUp|
+  [0002338B] OnMouseDown
+  [000233B1] OnMouseMove|
+  [000233D7] OnMouseUp
+  [000233FB] OnStartDock\
+  [00023421] OnStartDrag0@
+  [00023432] TListBoxStyle
+  [0002344D] lbStandard
+  [00023458] lbOwnerDrawFixed
+  [00023469] lbOwnerDrawVariable
+  [000235DB] TCustomListBox
+  [000235F2] TCustomListBox
+  [0002360B] StdCtrls
+  [00023741] TListBox
+  [00023752] TListBox
+  [00023765] StdCtrls4
+  [000237CC] BiDiMode
+  [000237EF] BorderStyle
+  [00023857] Constraints
+  [0002389D] DragCursor
+  [000238C2] DragKindP
+  [000238E5] DragMode
+  [0002392A] ExtendedSelectde
+  [000239B6] IntegralHeightT
+  [000239DF] ItemHeight<
+  [00023A24] MultiSelect
+  [00023A4A] ParentBiDiMode
+  [00023A73] ParentColor
+  [00023A99] ParentCtl3D
+  [00023ABF] ParentFont
+  [00023AE4] ParentShowHint
+  [00023B0D] PopupMenu
+  [00023B31] ShowHint
+  [00023B54] Sorted,@
+  [00023B95] TabOrder
+  [00023BB8] TabStopT
+  [00023BDA] TabWidth
+  [00023BFD] Visible 
+  [00023C1F] OnClick|
+  [00023C41] OnContextPopup 
+  [00023C6A] OnDblClick
+  [00023C8F] OnDragDrop
+  [00023CB4] OnDragOver(
+  [00023CD9] OnDrawItem
+  [00023CFE] OnEndDock
+  [00023D22] OnEndDrag 
+  [00023D46] OnEnter 
+  [00023D89] OnKeyDownp
+  [00023DAD] OnKeyPress0
+  [00023DF4] OnMeasureItem|
+  [00023E1C] OnMouseDown
+  [00023E42] OnMouseMove|
+  [00023E68] OnMouseUp
+  [00023E8C] OnStartDock\
+  [00023EB2] OnStartDrag
+  [00023F95] TComboBoxStrings
+  [00023FAE] TComboBoxStrings$K
+  [00023FC9] StdCtrls
+  [00024091] TListBoxStrings
+  [000240A6] TListBoxStrings L
+  [000240C0] StdCtrls
+  [000259D0] COMBOBOX
+  [0002843C] Delphi Picture
+  [0002844C] Delphi Component
+  [000284F5] THintAction
+  [00028506] THintAction
+  [0002851C] StdActns
+  [0002867D] TContainedAction
+  [00028696] TContainedAction
+  [000286B1] ActnList
+  [000286D6] Category
+  [0002877B] TCustomActionList
+  [00028792] TCustomActionList,
+  [000287AE] ActnList
+  [00028875] TCustomAction
+  [0002888A] TCustomAction
+  [000288A2] ActnList
+  [00028959] TActionLinkSV
+  [000293EA] TScrollBarInc
+  [00029406] TScrollBarStyle
+  [00029423] ssRegular
+  [00029434] ssHotTrack
+  [00029499] TControlScrollBar
+  [000294B2] TControlScrollBar
+  [000294F0] ButtonSize
+  [00029535] Increment
+  [0002957A] ParentColorT
+  [000295A0] PositionT
+  [00029643] ThumbSize
+  [00029667] Tracking
+  [0002969A] TWindowState
+  [000296B4] wsNormal
+  [000296BD] wsMinimized
+  [000296C9] wsMaximized 
+  [00029807] TScrollingWinControl
+  [00029822] TScrollingWinControl 
+  [00029863] HorzScrollBar
+  [0002988B] VertScrollBar
+  [0002989E] TFormBorderStyle
+  [000298C3] bsSingle
+  [000298CC] bsSizeable
+  [000298D7] bsDialog
+  [000298E0] bsToolWindow
+  [000298ED] bsSizeToolWin
+  [00029902] TBorderStyle
+  [00029A37] TScrollBox
+  [00029A4A] TScrollBoxh
+  [00029AC3] AutoScroll
+  [00029AE8] AutoSize
+  [00029B0B] BiDiMode
+  [00029B2E] BorderStyle
+  [00029B54] Constraints
+  [00029B7A] DockSitel
+  [00029B9D] DragCursor
+  [00029BC2] DragKindP
+  [00029BE5] DragMode
+  [00029C89] ParentBiDiMode
+  [00029CB2] ParentColor
+  [00029CD8] ParentCtl3D
+  [00029CFE] ParentFont
+  [00029D23] ParentShowHint
+  [00029D4C] PopupMenu
+  [00029D70] ShowHint
+  [00029D93] TabOrder
+  [00029DFA] OnCanResize 
+  [00029E20] OnClick(
+  [00029E42] OnConstrainedResize|
+  [00029E70] OnContextPopup 
+  [00029E99] OnDblClick
+  [00029EBE] OnDockDrop<
+  [00029EE3] OnDockOver
+  [00029F08] OnDragDrop
+  [00029F2D] OnDragOver
+  [00029F52] OnEndDock
+  [00029F76] OnEndDrag 
+  [00029F9A] OnEnter 
+  [00029FDD] OnGetSiteInfo|
+  [0002A005] OnMouseDown
+  [0002A02B] OnMouseMove|
+  [0002A051] OnMouseUp
+  [0002A075] OnMouseWheel
+  [0002A09C] OnMouseWheelDown
+  [0002A0C7] OnMouseWheelUp 
+  [0002A0F0] OnResize
+  [0002A113] OnStartDock\
+  [0002A139] OnStartDrag
+  [0002A15F] OnUnDock
+  [0002A16E] IDesigner
+  [0002A19A] IOleForm
+  [0002A1C6] TFormStyle
+  [0002A1DE] fsNormal
+  [0002A1E7] fsMDIChild
+  [0002A1F2] fsMDIForm
+  [0002A1FC] fsStayOnTop
+  [0002A20E] TBorderIcon
+  [0002A227] biSystemMenu
+  [0002A234] biMinimize
+  [0002A23F] biMaximize
+  [0002A256] TBorderIcons
+  [0002A26E] TPosition
+  [0002A285] poDesigned
+  [0002A290] poDefault
+  [0002A29A] poDefaultPosOnly
+  [0002A2AB] poDefaultSizeOnly
+  [0002A2BD] poScreenCenter
+  [0002A2CC] poDesktopCenter
+  [0002A2DC] poMainFormCenter
+  [0002A2ED] poOwnerFormCenter
+  [0002A306] TDefaultMonitor
+  [0002A323] dmDesktop
+  [0002A32D] dmPrimary
+  [0002A337] dmMainForm
+  [0002A342] dmActiveForm
+  [0002A356] TPrintScale
+  [0002A376] poProportional
+  [0002A385] poPrintToFit
+  [0002A39A] TModalResult
+  [0002A3B6] TCloseEvent
+  [0002A3DC] TCloseAction
+  [0002A3EE] TCloseQueryEvent
+  [0002A412] CanClose
+  [0002A42A] TShortCutEvent
+  [0002A70B] TCustomForm
+  [0002A71E] TCustomForm
+  [0002A8C9] ActiveControl
+  [0002A933] AutoScroll
+  [0002A958] AutoSize
+  [0002A97B] BiDiModeP
+  [0002A99E] BorderIcons
+  [0002A9C4] BorderStyle
+  [0002A9EA] BorderWidth
+  [0002AA10] CaptionT
+  [0002AA32] ClientHeightT
+  [0002AA59] ClientWidth
+  [0002AA9F] Constraints
+  [0002AAE5] UseDockManager
+  [0002AB0E] DefaultMonitor
+  [0002AB37] DockSite
+  [0002AB5A] DragKindP
+  [0002AB7D] DragMode
+  [0002ABC2] ParentFontde
+  [0002AC06] FormStyleT
+  [0002AC4B] HelpFile
+  [0002AC6E] HorzScrollBar0o
+  [0002ACB5] KeyPreview8
+  [0002ACF9] OldCreateOrder
+  [0002AD22] ObjectMenuItem
+  [0002AD4B] ParentBiDiModeT
+  [0002AD74] PixelsPerInch
+  [0002AD9C] PopupMenuh
+  [0002ADC0] PositionP
+  [0002ADE3] PrintScale
+  [0002AE29] ShowHint
+  [0002AE4C] VertScrollBar
+  [0002AE74] VisibleT
+  [0002AEB6] WindowState
+  [0002AEDC] WindowMenu 
+  [0002AF01] OnActivate
+  [0002AF26] OnCanResize 
+  [0002AF90] OnCloseQuery(
+  [0002AFB7] OnConstrainedResize|
+  [0002AFE5] OnContextPopup 
+  [0002B00E] OnCreate 
+  [0002B031] OnDblClick 
+  [0002B056] OnDestroy 
+  [0002B07A] OnDeactivate
+  [0002B0A1] OnDockDrop<
+  [0002B0C6] OnDockOver
+  [0002B0EB] OnDragDrop
+  [0002B110] OnDragOver
+  [0002B135] OnEndDockT
+  [0002B159] OnGetSiteInfo 
+  [0002B1C3] OnKeyDownp
+  [0002B1E7] OnKeyPress0
+  [0002B20C] OnKeyUp|
+  [0002B22E] OnMouseDown
+  [0002B254] OnMouseMove|
+  [0002B27A] OnMouseUp
+  [0002B29E] OnMouseWheel
+  [0002B2C5] OnMouseWheelDown
+  [0002B2F0] OnMouseWheelUp 
+  [0002B319] OnPaint 
+  [0002B33B] OnResize$
+  [0002B35E] OnShortCut 
+  [0002B3A4] OnStartDock
+  [0002B3CA] OnUnDock
+  [0002B539] TCustomDockFormL
+  [0002B54E] TCustomDockForm 
+  [0002B58A] PixelsPerInch
+  [0002B5E5] TMonitor
+  [0002B68E] TScreen<
+  [0002B6AE] THintInfo@
+  [0002B777] TApplication
+  [0002B78A] TApplication
+  [0002BBCC] TPUtilWindow
+  [0002DC44] PixelsPerInch
+  [0002DC5C] TextHeight
+  [0002DC70] IgnoreFontProperty
+  [0002F648] MDICLIENT
+  [0003256C] System\CurrentControlSet\Control\Keyboard Layouts\%.8x
+  [000325A4] layout text
+  [000326A5] C<YZ]_^[
+  [00032FC8] TApplication
+  [00033164] MAINICON
+  [00033D64] vcltest3.dll
+  [00033D74] RegisterAutomation
+  [000354B1] TChangeLink
+  [000354C2] TDrawingStyle
+  [000354E5] dsSelected
+  [000354F0] dsNormal
+  [000354F9] dsTransparent
+  [0003550E] TImageType
+  [0003552E] itMask8a
+  [0003553A] TImageIndex
+  [000355E1] TCustomImageList
+  [000355FA] TCustomImageList
+  [00036DE1] EMenuError
+  [00036DF2] TMenuBreak
+  [00036E19] mbBarBreak
+  [00036E2A] TMenuChangeEvent
+  [00036E55] TMenuItem
+  [00036E76] TMenuDrawItemEvent
+  [00036EBA] Selected
+  [00036ED2] TAdvancedMenuDrawItemEvent
+  [00036F24] TOwnerDrawState
+  [00036F3A] TMenuMeasureItemEvent
+  [00036F9A] TMenuItemAutoFlag
+  [00036FB9] maAutomatic
+  [00036FC5] maManual
+  [00036FCE] maParent
+  [00036FDE] TMenuAutoFlag
+  [000370A5] TMenuActionLink
+  [0003718B] TMenuItem
+  [0003719A] TMenuItem
+  [000371F1] AutoHotkeys
+  [00037217] AutoLineReduction
+  [000372C8] SubMenuImages
+  [00037312] Enabledl
+  [00037334] GroupIndex
+  [00037359] HelpContext
+  [0003739E] ImageIndex
+  [000373C3] RadioItem
+  [000373E7] ShortCut
+  [0003740A] Visible 
+  [0003742C] OnClickpz
+  [0003744E] OnDrawItem
+  [00037473] OnAdvancedDrawItem4{
+  [000374A0] OnMeasureItem
+  [0003762D] TMainMenu
+  [0003763E] TMainMenu
+  [00037674] AutoHotkeys
+  [0003769A] AutoLineReduction
+  [000376C6] AutoMerge
+  [000376EA] BiDiMode
+  [0003772E] OwnerDraw
+  [00037752] ParentBiDiMode$z
+  [0003777B] OnChange
+  [0003778A] TPopupAlignment
+  [000377B6] paCenter
+  [000377C6] TTrackButton
+  [000377E0] tbRightButton
+  [000377EE] tbLeftButton
+  [00037802] TMenuAnimations
+  [0003781F] maLeftToRight
+  [0003782D] maRightToLeft
+  [0003783B] maTopToBottom
+  [00037849] maBottomToTop
+  [00037866] TMenuAnimation
+  [0003790D] TPopupMenu
+  [0003791E] TPopupMenu
+  [00037955] Alignment
+  [00037979] AutoHotkeys
+  [0003799F] AutoLineReduction
+  [000379CB] AutoPopup
+  [000379EF] BiDiMode
+  [00037A12] HelpContext
+  [00037A59] MenuAnimation
+  [00037A81] OwnerDraw
+  [00037AA5] ParentBiDiMode
+  [00037ACE] TrackButton$z
+  [00037AF4] OnChange 
+  [00037B81] TPopupList
+  [00037BE5] TMenuItemStack
+  [00037BFC] 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  [00038B40] ShortCutText
+  [0003CFAB] alBottom
+  [0003CFC3] alClient
+  [0003D039] TDragObject
+  [0003D0B9] TBaseDragControlObject
+  [0003D145] TDragControlObject
+  [0003D1DD] TDragDockObject8
+  [0003D251] TControlCanvas
+  [0003D266] TControlCanvas8
+  [0003D27F] Controls
+  [0003D33D] TControlActionLink
+  [0003D356] TDragMode
+  [0003D36D] dmManual
+  [0003D376] dmAutomatic
+  [0003D38A] TDragKind
+  [0003D3B6] TTabOrder
+  [0003D3CE] TCaption
+  [0003D3DE] TAnchorKind
+  [0003D40C] akBottom
+  [0003D41A] TAnchors
+  [0003D42E] TConstraintSize
+  [0003D4AD] TSizeConstraints
+  [0003D4C6] TSizeConstraints
+  [0003D4E1] Controls
+  [0003D506] MaxHeight(
+  [0003D52A] MaxWidth(
+  [0003D54D] MinHeight(
+  [0003D571] MinWidth
+  [0003D582] TMouseEvent
+  [0003D5A8] TMouseButton
+  [0003D5BC] TShiftState
+  [0003D5E6] TMouseMoveEvent
+  [0003D60F] TShiftState
+  [0003D629] Integer4
+  [0003D636] TKeyEvent
+  [0003D663] TShiftState
+  [0003D676] TKeyPressEvent
+  [0003D6A6] TDragOverEvent
+  [0003D6F4] TDragState
+  [0003D716] TDragDropEvent
+  [0003D755] Integer`
+  [0003D762] TStartDragEvent
+  [0003D785] DragObject
+  [0003D790] TDragObject
+  [0003D7A2] TEndDragEvent
+  [0003D7EE] TDockDropEvent
+  [0003D817] TDragDockObject
+  [0003D835] Integer@
+  [0003D842] TDockOverEvent
+  [0003D86B] TDragDockObject
+  [0003D898] TDragState
+  [0003D8BA] TUnDockEvent
+  [0003D8E1] TControl
+  [0003D8EB] NewTarget
+  [0003D8F5] TWinControl
+  [0003D916] TStartDockEvent
+  [0003D939] DragObject
+  [0003D944] TDragDockObject
+  [0003D95A] TGetSiteInfoEvent
+  [0003D97F] DockClient
+  [0003D98A] TControl
+  [0003D994] InfluenceRect
+  [0003D9A9] MousePos
+  [0003D9D2] TCanResizeEvent
+  [0003D9F5] NewWidth
+  [0003DA07] NewHeight
+  [0003DA21] Boolean,
+  [0003DA2E] TConstrainedResizeEvent
+  [0003DA59] MinWidth
+  [0003DA6B] MinHeight
+  [0003DA7E] MaxWidth
+  [0003DA90] MaxHeight
+  [0003DAAA] TMouseWheelEvent
+  [0003DAD4] TShiftState
+  [0003DAE1] WheelDelta
+  [0003DAF5] MousePos
+  [0003DB1E] TMouseWheelUpDownEvent
+  [0003DB4E] TShiftState
+  [0003DB5B] MousePos
+  [0003DB82] TContextPopupEvent
+  [0003DBA8] MousePos
+  [0003DE45] TControl
+  [0003DE56] TControl
+  [0003DE69] Controls
+  [0003DFE5] TWinControlActionLink
+  [0003E002] TImeMode
+  [0003E018] imDisable
+  [0003E031] imDontCare
+  [0003E03C] imSAlpha
+  [0003E063] imChinese
+  [0003E06D] imSHanguel
+  [0003E078] imHanguel
+  [0003E08A] TImeName
+  [0003E09A] TBorderWidth
+  [0003E0B6] TBevelCut
+  [0003E0D4] bvLowered
+  [0003E0DE] bvRaised
+  [0003E0F6] TBevelWidth
+  [0003E112] IDockManager
+  [0003E134] Controls
+  [0003E4EB] TWinControl
+  [0003E4FE] TWinControl
+  [0003E514] Controls
+  [0003E539] HelpContext
+  [0003E621] TGraphicControl4
+  [0003E636] TGraphicControl
+  [0003E650] Controls
+  [0003E769] TCustomControl
+  [0003E77E] TCustomControl
+  [0003E797] Controls
+  [0003E8CD] THintWindow
+  [0003E8DE] THintWindow
+  [0003E8F4] Controls
+  [0003E989] TDragImageList
+  [0003E99E] TDragImageListL
+  [0003E9B7] Controls
+  [0003EA4D] TImageList
+  [0003EA5E] TImageList
+  [0003EA73] Controls
+  [0003EA98] BlendColor
+  [0003EABD] BkColorT
+  [0003EB01] DrawingStyleT
+  [0003EB49] ImageType
+  [0003EB8E] OnChange
+  [0003EBB1] ShareImagesT
+  [0003EC29] TDockZone
+  [0003EDA1] TDockTree
+  [0003EF18] crDefault
+  [0003EF5C] crSizeNESW
+  [0003EF70] crSizeNS
+  [0003EF84] crSizeNWSE
+  [0003EF98] crSizeWE
+  [0003EFAC] crUpArrow
+  [0003EFC0] crHourGlass
+  [0003EFE4] crNoDrop
+  [0003EFF8] crHSplit
+  [0003F00C] crVSplit
+  [0003F020] crMultiDrag
+  [0003F034] crSQLWait
+  [0003F058] crAppStart
+  [0003F07C] crHandPoint
+  [0003F090] crSizeAll
+  [0003F21D] TSiteList
+  [00040B1D] t1JtPJtq
+  [00042F58] IsControl
+  [0004C174] WINNLSEnableIME
+  [0004C184] IMM32.DLL
+  [0004C190] ImmGetContext
+  [0004C1A0] ImmReleaseContext
+  [0004C1B4] ImmGetConversionStatus
+  [0004C1CC] ImmSetConversionStatus
+  [0004C1E4] ImmSetOpenStatus
+  [0004C1F8] ImmSetCompositionWindow
+  [0004C210] ImmSetCompositionFontA
+  [0004C228] ImmGetCompositionStringA
+  [0004C244] ImmIsIME
+  [0004C250] ImmNotifyIME
+  [0004C4CC] Delphi%.8X
+  [0004C4D8] ControlOfs%.8X%.8X
+  [0004C644] Please Note
+  [0004CA3C] INFO01.CUS
+  [0004CF38] DEVNAGRI
+  [0004CF4C] GUJARATI
+  [0004CFC0] MALAYALAM
+  [0004CFD4] SANSKRIT
+  [0004CFE8] DIACRITICAL
+  [0004D05C] ASSAMESE/MANIPURI
+  [0004D088] SINDHI ENGLISH
+  [0004D424] DEVNAGRI
+  [0004D438] GUJARATI
+  [0004D4AC] MALAYALAM
+  [0004D4C0] SANSKRIT
+  [0004D4D4] DIACRITICAL
+  [0004D568] ASSAMESE
+  [0004D57C] ASSAMESE/MANIPURI
+  [0004D5A8] SINDHI ENGLISH
+  [0004E5B8] Devnagri
+  [0004E5D8] Gujarati
+  [0004E6A0] Malayalam
+  [0004E6C0] Sanskrit
+  [0004E6FC] Sindhi_English
+  [0004E768] Diacritical
+  [0004EBF6] TApplicationInfo
+  [0004EC28] MS_SCRPT.EXE
+  [0004EC40] Shree-Lipi 16 Bit
+  [0004EC5C] MS_SCR32.EXE
+  [0004EC74] Shree-Lipi 32 Bit
+  [0004EC90] SL7_32.EXE
+  [0004ECA4] SLB32.EXE
+  [0004ECB8] Shree-Lipi Bharati
+  [0004ECD4] ISM2000.EXE
+  [0004ECE8] ISM 2000
+  [0004ECF9] QQQQQQQSVW
+  [0004F218] ML-SHREE
+  [0004F8DC] Ctrl + Space
+  [0004F8F4] Ctrl + F2
+  [0004F908] Ctrl + F3
+  [0004F91C] Ctrl + F4
+  [0004F930] Ctrl + F5
+  [0004F944] Ctrl + F6
+  [0004F958] Ctrl + F7
+  [0004F96C] Ctrl + F8
+  [0004F980] Ctrl + F9
+  [0004F994] Ctrl + F10
+  [0004F9A8] Ctrl + F11
+  [0004F9BC] Ctrl + F12
+  [0004F9D0] Shift + F2
+  [0004F9E4] Shift + F3
+  [0004F9F8] Shift + F4
+  [0004FA0C] Shift + F5
+  [0004FA20] Shift + F6
+  [0004FA34] Shift + F7
+  [0004FA48] Shift + F8
+  [0004FA5C] Shift + F9
+  [0004FA70] Shift + F10
+  [0004FA84] Shift + F11
+  [0004FA98] Shift + F12
+  [0004FAAC] Ctrl + 0
+  [0004FAC0] Ctrl + 1
+  [0004FAD4] Ctrl + 2
+  [0004FAE8] Ctrl + 3
+  [0004FAFC] Ctrl + 4
+  [0004FB10] Ctrl + 5
+  [0004FB24] Ctrl + 6
+  [0004FB38] Ctrl + 7
+  [0004FB4C] Ctrl + 8
+  [0004FB60] Ctrl + 9
+  [0004FB74] Ctrl + A
+  [0004FB88] Ctrl + B
+  [0004FB9C] Ctrl + C
+  [0004FBB0] Ctrl + D
+  [0004FBC4] Ctrl + E
+  [0004FBD8] Ctrl + F
+  [0004FBEC] Ctrl + G
+  [0004FC00] Ctrl + H
+  [0004FC14] Ctrl + I
+  [0004FC28] Ctrl + J
+  [0004FC3C] Ctrl + K
+  [0004FC50] Ctrl + L
+  [0004FC64] Ctrl + M
+  [0004FC78] Ctrl + N
+  [0004FC8C] Ctrl + O
+  [0004FCA0] Ctrl + P
+  [0004FCB4] Ctrl + Q
+  [0004FCC8] Ctrl + R
+  [0004FCDC] Ctrl + S
+  [0004FCF0] Ctrl + T
+  [0004FD04] Ctrl + U
+  [0004FD18] Ctrl + V
+  [0004FD2C] Ctrl + W
+  [0004FD40] Ctrl + X
+  [0004FD54] Ctrl + Y
+  [0004FD68] Ctrl + Z
+  [0004FD7C] Ctrl + Shift + 0
+  [0004FD98] Ctrl + Shift + 1
+  [0004FDB4] Ctrl + Shift + 2
+  [0004FDD0] Ctrl + Shift + 3
+  [0004FDEC] Ctrl + Shift + 4
+  [0004FE08] Ctrl + Shift + 5
+  [0004FE24] Ctrl + Shift + 6
+  [0004FE40] Ctrl + Shift + 7
+  [0004FE5C] Ctrl + Shift + 8
+  [0004FE78] Ctrl + Shift + 9
+  [0004FE94] Ctrl + Shift + A
+  [0004FEB0] Ctrl + Shift + B
+  [0004FECC] Ctrl + Shift + C
+  [0004FEE8] Ctrl + Shift + D
+  [0004FF04] Ctrl + Shift + E
+  [0004FF20] Ctrl + Shift + F
+  [0004FF3C] Ctrl + Shift + G
+  [0004FF58] Ctrl + Shift + H
+  [0004FF74] Ctrl + Shift + I
+  [0004FF90] Ctrl + Shift + J
+  [0004FFAC] Ctrl + Shift + K
+  [0004FFC8] Ctrl + Shift + L
+  [0004FFE4] Ctrl + Shift + M
+  [00050000] Ctrl + Shift + N
+  [0005001C] Ctrl + Shift + O
+  [00050038] Ctrl + Shift + P
+  [00050054] Ctrl + Shift + Q
+  [00050070] Ctrl + Shift + R
+  [0005008C] Ctrl + Shift + S
+  [000500A8] Ctrl + Shift + T
+  [000500C4] Ctrl + Shift + U
+  [000500E0] Ctrl + Shift + V
+  [000500FC] Ctrl + Shift + W
+  [00050118] Ctrl + Shift + X
+  [00050134] Ctrl + Shift + Y
+  [00050150] Ctrl + Shift + Z
+  [00050610] Shift + 
+  [00050624] Ctrl + Space
+  [000508C0] FontInfo.dll
+  [000508D0] InitFontDatabase
+  [000508E4] FinalizeFontDatabase
+  [000508FC] GetFontInfoFromDatabase
+  [00051490] SHREE-PUDH
+  [000514A4] SHREE-PUD-77
+  [000514BC] SHREE-DEVV
+  [000514D0] SHREE-DEV7-
+  [000514E4] SHREE-DEVX
+  [000514F8] SHREE_DEV_OTF
+  [00051510] SHREE-SAKAL-LIPIX
+  [0005152C] SHREE-DEVSX
+  [00051540] SHRCAL-DEV
+  [00051554] SHREE-GUJX
+  [00051568] SHREE_GUJ_OTF
+  [00051580] SHREE-GUJ7-
+  [00051594] SHREE-GUJSX
+  [000515A8] SHREE_PUN_OTF
+  [000515C0] SHREE-PUNX
+  [000515D4] SHREELIPI BANGLA
+  [000515F0] SHREELIPI BANGLAT
+  [0005160C] SHREELIPI BANGLA LEKHAT
+  [0005162C] SHREE-BANT-
+  [00051640] SHREE-BANV-
+  [00051654] SHREE-BAN7-
+  [00051668] SHREE-MBAN
+  [0005167C] SHREE-BANX
+  [00051690] SHREE-SWABHUMI
+  [000516A8] SHREE_BAN_OTF
+  [000516C0] Shree-BarunX
+  [000516D8] SHREE-BARUNX
+  [000516F0] SHREE-BANSX
+  [00051704] SHREE-MAN-
+  [00051718] SHREE-MAN7-
+  [0005172C] SHREE-ASS7-
+  [00051740] SHREE-ORIX
+  [00051754] SHREE_ORI_OTF
+  [0005176C] SHREE-ORI-
+  [00051780] SHREE-ORI7-
+  [00051794] SHREE-ORISX
+  [000517A8] SHREE-TAMX
+  [000517BC] SHREE_TAM_OTF
+  [000517D4] SHREE-TAM7-
+  [000517E8] SHREE-TAMSX
+  [000517FC] SHREE-TAMV
+  [00051810] SHREE-SKAN
+  [00051824] SHREE_DECCAN
+  [0005183C] SHREE-KAN
+  [00051850] SHREE-DECCAN
+  [00051868] SHREE_DECMOD
+  [00051880] SHREE-KANX
+  [00051894] SHREE-DECCANX
+  [000518AC] SHREE_KAN_OTF
+  [000518C4] SHREE-KAN7-
+  [000518D8] SHREE-KANSX
+  [0005190C] SHREE-TELJ
+  [00051920] SHREE-TELANGANAX
+  [0005193C] SHREE-TELTX
+  [00051950] SHREE-TELANGANA
+  [00051968] SHREE-TELT
+  [0005197C] SHREE-TELX
+  [00051990] SHREE-TEL7-
+  [000519A4] SHREE-TEL-
+  [000519B8] SHREI-TEL-
+  [000519CC] SHREE_TEL_OTF
+  [000519E4] SHREE-TELSX
+  [000519F8] SHREE-TELMX
+  [00051A0C] SHREE-MALX
+  [00051A20] SHREE_MAL_OTF
+  [00051A38] SHREE-MAL7-
+  [00051A4C] SHREE-MALSX
+  [00051A60] SHREE-SAN7-
+  [00051A74] SHREE-SANX
+  [00051A88] SHREE-SANSX
+  [00051A9C] SHREE-DIA5
+  [00051AB0] SHREE-DIAI-
+  [00051AC4] INDO TIMES
+  [00051AD8] SHREE-DIAX
+  [00051C94] SUCHI-DEVV
+  [00051CA8] SUCHI-DEVN
+  [00051CBC] SUCHI-TEL5
+  [000539E4] WEBSUBAK
+  [00053A28] APARAJITA
+  [00053AAC] MANALI HINDI
+  [00053AD4] NatrajMedium
+  [00053AEC] LOKSHAHI
+  [00053B00] Marathi Saral-1
+  [00053B18] STM-H-DEVALINA
+  [00053B30] AkrutiMar_
+  [00053B44] BRH DEVANAGARI
+  [00053B5C] BARAHA DEVANAGARI
+  [00053B88] ITRDESHDUT
+  [00053B9C] MG SHREE
+  [00053BB0] CTWNATRAJ
+  [00053BD4] DEVO NATRAJM ITR
+  [00053C40] DEVOE NATRAJ ITR
+  [00053C5C] LANGSCAPEDEV
+  [00053C74] MILLENNIUM
+  [00053CE4] AKRUTIDEV
+  [00053CF8] AKRUTIGANESHDEV
+  [00053D20] DEV YOGESHE ITR LIGHT
+  [00053D50] APS-DV-POOJA
+  [00053D68] APS-C-DV
+  [00053D7C] DV_DIVYA
+  [00053DC0] NAIDUNIA
+  [00053DD4] BRAMHAPUTRA
+  [00053E14] KRUTI DEV
+  [00053E38] ATISHA-BHARATI
+  [00053E50] B Bharati Kautilya
+  [00053E9C] LIGHTTWO
+  [00053EDC] GUJ_HASTALIKHIT_SULEKH
+  [00053EFC] TERAFONT-TRILOCHAN
+  [00053F28] GJ_ME_SHREE
+  [00053F3C] GJ_ML_SHREE
+  [00053F50] GJMESHREE
+  [00053FC0] AKRUTIGUJ
+  [000540AC] TANMATRATAPAS PBA 1
+  [000540D4] GEETANJALI
+  [000540E8] GEETANJALIP
+  [000540FC] AABP-SLX
+  [00054110] ANANDA-SLX
+  [00054134] AABP-OTF
+  [00054148] BANGSEEALPONA
+  [00054160] AABPBENGALI
+  [00054194] BT SHATABDI
+  [000541A8] BN_ME_SHREE
+  [000541BC] BN_ML_SHREE
+  [000541D0] BNMESHREE
+  [00054260] AkrutiBngBharati
+  [0005427C] AKLiteRamkrishna
+  [00054298] ABBHAR_B
+  [000542AC] AMAR BANGLA
+  [000542C0] SUTONNYMJ
+  [000542E4] Monotype SBA
+  [00054348] SUTONNYCMJ
+  [0005435C] OR_ME_SHREE
+  [00054370] OR_ML_SHREE
+  [00054384] ORMESHREE
+  [000543D4] AKRUTIORI
+  [00054400] KALINGABBT
+  [000544EC] THAAGARAI
+  [00054520] IDSTAMIL_
+  [00054544] TAMIL BIBLE
+  [00054558] NAKEERAN
+  [0005457C] KavipPriya
+  [00054590] TAMIL-013
+  [000545B4] KN_ME_SHREE
+  [000545C8] KN_ML_SHREE
+  [000545DC] KNMESHREE
+  [0005465C] AKRUTIKND
+  [0005469C] PV_PRATHAM
+  [000546B0] PVPRATHAM
+  [000546E4] KAN BALLAL
+  [00054728] TL_ME_SHREE
+  [0005473C] TL_ML_SHREE
+  [00054750] TEMESHREE
+  [000547B0] Akrutitlg
+  [00054810] THOOLIKA
+  [00054824] PANCHARI
+  [00054848] CHIRUTHA
+  [000548BC] MANORAMA
+  [000548F0] WALKMAN-CHANAKYA
+  [00055B5C] DEVDL32.DLL
+  [00055B70] DEV1DL32.DLL
+  [00055B88] DEV2DL32.DLL
+  [00055BA0] SU_DEV32.DLL
+  [00055BB8] SU2DEV32.DLL
+  [00055BD0] CDEVDL32.DLL
+  [00055BE8] NDEVDL32.DLL
+  [00055C00] ADEVDL32.DLL
+  [00055C18] DEV8932.DLL
+  [00055C2C] DEV9032.DLL
+  [00055C40] DEVVFC32.DLL
+  [00055C58] DEVSLX32.DLL
+  [00055C70] DEVSAK32.DLL
+  [00055C88] DEVUNI32.DLL
+  [00055CA0] DVATISHA.DLL
+  [00055CB8] DEVCAL32.DLL
+  [00055CD0] GUJUNI32.DLL
+  [00055CE8] GUJVFC32.DLL
+  [00055D00] GUJDL32.DLL
+  [00055D14] GUJ2DL32.DLL
+  [00055D2C] SU_GUJ32.DLL
+  [00055D44] SU2GUJ32.DLL
+  [00055D5C] GUJSLX32.DLL
+  [00055D74] GUJCAL32.DLL
+  [00055D8C] PUNDL32.DLL
+  [00055DA0] PUN2DL32.DLL
+  [00055DB8] SU_PUN32.DLL
+  [00055DD0] SU2PUN32.DLL
+  [00055DE8] PUNVFC32.dll
+  [00055E00] PUNUNI32.DLL
+  [00055E18] PUNSLX32.DLL
+  [00055E30] PUNCAL32.DLL
+  [00055E48] BANDL32.DLL
+  [00055E5C] BAN2DL32.DLL
+  [00055E74] SU2BAN32.DLL
+  [00055E8C] BANPRO32.DLL
+  [00055EA4] BANVFC32.DLL
+  [00055EBC] BANSLX32.dll
+  [00055ED4] BANSLX32.DLL
+  [00055EEC] BANUNI32.DLL
+  [00055F04] BANCAL32.DLL
+  [00055F1C] ORIVFC32.DLL
+  [00055F34] ORI2DL32.DLL
+  [00055F4C] SU2ORI32.DLL
+  [00055F64] ORISLX32.DLL
+  [00055F7C] ORIUNI32.DLL
+  [00055F94] ORICAL32.DLL
+  [00055FAC] TAMDL32.DLL
+  [00055FC0] TAM2DL32.DLL
+  [00055FD8] SU_TAM32.DLL
+  [00055FF0] SU2TAM32.DLL
+  [00056008] NTAMDL32.DLL
+  [00056020] TACE32.DLL
+  [00056034] TAMSLX32.DLL
+  [0005604C] TAMUNI32.DLL
+  [00056064] Tam2Dl32.DLL
+  [0005607C] TAMCAL32.DLL
+  [00056094] TAMVFC32.DLL
+  [000560AC] KANDL32.DLL
+  [000560C0] KAN2DL32.DLL
+  [000560D8] SU2KAN32.DLL
+  [000560F0] KANVFC32.DLL
+  [00056108] KANSLX32.DLL
+  [00056120] KANUNI32.DLL
+  [00056138] KANCAL32.DLL
+  [00056150] TELDL32.DLL
+  [00056164] SU_TEL32.DLL
+  [0005617C] SU2TEL32.DLL
+  [00056194] TEL2DL32.DLL
+  [000561AC] TELVFC32.DLL
+  [000561C4] TELUNI32.DLL
+  [000561DC] TELSLX32.DLL
+  [000561F4] TELCAL32.DLL
+  [0005620C] MALDL32.DLL
+  [00056220] MAL2DL32.DLL
+  [00056238] SU2MAL32.DLL
+  [00056250] MALVFC32.DLL
+  [00056268] MALUNI32.DLL
+  [00056280] MALSLX32.DLL
+  [00056298] MALCAL32.DLL
+  [000562B0] SANDL32.DLL
+  [000562C4] SAN1DL32.DLL
+  [000562DC] SAN2DL32.DLL
+  [000562F4] SA10832.DLL
+  [00056308] SANSLX32.DLL
+  [00056320] SANVFC32.DLL
+  [00056338] DIADL32.DLL
+  [0005634C] DIA2DL32.DLL
+  [00056364] DIA1DL32.DLL
+  [0005637C] DIASLX32.DLL
+  [00056394] SNDDL32.DLL
+  [000563A8] SND2DL32.DLL
+  [000563C0] ARADL32.DLL
+  [000563D4] ARA2DL32.DLL
+  [000563EC] SLSDL32.DLL
+  [00056400] SLS2DL32.DLL
+  [00056418] RUSDL32.DLL
+  [0005642C] TAI2DL32.DLL
+  [00056444] LUS2DL32.DLL
+  [0005645C] ODE2DL32.DLL
+  [00056474] TIB2DL32.DLL
+  [0005648C] TibSan32.dll
+  [000564A4] TBATISHA.dll
+  [00057448] Shree-Lipi 2.0/3.0
+  [00057464] Suchika 2.0/3.0
+  [0005747C] Shree-Lipi 4.0/5.0/6.0
+  [0005749C] Shree-Lipi Vedic
+  [000574B8] Shree-Lipi 1.0
+  [000574D0] Shree-Lipi Professional
+  [000574F0] Shreelipi Linux
+  [00057508] Linux Bilingual
+  [00057520] Shree-Lipi Bharati/Linux
+  [00057544] Shree-Lipi 3.0.1
+  [00057560] Shree-Lipi 6.0
+  [00057578] Shree Video Titling Monolingual
+  [000575A0] Shree Video Titling Bilingual
+  [000575C8] ShreeLipi 4.0/5.0 On MAC
+  [000575EC] ShreeLipi-Ex
+  [00057604] Shree-Lipi 7.0
+  [0005761C] ShreeLipi 7 On MAC
+  [00057638] Suchika 4.0/5.0
+  [00057650] Suchika 2005
+  [00057668] Indic Diacritical
+  [00057684] Modular Editor
+  [000576BC] Diacritical 2005
+  [000576E4] ITR Swadesh 2.0 Monolingual
+  [00057708] ITR Swadesh 2.0 Bilingual
+  [0005772C] ITR Swadesh Monolingual
+  [0005774C] ITR Swadesh Primer Bilingual
+  [00057784] ISFOC Monolingual
+  [000577A0] ISFOC 2000 Monolingual
+  [000577C0] ISM Sanskrit
+  [000577D8] ISFOC Web Monolingual
+  [000577F8] ISFOC Bilingual
+  [00057810] ISFOC Web Bilingual
+  [0005782C] ISFOC Web Bilingual New
+  [0005784C] ISFOC-GIST
+  [00057860] ISFOC New
+  [00057874] Monotype
+  [00057888] Monotype SBA
+  [000578A0] MonoType-2
+  [000578B4] Indica, Anu
+  [000578D8] Indica 2004
+  [000578EC] Indica2K
+  [00057900] Akruti Monolingual
+  [0005791C] Akruti 2000 Monolingual
+  [0005793C] Akruti Freedom
+  [00057954] Akruti 95
+  [00057968] Akruti 98
+  [0005797C] Akruti 99
+  [00057990] Akruti Bilingual
+  [000579AC] Akruti Office
+  [000579C4] Akruti Office Bilingual
+  [000579E4] Akruti Office2 Bilingual
+  [00057A08] Akruti Office 6 Bilingual
+  [00057A2C] Akruti Lite
+  [00057A40] Akruti Dynamic
+  [00057A94] Tamil99 Monolingual
+  [00057AB0] Tamil99 Bilingual
+  [00057AEC] Tace-New
+  [00057B00] Panchari
+  [00057B24] TCRC Sanskrit
+  [00057B3C] Bharti Sanskrit
+  [00057B54] Bharati-Atisha
+  [00057B6C] Tibetan-Ex
+  [00057B80] Prakashak
+  [00057B94] Bangla Akademi
+  [00057BAC] Bangla Akademi 2004
+  [00057BC8] ISCII (8 bit)
+  [00057BE0] PC ISCII
+  [00057BF4] ISCII (7 bit)
+  [00057C3C] APS Monolingual
+  [00057C54] APS Bilingual
+  [00057C6C] APS BILINGUAL
+  [00057C84] APS Monolingual Old
+  [00057CA0] Kannada Deccan
+  [00057CB8] KANDECCAN-EX
+  [00057CD0] Thoolika
+  [00057CE4] Thoolika Bilingual
+  [00057D00] Akshar, Akshara-XP
+  [00057D3C] Baraha Kan Vedik
+  [00057D58] Baraha Dev 7.0/8.0
+  [00057D74] Baraha Dev 2.0/3.0
+  [00057DA0] Winkey Monolingual
+  [00057DEC] KrutiMaster
+  [00057E00] KGP/Nudi Monolingual
+  [00057E20] KGP/Nudi Bilingual
+  [00057E4C] Indoword
+  [00057E60] MonoType
+  [00057E74] WebDunia
+  [00057E88] Chitralekha
+  [00057EAC] Dainik Bhaskar
+  [00057EC4] Bhasha Bharati
+  [00057EDC] Bhasha Bharati-1
+  [00057EF8] Bhasha Bharti-2
+  [00057F10] Rashtriya Sahara
+  [00057F2C] Ananda Bazar
+  [00057F50] BangseeAlpona
+  [00057F78] Special ISCII for AOL
+  [00057FA8] Walkman Chanakya
+  [00057FC4] Panchang
+  [00057FF8] Sulipi-1
+  [0005800C] Sulipi-New
+  [00058030] HT Chanakya
+  [00058054] Sanskriti Editor
+  [00058070] Elango Old
+  [000580A4] Millennium Monolingual
+  [000580C4] LangscapeDev Bilingual
+  [000580E4] Manali Hindi
+  [000580FC] Shatabdi
+  [00058110] CTWNataraj
+  [00058150] SutonnyMJ(Bijoy)
+  [0005816C] SutonnyCMJ(Bijoy)
+  [00058188] TANMATRA
+  [0005819C] WINBRAILLE
+  [000581B0] DUXBRAILLE
+  [000581D4] Terafont
+  [00058228] Shree-Jagati
+  [0005825C] STM-Academy
+  [00058290] STM Hindi
+  [000582A4] Ramdhenu
+  [000582B8] Ramdhenu 3.1
+  [000582D0] DV-Indian
+  [000582E4] IDS Tamil
+  [00058304] Tamil Bible
+  [00058318] Nakeeran
+  [0005832C] Amar Bangla
+  [00058360] Dataflow Devyani
+  [0005837C] Indo Times
+  [00058390] MG SHREE
+  [000583B4] KavipPriya
+  [000583C8] Shree-BartamanX
+  [000583E0] Sakal-Lipi
+  [00058404] Gurbani Akhar
+  [0005841C] Shree-Telangana
+  [00058434] Shree-TelanganaX
+  [00058450] Lokshahi
+  [00058464] EKL-ARCAD
+  [00058488] Dharmaseva-Ex
+  [000584F0] Shree-Lipi Caligraphy
+  [00058520] Shree-MetroX
+  [00059980] SHREE-LIPI 2.0/3.0
+  [0005999C] SUCHIKA 2.0/3.0
+  [000599B4] SHREE-LIPI 4.0/5.0/6.0
+  [000599D4] SHREE-LIPI VEDIC
+  [000599F0] SHREE-LIPI 1.0
+  [00059A08] SHREE-LIPI PROFESSIONAL
+  [00059A28] Shreelipi Linux
+  [00059A40] LINUX BILINGUAL
+  [00059A58] Shree-Lipi Bharati/Linux
+  [00059A7C] Shree-Lipi 3.0.1
+  [00059A98] Shree-Lipi 6.0
+  [00059AB0] Shree Video Titling Monolingual
+  [00059AD8] Shree Video Titling Bilingual
+  [00059B00] ShreeLipi 4.0/5.0 On MAC
+  [00059B24] ShreeLipi-Ex
+  [00059B3C] SHREE-LIPI 7.0
+  [00059B54] ShreeLipi 7 On MAC
+  [00059B70] SUCHIKA 4.0/5.0
+  [00059B88] Suchika 2005
+  [00059BA0] Indic Diacritical
+  [00059BBC] Modular Editor
+  [00059BF4] Diacritical 2005
+  [00059C1C] Shree-Lipi Caligraphy
+  [00059C3C] ITR Swadesh 2.0 Monolingual
+  [00059C60] ITR Swadesh 2.0 Bilingual
+  [00059C84] ITR Swadesh Monolingual
+  [00059CA4] ITR Swadesh Primer Bilingual
+  [00059CDC] ITR 2.0/3.0
+  [00059CF0] ISFOC Monolingual
+  [00059D0C] ISFOC 2000 Monolingual
+  [00059D2C] ISM Sanskrit
+  [00059D44] ISFOC Web Monolingual
+  [00059D64] ISFOC Bilingual
+  [00059D7C] ISFOC Web Bilingual
+  [00059D98] ISFOC Web Bilingual New
+  [00059DB8] ISFOC-GIST
+  [00059DCC] ISFOC New
+  [00059DE0] MONOTYPE
+  [00059DF4] Monotype SBA
+  [00059E0C] MonoType-2
+  [00059E20] Indica, Anu
+  [00059E44] Indica 2004
+  [00059E58] Indica2K
+  [00059E6C] Akruti Monolingual
+  [00059E88] Akruti 2000 Monolingual
+  [00059EA8] Akruti Freedom
+  [00059EC0] AKRUTI 95
+  [00059ED4] AKRUTI 98
+  [00059EE8] AKRUTI 99
+  [00059EFC] Akruti Bilingual
+  [00059F18] Akruti Office Bilingual
+  [00059F38] Akruti Office2 Bilingual
+  [00059F5C] Akruti Office 6 Bilingual
+  [00059F80] Akruti Lite
+  [00059F94] Akruti Dynamic
+  [00059FE8] TAMIL99 MONOLINGUAL
+  [0005A004] TAMIL99 BILINGUAL
+  [0005A040] Tace-New
+  [0005A054] Panchari
+  [0005A078] TCRC Sanskrit
+  [0005A090] Bharti Sanskrit
+  [0005A0A8] Bharati-Atisha
+  [0005A0C0] Tibetan-Ex
+  [0005A0D4] Prakashak
+  [0005A0E8] Bangla Akademi
+  [0005A100] Bangla Akademi 2004
+  [0005A11C] ISCII (8 bit)
+  [0005A134] PC ISCII
+  [0005A148] ISCII (7 bit)
+  [0005A190] APS Monolingual
+  [0005A1A8] APS Bilingual
+  [0005A1C0] APS BILINGUAL
+  [0005A1D8] APS Monolingual Old
+  [0005A1F4] Kannada Deccan
+  [0005A20C] KANDECCAN-EX
+  [0005A224] Thoolika
+  [0005A238] Thoolika Bilingual
+  [0005A254] Akshar, Akshara-XP
+  [0005A290] Baraha Kan Vedik
+  [0005A2AC] Baraha Dev 7.0/8.0
+  [0005A2C8] Baraha Dev 2.0/3.0
+  [0005A304] Winkey Monolingual
+  [0005A330] KrutiMaster
+  [0005A354] KGP/Nudi Monolingual
+  [0005A374] KGP/Nudi Bilingual
+  [0005A3A0] Indoword
+  [0005A3B4] WebDunia
+  [0005A3C8] Chitralekha
+  [0005A3EC] Dainik Bhaskar
+  [0005A404] Bhasha Bharati
+  [0005A41C] Bhasha Bharati-1
+  [0005A438] Bhasha Bharti-2
+  [0005A450] Rashtriya Sahara
+  [0005A46C] Ananda Bazar
+  [0005A490] BangseeAlpona
+  [0005A4B8] Special ISCII for AOL
+  [0005A4E8] Walkman Chanakya
+  [0005A504] Panchang
+  [0005A538] Sulipi-1
+  [0005A54C] Sulipi-New
+  [0005A570] HT Chanakya
+  [0005A594] Sanskriti Editor
+  [0005A5B0] Elango Old
+  [0005A5E4] Millennium Monolingual
+  [0005A604] LangscapeDev Bilingual
+  [0005A624] Manali Hindi
+  [0005A63C] Shatabdi
+  [0005A650] CTWNataraj
+  [0005A690] SutonnyMJ(Bijoy)
+  [0005A6AC] SutonnyCMJ(Bijoy)
+  [0005A6C8] TANMATRA
+  [0005A6DC] WINBRAILLE
+  [0005A6F0] DUXBRAILLE
+  [0005A714] Terafont
+  [0005A768] Shree-Jagati
+  [0005A79C] STM-Academy
+  [0005A7D0] STM Hindi
+  [0005A7E4] Ramdhenu
+  [0005A7F8] Ramdhenu 3.1
+  [0005A810] DV-Indian
+  [0005A824] IDS Tamil
+  [0005A844] Tamil Bible
+  [0005A858] Nakeeran
+  [0005A86C] Amar Bangla
+  [0005A8A0] Dataflow Devyani
+  [0005A8BC] Indo Times
+  [0005A8D0] MG SHREE
+  [0005A8F4] KavipPriya
+  [0005A908] Shree-BartamanX
+  [0005A920] Sakal-Lipi
+  [0005A944] Gurbani Akhar
+  [0005A95C] Shree-Telangana
+  [0005A974] Shree-TelanganaX
+  [0005A990] Lokshahi
+  [0005A9A4] EKL-ARCAD
+  [0005A9C8] Dharmaseva-Ex
+  [0005AA40] Shree-MetroX
+  [0005B1E2]  INFOTECH
+  [0005B356]  INFOTECH
+  [0005B386]  INFOTECH
+  [0005B3A6]  INFOTECH
+  [0005B59F] TCustomIniFile
+  [0005B64D] TIniFile
+  [0005C77C] SHREE DEFAULT FONTS
+  [0005C798] SUCHI DEFAULT FONTS
+  [0005C7B4] SHREE 3.01 DEFAULT FONTS
+  [0005C7D8] SUCHI 3.01 DEFAULT FONTS
+  [0005C7FC] SHREE 6.0 DEFAULT FONTS
+  [0005C81C] SHREE 7.0 DEFAULT FONTS
+  [0005C83C] SHREELIPI-EX DEFAULT FONTS
+  [0005C860] DIA2005 DEFAULT FONTS
+  [0005C880] SWADESH DEFAULT FONTS
+  [0005C8A0] AKRUTI DEFAULT FONTS
+  [0005C8C0] ISFOC DEFAULT FONTS
+  [0005C8DC] INDICA DEFAULT FONTS
+  [0005C8FC] INDICA2004 DEFAULT FONTS
+  [0005C920] MONOTYPE DEFAULT FONTS
+  [0005C940] TAMIL99 DEFAULT FONTS
+  [0005C960] BTAMIL99 DEFAULT FONTS
+  [0005C980] ANU DEFAULT FONTS
+  [0005C99C] ANU 3.01 DEFAULT FONTS
+  [0005C9BC] ANU 7 DEFAULT FONTS
+  [0005C9D8] VEDIC DEFAULT FONTS
+  [0005C9F4] PANCHARI DEFAULT FONTS
+  [0005CA14] BENGALI SPECIAL DEFAULT FONTS
+  [0005CA3C] BENGALI SPECIAL 2004 DEFAULT FONTS
+  [0005CA68] PRAKASHAK DEFAULT FONTS
+  [0005CA88] THOOLIKA DEFAULT FONTS
+  [0005CAA8] DECCAN HERALD DEFAULT FONTS
+  [0005CACC] KGPKAN DEFAULT FONTS
+  [0005CAEC] AKRUTI 95 DEFAULT FONTS
+  [0005CB0C] AKRUTI 98 DEFAULT FONTS
+  [0005CB2C] AKRUTI 99 DEFAULT FONTS
+  [0005CB4C] SHREE BHARATI DEFAULT FONTS
+  [0005CB70] UNICODE DEFAULT FONTS
+  [0005CB90] APS DEFAULT FONTS
+  [0005CBAC] ISFOC BILINGUAL DEFAULT FONTS
+  [0005CBD4] IDS DEFAULT FONTS
+  [0005CBF0] INDOWORD DEFAULT FONTS
+  [0005CC10] BHASHABHARATI DEFAULT FONTS
+  [0005CC34] BHASHABHARATI-1 DEFAULT FONTS
+  [0005CC5C] TSCII DEFAULT FONTS
+  [0005CC78] SHREE VIDEO TITLING DEFAULT FONTS
+  [0005CCA4] SUCHI VIDEO TITLING DEFAULT FONTS
+  [0005CCD0] AKSHAR DEFAULT FONTS
+  [0005CCF0] SUCHI2005 DEFAULT FONTS
+  [0005CD10] SULIPI DEFAULT FONTS
+  [0005CD30] SULIPI-NEW DEFAULT FONTS
+  [0005CD54] NAIDUNIA DEFAULT FONTS
+  [0005CD74] SHATABDI DEFAULT FONTS
+  [0005CD94] BJOY DEFAULT FONTS
+  [0005CDB0] JAGATI DEFAULT FONTS
+  [0005CDD0] TELANGANA DEFAULT FONTS
+  [0005CDF0] TELANGANAX DEFAULT FONTS
+  [0005CE14] SLX DEFAULT FONTS
+  [0005CE30] ISFOC NEW DEFAULT FONTS
+  [0005CE50] SHREE CALLIGRAPHY DEFAULT FONTS
+  [0005CE84]  DEFAULT FONTS
+  [0005CF30] SOFTWARE\Modular InfoTech\Shree-Lipi
+  [0005CF60] SOFTWARE\Modular InfoTech\Ankur
+  [0005D140] SOFTWARE\Modular InfoTech\Cnvapi32\
+  [0005D2F0] Unable to Create Key 
+  [0005D6B8] SOFTWARE\Modular InfoTech
+  [0005D6D4] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0005D700] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0005D72D] INSCRIPT
+  [0005D740] SOFTWARE\Modular InfoTech\ESCAPEKEY
+  [0005D764] CTRLFLAG
+  [0005D770] SHIFTFLAG
+  [0005DF94] CURRENT APPLICATION TYPE
+  [0005DFB0] CURRENT SCRIPT
+  [0005DFC0] ACTIVATION KEY
+  [0005DFD0] AUTO_FONT_CHANGE
+  [0005DFE4] AUTO DETECT
+  [0005DFF0] JOB DIRECTORY
+  [0005E008] ENABLE IN DIALOGS
+  [0005E01C] STAY ON TOP
+  [0005E028] HELP FOR APPLICATIONS
+  [0005E040] CURRENT APPLICATION
+  [0005E074] TUTOR HINTS
+  [0005E080] TUTOR POSITION
+  [0005E090] SMART BACKSPACE
+  [0005E0A0] VALIDATE
+  [0005E0AC] \HYPHEN_FLAGS
+  [0005E0BC] \LANGUAGE ORDER
+  [0005E0CC] \FONT LAYOUT
+  [0005E9C4] CURRENT APPLICATION TYPE
+  [0005E9E8] CURRENT SCRIPT
+  [0005EA00] ACTIVATION KEY
+  [0005EA18] HYPHEN_FLAGS
+  [0005EA30] LANGUAGE ORDER
+  [0005EA74] FONT LAYOUT
+  [0005EA88] KEYBOARDS
+  [0005EA9C] AUTO_FONT_CHANGE
+  [0005EAB8] JOB DIRECTORY
+  [0005EAE0] ENABLE IN DIALOGS
+  [0005EAFC] STAY ON TOP
+  [0005EB10] HELP FOR APPLICATIONS
+  [0005EB30] CURRENT APPLICATION
+  [0005EB4C] TUTOR HINTS
+  [0005EB60] TUTOR POSITION
+  [0005F0DC] SOFTWARE\Modular InfoTech
+  [0005F0F8] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0005F124] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0005F150] SOFTWARE\Modular InfoTech\ESCAPEKEY
+  [0005F174] SOFTWARE\Modular InfoTech\ESCAPEKEY
+  [0005F198] CTRLFLAG
+  [0005F1A4] SHIFTFLAG
+  [0005F7A0] CURRENT APPLICATION TYPE
+  [0005F7BC] CURRENT SCRIPT
+  [0005F7CC] ACTIVATION KEY
+  [0005F7DC] AUTO_FONT_CHANGE
+  [0005F7F0] AUTO DETECT
+  [0005F7FC] JOB DIRECTORY
+  [0005F814] STAY ON TOP
+  [0005F820] ENABLE IN DIALOGS
+  [0005F834] HELP FOR APPLICATIONS
+  [0005F84C] CURRENT APPLICATION
+  [0005F860] TUTOR HINTS
+  [0005F86C] TUTOR POSITION
+  [0005F87C] SMART BACKSPACE
+  [0005F88C] VALIDATE
+  [0005F898] \HYPHEN_FLAGS
+  [0005F8A8] \LANGUAGE ORDER
+  [0005F8B8] \FONT LAYOUT
+  [0005F90C] \KEYBOARDS
+  [000601E0] SOFTWARE\Modular InfoTech\SAMSL111
+  [00060414] SOFTWARE\Modular InfoTech
+  [00060430] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0006045C] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [00060BE0] FreeHook
+  [00060BEC] KbdMsgFilterFunc
+  [00060C00] GetMsgFilterFunc
+  [00060C44] Error Loading DLL Library 
+  [00060C70] LoadKbdOverlay
+  [00060C88] MAL2DL32.DLL
+  [00060CA0] CGUJDL32.DLL
+  [00060CB8] UTELDL32.DLL
+  [00060CD0] TEL2DL32.DLL
+  [00060CE8] ABANDL32.DLL
+  [00060D00] DIA2DL32.DLL
+  [000613CC] Shree-Lipi 5.0 From Modular
+  [000613E8] Shree-Lipi Ratna From Modular
+  [00061408] Shree-Lipi Kerala Rathnam From Modular
+  [00061430] SOFTWARE\Modular InfoTech\SAMSL111
+  [0006145C] SOFTWARE\Modular InfoTech\SAMSL111
+  [00061C65] QQQQQQSVW3
+  [0006218C] Devnagri
+  [000621A0] Gujarati
+  [00062214] Malayalam
+  [00062228] Sanskrit
+  [0006223C] Diacritical
+  [00062290] Assamese
+  [00062460] DEVNAGRI
+  [00062474] GUJARATI
+  [000624E8] MALAYALAM
+  [000624FC] SANSKRIT
+  [00062510] DIACRITICAL
+  [00062564] ASSAMESE
+  [00063050] SOFTWARE\Modular InfoTech\KEYBOARDS
+  [0006330C] SOFTWARE\Modular InfoTech\Samhita
+  [00063569] TPaintBox
+  [0006357A] TPaintBox
+  [0006358E] ExtCtrls
+  [00063615] Constraintsl
+  [0006363B] DragCursor
+  [00063660] DragKindP
+  [00063683] DragMode
+  [000636A6] Enabledde
+  [000636E7] ParentColor
+  [0006370D] ParentFont
+  [00063732] ParentShowHint
+  [0006375B] PopupMenu
+  [0006377F] ShowHint
+  [000637A2] Visible 
+  [000637C4] OnClick|
+  [000637E6] OnContextPopup 
+  [0006380F] OnDblClick
+  [00063834] OnDragDrop
+  [00063859] OnDragOver
+  [0006387E] OnEndDock
+  [000638A2] OnEndDrag|
+  [000638C6] OnMouseDown
+  [000638EC] OnMouseMove|
+  [00063912] OnMouseUp 
+  [00063958] OnStartDock\
+  [0006397E] OnStartDrag
+  [00063A8F] ExtCtrls
+  [00063AF6] AutoSize
+  [00063B3A] Constraintsl
+  [00063B60] DragCursor
+  [00063B85] DragKindP
+  [00063BA8] DragMode
+  [00063BED] IncrementalDisplay
+  [00063C1A] ParentShowHint
+  [00063C65] PopupMenu
+  [00063C89] ShowHint
+  [00063CCE] Transparent
+  [00063CF4] Visible 
+  [00063D16] OnClick|
+  [00063D38] OnContextPopup 
+  [00063D61] OnDblClick
+  [00063D86] OnDragDrop
+  [00063DAB] OnDragOver
+  [00063DD0] OnEndDock
+  [00063DF4] OnEndDrag|
+  [00063E18] OnMouseDown
+  [00063E3E] OnMouseMove|
+  [00063E64] OnMouseUp<i
+  [00063E88] OnProgress
+  [00063EAD] OnStartDock\
+  [00063ED3] OnStartDrag
+  [00064011] TCustomPanel
+  [00064026] TCustomPanel,K
+  [0006403D] ExtCtrls
+  [0006416B] ExtCtrls6
+  [000641B0] Alignment
+  [000641F6] AutoSize
+  [00064219] BevelInner
+  [0006423E] BevelOuter
+  [00064263] BevelWidth
+  [00064288] BiDiMode
+  [000642AB] BorderWidth
+  [000642D1] BorderStyle
+  [00064339] Constraints
+  [0006437F] UseDockManager
+  [000643A8] DockSitel
+  [000643CB] DragCursor
+  [000643F0] DragKindP
+  [00064413] DragMode
+  [00064458] FullRepaintde
+  [000644BE] ParentBiDiMode
+  [000644E7] ParentColor
+  [0006450D] ParentCtl3D
+  [00064533] ParentFont
+  [00064558] ParentShowHint
+  [00064581] PopupMenu
+  [000645A5] ShowHint
+  [000645C8] TabOrder
+  [0006462F] OnCanResize 
+  [00064655] OnClick(
+  [00064677] OnConstrainedResize|
+  [000646A5] OnContextPopup
+  [000646CE] OnDockDrop<
+  [000646F3] OnDockOver 
+  [00064718] OnDblClick
+  [0006473D] OnDragDrop
+  [00064762] OnDragOver
+  [00064787] OnEndDock
+  [000647AB] OnEndDrag 
+  [000647CF] OnEnter 
+  [00064812] OnGetSiteInfo|
+  [0006483A] OnMouseDown
+  [00064860] OnMouseMove|
+  [00064886] OnMouseUp 
+  [000648AA] OnResize
+  [000648CD] OnStartDock\
+  [000648F3] OnStartDrag
+  [00064919] OnUnDock
+  [00065789] TCommonDialog
+  [0006579E] TCommonDialog(c
+  [000657FA] HelpContext 
+  [00065820] OnClose 
+  [00065842] OnShowLd
+  [0006584E] TPrintRange
+  [00065867] prAllPages
+  [00065872] prSelection
+  [0006587E] prPageNums
+  [0006588E] TPrintDialogOption
+  [000658AE] poPrintToFile
+  [000658BC] poPageNums
+  [000658C7] poSelection
+  [000658D3] poWarning
+  [000658E4] poDisablePrintToFile
+  [000658FE] TPrintDialogOptions
+  [000659A5] TPrintDialog
+  [000659BA] TPrintDialogde
+  [000659F5] CollateT
+  [00065A38] FromPageT
+  [00065A5B] MinPageT
+  [00065AC1] PrintToFileHd
+  [00065AE7] PrintRangeT
+  [000662BC] YesToAll
+  [0006633C] commdlg_help
+  [0006634C] commdlg_FindReplace
+  [00066360] WndProcPtr%.8X%.8X
+  [00067770] Disk Drive
+  [00067784] Tape Drive
+  [000677A8] Processor
+  [000677BC] WORM Drive
+  [000677D0] CD-ROM Drive
+  [000677F8] Optical Drive
+  [00067820] Communication Device
+  [00067850] Any Type Device
+  [00067868] Other Type Device
+  [00068764] UNRECOGNIZED DRIVE
+  [00068D58] Error in MLUtil6.DLL
+  [00068FE8] MutexforDID
+  [00068FF4] Mutex Problem
+  [0006925C] MutexforDID
+  [00069268] Mutex Problem
+  [00069278] MIT_DID_DATA
+  [00069290] 2. Disk ID = *
+  [000692AC] Problem in Detection of Hard Disk
+  [000699A4] System\MountedDevices
+  [000699C4] \DosDevices\
+  [000699E8] System\CurrentControlSet\Services\Disk\Enum
+  [00069A3C] System\CurrentControlSet\Enum\USBStor\
+  [00069A70] ParentIdPrefix
+  [00069DF8] Config Manager\Enum
+  [00069E14] Config Manager\Enum\
+  [00069E38] hardwarekey
+  [00069E70] CurrentDriveLetterAssignment
+  [0006A2F8] Error in MLUtil6.DLL
+  [0006A318] MutexforLANG
+  [0006A328] Mutex Problem
+  [0006A338] MIT_LANG_DATA
+  [0006A350] 2. USB Disk ID = *
+  [0006A37C] MIT_DID_DATA
+  [0006A38C] Problem in Detection of USB Disk
+  [0006A844] System\CurrentControlSet\Services\Disk\Enum
+  [0006A895] heiblxjq
+  [0006AD48] System\CurrentControlSet\Services\Disk\Enum
+  [0006B118] System\CurrentControlSet\Services\Disk\Enum
+  [0006B97C] DiskId = *
+  [0006B9A8] Alternate DiskId = *
+  [0006B9C0] Machid = 
+  [0006B9CC] Alternate Machid = 
+  [0006BC24] MIDE0703.VXD
+  [0006BC34] MIDE0703.VXD file does not exist in Windows System / program directory
+  [0006BC7C] MIDE0703.VXD file corrupted
+  [0006C878] MutexforDID
+  [0006C885] savavmws
+  [0006C891] heiblxjq
+  [0006C8A2] TButtonLayout
+  [0006C8BD] blGlyphLeft
+  [0006C8C9] blGlyphRight
+  [0006C8D6] blGlyphTop
+  [0006C8E1] blGlyphBottom
+  [0006C8F6] TNumGlyphs
+  [0006CA3D] TSpeedButton
+  [0006CA52] TSpeedButtonX
+  [0006CAAE] AllowAllUp
+  [0006CAF5] BiDiMode
+  [0006CB18] ConstraintsT
+  [0006CB3E] GroupIndex
+  [0006CC66] NumGlyphs
+  [0006CC8A] ParentFont
+  [0006CCAF] ParentShowHint
+  [0006CCD8] ParentBiDiMode
+  [0006CD01] PopupMenu
+  [0006CD25] ShowHintT
+  [0006CD6A] Transparent
+  [0006CD90] Visible 
+  [0006CDB2] OnClick 
+  [0006CDD4] OnDblClick|
+  [0006CDF9] OnMouseDown
+  [0006CE1F] OnMouseMove|
+  [0006CE45] OnMouseUp
+  [0006CED9] TGlyphList
+  [0006CEEA] TGlyphList
+  [0006CF55] TGlyphCache
+  [0006CFAD] TButtonGlyph
+  [0006FA18] MutexToSynchronizeSoftLock
+  [0006FCD0] \PSCRUTIL.DLL
+  [0006FCE8] PSCRUTIL.DLL
+  [0006FE3C] \PSCRUTIL.DLL
+  [0006FE54] PSCRUTIL.DLL
+  [0006FFC8] \PSCRUTIL.DLL
+  [0006FFD8] USIGN: PScrUtil.Dll File Not found
+  [0006FFFC] USIGN: Signature not found
+  [00070018] USIGN: Wrong CRC, Version
+  [000701E4] command\
+  [00070208] MSEXCHG.EXE
+  [0007021C] MAKEGRUP.EXE
+  [00070234] LANGS32.EXE
+  [00070248] SL7_32.EXE
+  [0007025C] LAUNCHER.EXE
+  [00070274] KBD32.EXE
+  [00070288] BROWSER.EXE
+  [000702AC] REGKBD.EXE
+  [000702C0] SLREG.EXE
+  [000702D4] SLCHECK.EXE
+  [000702E8] POFFDICT.EXE
+  [00070300] ROOPA.EXE
+  [00070314] PATRIKA.EXE
+  [00070328] DATAMGR.EXE
+  [0007033C] LABELS.EXE
+  [00070350] MS_SCRPT.EXE
+  [00070368] AVISHKAR.EXE
+  [00070380] SPELL.EXE
+  [00070394] ROOPA_B.EXE
+  [000703A8] DBCONV.EXE
+  [000703BC] SYMPREV.EXE
+  [000703D0] FNTLYMGR.EXE
+  [000703E8] MITDICT.EXE
+  [000703FC] SUCHIKA.EXE
+  [00070460] MSEXCHG.EXE
+  [00070474] MAKEGRUP.EXE
+  [0007048C] LANGS32.EXE
+  [000704A0] SL7_32.EXE
+  [000704B4] LAUNCHER.EXE
+  [000704CC] KBD32.EXE
+  [000704E0] BROWSER.EXE
+  [00070504] REGKBD.EXE
+  [00070518] SLREG.EXE
+  [0007052C] SLCHECK.EXE
+  [00070540] POFFDICT.EXE
+  [00070558] ROOPA.EXE
+  [0007056C] PATRIKA.EXE
+  [00070580] DATAMGR.EXE
+  [00070594] LABELS.EXE
+  [000705A8] MS_SCRPT.EXE
+  [000705C0] AVISHKAR.EXE
+  [000705D8] SPELL.EXE
+  [000705EC] ROOPA_B.EXE
+  [00070600] DBCONV.EXE
+  [00070614] SYMPREV.EXE
+  [00070628] FNTLYMGR.EXE
+  [00070640] MITDICT.EXE
+  [00070654] SUCHIKA.EXE
+  [00070A39] SoftLock1.0The file and actual checksums = 
+  [0007126C] :\License\
+  [00071280] :\License
+  [000712A0] \License\
+  [000712AC] Info file Read Error = 
+  [000712CC] MITINFO 
+  [000712F0] No. of Bytes read in Info file = 
+  [00071314] Expected No. of Bytes in Info file = 
+  [0007134C] \License
+  [00071360] \Keys.Txt
+  [00071380] \License\Keys.Txt
+  [00071A68] Info file Read Error = 
+  [00071A88] MITINFO 
+  [00071AAC] No. of Bytes read in Info file = 
+  [00071AD0] Expected No. of Bytes in Info file = 
+  [00071E2D] SoftLock1.0U
+  [000721AC] Error in File "MIDE0703.VXD"
+  [000721D8] Error in writing to Info.Mit file
+  [00072204] MITINFO 1.1
+  [000722A0] Mutex problem while writing to Info.Mit file
+  [00072380] Mutex problem while writing Time spent
+  [0007242D] QQQQQQQ3
+  [000725A8] MutexforMITINFO
+  [000725F8] MSEXCHG.EXE
+  [0007260C] MAKEGRUP.EXE
+  [00072624] LANGS32.EXE
+  [00072638] SL7_32.EXE
+  [0007264C] LAUNCHER.EXE
+  [00072664] KBD32.EXE
+  [00072678] BROWSER.EXE
+  [0007269C] REGKBD.EXE
+  [000726B0] SLREG.EXE
+  [000726C4] SLCHECK.EXE
+  [000726D8] POFFDICT.EXE
+  [000726F0] ROOPA.EXE
+  [00072704] PATRIKA.EXE
+  [00072718] DATAMGR.EXE
+  [0007272C] LABELS.EXE
+  [00072740] MS_SCRPT.EXE
+  [00072758] AVISHKAR.EXE
+  [00072770] SPELL.EXE
+  [00072784] ROOPA_B.EXE
+  [00072798] DBCONV.EXE
+  [000727AC] SYMPREV.EXE
+  [000727C0] FNTLYMGR.EXE
+  [000727D8] MITDICT.EXE
+  [000727EC] SUCHIKA.EXE
+  [00073764] Devnagri
+  [00073784] Gujarati
+  [0007384C] Malayalam
+  [0007386C] Sanskrit
+  [000738A8] Sindhi_English
+  [00073914] Diacritical
+  [00074264] SHREE499
+  [000744EC] SADARIKA.EXE
+  [00074504] TALIKA.EXE
+  [00074518] PATRIKA.EXE
+  [0007452C] WINWORD.EXE
+  [00074540] EXCEL.EXE
+  [00074844] SHREE499
+  [00074888] SHREE-PUDHARI
+  [000748A0] SHREE_DECCAN
+  [000748B8] SHREE-ARAS
+  [000748CC] SHREE-SNDS
+  [000748E0] SHREE-SKAN
+  [000748F4] Shreelipi Bangla
+  [00074910] DV-SHREE-
+  [00074924] DVB-SHREE-
+  [00074938] MLB-SHREE-
+  [0007499C] KKR-Malik
+  [000749B0] TM-Chandra
+  [000749C4] SHREE-TELANGANA
+  [000749DC] SHREE-TELT
+  [000749F0] SHREE-SWABHUMI
+  [00074A08] SHREE-TELM
+  [00075008] Mkfisill
+  [00075028] Nkfvtyvn}
+  [00075084] SLREG.EXE 
+  [00075A3A] TTabChangingEvent
+  [00075A5F] AllowChange
+  [00075A7A] TTabPosition
+  [00075A9A] tpBottom
+  [00075ABA] TTabStyle
+  [00075AD8] tsButtons
+  [00075AE2] tsFlatButtons
+  [00075AF6] TDrawTabEvent
+  [00075B0F] TCustomTabControl
+  [00075B22] TabIndex
+  [00075B56] TTabGetImageEvent
+  [00075B7B] TabIndex
+  [00075B8D] ImageIndex
+  [00075CF1] TCustomTabControl
+  [00075D0A] TCustomTabControl
+  [00075D26] ComCtrls
+  [00075E4B] TTabSheetXj
+  [00075E5A] TTabSheet|i
+  [00075E6E] ComCtrls 
+  [00075E93] BorderWidth
+  [00075EB9] CaptionP
+  [00075EDB] DragMode
+  [00075EFE] Enabledde
+  [00075F60] Highlighted4a
+  [00075F86] ImageIndexT
+  [00075FCA] ConstraintsT
+  [00075FF0] PageIndex
+  [00076014] ParentFont
+  [00076039] ParentShowHint
+  [00076062] PopupMenu
+  [00076086] ShowHint
+  [000760A9] TabVisibleT
+  [000760EC] VisibleT
+  [0007612E] OnContextPopup
+  [00076157] OnDragDrop
+  [0007617C] OnDragOver
+  [000761A1] OnEndDrag 
+  [000761C5] OnEnter 
+  [00076229] OnMouseDown
+  [0007624F] OnMouseMove|
+  [00076275] OnMouseUp 
+  [00076299] OnResize 
+  [000762DD] OnStartDrag4o
+  [0007644F] TPageControl
+  [00076462] TPageControl4o
+  [00076479] ComCtrls2
+  [0007649E] ActivePage
+  [00076505] BiDiMode
+  [00076528] Constraints
+  [0007654E] DockSitel
+  [00076571] DragCursor
+  [00076596] DragKindP
+  [000765B9] DragMode
+  [000765DC] Enabledde
+  [0007661D] HotTrack
+  [00076661] MultiLine
+  [00076685] OwnerDraw
+  [000766A9] ParentBiDiMode
+  [000766D2] ParentFont
+  [000766F7] ParentShowHint
+  [00076720] PopupMenu
+  [00076744] RaggedRight
+  [0007676A] ScrollOpposite
+  [00076793] ShowHint
+  [000767D6] TabHeight
+  [000767FA] TabOrdertf
+  [0007681D] TabPosition
+  [00076843] TabStop<
+  [00076865] TabWidth
+  [00076888] Visible 
+  [000768AA] OnChange4f
+  [000768CD] OnChanging|
+  [000768F2] OnContextPopup
+  [0007691B] OnDockDrop<
+  [00076940] OnDockOver
+  [00076965] OnDragDrop
+  [0007698A] OnDragOver
+  [000769AF] OnDrawTab
+  [000769D3] OnEndDock
+  [000769F7] OnEndDrag 
+  [00076A1B] OnEnter 
+  [00076A3D] OnExitPg
+  [00076A5E] OnGetImageIndexT
+  [00076A88] OnGetSiteInfo|
+  [00076AB0] OnMouseDown
+  [00076AD6] OnMouseMove|
+  [00076AFC] OnMouseUp 
+  [00076B20] OnResize
+  [00076B43] OnStartDock\
+  [00076B69] OnStartDrag
+  [00076B8F] OnUnDock
+  [00076BED] TConversion
+  [00076BFE] TConversionFormat
+  [00076D69] TTabStringsxy
+  [00076D7A] TTabStrings
+  [00076D90] ComCtrls
+  [0007756C] SysTabControl32
+  [00079248] FormActivate
+  [0007925B] FormCreate
+  [00079266] TABOUTFORM
+  [0007928A] TABOUTFORM
+  [00079434] Licenced to 
+  [00079570] HHCtrl.OCX
+  [0007957C] HtmlHelpA
+  [000796BC] Keytutor
+  [00079801] PrintDialog
+  [00079899] Button10
+  [000798A8] Button12
+  [000798B7] Button13
+  [000798C6] Button11
+  [000798D5] ShiftBut
+  [000798E4] Button30
+  [000798F3] Button36
+  [00079902] Button18
+  [00079911] Button31 
+  [00079920] Button33$
+  [0007992F] Button38(
+  [0007993E] Button34,
+  [0007994D] Button220
+  [0007995C] Button284
+  [0007996B] Button298
+  [0007997A] Button41<
+  [00079989] Button40@
+  [00079998] Button14D
+  [000799A7] Button32H
+  [000799B6] Button17L
+  [000799C5] Button19P
+  [000799D4] Button20T
+  [000799E3] Button21X
+  [000799F2] Button23\
+  [00079A01] Button24`
+  [00079A10] Button25d
+  [00079A1F] Button43h
+  [00079A2E] Button42l
+  [00079A3D] HelpButp
+  [00079A4B] Button39t
+  [00079A5A] Button37x
+  [00079A69] Button16|
+  [00079A78] Button35
+  [00079A87] Button15
+  [00079A96] Button27
+  [00079AA5] Button26
+  [00079AB4] Button44
+  [00079AC3] Button46
+  [00079AD2] Button45
+  [00079AE1] EnterBut
+  [00079AFE] SpaceBut
+  [00079B0D] AlterBut
+  [00079B38] PrintBut
+  [00079B55] Button48
+  [00079B64] Button49
+  [00079B83] FormCreate
+  [00079B94] ShowButClick
+  [00079BA7] BackButClick
+  [00079BBA] FormClick
+  [00079BCA] DisplayBoxKeyPress
+  [00079BE3] FormKeyPress
+  [00079BF6] FormKeyDown
+  [00079C08] HelpButClick
+  [00079C1B] SpaceButClick
+  [00079C2F] ShiftButClick
+  [00079C43] AlterButClick
+  [00079C65] FormMouseMove
+  [00079C79] PrintButClick
+  [00079C8D] AboutButClick
+  [00079CA1] FormClose
+  [00079CB1] FormActivate
+  [00079CC4] Button49Click
+  [00079CD2] TKeyBoardTutorForm
+  [00079CFA] TKeyBoardTutorForm
+  [00079D17] Keytutor
+  [0007A1FC] MS Sans Serif
+  [0007A238] MS Scans Serif
+  [0007A434] MS Sans Serif
+  [0007A460] SLTUTOR.HLP
+  [0007A59D] QQQQQQQSVW
+  [0007AAF0] Modular InfoTech Tutor for Keyboard : 
+  [0007AB18] TutorGetMappedCode
+  [0007AB6C] MS Sans Serif
+  [0007ACCC] TutorGetAlterCode
+  [0007AFE8] C&trl+Sp
+  [0007B0F0] TutorGetAkshar
+  [0007B5A0] TutorGetMappedCode
+  [0007B5D1] QQQQQQQS3
+  [0007B7DC] SLTUTOR.HLP
+  [0007B7F0] SLTUTOR.CHM
+  [0007C494] MS Sans Serif
+  [0007C4F8]  Ctrl+Sp
+  [0007CB90] MS Sans Serif
+  [0007CBAC] Keyboard Layout For 
+  [0007CC7C] * LK  This key Links previous character with current one.
+  [0007CCC0] * HF  This key makes previous character Half.
+  [0007CCF8] * Ctrl+Sp = Control + SPACE [For MSWindows]
+  [0007CEC8] TutorGetAkshar
+  [0007D524] SHREE708
+  [0007D538] SUCHI708
+  [0007D54C] SHREE750
+  [0007D560] SUCHI792
+  [0007D574] SHREE951
+  [0007D588] SUCHI951
+  [0007D59C] SHREE550
+  [0007D5B0] SHREE600
+  [0007D5C4] SHREE802
+  [0007D5D8] SUCHI802
+  [0007D5EC] SHREE850
+  [0007D600] SUCHI850
+  [0007D614] SHREE900
+  [0007D628] SUCHI900
+  [0007D63C] SHREE504
+  [0007D650] SUCHI504
+  [0007D664] SHREE960
+  [0007D678] SHREE540
+  [0007D978] MS Sans Serif
+  [0007DCD4] MS Sans Serif
+  [0007DFBC] Modular InfoTech Tutor for Keyboard : 
+  [0007DFE4] Shree-Lipi Keyboard Tutor
+  [0007E614] SlTutorGetAkshar
+  [0007E628] TutorGetAkshar
+  [0007EC18] Unable to destroy the Tutor Window
+  [0007ECDC] SlTutorGetAlterCode
+  [0007ECF0] TutorGetAlterCode
+  [0007F060] SlTutorGetMappedCodeW
+  [0007F078] TutorGetMappedCodeW
+  [0007F699] CANCELBTN
+  [0007F6B7] PageControl1
+  [0007F6CA] TabSheet1
+  [0007F6DA] TabSheet2
+  [0007F6EA] GroupBox1
+  [0007F6FA] SCROLLRadioButton
+  [0007F712] CAPSRadioButton
+  [0007F728] NUMRadioButton
+  [0007F764] PREVIEWGRPBOX
+  [0007F778] PREVIEWPAINTBOX
+  [0007F78E] FONTNAMECB
+  [0007F79F] FONTSTYLECB
+  [0007F7B1] FONTSIZECB
+  [0007F7CF] SCRIPTComboBox 
+  [0007F7E4] CheckBox1$
+  [0007F801] KBDComboBox,
+  [0007F820] FONTLAYOUTComboBox4
+  [0007F839] APPLYButton8
+  [0007F84B] SrcLabel<
+  [0007F85A] DstLabel@
+  [0007F869] IncludeBtnD
+  [0007F87A] IncAllBtnH
+  [0007F88A] ExcludeBtnL
+  [0007F89B] ExAllBtnP
+  [0007F8AA] SrcListT
+  [0007F8B8] DstListX
+  [0007F8D3] TabSheet3`
+  [0007F8E3] CheckBox2d
+  [0007F8F3] GroupBox2h
+  [0007F903] RadioButton1l
+  [0007F916] RadioButton2p
+  [0007F929] RadioButton3t
+  [0007F93C] RadioButton4x
+  [0007F94F] RadioButton5|
+  [0007F97E] cbEscape
+  [0007F98F] FormActivate
+  [0007F9A2] FormCreate
+  [0007F9B3] OKBTNClick
+  [0007F9C4] FONTNAMECBChange
+  [0007F9DB] FONTNAMECBExit
+  [0007F9F0] FONTSIZECBExit
+  [0007FA05] HELPBTNClick
+  [0007FA18] SCRIPTComboBoxChange
+  [0007FA33] IncludeBtnClick
+  [0007FA49] ExcludeBtnClick
+  [0007FA5F] IncAllBtnClick
+  [0007FA74] ExAllBtnClick
+  [0007FA88] MoveSelected
+  [0007FAA9] GetFirstSelection
+  [0007FAC1] SetButtons
+  [0007FAD2] APPLYButtonClick
+  [0007FAE9] PageControl1Change
+  [0007FB02] Button1Click
+  [0007FB15] FONTLAYOUTComboBoxChange
+  [0007FB34] FormPaint
+  [0007FB44] cbEscapeKeyDown
+  [0007FB5A] cbEscapeKeyUp
+  [0007FB6E] CANCELBTNClick
+  [0007FB83] FONTSIZECBKeyPress
+  [0007FB9C] PREVIEWPAINTBOXPaint
+  [0007FBB1] TSHRSETUPFORM
+  [0007FBF2] TSHRSETUPFORM
+  [0007FC0A] SHRSETUP
+  [0007FC19] QQQQQQQQSVW
+  [00080278] ERROR : 
+  [0008028C]  THESE FONTS ARE NOT AVAILABLE
+  [00080775] QQQQQSVW
+  [000808D4] ERROR : 
+  [000808E8]  Fonts Are Not Available...
+  [00082368] Error in Setup, the settings will not be saved
+  [00083319] CANCELBTN
+  [00083337] PageControl1
+  [0008334A] TabSheet1
+  [0008335A] GroupBox1
+  [0008336A] SCROLLRadioButton
+  [00083382] CAPSRadioButton
+  [00083398] NUMRadioButton
+  [000833AD] TabSheet2
+  [000833D7] ComboBox1
+  [000833E7] ComboBox2
+  [000833F7] APPLYButton
+  [00083409] TabSheet3
+  [00083419] CheckBox2
+  [00083429] GroupBox2
+  [00083439] RadioButton1
+  [0008344C] RadioButton2 
+  [0008345F] RadioButton3$
+  [00083472] RadioButton4(
+  [00083485] RadioButton5,
+  [00083498] Button10
+  [000834A6] lEscape4
+  [000834B4] cbEscape
+  [000834C5] OKBTNClick
+  [000834D6] APPLYButtonClick
+  [000834ED] FormCreate
+  [000834FE] FormActivate
+  [00083511] ComboBox1Change
+  [00083527] Button1Click
+  [0008353A] HELPBTNClick
+  [0008354D] PageControl1Change
+  [00083566] CANCELBTNClick
+  [0008357B] cbEscapeKeyDown
+  [00083591] cbEscapeKeyUp
+  [0008359F] TKBDSETUPFORM
+  [000835D6] TKBDSETUPFORM >
+  [000835EE] KBDSETUP
+  [000842F8] Shift + 
+  [00084BC8] This is DEMO Version of ShreeLipi Samhita, this screen will appear every 5 minutes
+  [00085578] ControlDll
+  [00086388] Unauthorised use of font 
+  [00086560] Modular4226612
+  [00086820] SOFTWARE\Modular InfoTech\SAMSL111
+  [00086844] FreeHook
+  [00086850] KbdMsgFilterFunc
+  [00086864] GetMsgFilterFunc
+  [000873DC] MODULAR,
+  [000875A1] MS EXCEL
+  [000875AD] MS EXCEL 2000
+  [000875BD] ADOBE INDESIGN 2.0, CS
+  [00087B88] SET_AKSHAR
+  [00087E00] SOFTWARE\Modular InfoTech\SAMSL111
+  [00088428] Runtime error     at 00000000
+  [00088450] 0123456789ABCDEF                                                                
+  [00088770] MS Sans Serif
+  [00089029] MODULAR INFOTECH
+  [00089066]  INFOTECH
+  [00089099]  INFOTECH
+  [000890C9]  INFOTECH
+  [00089160]  INFOTECH
+  [00089197] #| INFOTECH
+  [000891CF]  INFOTECH
+  [000891FB]  INFOTECH
+  [00089227] MODULAR INFOTECH
+  [0008925A] MODULAR INFOTECH
+  [0008928D] MODULAR INFOTECH
+  [000892C0] MODULAR INFOTECH
+  [000892F3] MODULAR INFOTECH
+  [00089326] MODULAR INFOTECH
+  [00089359] MODULAR INFOTECH
+  [0008938C] MODULAR INFOTECH
+  [000893BF] MODULAR INFOTECH
+  [000893F5] MODULAR INFOTECH
+  [00089432]  INFOTECH
+  [00089465]  INFOTECH
+  [00089495]  INFOTECH
+  [000894C9]  INFOTECH
+  [000894FE]  INFOTECH
+  [0008952C]  INFOTECH
+  [00089563] #| INFOTECH
+  [0008959B]  INFOTECH
+  [000895C7]  INFOTECH
+  [000895F3] MODULAR INFOTECH
+  [00089626] MODULAR INFOTECH
+  [00089659] MODULAR INFOTECH
+  [0008968C] MODULAR INFOTECH
+  [000896BF] MODULAR INFOTECH
+  [000896F2] MODULAR INFOTECH
+  [00089725] MODULAR INFOTECH
+  [00089758] MODULAR INFOTECH
+  [00089794]  INFOTECH
+  [000897C1] MODULAR INFOTECH
+  [00089B8D] MODULAR INFOTECH
+  [00089BCA]  INFOTECH
+  [00089BFD]  INFOTECH
+  [00089CC5]  INFOTECH
+  [00089D00]  INFOTECH
+  [00089D34]  INFOTECH
+  [00089D5F]  INFOTECH
+  [00089D8B] MODULAR INFOTECH
+  [00089DBE] MODULAR INFOTECH
+  [00089DF1] MODULAR INFOTECH
+  [00089E24] MODULAR INFOTECH
+  [00089E57] MODULAR INFOTECH
+  [00089E8A] MODULAR INFOTECH
+  [00089EBD] MODULAR INFOTECH
+  [00089EF0] MODULAR INFOTECH
+  [00089F23] MODULAR INFOTECH
+  [00089F59] MODULAR INFOTECH
+  [0008A5B8] !?~@AOMXr@~?
+  [0008A5D0] !?~@AOMXr@~?
+  [0008AC20] \\.\PhysicalDrive%d
+  [0008AC34] \\.\PhysicalDrive%d
+  [0008AC48] \\.\PhysicalDrive%d
+  [0008AC5C] \\.\MIDE0703.VXD
+  [0008AC6D] ERROR: Could not open MIDE0703.VXD file
+  [0008AC95] Lock Test
+  [0008ACA5] \\.\Scsi%d:
+  [0008ACB1] SCSIDISK
+  [0008B258] TuZuJ6D6
+  [0008B277] 84y:y7u9uT
+  [0008B378] JmDmZ1T1
+  [0008B5B3] sRT\T(^&^
+  [0008B608] (D&D7c9c
+  [0008B744] {IyIwMwM
+  [0008BB38] XZXX`^`\
+  [0008BB4C] /v/v*{By~
+  [0008BD34] -Z-Z<u<u
+  [0008C36C] M&!&+J+JL
+  [0008C444] #-#-'XoX
+  [0008C710] 6`6`n}&}'WoWk
+  [0008C8D7] nsO;O4Q|Q
+  [0008C96B] Z@l@ly{y{
+  [0008CA24] 7s7su<u<V
+  [0008CC84] OEOE<*<*
+  [0008CCAF] zQ&Q&ylyl
+  [0008CE10] o[o[0J0J
+  [0008CE40] oToT"-"-
+  [0008CEC4] *P*PY`Y`
+  [0008CF7B] Q<{<{n{n{T!T!
+  [0008CF97] !v"v"/z/z
+  [0008CFAB] f"`"`b|b|6
+  [0008D1F3] !a.a..+.+
+  [0008D21C] >^>^9a9a9
+  [0008D268] t[4[#KkK
+  [0008D5D1] =B=t'<'Fb
+  [0008DC6C] vJvJuO=OW
+  [0008DE7C] \L\L|n|nu
+  [0008DEEC] adcd:O:Or
+  [0008E094] <v^vawew
+  [0008E0D4] 2ZZZu4=4i
+  [0008E1C5] 2Y2%%m%&
+  [0008EBD7] 2-f-fPfPf
+  [0008EC48] xmxmR`R`
+  [0008EEB7] }i!i!0^0^
+  [0008EFA4] OQOQkXkX>
+  [0008F0E4] aq)q:+r+\
+  [0008F100] (&(&hThT
+  [0008F16C] e5e5?=?=
+  [0008F1BC] }<}<HXHX
+  [0008F1F3] s[$[$]v]vlZlZW
+  [0008F288] vAvAO:O:
+  [0008F368] $$$$J<J<
+  [0008F490] V,V,YnYn
+  [0008F9C7] W#)#)O[O[
+  [0008FA33] ,*,*,-2-2#+#+]~]~
+  [0008FAC8] _*_*1A1AV}V}
+  [0008FAE7] 'g6g6;1;1oHoH
+  [0008FD07] A,2,2OgOg
+  [0008FD40] MbMb8l8l
+  [0008FE14] \m\mjGjG
+  [0008FF47] -4*4*jCjCC9C9p
+  [00090128] igigxSxS
+  [00090234] zIzIu/u/.M.M
+  [00090273] ,:P:Pi0i0
+  [00090284] qJqJ.,.,
+  [000903DC] m`m`z+z+:
+  [00090448] AmAmqjqj}
+  [00090518] 3}3}ykyk
+  [00090634] TMTM!$!$
+  [000906B4] MzMz!n!n
+  [00090750] STST1@1@
+  [00090824] .\.\wTwT
+  [00090848] >U>Ux:x:
+  [00090860] P]P]@X@X
+  [00090B28] h9h9`T`Tb
+  [00090B70] \5\5< < ,B,B
+  [00090B9C] g&g&"x"x
+  [0009101C] TuZuJ6D6
+  [0009103B] 84y:y7u9uT
+  [0009113C] JmDmZ1T1
+  [00091377] sRT\T(^&^
+  [000913CC] (D&D7c9c
+  [00091508] {IyIwMwM
+  [000918FC] XZXX`^`\
+  [00091910] /v/v*{By~
+  [00091AF8] -Z-Z<u<u
+  [00092130] M&!&+J+JL
+  [00092208] #-#-'XoX
+  [000924D4] 6`6`n}&}'WoWk
+  [0009269B] nsO;O4Q|Q
+  [0009272F] Z@l@ly{y{
+  [000927E8] 7s7su<u<V
+  [00092A48] OEOE<*<*
+  [00092A73] zQ&Q&ylyl
+  [00092BD4] o[o[0J0J
+  [00092C04] oToT"-"-
+  [00092C88] *P*PY`Y`
+  [00092D3F] Q<{<{n{n{T!T!
+  [00092D5B] !v"v"/z/z
+  [00092D6F] f"`"`b|b|6
+  [00092FB7] !a.a..+.+
+  [00092FE0] >^>^9a9a9
+  [0009302C] t[4[#KkK
+  [00093395] =B=t'<'Fb
+  [00093A30] vJvJuO=OW
+  [00093C40] \L\L|n|nu
+  [00093CB0] adcd:O:Or
+  [00093E58] <v^vawew
+  [00093E98] 2ZZZu4=4i
+  [00093F89] 2Y2%%m%&
+  [00094C7B] }i!i!0^0^
+  [00094D68] OQOQkXkX>
+  [00094EA8] aq)q:+r+\
+  [00094EC4] h&(&(ThTO
+  [00094F30] e5e5?=?=
+  [00094F80] }<}<HXHX
+  [00094FB7] s[$[$]v]vlZlZW
+  [0009504C] vAvAO:O:
+  [0009512C] d$$$J<J<
+  [00095254] V,V,YnYn
+  [0009578B] W#)#)O[O[
+  [000957F7] ,*,*,-2-2#+#+]~]~
+  [0009588C] _*_*1A1AV}V}
+  [000958AB] 'g6g6;1;1oHoH
+  [00095ACB] A,2,2OgOg
+  [00095B04] MbMb8l8l
+  [00095BD8] \m\mjGjG
+  [00095D0B] -4*4*jCjCC9C9p
+  [00095EEC] igigxSxS
+  [00095FF8] zIzIu/u/.M.M
+  [00096037] ,:P:Pi0i0
+  [00096048] qJqJ.,.,
+  [000961A0] m`m`z+z+:
+  [0009620C] AmAmqjqj}
+  [000962DC] 3}3}ykyk
+  [000963F8] TMTM!$!$
+  [00096478] MzMz!n!n
+  [00096514] STST1@1@
+  [000965E8] .\.\wTwT
+  [0009660C] >U>Ux:x:
+  [00096624] P]P]@X@X
+  [000968EC] h9h9`T`Tb
+  [00096934] \5\5< < ,B,B
+  [00096960] g&g&"x"x
+  [00096DE0] TuZuJ6D6
+  [00096DFF] 84y:y7u9uT
+  [00096F00] JmDmZ1T1
+  [0009713B] sRT\T(^&^
+  [00097190] (D&D7c9c
+  [000972CC] {IyIwMwM
+  [000976C0] XZXX`^`\
+  [000976D4] /v/v*{By~
+  [000978BC] -Z-Z<u<u
+  [00097EF4] M&!&+J+JL
+  [00097FCC] #-#-'XoX
+  [00098298] 6`6`n}&}'WoWk
+  [0009845F] nsO;O4Q|Q
+  [000984F3] Z@l@ly{y{
+  [000985AC] 7s7su<u<V
+  [0009880C] OEOE<*<*
+  [00098837] zQ&Q&ylyl
+  [00098998] o[o[0J0J
+  [000989C8] oToT"-"-
+  [00098A4C] *P*PY`Y`
+  [00098B03] Q<{<{n{n{T!T!
+  [00098B1F] !v"v"/z/z
+  [00098B33] f"`"`b|b|6
+  [00098D7B] !a.a..+.+
+  [00098DA4] >^>^9a9a9
+  [00098DF0] t[4[#KkK
+  [00099159] =B=t'<'Fb
+  [000997F4] vJvJuO=OW
+  [00099A04] \L\L|n|nu
+  [00099A74] adcd:O:Or
+  [00099C1C] <v^vawew
+  [00099C5C] 2ZZZu4=4i
+  [00099D4D] 2Y2%%m%&
+  [0009AA3F] }i!i!0^0^
+  [0009AB2C] OQOQkXkX>
+  [0009AC6C] aq)q:+r+\
+  [0009AC88] h&(&(ThTO
+  [0009AD44] }<}<HXHX
+  [0009AD7B] s[$[$]v]vlZlZW
+  [0009AE10] vAvAO:O:
+  [0009B018] V,V,YnYn
+  [0009B54F] W#)#)O[O[
+  [0009B5BB] ,*,*,-2-2#+#+]~]~
+  [0009B650] _*_*1A1AV}V}
+  [0009B66F] 'g6g6;1;1oHoH
+  [0009B8C8] MbMb8l8l
+  [0009B99C] \m\mjGjG
+  [0009BACF] -4*4*jCjCC9C9p
+  [0009BCB0] igigxSxS
+  [0009BDBC] zIzIu/u/.M.M
+  [0009BDFB] ,:P:Pi0i0
+  [0009BE0C] qJqJ.,.,
+  [0009BF64] m`m`z+z+:
+  [0009BFD0] AmAmqjqj}
+  [0009C0A0] 3}3}ykyk
+  [0009C1BC] TMTM!$!$
+  [0009C23C] MzMz!n!n
+  [0009C2D8] STST1@1@
+  [0009C3AC] .\.\wTwT
+  [0009C3D0] >U>Ux:x:
+  [0009C3E8] P]P]@X@X
+  [0009C6B0] h9h9`T`Tb
+  [0009C6F8] \5\5< < ,B,B
+  [0009C724] g&g&"x"x
+  [0009CBA4] TuZuJ6D6
+  [0009CBC3] 84y:y7u9uT
+  [0009CCC4] JmDmZ1T1
+  [0009CEFF] sRT\T(^&^
+  [0009CF54] (D&D7c9c
+  [0009D090] {IyIwMwM
+  [0009D484] XZXX`^`\
+  [0009D498] /v/v*{By~
+  [0009D680] -Z-Z<u<u
+  [0009DCB8] M&!&+J+JL
+  [0009DD90] #-#-'XoX
+  [0009E05C] 6`6`n}&}'WoWk
+  [0009E223] nsO;O4Q|Q
+  [0009E2B7] Z@l@ly{y{
+  [0009E370] 7s7su<u<V
+  [0009E5D0] OEOE<*<*
+  [0009E5FB] zQ&Q&ylyl
+  [0009E75C] o[o[0J0J
+  [0009E78C] oToT"-"-
+  [0009E810] *P*PY`Y`
+  [0009E8C7] Q<{<{n{n{T!T!
+  [0009E8E3] !v"v"/z/z
+  [0009E8F7] f"`"`b|b|6
+  [0009EB3F] !a.a..+.+
+  [0009EB68] >^>^9a9a9
+  [0009EBB4] t[4[#KkK
+  [0009EE10] 8O`Ob%:%
+  [0009EF1D] =B=t'<'Fb
+  [0009F5B8] vJvJuO=OW
+  [0009F7C8] \L\L|n|nu
+  [0009F838] adcd:O:Or
+  [0009F9E0] <v^vawew
+  [0009FA20] 2ZZZu4=4i
+  [0009FB11] 2Y2%%m%&
+  [000A0803] }i!i!0^0^
+  [000A08F0] OQOQkXkX>
+  [000A0A30] aq)q:+r+\
+  [000A0A4C] h&(&(ThTO
+  [000A0B08] }<}<HXHX
+  [000A0B3F] s[$[$]v]vlZlZW
+  [000A0BD4] vAvAO:O:
+  [000A0DDC] V,V,YnYn
+  [000A1313] W#)#)O[O[
+  [000A137F] ,*,*,-2-2#+#+]~]~
+  [000A1414] _*_*1A1AV}V}
+  [000A1433] 'g6g6;1;1oHoH
+  [000A1760] \m\mjGjG
+  [000A1893] -4*4*jCjCC9C9p
+  [000A1A74] igigxSxS
+  [000A1B80] zIzIu/u/.M.M
+  [000A1BBF] ,:P:Pi0i0
+  [000A1BD0] qJqJ.,.,
+  [000A1D28] m`m`z+z+:
+  [000A1D94] AmAmqjqj}
+  [000A1E64] 3}3}ykyk
+  [000A1F80] TMTM!$!$
+  [000A2000] MzMz!n!n
+  [000A209C] STST1@1@
+  [000A2170] .\.\wTwT
+  [000A2194] >U>Ux:x:
+  [000A21AC] P]P]@X@X
+  [000A2474] h9h9`T`Tb
+  [000A24BC] \5\5< < ,B,B
+  [000A24E8] g&g&"x"x
+  [000A2FB8] `1234567890-=\QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./
+  [000A2FE8] ~!@#$%^&*()_+|QWERTYUIOP{}ASDFGHJKL:"ZXCVBNM<>?
+  [000A3018] `1234567890-=\qwertyuiop[]asdfghjkl;'zxcvbnm,./
+  [000A3048] `1234567890-=\qwertyuiop[]asdfghjkl;'zxcvbnm,./
+  [000A3078] ~!@#$%^&*()_+|QWERTYUIOP{}ASDFGHJKL:"ZXCVBNM<>?
+  [000A3138] `1234567890-=\qwertyuiop[]asdfghjkl;'zxcvbnm,./
+  [000A3168] ~!@#$%^&*()_+|QWERTYUIOP{}ASDFGHJKL:"ZXCVBNM<>?
+  [000A4338] kernel32.dll
+  [000A4348] GetCurrentThreadId
+  [000A435E] DeleteCriticalSection
+  [000A4376] LeaveCriticalSection
+  [000A438E] EnterCriticalSection
+  [000A43A6] InitializeCriticalSection
+  [000A43C2] VirtualFree
+  [000A43D0] VirtualAlloc
+  [000A43E0] LocalFree
+  [000A43EC] LocalAlloc
+  [000A43FA] InterlockedDecrement
+  [000A4412] InterlockedIncrement
+  [000A442A] VirtualQuery
+  [000A443A] WideCharToMultiByte
+  [000A4450] SetCurrentDirectoryA
+  [000A4468] MultiByteToWideChar
+  [000A447E] lstrlenA
+  [000A448A] lstrcpynA
+  [000A4496] lstrcpyA
+  [000A44A2] LoadLibraryExA
+  [000A44B4] GetThreadLocale
+  [000A44C6] GetStartupInfoA
+  [000A44D8] GetProcAddress
+  [000A44EA] GetModuleHandleA
+  [000A44FE] GetModuleFileNameA
+  [000A4514] GetLocaleInfoA
+  [000A4526] GetLastError
+  [000A4536] GetCurrentDirectoryA
+  [000A454E] GetCommandLineA
+  [000A4560] FreeLibrary
+  [000A456E] FindFirstFileA
+  [000A4580] FindClose
+  [000A458C] ExitProcess
+  [000A459A] WriteFile
+  [000A45A6] UnhandledExceptionFilter
+  [000A45C2] SetFilePointer
+  [000A45D4] SetEndOfFile
+  [000A45E4] RtlUnwind
+  [000A45F0] ReadFile
+  [000A45FC] RaiseException
+  [000A460E] GetStdHandle
+  [000A461E] GetFileSize
+  [000A462C] GetFileType
+  [000A463A] CreateFileA
+  [000A4648] CloseHandle
+  [000A4654] user32.dll
+  [000A4662] GetKeyboardType
+  [000A4674] LoadStringA
+  [000A4682] MessageBoxA
+  [000A4690] CharNextA
+  [000A469A] advapi32.dll
+  [000A46AA] RegQueryValueExA
+  [000A46BE] RegOpenKeyExA
+  [000A46CE] RegCloseKey
+  [000A46DA] oleaut32.dll
+  [000A46EA] VariantChangeTypeEx
+  [000A4700] VariantCopyInd
+  [000A4712] VariantClear
+  [000A4722] SysStringLen
+  [000A4732] SysFreeString
+  [000A4742] SysReAllocStringLen
+  [000A4758] SysAllocStringLen
+  [000A476A] kernel32.dll
+  [000A477A] TlsSetValue
+  [000A4788] TlsGetValue
+  [000A47A0] TlsAlloc
+  [000A47AC] LocalFree
+  [000A47B8] LocalAlloc
+  [000A47C6] GetModuleFileNameA
+  [000A47DA] advapi32.dll
+  [000A47EA] RegSetValueExA
+  [000A47FC] RegQueryValueExA
+  [000A4810] RegQueryInfoKeyA
+  [000A4824] RegOpenKeyExA
+  [000A4834] RegFlushKey
+  [000A4842] RegEnumValueA
+  [000A4852] RegEnumKeyExA
+  [000A4862] RegDeleteValueA
+  [000A4874] RegCreateKeyExA
+  [000A4886] RegCloseKey
+  [000A4892] kernel32.dll
+  [000A48A2] lstrlenW
+  [000A48AE] lstrlenA
+  [000A48BA] lstrcpyA
+  [000A48C6] lstrcmpiA
+  [000A48D2] lstrcatA
+  [000A48DE] WritePrivateProfileStringA
+  [000A48FC] WriteFile
+  [000A4912] WaitForSingleObject
+  [000A4928] VirtualQuery
+  [000A4938] VirtualAlloc
+  [000A4948] UnmapViewOfFile
+  [000A4962] SizeofResource
+  [000A4974] SetThreadLocale
+  [000A4986] SetPriorityClass
+  [000A499A] SetLastError
+  [000A49AA] SetFileTime
+  [000A49B8] SetFilePointer
+  [000A49CA] SetEvent
+  [000A49D6] SetErrorMode
+  [000A49E6] SetEndOfFile
+  [000A49F6] ResetEvent
+  [000A4A04] ReleaseMutex
+  [000A4A14] ReadFile
+  [000A4A20] OpenFileMappingA
+  [000A4A3E] MapViewOfFile
+  [000A4A4E] LockResource
+  [000A4A5E] LocalFileTimeToFileTime
+  [000A4A78] LoadResource
+  [000A4A88] LoadLibraryA
+  [000A4A98] LeaveCriticalSection
+  [000A4AB0] InitializeCriticalSection
+  [000A4ACC] HeapFree
+  [000A4AD8] HeapAlloc
+  [000A4AE4] GlobalUnlock
+  [000A4AF4] GlobalSize
+  [000A4B02] GlobalReAlloc
+  [000A4B12] GlobalHandle
+  [000A4B22] GlobalLock
+  [000A4B30] GlobalFree
+  [000A4B3E] GlobalDeleteAtom
+  [000A4B52] GlobalAlloc
+  [000A4B60] GlobalAddAtomA
+  [000A4B72] GetWindowsDirectoryA
+  [000A4B8A] GetVersionExA
+  [000A4B9A] GetVersion
+  [000A4BA8] GetTickCount
+  [000A4BB8] GetThreadLocale
+  [000A4BCA] GetSystemInfo
+  [000A4BDA] GetSystemDirectoryA
+  [000A4BF0] GetProfileStringA
+  [000A4C04] GetProcessHeap
+  [000A4C16] GetProcAddress
+  [000A4C28] GetPrivateProfileStringA
+  [000A4C44] GetModuleHandleA
+  [000A4C58] GetModuleFileNameA
+  [000A4C6E] GetLocaleInfoA
+  [000A4C80] GetLocalTime
+  [000A4C90] GetLastError
+  [000A4CA0] GetFullPathNameA
+  [000A4CB4] GetFileTime
+  [000A4CC2] GetFileSize
+  [000A4CD0] GetFileAttributesA
+  [000A4CE6] GetDriveTypeA
+  [000A4CF6] GetDiskFreeSpaceA
+  [000A4D0A] GetDateFormatA
+  [000A4D1C] GetCurrentThreadId
+  [000A4D32] GetCurrentProcessId
+  [000A4D48] GetCurrentProcess
+  [000A4D5C] GetCPInfo
+  [000A4D68] FreeResource
+  [000A4D78] FreeLibrary
+  [000A4D86] FormatMessageA
+  [000A4D98] FindResourceA
+  [000A4DA8] FindNextFileA
+  [000A4DB8] FindFirstFileA
+  [000A4DCA] FindClose
+  [000A4DD6] FileTimeToLocalFileTime
+  [000A4DF0] FileTimeToDosDateTime
+  [000A4E08] EnumCalendarInfoA
+  [000A4E1C] EnterCriticalSection
+  [000A4E34] DosDateTimeToFileTime
+  [000A4E4C] DeviceIoControl
+  [000A4E5E] DeleteFileA
+  [000A4E6C] DeleteCriticalSection
+  [000A4E84] CreateThread
+  [000A4E94] CreateMutexA
+  [000A4EA4] CreateFileMappingA
+  [000A4EBA] CreateFileA
+  [000A4EC8] CreateEventA
+  [000A4ED8] CreateDirectoryA
+  [000A4EEC] CopyFileA
+  [000A4EF8] CompareStringA
+  [000A4F0A] CloseHandle
+  [000A4F16] gdi32.dll
+  [000A4F22] UnrealizeObject
+  [000A4F34] StretchBlt
+  [000A4F42] StartPage
+  [000A4F4E] StartDocA
+  [000A4F5A] SetWindowOrgEx
+  [000A4F6C] SetWinMetaFileBits
+  [000A4F82] SetViewportOrgEx
+  [000A4F96] SetTextColor
+  [000A4FA6] SetTextAlign
+  [000A4FB6] SetStretchBltMode
+  [000A4FD4] SetPixel
+  [000A4FE0] SetEnhMetaFileBits
+  [000A4FF6] SetDIBColorTable
+  [000A500A] SetBrushOrgEx
+  [000A501A] SetBkMode
+  [000A5026] SetBkColor
+  [000A5034] SetAbortProc
+  [000A5044] SelectPalette
+  [000A5054] SelectObject
+  [000A506E] RestoreDC
+  [000A507A] Rectangle
+  [000A5086] RectVisible
+  [000A5094] RealizePalette
+  [000A50A6] Polyline
+  [000A50B2] PlayEnhMetaFile
+  [000A50CE] MoveToEx
+  [000A50EE] IntersectClipRect
+  [000A5102] GetWindowOrgEx
+  [000A5114] GetWinMetaFileBits
+  [000A512A] GetTextMetricsA
+  [000A513C] GetTextExtentPoint32A
+  [000A5154] GetSystemPaletteEntries
+  [000A516E] GetStockObject
+  [000A5180] GetPixel
+  [000A518C] GetPaletteEntries
+  [000A51A0] GetObjectA
+  [000A51AE] GetFontData
+  [000A51BC] GetEnhMetaFilePaletteEntries
+  [000A51DC] GetEnhMetaFileHeader
+  [000A51F4] GetEnhMetaFileBits
+  [000A520A] GetDeviceCaps
+  [000A521A] GetDIBits
+  [000A5226] GetDIBColorTable
+  [000A523A] GetDCOrgEx
+  [000A5248] GetCurrentPositionEx
+  [000A5260] GetClipBox
+  [000A526E] GetBrushOrgEx
+  [000A527E] GetBitmapBits
+  [000A528E] ExtTextOutW
+  [000A529C] ExtTextOutA
+  [000A52AA] ExcludeClipRect
+  [000A52BC] EnumFontFamiliesExA
+  [000A52E6] DeleteObject
+  [000A52F6] DeleteEnhMetaFile
+  [000A530A] DeleteDC
+  [000A5316] CreateSolidBrush
+  [000A532A] CreatePenIndirect
+  [000A533E] CreatePalette
+  [000A534E] CreateICA
+  [000A535A] CreateHalftonePalette
+  [000A5372] CreateFontIndirectA
+  [000A5388] CreateDIBitmap
+  [000A539A] CreateDIBSection
+  [000A53AE] CreateDCA
+  [000A53BA] CreateCompatibleDC
+  [000A53D0] CreateCompatibleBitmap
+  [000A53EA] CreateBrushIndirect
+  [000A5400] CreateBitmap
+  [000A5410] CopyEnhMetaFileA
+  [000A542C] user32.dll
+  [000A543A] keybd_event
+  [000A5448] WindowFromPoint
+  [000A545A] WinHelpA
+  [000A5466] WaitMessage
+  [000A5474] UpdateWindow
+  [000A5484] UnregisterClassA
+  [000A5498] UnhookWindowsHookEx
+  [000A54AE] TranslateMessage
+  [000A54C2] TranslateMDISysAccel
+  [000A54DA] TrackPopupMenu
+  [000A54EC] SystemParametersInfoA
+  [000A5504] ShowWindow
+  [000A5512] ShowScrollBar
+  [000A5522] ShowOwnedPopups
+  [000A5534] ShowCursor
+  [000A5542] SetWindowsHookExA
+  [000A5556] SetWindowTextA
+  [000A5568] SetWindowPos
+  [000A5578] SetWindowPlacement
+  [000A558E] SetWindowLongW
+  [000A55A0] SetWindowLongA
+  [000A55B2] SetTimer
+  [000A55BE] SetScrollRange
+  [000A55D0] SetScrollPos
+  [000A55E0] SetScrollInfo
+  [000A55FA] SetPropW
+  [000A5606] SetPropA
+  [000A5612] SetParent
+  [000A561E] SetMenuItemInfoA
+  [000A563C] SetKeyboardState
+  [000A5650] SetForegroundWindow
+  [000A5666] SetFocus
+  [000A5672] SetDlgItemTextA
+  [000A5684] SetCursor
+  [000A5690] SetClassLongA
+  [000A56A0] SetCapture
+  [000A56AE] SetActiveWindow
+  [000A56C0] SendMessageA
+  [000A56D0] SendDlgItemMessageW
+  [000A56E6] ScrollWindow
+  [000A56F6] ScreenToClient
+  [000A5708] RemovePropW
+  [000A5716] RemovePropA
+  [000A5724] RemoveMenu
+  [000A5732] ReleaseDC
+  [000A573E] ReleaseCapture
+  [000A5750] RegisterWindowMessageA
+  [000A576A] RegisterClipboardFormatA
+  [000A5786] RegisterClassA
+  [000A5798] RedrawWindow
+  [000A57A8] PtInRect
+  [000A57B4] PostQuitMessage
+  [000A57C6] PostMessageA
+  [000A57D6] PeekMessageA
+  [000A57E6] OffsetRect
+  [000A57F4] OemToCharA
+  [000A5802] OemKeyScan
+  [000A5810] MessageBoxA
+  [000A581E] MapWindowPoints
+  [000A5830] MapVirtualKeyA
+  [000A5842] LoadStringA
+  [000A5850] LoadKeyboardLayoutA
+  [000A5866] LoadIconA
+  [000A5872] LoadCursorA
+  [000A5880] LoadBitmapA
+  [000A588E] KillTimer
+  [000A589A] IsZoomed
+  [000A58A6] IsWindowVisible
+  [000A58B8] IsWindowEnabled
+  [000A58CA] IsWindow
+  [000A58D6] IsRectEmpty
+  [000A58E4] IsIconic
+  [000A58F0] IsDialogMessageA
+  [000A590E] InvalidateRect
+  [000A5920] IntersectRect
+  [000A5930] InsertMenuItemA
+  [000A5942] InsertMenuA
+  [000A5950] InflateRect
+  [000A595E] GetWindowThreadProcessId
+  [000A597A] GetWindowTextA
+  [000A598C] GetWindowRect
+  [000A599C] GetWindowPlacement
+  [000A59B2] GetWindowLongA
+  [000A59C4] GetWindowDC
+  [000A59D2] GetTopWindow
+  [000A59E2] GetSystemMetrics
+  [000A59F6] GetSystemMenu
+  [000A5A06] GetSysColor
+  [000A5A14] GetSubMenu
+  [000A5A22] GetScrollRange
+  [000A5A34] GetScrollPos
+  [000A5A44] GetScrollInfo
+  [000A5A54] GetPropW
+  [000A5A60] GetPropA
+  [000A5A6C] GetParent
+  [000A5A78] GetWindow
+  [000A5A84] GetMenuStringA
+  [000A5A96] GetMenuState
+  [000A5AA6] GetMenuItemInfoA
+  [000A5ABA] GetMenuItemID
+  [000A5ACA] GetMenuItemCount
+  [000A5AE8] GetLastActivePopup
+  [000A5AFE] GetKeyboardState
+  [000A5B12] GetKeyboardLayoutList
+  [000A5B2A] GetKeyboardLayout
+  [000A5B3E] GetKeyState
+  [000A5B4C] GetKeyNameTextA
+  [000A5B5E] GetIconInfo
+  [000A5B6C] GetForegroundWindow
+  [000A5B82] GetFocus
+  [000A5B8E] GetDlgItemTextA
+  [000A5BA0] GetDlgItem
+  [000A5BAE] GetDlgCtrlID
+  [000A5BBE] GetDesktopWindow
+  [000A5BE4] GetCursorPos
+  [000A5BF4] GetCursor
+  [000A5C00] GetClipboardData
+  [000A5C14] GetClientRect
+  [000A5C24] GetClassInfoA
+  [000A5C34] GetCapture
+  [000A5C42] GetActiveWindow
+  [000A5C54] FrameRect
+  [000A5C60] FindWindowA
+  [000A5C6E] FillRect
+  [000A5C7A] EqualRect
+  [000A5C86] EnumWindows
+  [000A5C94] EnumThreadWindows
+  [000A5CA8] EndPaint
+  [000A5CB4] EnableWindow
+  [000A5CC4] EnableScrollBar
+  [000A5CD6] EnableMenuItem
+  [000A5CE8] DrawTextA
+  [000A5CF4] DrawMenuBar
+  [000A5D02] DrawIconEx
+  [000A5D10] DrawIcon
+  [000A5D1C] DrawFrameControl
+  [000A5D30] DrawFocusRect
+  [000A5D40] DrawEdge
+  [000A5D4C] DispatchMessageA
+  [000A5D60] DestroyWindow
+  [000A5D70] DestroyMenu
+  [000A5D7E] DestroyIcon
+  [000A5D8C] DestroyCursor
+  [000A5D9C] DeleteMenu
+  [000A5DAA] DefWindowProcA
+  [000A5DBC] DefMDIChildProcA
+  [000A5DD0] DefFrameProcA
+  [000A5DE0] CreateWindowExA
+  [000A5DF2] CreatePopupMenu
+  [000A5E04] CreateMenu
+  [000A5E12] CreateIcon
+  [000A5E20] CreateDialogParamW
+  [000A5E36] ClientToScreen
+  [000A5E48] CheckMenuItem
+  [000A5E58] CallWindowProcW
+  [000A5E6A] CallWindowProcA
+  [000A5E7C] CallNextHookEx
+  [000A5E8E] BeginPaint
+  [000A5E9C] CharLowerBuffA
+  [000A5EAE] CharLowerA
+  [000A5EBC] AdjustWindowRectEx
+  [000A5ED2] ActivateKeyboardLayout
+  [000A5EEA] ole32.dll
+  [000A5EF6] IsEqualGUID
+  [000A5F02] comctl32.dll
+  [000A5F12] ImageList_SetIconSize
+  [000A5F2A] ImageList_GetIconSize
+  [000A5F42] ImageList_Write
+  [000A5F54] ImageList_Read
+  [000A5F66] ImageList_GetDragImage
+  [000A5F80] ImageList_DragShowNolock
+  [000A5F9C] ImageList_SetDragCursorImage
+  [000A5FBC] ImageList_DragMove
+  [000A5FD2] ImageList_DragLeave
+  [000A5FE8] ImageList_DragEnter
+  [000A5FFE] ImageList_EndDrag
+  [000A6012] ImageList_BeginDrag
+  [000A6028] ImageList_Remove
+  [000A603C] ImageList_DrawEx
+  [000A6050] ImageList_Replace
+  [000A6064] ImageList_Draw
+  [000A6076] ImageList_GetBkColor
+  [000A608E] ImageList_SetBkColor
+  [000A60A6] ImageList_ReplaceIcon
+  [000A60BE] ImageList_Add
+  [000A60CE] ImageList_GetImageCount
+  [000A60E8] ImageList_Destroy
+  [000A60FC] ImageList_Create
+  [000A6110] InitCommonControls
+  [000A6124] winspool.drv
+  [000A6134] OpenPrinterA
+  [000A6144] EnumPrintersA
+  [000A6154] DocumentPropertiesA
+  [000A616A] ClosePrinter
+  [000A6178] comdlg32.dll
+  [000A6188] PrintDlgA
+  [000A6192] WNASPI32.DLL
+  [000A61A2] SendASPI32Command
+  [000A61B6] GetASPI32SupportInfo
+  [000A61CC] Kernel32.dll
+  [000A61DC] GetVersionExA
+  [000A61EA] msvcrt.dll
+  [000A6244] MLUtil6.Dll
+  [000A625C] MSVCRT.dll
+  [000A6278] msvcrt.dll
+  [000A6626] SHREE.dll
+  [000A6630] CLOSE_SHREE
+  [000A663C] GETFONTLAYOUTSLIST
+  [000A664F] GET_SHREE_INSTALLED_SCRIPTS
+  [000A666B] GET_SHREE_STATUS
+  [000A667C] NEW_WNDPROC
+  [000A6688] SET_REGISTRY_ROOT_KEY
+  [000A669E] SHREE_COMMAND_HANDLER
+  [000A66B4] SHREE_ENABLE_IN_DIALOGS
+  [000A66CC] SHREE_ENABLE_TOOLTIP
+  [000A66E1] SHREE_FIRSTFONT_FORSCRIPT_EX
+  [000A66FE] SHREE_FIRSTFONT_FOR_SCRIPT
+  [000A6719] SHREE_FONTNAME_TO_SCRIPT
+  [000A6732] SHREE_GET_ACTIVATION_KEY
+  [000A674B] SHREE_GET_DEFAULTFONT_FOR_SCRIPT
+  [000A676C] SHREE_GET_DEFAULTFONT_FOR_SCRIPT_LAYOUT
+  [000A6794] SHREE_GET_FONTNAMES
+  [000A67A8] SHREE_GET_FONTNAMES_EX
+  [000A67BF] SHREE_GET_FONTTYPE
+  [000A67D2] SHREE_GET_ILSCRIPT
+  [000A67E5] SHREE_GET_KEYBOARDS
+  [000A67F9] SHREE_GET_KEYBOARD_NAME
+  [000A6811] SHREE_GET_MAINSCRIPT
+  [000A6826] SHREE_KBD_SETUP
+  [000A6836] SHREE_RESTORE_REGISTRY
+  [000A684D] SHREE_SCRIPT_TO_SHORTSTR
+  [000A6866] SHREE_SCRIPT_TO_STR
+  [000A687A] SHREE_SETFONTTYPE
+  [000A688C] SHREE_SETSCRIPT
+  [000A689C] SHREE_SETUP
+  [000A68A8] SHREE_SETUPEX
+  [000A68B6] SHREE_SET_ACTIVATION_KEY
+  [000A68CF] SHREE_SET_AKSHAR
+  [000A68E0] SHREE_SET_APPLICATION_NAME
+  [000A68FB] SHREE_SET_APPLICATION_TYPE
+  [000A6916] SHREE_SET_DEFAULT_FONT
+  [000A692D] SHREE_SET_ESCAPEMENT
+  [000A6942] SHREE_SET_HYPHENFLAG
+  [000A6957] SHREE_SET_KEYBOARD
+  [000A696A] SHREE_SET_TUTOR_POSITION
+  [000A6983] SHREE_SHORTSTR_TO_SCRIPT
+  [000A699C] SHREE_STR_TO_SCRIPT
+  [000A69B0] SHREE_TUTOR_OFF
+  [000A69C0] SHREE_TUTOR_ON
+  [000A69CF] SHREE_TUTOR_ON1
+  [000A69DF] START_SHREE
+  [000A69EB] START_SHREE1
+  [000A69F8] START_SHREE2
+  [000A6A05] SUCHI_FIRSTFONT_FOR_SCRIPT
+  [000A6A20] SUCHI_GET_FONTNAMES
+  [000A6A34] TAMIL99_FIRSTFONT
+  [000A6A46] TAMIL99_GET_FONTNAMES
+  [000A6C0B] 0(0<0T0l0
+  [000A6C5D] 2"2*222:2B2J2R2Z2b2j2r2z2
+  [000A6C9D] 3"3*323:3B3J3R3Z3b3j3
+  [000A6CE5] :J:g:r:}:
+  [000A6D09] ;*;9;E;M;X;^;k;q;
+  [000A6D70] )0G0L0R0
+  [000A6D7F] 0"1+1A1_1k1s1
+  [000A6D95] 2-252;2D2K2P2V2i2r2
+  [000A6DB9] 3#323B3b3z3
+  [000A6DCF] 4&464<4D4
+  [000A6DE3] 4"5)595C5I5Q5W5]5d5n5
+  [000A6DF9] 6=6[6g6o6
+  [000A6E23] >/>M>c>z>
+  [000A6E91] :":+:;:I:S:k:t:{:
+  [000A6EAD] ;!;';-;F;Y;^;c;
+  [000A6F09] 4)444D4K4
+  [000A6F1B] 5%5.5:5A5
+  [000A6F25] 6B7k7r7y788s8
+  [000A6F33] 85:V;];n;z;
+  [000A6F71] 4'454<4C4I4P4W4_4h4q4y4
+  [000A6FA9] 5&5.565>5P5
+  [000A6FC5] 6*6;6^6s6|6
+  [000A6FE7] 7"7*727:7B7J7R7Z7b7j7r7z7
+  [000A7027] 8"8*828:8B8J8R8Z8b8j8r8z8
+  [000A7067] 9"9*929:9B9J9R9Z9b9j9r9z9
+  [000A70A7] :":*:2:::B:J:R:Z:b:j:r:z:
+  [000A70E7] ;";*;2;:;B;J;R;Z;b;j;r;z;
+  [000A7127] <"<*<2<:<B<J<R<Z<b<j<r<z<
+  [000A7167] ="=*=2=:=B=J=R=Z=b=j=r=z=
+  [000A71A7] >">*>2>:>B>J>R>Z>b>j>r>z>
+  [000A71E7] ?"?*?2?:?B?J?R?Z?b?j?r?z?
+  [000A722F] 0"0*020:0B0J0R0Z0b0j0r0z0
+  [000A726F] 1"1*121:1B1J1R1Z1b1j1r1z1
+  [000A72AF] 2"2*2G3L3X3g3s374C4P4b4o4{4
+  [000A72F1] 6&6,686@6c6o6
+  [000A7307] 6C7K7Q7]7j7
+  [000A737D] <&<4<<<D<L<T<\<d<l<t<|<
+  [000A73BB] =$=,=4=<=D=L=T=\=d=l=t=|=
+  [000A73FB] >$>,>4><>D>L>T>\>d>l>t>|>
+  [000A7435] ?,?D?L?X?l?t?x?|?
+  [000A7475] 0(0004080<0@0D0H0L0P0d0
+  [000A74B7] 181@1D1H1L1P1T1X1\1`1p1
+  [000A74F7] 2(2H2P2T2X2\2`2d2h2l2p2
+  [000A7537] 3 343T3\3`3d3h3l3p3t3x3|3
+  [000A7573] 4 4$4(4,4<4\4d4h4l4p4t4x4|4
+  [000A75B1] 5 5$5(5,50545H5h5p5t5x5|5
+  [000A75EB] 6 6(6,6064686<6@6D6H6`6
+  [000A762D] 747<7@7D7H7L7P7T7X7\7l7
+  [000A766D] 8(8H8P8T8X8\8`8d8h8l8p8
+  [000A76A9] 9 9$9(989X9`9d9h9l9p9t9x9|9
+  [000A7767] 5Y5]5a5e5i5m5q5u5y5}5
+  [000A77ED] 0-1C1P1U1g1
+  [000A7853] :,:E:R:k:z:
+  [000A7865] ;+<0<8<b<s<|<1=?=\=e=
+  [000A7881] >,?C?e?s?z?
+  [000A78CD] 4"4[4i4x4
+  [000A78FD] 5&52575@5L5Q5Z5c5l5u5~5
+  [000A7941] ;);D;M;h;{;
+  [000A795B] <2<;<O<]<q<
+  [000A7971] ="=2=:=O=W=t=
+  [000A798F] ?&?6?A?G?O?T?
+  [000A79AB] 1.1H1l1p1t1x1|1
+  [000A7A09] 2 2$2(2,2024282<2@2D2H2L2P2X2\2d2h2p2t2|2
+  [000A7A67] 3$3(30343<3@3H3L3T3X3`3d3l3p3x3|3
+  [000A7ABB] 4 4$4,404
+  [000A7AD9] 556C6a6r6
+  [000A7AFB] =2===G=R=\=f=q={=
+  [000A7B2B] >1>G>S>[>e>p>x>}>
+  [000A7B4F] ? ?(?0?8?@?H?P?X?`?h?p?x?
+  [000A7B97] 0 0(00080@0H0P0X0`0h0p0x0
+  [000A7BD7] 1 1(10181@1H1P1X1`1h1p1x1
+  [000A7C17] 2 2(20282@2H2P2X2`2h2p2x2
+  [000A7C65] 8 898d8}8
+  [000A7C9B] : :$:(:,:0:D:d:l:p:t:x:|:
+  [000A7CD7] ; ;$;(;,;0;4;8;<;L;l;t;x;|;
+  [000A7D15] < <(<,<0<4<8<<<@<D<H<\<|<
+  [000A7D57] =,=4=8=<=@=D=H=L=P=T=l=
+  [000A7D97] >$>D>L>P>T>X>\>`>d>h>l>
+  [000A7DD7] ? ?$?(?,?0?@?`?h?l?p?t?x?|?
+  [000A7E29] 000E0d0p0t0
+  [000A7E7F] 1*1<1J1N1`1y1
+  [000A7ECB] 2 2$2(2,2024282<2@2D2H2L2P2`2q2u2
+  [000A7F13] 3 3$3(3,3034383<3@3D3X3x3
+  [000A7F63] 404P4X4\4`4d4h4l4p4t4x4|4
+  [000A7FBF] 6 6$6@6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+  [000A800F] 7,74787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+  [000A8053] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8j8
+  [000A809D] 9@9`9h9l9p9t9x9|9
+  [000A80E7] : :$:(:,:0:4:8:<:@:D:H:L:P:X:l:~:
+  [000A810D] :&;A;P;g;
+  [000A8149] ?4?<?@?D?H?L?P?T?X?\?
+  [000A8187] 3"363=3W3
+  [000A82B7] 8,84888<8@8D8H8L8P8T8b8j869~9
+  [000A8307] <8===\=m=y=
+  [000A8373] ;-;;;I;f<
+  [000A83A8] $0K0O0S0W0[0_0c0g0k0o0s0w0{0
+  [000A83DB] 112E2e2i2m2q2u2y2}2
+  [000A840D] 415I5V5d5E6X6
+  [000A843B] ;#;';+;/;3;7;;;?;C;G;K;O;S;W;[;_;,<P<t<
+  [000A84D7] 0 0:0F0K0U0g0z0
+  [000A8501] 1$1,1014181<1@1D1H1L1`1
+  [000A8549] 4(44484@4D4H4L4P4T4X4\4`4d4h4l4t4
+  [000A8583] 5 5$5(5,5054585<5@5N5Z5d5o5s5
+  [000A85BB] 6&6*6.6E6I6M6h6x6
+  [000A85F5] 7&7*7.7F7J7N7h7x7
+  [000A8631] 8,8<8L8T8X8\8`8d8h8l8p8t8x8|8
+  [000A8695] : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:d:t:
+  [000A86E7] ;*;.;@;`;h;l;p;t;x;|;
+  [000A871F] < <(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+  [000A877B] = =$=(=<=L=\=d=h=l=p=t=x=|=
+  [000A87D5] > >@>H>L>P>T>X>\>`>d>h>l>|>
+  [000A8831] ? ?$?0?;???V?d?
+  [000A887B] 3K7[7S9c9~99:>:C:W:
+  [000A88FD] 4@5T5a5u5
+  [000A8A0F] 5C5Y5b5o5}5
+  [000A8A4D] 8=8L8Z8k8|8
+  [000A8A59] 8>9H9R9W9^9h9r9w9
+  [000A8BBF] 5)5.5F5K5Y5h5n5
+  [000A8BE7] 6%75748R8
+  [000A8C03] 9#9-979B9L9V9a9k9v9
+  [000A8C2D] :):3:::D:K:U:\:f:k:p:u:
+  [000A8C69] ;$;(;,;0;4;8;<;@;D;H;L;P;
+  [000A8C83] ;'<3<@<R<Z<b<j<t<z<
+  [000A8CAD] =&=:=B=J=R=Z=b=j=r=z=
+  [000A8CDD] >">7>C>P>b>j>r>z>
+  [000A8D0F] ?$?8?@?D?H?L?P?T?X?\?`?n?
+  [000A8D41] 0 0$0(0,0004080F0N0V0
+  [000A8D57] 011T1d1h1l1t1|1
+  [000A8DF3] ?'?3?:?L?^?i?
+  [000A8E23] 0%0.03080F0O0T0Y0g0p0u0z0
+  [000A8E61] 1K2W2d2v2
+  [000A8EAB] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [000A8EFF] 4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+  [000A8F6B] 545<5@5V5b5y5}5
+  [000A8FA7] 7'7E7M7j7r7
+  [000A8FC7] 8'8+8A8M8c8
+  [000A8FF7] ; ;,;0;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+  [000A9063] <.<2<D<T<d<l<p<t<x<|<
+  [000A90C7] =(=4=8=I=Q=i=q=
+  [000A9125] 0!0%0<0@0D0b0j0
+  [000A9179] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [000A91ED] 4$45494J4R4l4|4
+  [000A9243] 5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [000A928D] 6*6A6I6g6o6
+  [000A92A9] 787[7g7}7
+  [000A92C1] 8,848Q8z8
+  [000A92DB] 9;9C9_9g9
+  [000A92FF] :+:N:Z:p:
+  [000A9345] > >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+  [000A93B5] ?"?&?*?.?2?6?:?>?B?F?J?`?u?y?
+  [000A940B] 0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+  [000A9469] 121>1U1]1a1u1
+  [000A9481] 2&2N2Z2p2x2|2
+  [000A949D] 3E3M3k3s3
+  [000A94B7] 4&4.4G4K4O4j4r4
+  [000A953B] 8 8$8(8,8D8T8`8d8l8p8t8x8|8
+  [000A95A5] 9 9$9(9,9094989<9@9D9H9R9V9l9
+  [000A95FD] : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [000A965B] ;#;';=;I;`;
+  [000A9677] <3<V<b<x<
+  [000A968F] =4=<=X=`=d={=
+  [000A96D5] 0,0I0l0|0
+  [000A9727] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1
+  [000A976F] 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+  [000A97E3] 3#3'383<3@3Y3a3}3
+  [000A9809] 4,44484L4r4z4~4
+  [000A9823] 5'5+5>5g5o5
+  [000A983D] 6%6-616H6P6h6l6p6
+  [000A987B] 9(94989@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000A98F1] :*:.:2:6:H:Z:^:o:s:w:
+  [000A991D] ;';=;E;I;];
+  [000A9937] <0<8<<<O<x<
+  [000A9953] =6=>=B=Y=]=a=|=
+  [000A99DF] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [000A9A37] 282H2X2`2d2h2l2p2t2x2|2
+  [000A9A9D] 3 3$3(3,3034383<3L3Z3^3o3w3
+  [000A9ACD] 4"4<4b4j4n4
+  [000A9AE5] 585@5D5W5y5
+  [000A9B01] 6/6X6`6~6
+  [000A9B1B] 7"797A7Z7b7z7~7
+  [000A9B77] ; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+  [000A9BCF] < <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+  [000A9C51] ;8;L;[;j;y;
+  [000A9D65] 6%838A8Y8h8
+  [000A9D7D] 9K:q=<>o?
+  [000A9DA5] 0"0-040`0p0
+  [000A9E21] 2 2$2(2,2024282<2@2D2H2L2Z2l2p2t2x2
+  [000A9E63] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3j3n3r3v3
+  [000A9EBB] 4 4$4(4,4044484<4@4D4H4V4^4l4p4
+  [000A9F09] 5 5$5(5,5054585<5@5D5H5L5P5T5
+  [000A9F73] 0@0P0`0h0l0p0t0x0|0
+  [000A9FA1] 1&1>1_1g1
+  [000A9FBD] 2(202L2o2w2
+  [000A9FE5] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [000AA053] 464:4H4P4p4x4
+  [000AA069] 5,585<5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [000AA0DD] 6 6$6.626D6T6X6f6n6
+  [000AA11B] 8/878;8O8W8[8n8
+  [000AA139] 91999U9]9a9x9|9
+  [000AA193] >">P>c>h>
+  [000AA1B4] $0X0d0h0t0x0
+  [000AA20F] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [000AA249] 2"2&2*2.22262:2>2B2F2J2N2R2V2Z2^2b2f2j2n2r2v2z2~2
+  [000AA2BF] 3)3-3<3L3\3d3h3l3p3t3x3|3
+  [000AA327] 4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4p4{4
+  [000AA369] 5 5$5=5E5`5l5
+  [000AA393] 6#6>6B6F6J6d6l6p6
+  [000AA3D5] 808S8[8_8{8
+  [000AA3F5] 909Y9]9a9
+  [000AA41B] :1:9:=:Y:a:e:{:
+  [000AA441] ;1;=;S;_;u;
+  [000AA457] <"<;<G<_<k<
+  [000AA487] >9>E>_>k>
+  [000AA499] ? ?,?C?h?t?
+  [000AA4CB] 0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+  [000AA541] 1 1$1(1,10141H1]1a1o1s1w1
+  [000AA57B] 2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2v2
+  [000AA5CD] 3 3$3(3,3034383<3@3N3V3^3f3n3
+  [000AA63D] 6'7F7P7_7
+  [000AA657] 8!8,888O8T8
+  [000AA6A1] 13292+3I3o3u3+4<4m4
+  [000AA7E3] >,>B>Y>q>
+  [000AA833] 405V5a5i5x5
+  [000AA861] 8;9}9<:d:
+  [000AA8A3] 606?6N6e6
+  [000AA8D1] :/:X:g:9;X;
+  [000AA8FB] >!?0?p?x?
+  [000AA939] 3`5o5}607
+  [000AA95D] ;!<+<6<E<T<p<}<
+  [000AA96D] <W=c=o={=
+  [000AA9A3] 1j4)5-5155595=5A5e7u7
+  [000AA9D7] :?:Q:[:r:
+  [000AAB0D] 0,0>0F0P0V0\0x0|0
+  [000AAB37] 1!141P1`1l1p1x1|1
+  [000AAB95] 7>7N7[7k7
+  [000AAC6D] < <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+  [000AACDB] = =$=(=,=0=4=8=<=@=N=V=n=r=v=z=~=
+  [000AAD13] >(>,>0>I>Q>i>q>u>
+  [000AAD39] ?!?>?J?d?p?
+  [000AAD9B] 1 1$1(1,10141B1R1V1Z1d1o1s1
+  [000AADE7] 2 2$2(282G2K2Y2]2a2
+  [000AAE63] 5(5,5:5^5b5f5
+  [000AAE85] 6%6>6f6n6
+  [000AAE97] 6 7@7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+  [000AAF27] 3!3-393G3S3b3n3z3
+  [000AB0D1] : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+  [000AB125] ;$;8;B;I;S;Z;d;l;
+  [000AB153] < <$<(<,<0<4<D<d<l<p<t<x<|<
+  [000AB1A1] = =$=(=,=0=4=8=<=@=X=x=
+  [000AB1F1] > >$>(>,>0>4>8><>@>D>H>L>`>t>x>
+  [000AB249] ? ?$?(?,?0?4?8?P?h?
+  [000AB271] 0#0(0H0X0d0h0p0t0x0|0
+  [000AB2A7] 121:1V1^1|1
+  [000AB2F5] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+  [000AB333] 84989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000AB3A9] : :$:(:,:0:4:8:<:@:P:^:b:s:{:
+  [000AB3D9] ;4;T;\;`;d;h;l;p;t;x;|;
+  [000AB433] =@=L=P=\=`=h=l=p=t=x=|=
+  [000AB499] > >$>(>,>0>4>8><>J>R>6?:?>?B?F?J?N?R?V?Z?^?b?f?j?n?r?v?z?~?
+  [000AB52B] 0"0&0*0.02060:0>0B0F0J0N0R0V0Z0^0b0f0j0n0r0v0z0~0
+  [000AB597] 1*1D1T1`1d1l1p1t1x1|1
+  [000AB5F9] 202E2I2\2l2x2|2
+  [000AB655] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3d3x3
+  [000AB6AF] 4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+  [000AB70B] 5 5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [000AB763] 6 6$6(6,6064686<6@6D6H6X6h6l6}6
+  [000AB7D1] 9(9,9H9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000AB8A9] 8(959>9G9b9
+  [000AB8BF] :$:/:5:N:W:_:m:r:|:
+  [000AB8E7] ;!;.;P;];q;{;
+  [000AB903] <"<*<<<c<l<u<
+  [000AB945] >%>F>N>_>}>
+  [000AB96D] 0-0?0O0X0
+  [000AB991] 1)1<1Y1h1
+  [000AB9C1] 3-4T4y4~4
+  [000ABA5D] ? ?'?>?G?Q?
+  [000ABA89] 9^:&;/;=;
+  [000ABD03] :W:a:k:u:
+  [000ABD17] <)<1<=<H<N<Z<d<j<v<{<
+  [000ABD59] =#=.=3=8=C=P=b>q>
+  [000ABD79] ?-?C?K?Z?d?m?y?
+  [000ABDA7] 040I0P0Z0f0p0y0
+  [000ABDCB] 1 121B1Z1|1
+  [000ABDE7] 373[3g3t3
+  [000ABE0B] 5&575U5~5
+  [000ABE33] 7&707B7W7c7l7t7
+  [000ABE91] 9!9%9-9?9Q9c9u9
+  [000ABEB1] :):;:M:_:q:
+  [000ABED7] >/>@>Q>b>s>
+  [000ABEF5] ?.???P?a?r?
+  [000ABF19] 2%2)2-2125292=2A2E2I2M2Q2U2Y2]2a2e2i2m2q2u2y2}2
+  [000ABF65] 313C3U3g3y3
+  [000ABF81] 4$434B4Q4`4o4
+  [000ABF93] 6)6:6K6\6m6~6
+  [000ABFB1] 7(797J7[7l7}7
+  [000ABFE5] ?$?)?3?8?G?L?V?[?j?o?y?~?
+  [000AC02B] 0(0-0<0A0K0P0_0d0n0s0
+  [000AC065] 1"11161@1E1T1Y1c1h1
+  [000AC087] 5.5C5X5m5
+  [000AC0C5] =3>C>S>c>s>
+  [000AC0E3] ?#?3?C?S?c?s?
+  [000AC10B] 0#030C0S0c0s0
+  [000AC12B] 1#131C1S1c1s1
+  [000AC14B] 2#232C2S2c2s2
+  [000AC16B] 3#333C3S3c3s3
+  [000AC18B] 4#434C4S4c4s4
+  [000AC1EF] 1;2G2N2Y2c2m2
+  [000AC235] 4$4+4@4I4V4]4d4k4
+  [000AC247] 4*535C5n5
+  [000AC2BD] <#<3<Q<n<
+  [000AC301] 7#777T7q7
+  [000AC38D] 0 0?0^0n0
+  [000AC3BD] 3 3@3P3o3
+  [000AC42F] :!:@:_:~:
+  [000AC485] ?,?<?[?z?
+  [000AC53F] 8!8%8)8-8185898=8A8E8I8M8Q8
+  [000AC589] :0:A:R:c:t:
+  [000AC5AF] ;D<U<f<w<
+  [000AC5C3] >">3>D>U>f>w>
+  [000AC5D5] >C?T?e?v?
+  [000AC63D] 2=3N3_3p3
+  [000AC66D] 4"4&4*4.42464:4>4B4F4J4N4R4V4Z4
+  [000AC699] 4F5W5h5y5
+  [000AC6AD] 6!626S6d6
+  [000AC6FB] 1#1'1+1/13171;1?1C1G1K1O1S1W1[1_1c1g1k1o1s1w1{1
+  [000AC77B] 2#2'2+2/23272;2?2C2G2K2O2S2W2[2_2c2g2k2o2s2w2{2
+  [000AC7FB] 3#3'3+3/33373;3?3C3G3K3O3S3W3[3_3c3g3k3o3s3w3{3
+  [000AC87B] 4#4'4.4=4L4[4j4y4
+  [000AC8A1] 5-5<5K5Z5i5x5
+  [000AC8C3] 6,6;6J6Y6h6w6
+  [000AC8E5] 7+7:7I7X7g7v7
+  [000AC907] 8*898H8W8f8u8
+  [000AC929] 9)989G9V9e9t9
+  [000AC94B] :(:7:F:U:d:s:
+  [000AC96D] ;';6;E;T;c;r;
+  [000AC98F] <&<5<D<S<b<q<
+  [000AC9B1] =%=4=C=R=a=p=
+  [000AC9D3] >$>3>B>Q>`>o>~>
+  [000AC9F5] ?#?2?A?P?_?n?}?
+  [000ACA3D] 2.2F2^2v2
+  [000ACA4F] 3 383P3h3
+  [000ACA63] 3'4?4W4o4
+  [000ACA85] 4%5=5U5m5
+  [000ACAAB] 757M7e7}7
+  [000ACABF] 828J8b8z8
+  [000ACAD3] 9"9:9R9j9
+  [000ACAEF] :!:9:Q:i:
+  [000ACB29] =+=C=[=s=
+  [000ACB3F] >3>K>c>{>
+  [000ACB53] ?#?;?S?k?
+  [000ACB71] 0+0C0[0s0
+  [000ACB87] 131K1c1{1
+  [000ACB9B] 2#2;2S2k2
+  [000ACBB1] 3+3Q3f3~3
+  [000ACBC5] 4&4>4V4n4
+  [000ACC45] :#:':+:8:O:h:
+  [000ACC61] ;);:;K;\;m;~;
+  [000ACC7F] <(<9<J<g<x<
+  [000ACC97] =&=4=B=P=^=u=
+  [000ACCAC] *03080E0L0S0Z0g0s0
+  [000ACCDD] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [000ACD3D] 2 2$2(2,2024282<2@2D2H2
+  [000ACD5F] 3*4S4W4_4x4
+  [000ACD9B] 7&8h8$9+9Y9t9
+  [000ACDCF] =#=*=5=G=Z=
+  [000ACE15] ?"?&?*?.?2?6?:?>?B?F?J?N?R?V?Z?^?b?f?j?n?r?v?z?~?
+  [000ACE6F] 0$050F0W0h0y0
+  [000ACE8D] 1#141E1V1g1x1
+  [000ACEAB] 2"232D2U2f2w2
+  [000ACECB] 3 3,3@3Y3
+  [000ACEEF] ;#<b<g<x<
+  [000ACF3D] 2"2)2>2D2K2`2f2m2
+  [000ACF59] 4"4)4>4D4K4`4f4m4
+  [000ACF81] 5#5=5E5K5R5g5m5t5
+  [000ACFA3] 6-686Y6h6o6v6
+  [000AD013] =R>Y>p>t>x>|>
+  [000AD04F] 1/2M2T2c2h2w2}2
+  [000AD075] 3/3J3x3}3
+  [000AD085] 4D4Z4`4e4u4
+  [000AD0B3] 5"5'545=5B5_5
+  [000AD0C5] 828G8T8e8
+  [000AD0FB] :L:h:C;K;s;
+  [000AD10B] ;;<E<Q<\<a<q<|<
+  [000AD125] =$>7>V>b>p>x>
+  [000AD153] ?"?.?9?>?J?U?Z?f?q?v?
+  [000AD193] 060B0]0i0
+  [000AD1BB] 2/2=2m2x2
+  [000AD1CB] 2'3^3E5q5
+  [000AD1EF] 73777C7V7\7d7s7y7
+  [000AD229] 9::A:X:\:`:d:
+  [000AD25F] ?B?H?R?X?h?y?
+  [000AD2AD] 3$3*31393>3L3W3]3c3i3y3
+  [000AD2EB] 5!5+555;5E5K5Z5h5v5
+  [000AD313] 6"616?6M6^6j6t6
+  [000AD32B] 7"7H7t7~7
+  [000AD33B] 7(90969d9
+  [000AD357] :#:C:V:o:w:~:
+  [000AD399] <"<&<*<.<2<
+  [000AD3DD] 2&222R2\2}2
+  [000AD407] 5'5=5M5~5
+  [000AD455] ;%;A;R;f;
+  [000AD481] < <$<(<,<4<F<X<j<|<
+  [000AD4B9] ?/?C?W?k?
+  [000AD50B] 2&282J2\2n2
+  [000AD52B] 4!454I4]4q4
+  [000AD563] 868I8j8p8~8
+  [000AD57F] 9,929@9F9T9Z9h9n9
+  [000AD595] :-:9:D:X:
+  [000AD5A7] ;-;7;=;E;O;Z;
+  [000AD5C1] <?=K=R=\=f=p=
+  [000AD5ED] >0>:>E>Q>V>e>j>x>
+  [000AD611] >C?O?\?n?{?
+  [000AD63B] 0#0/0<0N0V0c0o0|0
+  [000AD685] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1t1
+  [000AD6DD] 3@3H3d3l3p3
+  [000AD747] 6 6$6(6,6064686<6@6D6H6L6P6T6X6\6f6j6x6
+  [000AD795] 8(808J8R8n8v8z8
+  [000AD7E1] ; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+  [000AD851] < <2<6<H<X<h<p<t<x<|<
+  [000AD8B5] = =$=(=,=0=4=8=<=@=D=H=T=`=d=u=}=
+  [000AD8E7] >#>+>H>P>m>y>
+  [000AD90B] ?D?L?P?d?l?
+  [000AD929] 0'0=0c0k0o0
+  [000AD941] 1 1=1E1f1n1
+  [000AD98D] 4d697F7]7
+  [000AD9E9] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3t3x3|3
+  [000ADA33] 5(585@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [000ADB11] 0 0$030?0H0Q0\0g0y0
+  [000ADB2F] 001@1D1H1L1P1T1X1\1`1d1h1u1{1
+  [000ADB59] 1 2&222Y2_2k2
+  [000ADB77] 3:3@3L3p3v3
+  [000ADB9F] 4(484<4@4D4H4L4P4T4X4\4c4l4u4~4
+  [000ADBDB] 5$5/585A5J5U5^5i5r5{5
+  [000ADC05] 596E6J6T6k6q6~6
+  [000ADC23] 6:7?7E7M7V7_7h7q7z7
+  [000ADC6F] 8$828;8D8M8[8d8r8{8
+  [000ADCA1] 9-969?9H9V9_9h9q9
+  [000ADCD1] :#:,:::C:L:U:c:l:u:~:
+  [000ADD09] ;!;&;+;5;:;?;I;N;S;w;
+  [000ADD39] <$<*<4<:<D<J<T<Z<d<j<t<z<
+  [000ADD65] =+=7=D=V=_=8>Y>b>k>
+  [000ADDA3] 0#0/0<0N0[0g0t0
+  [000ADDB9] 273C3P3b3~4
+  [000ADDDF] 6#6'6+6/63676;6?6C6
+  [000ADE03] 7!7%7)7-7175797=7
+  [000ADE15] ;C?O?V?a?s?
+  [000ADE2C] F0#2/2<2N2w2
+  [000ADE61] 6"6*626:6B6J6R6Z6b6j6
+  [000ADEC1] ;.<:<E<Z<b<g<q<
+  [000ADEE7] = =(=2=`=n=t=
+  [000ADF67] :-;2;<;G;V;^;c;m;{;
+  [000ADF91] <&<0<I<W<]<q<|<
+  [000ADFC1] > >(>?>L>W>\>
+  [000AE06F] 0 000L0Q0l0v0
+  [000AE093] 5'545:5L5
+  [000AE0E9] 2C3O3X3k3w3
+  [000AE111] 4$42494>4C4K4P4`4
+  [000AE12B] 5(5,54585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+  [000AE195] 6 6$6(6,6064686L6^6b6r6v6z6
+  [000AE1BF] 6#7+7H7P7g7k7o7s7
+  [000AE1E7] 8*828K8O8S8o8w8
+  [000AE205] 9-959O9W9u9}9
+  [000AE21D] :*:P:`:p:x:|:
+  [000AE25D] ;(;0;4;8;<;@;D;H;L;P;`;
+  [000AE2AC] `0j0t0}0
+  [000AE33D] 7 727E7O7]7
+  [000AE357] 8'858\8a8
+  [000AE389] 1!1-2W3w3g4
+  [000AE3D9] 80989D9x9
+  [000AE40D] ;(;?;P;b;
+  [000AE419] ;;<G<N<`<~<
+  [000AE433] =)=9=D=P=U=_=d=j=t=
+  [000AE45F] 0"0-0?0R0n2y2
+  [000AE477] 3:3W3\3a3f3k3p3u3z3
+  [000AE499] 4!4E4[4k4
+  [000AE4CD] 5#555:5?5D5I5N5S5X5]5b5n5s5
+  [000AE513] 8&8;8U8}8
+  [000AE539] :=:J:_:p:u:
+  [000AE56F] =<=B=a=g=
+  [000AE5E5] 4:4M4^4s4z4
+  [000AE609] 7+7>7L7t7y7
+  [000AE63F] 9,9I9a9l9w9
+  [000AE67B] ;.;@;S;a;k;r;y;
+  [000AE69B] <'=6=C=N=X=_=e=}=3>;>I>W>~>
+  [000AE6BF] ?.?:?^?c?
+  [000AE6E7] 080D0U0Z0h0u0
+  [000AE70F] 1A1N1X1f1l1t1
+  [000AE757] 6#616C6O6[6f6x6
+  [000AE77F] 7"7+727y7
+  [000AE795] 7'8.8h8l8p8t8x8
+  [000AE7BF] 9Y9]9a9e9i9m9q9
+  [000AE7DD] :":&:*:.:2:6:::
+  [000AE80B] ;_;c;g;k;o;s;w;{;
+  [000AE824] g0l0v0{0
+  [000AE84F] 1%1*191>1H1M1\1a1k1p1
+  [000AE88B] 2.232=2B2Q2V2`2e2t2y2
+  [000AE8D3] 8"8&8*8.888a8
+  [000AE8ED] :!;);1;9;
+  [000AE8F7] <4<I<W<o<s<w<{<
+  [000AE923] <7=C=J=T=f=v=
+  [000AE965] 0!0(020B0
+  [000AE97B] 222G2\2q2
+  [000AE993] 3+3?3S3g3{3
+  [000AE9D5] ;C;Z;j;w;
+  [000AEA0F] 0(1X1i1u1
+  [000AEA37] 5"545F5S5_5l5~5
+  [000AEAA7] 8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+  [000AEB09] 909@9L9P9X9\9`9d9h9l9p9t9x9|9
+  [000AEB75] : :$:(:,:::>:B:F:T:c:g:x:
+  [000AEBA3] ;$;,;E;M;k;s;
+  [000AEBC1] <&<G<O<k<s<w<
+  [000AEC07] ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+  [000AEC81] 0"0&0*0.02060:0>0B0F0J0\0n0r0
+  [000AECB1] 131;1V1{1
+  [000AECC9] 2%2-2F2N2j2r2
+  [000AECE3] 3)313O3W3x3
+  [000AED03] 4(404J4R4m4u4y4
+  [000AED85] 9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9t9
+  [000AEE35] =H>O>W?}?
+  [000AEE6B] :+<7<?<G<S<[<f<l<v<|<
+  [000AEEB7] = =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+  [000AEF11] =C>V>r>v>z>~>
+  [000AEF51] 1"121<1A1K1Q1Y1^1i1
+  [000AEFA1] 2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+  [000AF007] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [000AF085] 8*8>8R8`8t8
+  [000AF0B5] :,:@:J:m:
+  [000AF0C7] :8;B;J;U;u;
+  [000AF0E1] <0<A<F<Q<Z<_<k<q<|<
+  [000AF113] =$=)=5=B=S=X=c=l=q=
+  [000AF161] ?-?2?:?D?
+  [000AF1E3] 3/3<3G3O3V3]3b3g3z3
+  [000AF21D] 4(4F4O4W4\4c4p4w4
+  [000AF245] 5"525\5n5
+  [000AF265] 6'626:6?6L6T6Y6f6x6
+  [000AF299] 8&8+8L8Q8u8z8
+  [000AF2AF] 9*9>9k9q9v9
+  [000AF2C5] 9 :4:H:\:f:
+  [000AF2E1] ;6;@;P;b;y;
+  [000AF2EF] <-<2<?<D<N<a<w<
+  [000AF311] =*===P=g=q=v=
+  [000AF32F] =+>:>?>F>M>T>[>a>x>
+  [000AF36F] ?!?(?/?;?G?\?i?~?
+  [000AF3B1] 242?2J2m2z2
+  [000AF3C7] 3.3F3f3~3
+  [000AF4A1] :D:I:V:[:e:
+  [000AF503] =0=B=R=]=h=w=
+  [000AF523] >5>@>K>Z>k>z>
+  [000AF549] ? ?-?8?S?g?p?y?
+  [000AF575] 3'3N3S3Z3a3h3
+  [000AF591] 4$4,454E4P4^4g4}4
+  [000AF5E3] 7"7,767@7J7T7^7h7z7
+  [000AF601] 8$9G9O9Z9m9|9
+  [000AF625] :<:A:H:N:m:}:
+  [000AF63D] :%;*;0;N;^;
+  [000AF64D] <8<?<b<l<y<
+  [000AF669] <I=M=Q=U=Y=]=
+  [000AF691] ?,?1?A?i?t?
+  [000AF6BB] 000<0e0p0
+  [000AF6D5] 1)1>1C1S1f1r1
+  [000AF74D] 7@8E8J8_8d8z8
+  [000AF763] 9&9.969>9D9X9b9h9m9r9w9
+  [000AF789] 93:G:Q:W:\:a:f:s:
+  [000AF79D] ;%;4;O;a;f;k;{;
+  [000AF7C9] <!<&<1<><
+  [000AF7F5] >">5>E>P>W>\>g>{>
+  [000AF81B] ?+?/?3?7?;???X?p?
+  [000AF859] 1#1/1<1N1T1d1h1l1t1|1
+  [000AF8BD] 2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+  [000AF8FF] 6.6D6Z6o6
+  [000AF917] 7/7?7U7i7~7
+  [000AF95B] :D;Q;Z;o;
+  [000AF989] 1V1b1j1o1m2}2
+  [000AF9B3] 545V5o566Y6
+  [000AF9C1] 707?7C7G7K7O7S7.8D8Z8p8
+  [000AF9EB] :7;v;,<\<u<
+  [000AFA61] 7I8X9b9t9
+  [000AFA7D] :!:.:9:C:S:v:
+  [000AFA97] ;M;X;b;o;
+  [000AFAC3] >$>+>?>S>^>k>y>
+  [000AFB03] 0V0g0q0}0
+  [000AFB51] 9%9:9F9P9Z9e9
+  [000AFB5F] :,:4:;:Y:s:
+  [000AFB8B] <'</<b<z<
+  [000AFBC9] > >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+  [000AFC4D] 1"151H1a1v1
+  [000AFC7F] 2C3J3T3f3
+  [000AFCB3] 6"6&6*6.62666:6>6B6F6J6N6R6V6[6`6o6t6
+  [000AFCF9] 7"7.737?7D7P7U7a7f7r7w7
+  [000AFD63] ?+?>?R?e?w?
+  [000AFD83] 0#0'0+0/03070;0?0C0G0K0O0S0W0[0_0
+  [000AFDB9] 2-252`2o2
+  [000AFDCB] 3"3:3M3\3l3
+  [000AFDDF] 3;4U4e4m4w4
+  [000AFE21] 7 727?7K7X7j7t7
+  [000AFE3B] 7$8<8E8O8
+  [000AFE81] 0(070E0L0T0[0r0
+  [000AFEA3] 0H1R1W1e1m1
+  [000AFEC3] 242>2H2R2]2q2{2
+  [000AFEE3] 213;3C3M3d3
+  [000AFF1F] 5)535>5L5V5`5v5
+  [000AFF47] 6,696C6Z6
+  [000AFF63] 7'7.797P7^7h7u7
+  [000AFF83] 888M8W8c8r8|8
+  [000AFF9F] 949\9c9z9~9
+  [000AFFE1] >">*>9>B>Q>\>g>u>}>
+  [000AFFFF] >+?5?@?J?d?
+  [000B0015] 030G0O0^0f0n0
+  [000B0035] 1$11161=1L1
+  [000B0059] 2#2-232L2T2\2b2y2
+  [000B0083] 3#313:3?3H3P3Z3_3m3v3{3
+  [000B00C9] 5,555@5G5T5c5u5
+  [000B00E3] 6$626F6]6j6v6
+  [000B0107] 7,747@7O7d7o7x7
+  [000B0129] 8$838>8Y8`8h8u8}8
+  [000B0153] 9/9L9a9k9w9
+  [000B017B] :$:>:N:]:j:
+  [000B0191] ;J;N;R;V;Z;^;b;f;j;n;r;v;z;~;
+  [000B01D5] <'<,<;<@<O<T<`<e<q<v<
+  [000B01FF] <+=8=B=s=
+  [000B0220] <0G0R0b0k0v0}0
+  [000B0239] 1$1.1<1G1Q1_1p1z1
+  [000B0269] 3-383F3U3t3
+  [000B028F] 576E6P6a6o6
+  [000B02AB] 7L7V7[7i7w7
+  [000B02E1] 9+:>:P:T:X:\:`:d:h:l:p:t:x:|:
+  [000B034D] ; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+  [000B03CD] < <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+  [000B0445] ="='=/=7=>=C=I=
+  [000B0469] 081`1d1t1x1|1
+  [000B04BB] 2D2L2T2\2d2l2t2|2
+  [000B050F] 4 4(40484@4H4P4X4`4h4p4x4
+  [000B054F] 5 5(50585@5H5P5X5`5h5p5
+  [000B056D] 8,8X8H9X9`9h9p9x9
+  [000B059F] :0;4;8;<;@;D;H;L;P;T;
+  [000B0600] $?(?,?0?
+  [000B0610] L1P1T1X1`1d1h1l1p1t1x1|1
+  [000B0643] 1D7H7L7P7T7X7\7`7d7h7l7p7t7
+  [000B0671] 8@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+  [000B06E1] : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:
+  [000B0710] $;(;0;4;8;
+  [000B0747] 0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+  [000B07C7] 1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+  [000B0847] 2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+  [000B08C7] 3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+  [000B0947] 4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+  [000B2078] 333333333333333333
+  [000B208F] 33333333?333333
+  [000B2147] 33333833
+  [000B21B8] 3333333333333338
+  [000B21CC] 333333333333333333
+  [000B2248] 334C33333338
+  [000B225C] 33B$3333333
+  [000B2270] 34""C33333833
+  [000B2284] 3B""$33333
+  [000B2298] 4"*""C3338
+  [000B22C0] :*"*"$3338
+  [000B233D] "J"C3333
+  [000B2366] "J333333
+  [000B2374] 33333:"$3333338
+  [000B238F] $3333333
+  [000B239C] 333333:"33333338
+  [000B23B8] 33333333
+  [000B242C] 333333333333333333
+  [000B2443] 33333333?333333
+  [000B24FB] 33333833
+  [000B256C] 3333333333333338
+  [000B2580] 333333333333333333
+  [000B2700] 33DDDDD3333
+  [000B2714] 33333333333
+  [000B27CC] 3333f3333333?
+  [000B27E0] 3336Dc3333338
+  [000B27F4] 333>fC333333
+  [000B281C] 3333333333338
+  [000B2830] 3333Dc3333333
+  [000B2844] 3336fC3333338
+  [000B2858] 333>fC333333
+  [000B286C] 333>fd333333
+  [000B2894] 3333>fd333338
+  [000B28BC] 33fd3>fC333
+  [000B28D3] fDFfC338
+  [000B28E4] 33>ffffc338
+  [000B2920] 3333333333338
+  [000B299C] 4DF334DC33
+  [000B29C7] c33*C333
+  [000B29F3] 33338?383
+  [000B2A04] F*F333383
+  [000B2A18] "$c33333
+  [000B2A2D] "dc3333833
+  [000B2A69] D*C33383
+  [000B2A92] C33333833?33
+  [000B2AB4] 3334JC33333338?333
+  [000B2ACD] C3333333
+  [000B2AE1] C3333333
+  [000B2AF0] 3333fc33333338
+  [000B2B6C] 333333333333?
+  [000B2CC0] 333333333333333333
+  [000B2D3C] 333333333333333333
+  [000B2D50] 333333333333
+  [000B2D64] 334C33333338
+  [000B2D78] 33B$3333333
+  [000B2D8C] 34""C33333833
+  [000B2DA0] 3B""$33333
+  [000B2DB4] 4"*""C3338
+  [000B2DDC] :*3:"$3338
+  [000B2E04] 3333:"$3333338
+  [000B2E1E] "C333333
+  [000B2E2C] 33333:"$3333338
+  [000B2E47] "C333333
+  [000B2E54] 333333:"C3333338
+  [000B2E70] #3333333
+  [000B2E7C] 3333333:3333333383
+  [000B2E90] 333333333333333333
+  [000B2F0C] 333DDD33333?
+  [000B2F20] 2C4"""D338
+  [000B2F34] 2$B""""C38
+  [000B2F70] 2""333:"C8
+  [000B2F84] 2""#33:DC8
+  [000B2FAC] 333333333333333
+  [000B2FC0] 333333DDD3
+  [000B2FD4] :DC33:""$8
+  [000B2FFE] $334B"$3
+  [000B3012] "DDB""$3
+  [000B3060] 333333333333333333
+  [000B30DC] 333333333333333333
+  [000B30F0] 333333333333
+  [000B3104] 334C33333338
+  [000B3118] 33B$3333333
+  [000B312C] 34""C33333833
+  [000B3140] 3B""$33333
+  [000B3154] 4"*""C3338
+  [000B317C] :*3:"$3338
+  [000B31A4] 3333:"$3333338
+  [000B31BE] "C333333
+  [000B31CC] 33333:"$3333338
+  [000B31E7] "C333333
+  [000B31F4] 333333:"C3333338
+  [000B3210] #3333333
+  [000B321C] 3333333:3333333383
+  [000B3230] 333333333333333333
+  [000B65EE] HtmlHelp
+  [000B660B] KWindows
+  [000B6615] +Graphics
+  [000B662A] SysUtils
+  [000B6635] SysConst
+  [000B663F] ^Classes
+  [000B6649] QTypInfo
+  [000B6653] sActiveX
+  [000B665D] 3Messages
+  [000B6672] nComCtrls
+  [000B667E] Printers
+  [000B6688] WWinSpool
+  [000B66A3] Commctrl
+  [000B66B7] StdActns
+  [000B66CB] &Controls
+  [000B66D7] MultiMon
+  [000B66FD] EActnList
+  [000B670E] dStdCtrls
+  [000B6724] RichEdit
+  [000B6739] ExtCtrls
+  [000B6744] FntAutho
+  [000B6758] ,OURDIAG
+  [000B67B6] 3CommDlg
+  [000B67C9] *ShellAPI
+  [000B67DD] ?WinInet
+  [000B67F0] -WinIoCtl
+  [000B67FB] ]Scrutils
+  [000B6807] TLHelp32
+  [000B6837] USCSIDev
+  [000B6841] 8Registry
+  [000B684D] IniFiles
+  [000B6868] FileCtrl
+  [000B6895] FPLKData
+  [000B68A0] RegUtils
+  [000B68AB] PackInfo
+  [000B68B6] ShreeReg
+  [000B68D3] )Keytutor
+  [000B68DF] GLOBALS3
+  [000B68EA] MSDEF332
+  [000B68F5] uAuthorize
+  [000B690A] Pass3gen
+  [000B691F] KBDSETUP
+  [000B6929] eSHRSETUP
+  [000B6990] This program must be run under Win32
+  [000B8370] SOFTWARE\Borland\Delphi\RTL
+  [000B838C] FPUMaskValue
+  [000B8B07] Portions Copyright (c) 1983,99 Borland
+  [000B8DF4] kernel32.dll
+  [000B8E04] GetLongPathNameA
+  [000B8FD4] Software\Borland\Locales
+  [000B8FF0] Software\Borland\Delphi\Locales
+  [000B9998] Modular InfoTech
+  [000B99FC] Modular InfoTech
+  [000B9A2C] Modular InfoTech
+  [000B9A8C] Modular InfoTech
+  [000B9ABC] Modular InfoTech
+  [000B9AEC] Modular InfoTech
+  [000B9B4C] Modular InfoTech
+  [000B9D64] Runtime error     at 00000000
+  [000B9D8C] 0123456789ABCDEF                                                                
+  [000BA09C] kernel32.dll
+  [000BA0AC] GetCurrentThreadId
+  [000BA0C2] DeleteCriticalSection
+  [000BA0DA] LeaveCriticalSection
+  [000BA0F2] EnterCriticalSection
+  [000BA10A] InitializeCriticalSection
+  [000BA126] VirtualFree
+  [000BA134] VirtualAlloc
+  [000BA144] LocalFree
+  [000BA150] LocalAlloc
+  [000BA15E] VirtualQuery
+  [000BA16E] lstrlenA
+  [000BA17A] lstrcpynA
+  [000BA186] lstrcpyA
+  [000BA192] LoadLibraryExA
+  [000BA1A4] GetThreadLocale
+  [000BA1B6] GetStartupInfoA
+  [000BA1C8] GetProcAddress
+  [000BA1DA] GetModuleHandleA
+  [000BA1EE] GetModuleFileNameA
+  [000BA204] GetLocaleInfoA
+  [000BA216] GetLastError
+  [000BA226] GetCommandLineA
+  [000BA238] FreeLibrary
+  [000BA246] FindFirstFileA
+  [000BA258] FindClose
+  [000BA264] ExitProcess
+  [000BA272] WriteFile
+  [000BA27E] UnhandledExceptionFilter
+  [000BA29A] SetFilePointer
+  [000BA2AC] SetEndOfFile
+  [000BA2BC] RtlUnwind
+  [000BA2C8] ReadFile
+  [000BA2D4] RaiseException
+  [000BA2E6] GetStdHandle
+  [000BA2F6] GetFileSize
+  [000BA304] GetFileType
+  [000BA312] CreateFileA
+  [000BA320] CloseHandle
+  [000BA32C] user32.dll
+  [000BA33A] GetKeyboardType
+  [000BA34C] MessageBoxA
+  [000BA35A] CharNextA
+  [000BA364] advapi32.dll
+  [000BA374] RegQueryValueExA
+  [000BA388] RegOpenKeyExA
+  [000BA398] RegCloseKey
+  [000BA3A4] oleaut32.dll
+  [000BA3B4] VariantClear
+  [000BA3C2] kernel32.dll
+  [000BA3D2] TlsSetValue
+  [000BA3E0] TlsGetValue
+  [000BA3F8] TlsAlloc
+  [000BA404] LocalFree
+  [000BA410] LocalAlloc
+  [000BA41E] GetModuleFileNameA
+  [000BA5D6] PSCRUTIL.dll
+  [000BA5E3] FONTNAME_TO_SCRIPT_TYPE
+  [000BA5FB] FONT_LAYOUTSTR_TO_LAYOUT
+  [000BA614] FONT_LAYOUT_TO_STR
+  [000BA627] FORMFONTNAME
+  [000BA634] FORMFONTVAL
+  [000BA640] GET_DLLNAME_32
+  [000BA64F] GET_FIRST_FONT
+  [000BA65E] GetDefaultLang
+  [000BA66D] GetIsciiKbdName
+  [000BA67D] LANGTOLONGSTR
+  [000BA68B] LANGTOSHORTSTR
+  [000BA74F] 0"0*020:0B0J0R0Z0b0j0r0z0
+  [000BA78D] 1>1F1N1V1^1f1n1v1
+  [000BA7C7] 8%8-878A8K8a8g8u8
+  [000BA7F5] 939:9D9N9X9d9o9
+  [000BA823] ;'<4<g<m<
+  [000BA883] 080>0F0p0v0
+  [000BA89D] 1"1F1N1T1Z1
+  [000BA8B3] 1F2Q2Z2`2p2y2
+  [000BA949] <'<0<7<S<X<q<|<
+  [000BA96F] = =2=<=A=O=
+  [000BA999] 22393K3i3r3~3
+  [000BA9E5] 9%9-979;9A9E9K9O9g9l9v9{9
+  [000BAA15] :5:A:W:{:
+  [000BAA2D] ;';0;5;:;M;[;e;
+  [000BAA53] <$<6<B<t<
+  [000BAA71] =(>@>[>n>
+  [000BAC0D] +PScrutil
+  [000BAC18] 3Messages
+  [000BAC36] KWindows
+  [000BAD45] TABOUTFORM
+  [000BAD50] ABOUTFORM
+  [000BAD68] BorderIcons
+  [000BAD75] biSystemMenu
+  [000BAD83] BorderStyle
+  [000BAD90] bsDialog
+  [000BADA2] About Shree-Samhita
+  [000BADB6] ClientHeight
+  [000BADC6] ClientWidth
+  [000BADE4] Font.Charset
+  [000BADF2] DEFAULT_CHARSET
+  [000BAE02] Font.Color
+  [000BAE0E] clWindowText
+  [000BAE1B] Font.Height
+  [000BAE29] Font.Name
+  [000BAE34] MS Sans Serif
+  [000BAE42] Font.Style
+  [000BAE4F] OldCreateOrder
+  [000BAE5F] OnActivate
+  [000BAE6B] FormActivate
+  [000BAE78] OnCreate
+  [000BAE82] FormCreate
+  [000BAE8D] PixelsPerInch
+  [000BAE9D] TextHeight
+  [000BAED7] Picture.Data
+  [000BAEE9] TMetafile
+  [000BAF28] Generated by ROOPA - MODULAR SYSTEMS - PUNE.
+  [000DE351] 4The Indian language support for Windows applications
+  [000DE387] Font.Charset
+  [000DE395] ANSI_CHARSET
+  [000DE3A2] Font.Color
+  [000DE3AE] clWindowText
+  [000DE3BB] Font.Height
+  [000DE3C9] Font.Name
+  [000DE3D4] Arial Narrow
+  [000DE3E1] Font.Style
+  [000DE3F5] ParentFont
+  [000DE43A] Designed and Developed by
+  [000DE48D] Modular InfoTech Ltd, Pune
+  [000DE4A8] Font.Charset
+  [000DE4B6] DEFAULT_CHARSET
+  [000DE4C6] Font.Color
+  [000DE4D2] clWindowText
+  [000DE4DF] Font.Height
+  [000DE4ED] Font.Name
+  [000DE4F8] MS Sans Serif
+  [000DE506] Font.Style
+  [000DE51A] ParentFont
+  [000DE556] Alignment
+  [000DE561] taCenter
+  [000DE56A] AutoSize
+  [000DE57D] Licenced to 
+  [000DE58A] WordWrap
+  [000DE5CC] Demo Version
+  [000DE611] BevelInner
+  [000DE61D] bvLowered
+  [000DE627] BevelWidth
+  [000DE63D] Shree-Samhita
+  [000DE65A] Font.Charset
+  [000DE668] ANSI_CHARSET
+  [000DE675] Font.Color
+  [000DE681] clWindowText
+  [000DE68E] Font.Height
+  [000DE69C] Font.Name
+  [000DE6A7] Arial Black
+  [000DE6B3] Font.Style
+  [000DE6C0] ParentFont
+  [000DE6CC] TabOrder
+  [000DE716] ModalResult
+  [000DE724] TabOrder
+  [000DE739] TKBDSETUPFORM
+  [000DE747] KBDSETUPFORM
+  [000DE763] BorderIcons
+  [000DE770] biSystemMenu
+  [000DE77E] BorderStyle
+  [000DE78B] bsDialog
+  [000DE79D] Keyboard Setup
+  [000DE7AC] ClientHeight
+  [000DE7BC] ClientWidth
+  [000DE7D2] clBtnFace
+  [000DE7DC] Font.Charset
+  [000DE7EA] DEFAULT_CHARSET
+  [000DE7FA] Font.Color
+  [000DE806] clWindowText
+  [000DE813] Font.Height
+  [000DE821] Font.Name
+  [000DE82C] MS Sans Serif
+  [000DE83A] Font.Style
+  [000DE847] OldCreateOrder
+  [000DE857] Position
+  [000DE861] poScreenCenter
+  [000DE870] ShowHint
+  [000DE87A] OnActivate
+  [000DE886] FormActivate
+  [000DE893] OnCreate
+  [000DE89D] FormCreate
+  [000DE8A8] PixelsPerInch
+  [000DE8B8] TextHeight
+  [000DE8F9] Click to apply changes
+  [000DE91D] ModalResult
+  [000DE92B] ParentShowHint
+  [000DE93B] ShowHint
+  [000DE945] TabOrder
+  [000DE959] OKBTNClick
+  [000DE96E] CANCELBTN
+  [000DE99E] Click to cancel the changes
+  [000DE9D3] ModalResult
+  [000DE9E1] ParentShowHint
+  [000DE9F1] ShowHint
+  [000DE9FB] TabOrder
+  [000DEA0F] CANCELBTNClick
+  [000DEA55] Click to get help
+  [000DEA76] ParentShowHint
+  [000DEA86] ShowHint
+  [000DEA90] TabOrder
+  [000DEAA4] HELPBTNClick
+  [000DEAB3] TPageControl
+  [000DEAC0] PageControl1
+  [000DEAED] ActivePage
+  [000DEAF9] TabSheet3
+  [000DEB10] TabOrder
+  [000DEB1B] OnChange
+  [000DEB25] PageControl1Change
+  [000DEB39] TTabSheet
+  [000DEB43] TabSheet1
+  [000DEB95] &Escapement  :
+  [000DEBA4] FocusControl
+  [000DEBB2] cbEscape
+  [000DEBBD] TGroupBox
+  [000DEBC7] GroupBox1
+  [000DEBEF] HelpContext
+  [000DEC06] Activation Key
+  [000DEC15] TabOrder
+  [000DEC21] TRadioButton
+  [000DEC2E] SCROLLRadioButton
+  [000DEC63] *Click to set Scroll Lock as activation key
+  [000DEC8F] HelpContext
+  [000DECA6] &Scroll Lock
+  [000DECBC] TabOrder
+  [000DECD2] TRadioButton
+  [000DECDF] CAPSRadioButton
+  [000DED12] (Click to set Caps Lock as activation key
+  [000DED3C] HelpContext
+  [000DED53] C&aps Lock
+  [000DED5E] TabOrder
+  [000DED6B] TRadioButton
+  [000DED78] NUMRadioButton
+  [000DEDAA] 'Click to set Num Lock as activation key
+  [000DEDD3] HelpContext
+  [000DEDEA] &Num Lock
+  [000DEDF4] TabOrder
+  [000DEE02] TComboBox
+  [000DEE0C] cbEscape
+  [000DEE3A] "Click to change the Escapement key
+  [000DEE5E] HelpContext
+  [000DEE6C] ItemHeight
+  [000DEE79] TabOrder
+  [000DEE84] OnKeyDown
+  [000DEE8F] cbEscapeKeyDown
+  [000DEEA8] cbEscapeKeyUp
+  [000DEEB6] Items.Strings
+  [000DEEC6] Ctrl + Space
+  [000DEED4] Ctrl + F1
+  [000DEEDF] Ctrl + F2
+  [000DEEEA] Ctrl + F3
+  [000DEEF5] Ctrl + F4
+  [000DEF00] Ctrl + F5
+  [000DEF0B] Ctrl + F6
+  [000DEF16] Ctrl + F7
+  [000DEF21] Ctrl + F8
+  [000DEF2C] Ctrl + F9
+  [000DEF37] Ctrl + F10
+  [000DEF43] Ctrl + F11
+  [000DEF4F] Ctrl + F12
+  [000DEF5B] Shift + F1
+  [000DEF67] Shift + F2
+  [000DEF73] Shift + F3
+  [000DEF7F] Shift + F4
+  [000DEF8B] Shift + F5
+  [000DEF97] Shift + F6
+  [000DEFA3] Shift + F7
+  [000DEFAF] Shift + F8
+  [000DEFBB] Shift + F9
+  [000DEFC7] Shift + F10
+  [000DEFD4] Shift + F11
+  [000DEFE1] Shift + F12
+  [000DEFEE] Ctrl + 0
+  [000DEFF8] Ctrl + 1
+  [000DF002] Ctrl + 2
+  [000DF00C] Ctrl + 3
+  [000DF016] Ctrl + 4
+  [000DF020] Ctrl + 5
+  [000DF02A] Ctrl + 6
+  [000DF034] Ctrl + 7
+  [000DF03E] Ctrl + 8
+  [000DF048] Ctrl + 9
+  [000DF052] Ctrl + A
+  [000DF05C] Ctrl + B
+  [000DF066] Ctrl + C
+  [000DF070] Ctrl + D
+  [000DF07A] Ctrl + E
+  [000DF084] Ctrl + F
+  [000DF08E] Ctrl + G
+  [000DF098] Ctrl + H
+  [000DF0A2] Ctrl + I
+  [000DF0AC] Ctrl + J
+  [000DF0B6] Ctrl + K
+  [000DF0C0] Ctrl + L
+  [000DF0CA] Ctrl + M
+  [000DF0D4] Ctrl + N
+  [000DF0DE] Ctrl + O
+  [000DF0E8] Ctrl + P
+  [000DF0F2] Ctrl + Q
+  [000DF0FC] Ctrl + R
+  [000DF106] Ctrl + S
+  [000DF110] Ctrl + T
+  [000DF11A] Ctrl + U
+  [000DF124] Ctrl + V
+  [000DF12E] Ctrl + W
+  [000DF138] Ctrl + X
+  [000DF142] Ctrl + Y
+  [000DF14C] Ctrl + Z
+  [000DF156] Ctrl + Shift + 0
+  [000DF168] Ctrl + Shift + 1
+  [000DF17A] Ctrl + Shift + 2
+  [000DF18C] Ctrl + Shift + 3
+  [000DF19E] Ctrl + Shift + 4
+  [000DF1B0] Ctrl + Shift + 5
+  [000DF1C2] Ctrl + Shift + 6
+  [000DF1D4] Ctrl + Shift + 7
+  [000DF1E6] Ctrl + Shift + 8
+  [000DF1F8] Ctrl + Shift + 9
+  [000DF20A] Ctrl + Shift + A
+  [000DF21C] Ctrl + Shift + B
+  [000DF22E] Ctrl + Shift + C
+  [000DF240] Ctrl + Shift + D
+  [000DF252] Ctrl + Shift + E
+  [000DF264] Ctrl + Shift + F
+  [000DF276] Ctrl + Shift + G
+  [000DF288] Ctrl + Shift + H
+  [000DF29A] Ctrl + Shift + I
+  [000DF2AC] Ctrl + Shift + J
+  [000DF2BE] Ctrl + Shift + K
+  [000DF2D0] Ctrl + Shift + L
+  [000DF2E2] Ctrl + Shift + M
+  [000DF2F4] Ctrl + Shift + N
+  [000DF306] Ctrl + Shift + O
+  [000DF318] Ctrl + Shift + P
+  [000DF32A] Ctrl + Shift + Q
+  [000DF33C] Ctrl + Shift + R
+  [000DF34E] Ctrl + Shift + S
+  [000DF360] Ctrl + Shift + T
+  [000DF372] Ctrl + Shift + U
+  [000DF384] Ctrl + Shift + V
+  [000DF396] Ctrl + Shift + W
+  [000DF3A8] Ctrl + Shift + X
+  [000DF3BA] Ctrl + Shift + Y
+  [000DF3CC] Ctrl + Shift + Z
+  [000DF3DE] Shift + 0
+  [000DF3E9] Shift + 1
+  [000DF3F4] Shift + 2
+  [000DF3FF] Shift + 3
+  [000DF40A] Shift + 4
+  [000DF415] Shift + 5
+  [000DF420] Shift + 6
+  [000DF42B] Shift + 7
+  [000DF436] Shift + 8
+  [000DF441] Shift + 9
+  [000DF44F] TTabSheet
+  [000DF459] TabSheet2
+  [000DF4A9] Current Sc&ript
+  [000DF4B9] FocusControl
+  [000DF4C7] ComboBox1
+  [000DF508] &Keyboard Layout
+  [000DF519] FocusControl
+  [000DF527] ComboBox2
+  [000DF533] TComboBox
+  [000DF53D] ComboBox1
+  [000DF56B] "Click to select the Current Script
+  [000DF58F] HelpContext
+  [000DF5A4] csDropDownList
+  [000DF5B3] DropDownCount
+  [000DF5C3] ItemHeight
+  [000DF5D0] TabOrder
+  [000DF5DB] OnChange
+  [000DF5E5] ComboBox1Change
+  [000DF5F5] Items.Strings
+  [000DF605] Malayalam
+  [000DF610] Devnagri
+  [000DF61C] TComboBox
+  [000DF626] ComboBox2
+  [000DF654] #Click to select the keyboard layout
+  [000DF679] HelpContext
+  [000DF68E] csDropDownList
+  [000DF69D] DropDownCount
+  [000DF6AD] ItemHeight
+  [000DF6BA] TabOrder
+  [000DF6C5] Items.Strings
+  [000DF6E8] APPLYButton
+  [000DF718] "Click to apply changes in settings
+  [000DF73C] HelpContext
+  [000DF759] TabOrder
+  [000DF76D] APPLYButtonClick
+  [000DF781] TTabSheet
+  [000DF78B] TabSheet3
+  [000DF79E] Keyboard Tutor
+  [000DF7AE] TCheckBox
+  [000DF7B8] CheckBox2
+  [000DF7E6] &Click to show key contents on tool tip
+  [000DF80E] HelpContext
+  [000DF825] &Show Key contents on tool tip
+  [000DF854] cbChecked
+  [000DF85E] TabOrder
+  [000DF86B] TGroupBox
+  [000DF875] GroupBox2
+  [000DF89D] HelpContext
+  [000DF8B4] Position on Screen
+  [000DF8C7] TabOrder
+  [000DF8D3] TRadioButton
+  [000DF8E0] RadioButton1
+  [000DF910] *Click to set position of tutor to Top Left
+  [000DF93C] HelpContext
+  [000DF953] Top &Left
+  [000DF95D] TabOrder
+  [000DF96A] TRadioButton
+  [000DF977] RadioButton2
+  [000DF9A7] +Click to set position of tutor to Top Right
+  [000DF9D4] HelpContext
+  [000DF9EB] Top &Right
+  [000DF9FF] TabOrder
+  [000DFA15] TRadioButton
+  [000DFA22] RadioButton3
+  [000DFA52] -Click to set position of tutor to Bottom Left
+  [000DFA81] HelpContext
+  [000DFA98] &Bottom Left
+  [000DFAA5] TabOrder
+  [000DFAB2] TRadioButton
+  [000DFABF] RadioButton4
+  [000DFAEF] .Click to set position of tutor to Bottom Right
+  [000DFB1F] HelpContext
+  [000DFB36] Bottom Ri&ght
+  [000DFB44] TabOrder
+  [000DFB51] TRadioButton
+  [000DFB5E] RadioButton5
+  [000DFB8E] /Click to set position of tutor to Screen Center
+  [000DFBBF] HelpContext
+  [000DFBD6] Screen Cen&ter
+  [000DFBE5] TabOrder
+  [000DFC34] TabOrder
+  [000DFC48] Button1Click
+  [000DFC5D] TKeyBoardTutorForm
+  [000DFC70] KeyBoardTutorForm
+  [000DFC91] ActiveControl
+  [000DFCA0] SpaceBut
+  [000DFCA9] BorderIcons
+  [000DFCB6] biSystemMenu
+  [000DFCC4] BorderStyle
+  [000DFCD1] bsToolWindow
+  [000DFCE7] Modular InfoTech Keyboard Tutor
+  [000DFD07] ClientHeight
+  [000DFD16] ClientWidth
+  [000DFD2C] clBtnFace
+  [000DFD36] Font.Charset
+  [000DFD44] ANSI_CHARSET
+  [000DFD51] Font.Color
+  [000DFD65] Font.Height
+  [000DFD73] Font.Name
+  [000DFD7E] MS Sans Serif
+  [000DFD8C] Font.Style
+  [000DFD99] FormStyle
+  [000DFDA4] fsStayOnTop
+  [000DFDB0] Icon.Data
+  [000E00BD] KeyPreview
+  [000E00C9] OldCreateOrder
+  [000E00D9] Position
+  [000E00E3] poScreenCenter
+  [000E00F2] OnActivate
+  [000E00FE] FormActivate
+  [000E0114] FormClick
+  [000E0127] FormClose
+  [000E0131] OnCreate
+  [000E013B] FormCreate
+  [000E0146] OnKeyDown
+  [000E0151] FormKeyDown
+  [000E015D] OnKeyPress
+  [000E0169] FormKeyPress
+  [000E0176] OnMouseMove
+  [000E0183] FormMouseMove
+  [000E0191] PixelsPerInch
+  [000E01A1] TextHeight
+  [000E0218] HelpContext
+  [000E0231] Font.Charset
+  [000E023F] DEFAULT_CHARSET
+  [000E024F] Font.Color
+  [000E0263] Font.Height
+  [000E0271] Font.Name
+  [000E027C] MS Sans Serif
+  [000E028A] Font.Style
+  [000E0297] ParentFont
+  [000E02A3] ParentShowHint
+  [000E02B3] ShowHint
+  [000E02BD] TabOrder
+  [000E02DA] FormClick
+  [000E0322] HelpContext
+  [000E033B] Font.Charset
+  [000E0349] DEFAULT_CHARSET
+  [000E0359] Font.Color
+  [000E036D] Font.Height
+  [000E037B] Font.Name
+  [000E0386] MS Sans Serif
+  [000E0394] Font.Style
+  [000E03A1] ParentFont
+  [000E03AD] ParentShowHint
+  [000E03BD] ShowHint
+  [000E03C7] TabOrder
+  [000E03E4] FormClick
+  [000E042C] HelpContext
+  [000E0445] Font.Charset
+  [000E0453] DEFAULT_CHARSET
+  [000E0463] Font.Color
+  [000E0477] Font.Height
+  [000E0485] Font.Name
+  [000E0490] MS Sans Serif
+  [000E049E] Font.Style
+  [000E04AB] ParentFont
+  [000E04B7] ParentShowHint
+  [000E04C7] ShowHint
+  [000E04D1] TabOrder
+  [000E04EE] FormClick
+  [000E0536] HelpContext
+  [000E054F] Font.Charset
+  [000E055D] DEFAULT_CHARSET
+  [000E056D] Font.Color
+  [000E0581] Font.Height
+  [000E058F] Font.Name
+  [000E059A] MS Sans Serif
+  [000E05A8] Font.Style
+  [000E05B5] ParentFont
+  [000E05C1] ParentShowHint
+  [000E05D1] ShowHint
+  [000E05DB] TabOrder
+  [000E05F8] FormClick
+  [000E0641] HelpContext
+  [000E065A] Font.Charset
+  [000E0668] DEFAULT_CHARSET
+  [000E0678] Font.Color
+  [000E068C] Font.Height
+  [000E069A] Font.Name
+  [000E06A5] MS Sans Serif
+  [000E06B3] Font.Style
+  [000E06C0] ParentFont
+  [000E06CC] ParentShowHint
+  [000E06DC] ShowHint
+  [000E06E6] TabOrder
+  [000E0703] FormClick
+  [000E074C] HelpContext
+  [000E0765] Font.Charset
+  [000E0773] DEFAULT_CHARSET
+  [000E0783] Font.Color
+  [000E0797] Font.Height
+  [000E07A5] Font.Name
+  [000E07B0] MS Sans Serif
+  [000E07BE] Font.Style
+  [000E07CB] ParentFont
+  [000E07D7] ParentShowHint
+  [000E07E7] ShowHint
+  [000E07F1] TabOrder
+  [000E080E] FormClick
+  [000E0857] HelpContext
+  [000E0870] Font.Charset
+  [000E087E] DEFAULT_CHARSET
+  [000E088E] Font.Color
+  [000E08A2] Font.Height
+  [000E08B0] Font.Name
+  [000E08BB] MS Sans Serif
+  [000E08C9] Font.Style
+  [000E08D6] ParentFont
+  [000E08E2] ParentShowHint
+  [000E08F2] ShowHint
+  [000E08FC] TabOrder
+  [000E0919] FormClick
+  [000E0962] HelpContext
+  [000E097B] Font.Charset
+  [000E0989] DEFAULT_CHARSET
+  [000E0999] Font.Color
+  [000E09AD] Font.Height
+  [000E09BB] Font.Name
+  [000E09C6] MS Sans Serif
+  [000E09D4] Font.Style
+  [000E09E1] ParentFont
+  [000E09ED] ParentShowHint
+  [000E09FD] ShowHint
+  [000E0A07] TabOrder
+  [000E0A24] FormClick
+  [000E0A6D] HelpContext
+  [000E0A86] Font.Charset
+  [000E0A94] DEFAULT_CHARSET
+  [000E0AA4] Font.Color
+  [000E0AB8] Font.Height
+  [000E0AC6] Font.Name
+  [000E0AD1] MS Sans Serif
+  [000E0ADF] Font.Style
+  [000E0AEC] ParentFont
+  [000E0AF8] ParentShowHint
+  [000E0B08] ShowHint
+  [000E0B12] TabOrder
+  [000E0B2F] FormClick
+  [000E0B43] Button10
+  [000E0B79] HelpContext
+  [000E0B92] Font.Charset
+  [000E0BA0] DEFAULT_CHARSET
+  [000E0BB0] Font.Color
+  [000E0BC4] Font.Height
+  [000E0BD2] Font.Name
+  [000E0BDD] MS Sans Serif
+  [000E0BEB] Font.Style
+  [000E0BF8] ParentFont
+  [000E0C04] ParentShowHint
+  [000E0C14] ShowHint
+  [000E0C1E] TabOrder
+  [000E0C3B] FormClick
+  [000E0C4F] Button12
+  [000E0C85] HelpContext
+  [000E0C9E] Font.Charset
+  [000E0CAC] DEFAULT_CHARSET
+  [000E0CBC] Font.Color
+  [000E0CD0] Font.Height
+  [000E0CDE] Font.Name
+  [000E0CE9] MS Sans Serif
+  [000E0CF7] Font.Style
+  [000E0D04] ParentFont
+  [000E0D10] ParentShowHint
+  [000E0D20] ShowHint
+  [000E0D2A] TabOrder
+  [000E0D47] FormClick
+  [000E0D5B] Button13
+  [000E0D91] HelpContext
+  [000E0DAA] Font.Charset
+  [000E0DB8] DEFAULT_CHARSET
+  [000E0DC8] Font.Color
+  [000E0DDC] Font.Height
+  [000E0DEA] Font.Name
+  [000E0DF5] MS Sans Serif
+  [000E0E03] Font.Style
+  [000E0E10] ParentFont
+  [000E0E1C] ParentShowHint
+  [000E0E2C] ShowHint
+  [000E0E36] TabOrder
+  [000E0E53] FormClick
+  [000E0E67] Button11
+  [000E0E9D] HelpContext
+  [000E0EB6] Font.Charset
+  [000E0EC4] DEFAULT_CHARSET
+  [000E0ED4] Font.Color
+  [000E0EE8] Font.Height
+  [000E0EF6] Font.Name
+  [000E0F01] MS Sans Serif
+  [000E0F0F] Font.Style
+  [000E0F1C] ParentFont
+  [000E0F28] ParentShowHint
+  [000E0F38] ShowHint
+  [000E0F42] TabOrder
+  [000E0F5F] FormClick
+  [000E0F73] ShiftBut
+  [000E0FA6] Shift state of Tutor
+  [000E0FBB] HelpContext
+  [000E0FD9] Font.Charset
+  [000E0FE7] ANSI_CHARSET
+  [000E0FF4] Font.Color
+  [000E1008] Font.Height
+  [000E1016] Font.Name
+  [000E1021] MS Sans Serif
+  [000E102F] Font.Style
+  [000E103C] ParentFont
+  [000E1048] ParentShowHint
+  [000E1058] ShowHint
+  [000E1062] TabOrder
+  [000E1076] ShiftButClick
+  [000E1084] OnMouseMove
+  [000E1091] FormMouseMove
+  [000E10A9] Button30
+  [000E10DE] HelpContext
+  [000E10F7] Font.Charset
+  [000E1105] DEFAULT_CHARSET
+  [000E1115] Font.Color
+  [000E1129] Font.Height
+  [000E1137] Font.Name
+  [000E1142] MS Sans Serif
+  [000E1150] Font.Style
+  [000E115D] ParentFont
+  [000E1169] ParentShowHint
+  [000E1179] ShowHint
+  [000E1183] TabOrder
+  [000E11A0] FormClick
+  [000E11B4] Button36
+  [000E11E9] HelpContext
+  [000E1202] Font.Charset
+  [000E1210] DEFAULT_CHARSET
+  [000E1220] Font.Color
+  [000E1234] Font.Height
+  [000E1242] Font.Name
+  [000E124D] MS Sans Serif
+  [000E125B] Font.Style
+  [000E1268] ParentFont
+  [000E1274] ParentShowHint
+  [000E1284] ShowHint
+  [000E128E] TabOrder
+  [000E12AB] FormClick
+  [000E12BF] Button18
+  [000E12F4] HelpContext
+  [000E130D] Font.Charset
+  [000E131B] DEFAULT_CHARSET
+  [000E132B] Font.Color
+  [000E133F] Font.Height
+  [000E134D] Font.Name
+  [000E1358] MS Sans Serif
+  [000E1366] Font.Style
+  [000E1373] ParentFont
+  [000E137F] ParentShowHint
+  [000E138F] ShowHint
+  [000E1399] TabOrder
+  [000E13B6] FormClick
+  [000E13CA] Button31
+  [000E13FF] HelpContext
+  [000E1418] Font.Charset
+  [000E1426] DEFAULT_CHARSET
+  [000E1436] Font.Color
+  [000E144A] Font.Height
+  [000E1458] Font.Name
+  [000E1463] MS Sans Serif
+  [000E1471] Font.Style
+  [000E147E] ParentFont
+  [000E148A] ParentShowHint
+  [000E149A] ShowHint
+  [000E14A4] TabOrder
+  [000E14C1] FormClick
+  [000E14D5] Button33
+  [000E150B] HelpContext
+  [000E1524] Font.Charset
+  [000E1532] DEFAULT_CHARSET
+  [000E1542] Font.Color
+  [000E1556] Font.Height
+  [000E1564] Font.Name
+  [000E156F] MS Sans Serif
+  [000E157D] Font.Style
+  [000E158A] ParentFont
+  [000E1596] ParentShowHint
+  [000E15A6] ShowHint
+  [000E15B0] TabOrder
+  [000E15CD] FormClick
+  [000E15E1] Button38
+  [000E1617] HelpContext
+  [000E1630] Font.Charset
+  [000E163E] DEFAULT_CHARSET
+  [000E164E] Font.Color
+  [000E1662] Font.Height
+  [000E1670] Font.Name
+  [000E167B] MS Sans Serif
+  [000E1689] Font.Style
+  [000E1696] ParentFont
+  [000E16A2] ParentShowHint
+  [000E16B2] ShowHint
+  [000E16BC] TabOrder
+  [000E16D9] FormClick
+  [000E16ED] Button34
+  [000E1723] HelpContext
+  [000E173C] Font.Charset
+  [000E174A] DEFAULT_CHARSET
+  [000E175A] Font.Color
+  [000E176E] Font.Height
+  [000E177C] Font.Name
+  [000E1787] MS Sans Serif
+  [000E1795] Font.Style
+  [000E17A2] ParentFont
+  [000E17AE] ParentShowHint
+  [000E17BE] ShowHint
+  [000E17C8] TabOrder
+  [000E17E5] FormClick
+  [000E17F9] Button22
+  [000E182F] HelpContext
+  [000E1848] Font.Charset
+  [000E1856] DEFAULT_CHARSET
+  [000E1866] Font.Color
+  [000E187A] Font.Height
+  [000E1888] Font.Name
+  [000E1893] MS Sans Serif
+  [000E18A1] Font.Style
+  [000E18AE] ParentFont
+  [000E18BA] ParentShowHint
+  [000E18CA] ShowHint
+  [000E18D4] TabOrder
+  [000E18F1] FormClick
+  [000E1905] Button28
+  [000E193B] HelpContext
+  [000E1954] Font.Charset
+  [000E1962] DEFAULT_CHARSET
+  [000E1972] Font.Color
+  [000E1986] Font.Height
+  [000E1994] Font.Name
+  [000E199F] MS Sans Serif
+  [000E19AD] Font.Style
+  [000E19BA] ParentFont
+  [000E19C6] ParentShowHint
+  [000E19D6] ShowHint
+  [000E19E0] TabOrder
+  [000E19FD] FormClick
+  [000E1A11] Button29
+  [000E1A47] HelpContext
+  [000E1A60] Font.Charset
+  [000E1A6E] DEFAULT_CHARSET
+  [000E1A7E] Font.Color
+  [000E1A92] Font.Height
+  [000E1AA0] Font.Name
+  [000E1AAB] MS Sans Serif
+  [000E1AB9] Font.Style
+  [000E1AC6] ParentFont
+  [000E1AD2] ParentShowHint
+  [000E1AE2] ShowHint
+  [000E1AEC] TabOrder
+  [000E1B09] FormClick
+  [000E1B1D] Button41
+  [000E1B53] HelpContext
+  [000E1B6C] Font.Charset
+  [000E1B7A] DEFAULT_CHARSET
+  [000E1B8A] Font.Color
+  [000E1B9E] Font.Height
+  [000E1BAC] Font.Name
+  [000E1BB7] MS Sans Serif
+  [000E1BC5] Font.Style
+  [000E1BD2] ParentFont
+  [000E1BDE] ParentShowHint
+  [000E1BEE] ShowHint
+  [000E1BF8] TabOrder
+  [000E1C15] FormClick
+  [000E1C29] Button40
+  [000E1C5F] HelpContext
+  [000E1C78] Font.Charset
+  [000E1C86] DEFAULT_CHARSET
+  [000E1C96] Font.Color
+  [000E1CAA] Font.Height
+  [000E1CB8] Font.Name
+  [000E1CC3] MS Sans Serif
+  [000E1CD1] Font.Style
+  [000E1CDE] ParentFont
+  [000E1CEA] ParentShowHint
+  [000E1CFA] ShowHint
+  [000E1D04] TabOrder
+  [000E1D21] FormClick
+  [000E1D35] Button14
+  [000E1D6A] HelpContext
+  [000E1D83] Font.Charset
+  [000E1D91] DEFAULT_CHARSET
+  [000E1DA1] Font.Color
+  [000E1DB5] Font.Height
+  [000E1DC3] Font.Name
+  [000E1DCE] MS Sans Serif
+  [000E1DDC] Font.Style
+  [000E1DE9] ParentFont
+  [000E1DF5] ParentShowHint
+  [000E1E05] ShowHint
+  [000E1E0F] TabOrder
+  [000E1E2C] FormClick
+  [000E1E40] Button32
+  [000E1E75] HelpContext
+  [000E1E8E] Font.Charset
+  [000E1E9C] DEFAULT_CHARSET
+  [000E1EAC] Font.Color
+  [000E1EC0] Font.Height
+  [000E1ECE] Font.Name
+  [000E1ED9] MS Sans Serif
+  [000E1EE7] Font.Style
+  [000E1EF4] ParentFont
+  [000E1F00] ParentShowHint
+  [000E1F10] ShowHint
+  [000E1F1A] TabOrder
+  [000E1F37] FormClick
+  [000E1F4B] Button17
+  [000E1F80] HelpContext
+  [000E1F99] Font.Charset
+  [000E1FA7] DEFAULT_CHARSET
+  [000E1FB7] Font.Color
+  [000E1FCB] Font.Height
+  [000E1FD9] Font.Name
+  [000E1FE4] MS Sans Serif
+  [000E1FF2] Font.Style
+  [000E1FFF] ParentFont
+  [000E200B] ParentShowHint
+  [000E201B] ShowHint
+  [000E2025] TabOrder
+  [000E2042] FormClick
+  [000E2056] Button19
+  [000E208B] HelpContext
+  [000E20A4] Font.Charset
+  [000E20B2] DEFAULT_CHARSET
+  [000E20C2] Font.Color
+  [000E20D6] Font.Height
+  [000E20E4] Font.Name
+  [000E20EF] MS Sans Serif
+  [000E20FD] Font.Style
+  [000E210A] ParentFont
+  [000E2116] ParentShowHint
+  [000E2126] ShowHint
+  [000E2130] TabOrder
+  [000E214D] FormClick
+  [000E2161] Button20
+  [000E2197] HelpContext
+  [000E21B0] Font.Charset
+  [000E21BE] DEFAULT_CHARSET
+  [000E21CE] Font.Color
+  [000E21E2] Font.Height
+  [000E21F0] Font.Name
+  [000E21FB] MS Sans Serif
+  [000E2209] Font.Style
+  [000E2216] ParentFont
+  [000E2222] ParentShowHint
+  [000E2232] ShowHint
+  [000E223C] TabOrder
+  [000E2259] FormClick
+  [000E226D] Button21
+  [000E22A3] HelpContext
+  [000E22BC] Font.Charset
+  [000E22CA] DEFAULT_CHARSET
+  [000E22DA] Font.Color
+  [000E22EE] Font.Height
+  [000E22FC] Font.Name
+  [000E2307] MS Sans Serif
+  [000E2315] Font.Style
+  [000E2322] ParentFont
+  [000E232E] ParentShowHint
+  [000E233E] ShowHint
+  [000E2348] TabOrder
+  [000E2365] FormClick
+  [000E2379] Button23
+  [000E23AF] HelpContext
+  [000E23C8] Font.Charset
+  [000E23D6] DEFAULT_CHARSET
+  [000E23E6] Font.Color
+  [000E23FA] Font.Height
+  [000E2408] Font.Name
+  [000E2413] MS Sans Serif
+  [000E2421] Font.Style
+  [000E242E] ParentFont
+  [000E243A] ParentShowHint
+  [000E244A] ShowHint
+  [000E2454] TabOrder
+  [000E2471] FormClick
+  [000E2485] Button24
+  [000E24BB] HelpContext
+  [000E24D4] Font.Charset
+  [000E24E2] DEFAULT_CHARSET
+  [000E24F2] Font.Color
+  [000E2506] Font.Height
+  [000E2514] Font.Name
+  [000E251F] MS Sans Serif
+  [000E252D] Font.Style
+  [000E253A] ParentFont
+  [000E2546] ParentShowHint
+  [000E2556] ShowHint
+  [000E2560] TabOrder
+  [000E257D] FormClick
+  [000E2591] Button25
+  [000E25C7] HelpContext
+  [000E25E0] Font.Charset
+  [000E25EE] DEFAULT_CHARSET
+  [000E25FE] Font.Color
+  [000E2612] Font.Height
+  [000E2620] Font.Name
+  [000E262B] MS Sans Serif
+  [000E2639] Font.Style
+  [000E2646] ParentFont
+  [000E2652] ParentShowHint
+  [000E2662] ShowHint
+  [000E266C] TabOrder
+  [000E2689] FormClick
+  [000E269D] Button43
+  [000E26D3] HelpContext
+  [000E26EC] Font.Charset
+  [000E26FA] DEFAULT_CHARSET
+  [000E270A] Font.Color
+  [000E271E] Font.Height
+  [000E272C] Font.Name
+  [000E2737] MS Sans Serif
+  [000E2745] Font.Style
+  [000E2752] ParentFont
+  [000E275E] ParentShowHint
+  [000E276E] ShowHint
+  [000E2778] TabOrder
+  [000E2795] FormClick
+  [000E27A9] Button42
+  [000E27DF] HelpContext
+  [000E27F8] Font.Charset
+  [000E2806] DEFAULT_CHARSET
+  [000E2816] Font.Color
+  [000E282A] Font.Height
+  [000E2838] Font.Name
+  [000E2843] MS Sans Serif
+  [000E2851] Font.Style
+  [000E285E] ParentFont
+  [000E286A] ParentShowHint
+  [000E287A] ShowHint
+  [000E2884] TabOrder
+  [000E28A1] FormClick
+  [000E28E7] &Displays Conjuncts of current language
+  [000E290F] HelpContext
+  [000E292B] Font.Charset
+  [000E2939] ANSI_CHARSET
+  [000E2946] Font.Color
+  [000E295A] Font.Height
+  [000E2968] Font.Name
+  [000E2973] MS Sans Serif
+  [000E2981] Font.Style
+  [000E298E] ParentFont
+  [000E299A] ParentShowHint
+  [000E29AA] ShowHint
+  [000E29B4] TabOrder
+  [000E29C8] HelpButClick
+  [000E29D5] OnMouseMove
+  [000E29E2] FormMouseMove
+  [000E29FA] Button39
+  [000E2A2F] HelpContext
+  [000E2A48] Font.Charset
+  [000E2A56] DEFAULT_CHARSET
+  [000E2A66] Font.Color
+  [000E2A7A] Font.Height
+  [000E2A88] Font.Name
+  [000E2A93] MS Sans Serif
+  [000E2AA1] Font.Style
+  [000E2AAE] ParentFont
+  [000E2ABA] ParentShowHint
+  [000E2ACA] ShowHint
+  [000E2AD4] TabOrder
+  [000E2AF1] FormClick
+  [000E2B05] Button37
+  [000E2B3A] HelpContext
+  [000E2B53] Font.Charset
+  [000E2B61] DEFAULT_CHARSET
+  [000E2B71] Font.Color
+  [000E2B85] Font.Height
+  [000E2B93] Font.Name
+  [000E2B9E] MS Sans Serif
+  [000E2BAC] Font.Style
+  [000E2BB9] ParentFont
+  [000E2BC5] ParentShowHint
+  [000E2BD5] ShowHint
+  [000E2BDF] TabOrder
+  [000E2BFC] FormClick
+  [000E2C10] Button16
+  [000E2C45] HelpContext
+  [000E2C5E] Font.Charset
+  [000E2C6C] DEFAULT_CHARSET
+  [000E2C7C] Font.Color
+  [000E2C90] Font.Height
+  [000E2C9E] Font.Name
+  [000E2CA9] MS Sans Serif
+  [000E2CB7] Font.Style
+  [000E2CC4] ParentFont
+  [000E2CD0] ParentShowHint
+  [000E2CE0] ShowHint
+  [000E2CEA] TabOrder
+  [000E2D07] FormClick
+  [000E2D1B] Button35
+  [000E2D51] HelpContext
+  [000E2D6A] Font.Charset
+  [000E2D78] DEFAULT_CHARSET
+  [000E2D88] Font.Color
+  [000E2D9C] Font.Height
+  [000E2DAA] Font.Name
+  [000E2DB5] MS Sans Serif
+  [000E2DC3] Font.Style
+  [000E2DD0] ParentFont
+  [000E2DDC] ParentShowHint
+  [000E2DEC] ShowHint
+  [000E2DF6] TabOrder
+  [000E2E13] FormClick
+  [000E2E27] Button15
+  [000E2E5D] HelpContext
+  [000E2E76] Font.Charset
+  [000E2E84] DEFAULT_CHARSET
+  [000E2E94] Font.Color
+  [000E2EA8] Font.Height
+  [000E2EB6] Font.Name
+  [000E2EC1] MS Sans Serif
+  [000E2ECF] Font.Style
+  [000E2EDC] ParentFont
+  [000E2EE8] ParentShowHint
+  [000E2EF8] ShowHint
+  [000E2F02] TabOrder
+  [000E2F1F] FormClick
+  [000E2F33] Button27
+  [000E2F69] HelpContext
+  [000E2F82] Font.Charset
+  [000E2F90] DEFAULT_CHARSET
+  [000E2FA0] Font.Color
+  [000E2FB4] Font.Height
+  [000E2FC2] Font.Name
+  [000E2FCD] MS Sans Serif
+  [000E2FDB] Font.Style
+  [000E2FE8] ParentFont
+  [000E2FF4] ParentShowHint
+  [000E3004] ShowHint
+  [000E300E] TabOrder
+  [000E302B] FormClick
+  [000E303F] Button26
+  [000E3075] HelpContext
+  [000E308E] Font.Charset
+  [000E309C] DEFAULT_CHARSET
+  [000E30AC] Font.Color
+  [000E30C0] Font.Height
+  [000E30CE] Font.Name
+  [000E30D9] MS Sans Serif
+  [000E30E7] Font.Style
+  [000E30F4] ParentFont
+  [000E3100] ParentShowHint
+  [000E3110] ShowHint
+  [000E311A] TabOrder
+  [000E3137] FormClick
+  [000E314B] Button44
+  [000E3181] HelpContext
+  [000E319A] Font.Charset
+  [000E31A8] DEFAULT_CHARSET
+  [000E31B8] Font.Color
+  [000E31CC] Font.Height
+  [000E31DA] Font.Name
+  [000E31E5] MS Sans Serif
+  [000E31F3] Font.Style
+  [000E3200] ParentFont
+  [000E320C] ParentShowHint
+  [000E321C] ShowHint
+  [000E3226] TabOrder
+  [000E3243] FormClick
+  [000E3257] Button46
+  [000E328D] HelpContext
+  [000E32A6] Font.Charset
+  [000E32B4] DEFAULT_CHARSET
+  [000E32C4] Font.Color
+  [000E32D8] Font.Height
+  [000E32E6] Font.Name
+  [000E32F1] MS Sans Serif
+  [000E32FF] Font.Style
+  [000E330C] ParentFont
+  [000E3318] ParentShowHint
+  [000E3328] ShowHint
+  [000E3332] TabOrder
+  [000E334F] FormClick
+  [000E3363] Button45
+  [000E3399] HelpContext
+  [000E33B2] Font.Charset
+  [000E33C0] DEFAULT_CHARSET
+  [000E33D0] Font.Color
+  [000E33E4] Font.Height
+  [000E33F2] Font.Name
+  [000E33FD] MS Sans Serif
+  [000E340B] Font.Style
+  [000E3418] ParentFont
+  [000E3424] ParentShowHint
+  [000E3434] ShowHint
+  [000E343E] TabOrder
+  [000E345B] FormClick
+  [000E346F] EnterBut
+  [000E34A3] Clear Text
+  [000E34AE] HelpContext
+  [000E34CC] Font.Charset
+  [000E34DA] ANSI_CHARSET
+  [000E34E7] Font.Color
+  [000E34FB] Font.Height
+  [000E3509] Font.Name
+  [000E3514] MS Sans Serif
+  [000E3522] Font.Style
+  [000E352F] ParentFont
+  [000E353B] TabOrder
+  [000E3558] SpaceButClick
+  [000E3566] OnMouseMove
+  [000E3573] FormMouseMove
+  [000E35BF] HelpContext
+  [000E35D8] Font.Charset
+  [000E35E6] DEFAULT_CHARSET
+  [000E35F6] Font.Color
+  [000E360A] Font.Height
+  [000E3618] Font.Name
+  [000E3623] MS Sans Serif
+  [000E3631] Font.Style
+  [000E363E] ParentFont
+  [000E364A] ParentShowHint
+  [000E365A] ShowHint
+  [000E3664] TabOrder
+  [000E3681] FormClick
+  [000E3695] SpaceBut
+  [000E36C3] HelpContext
+  [000E36DA] Space Bar
+  [000E36E4] Font.Charset
+  [000E36F2] ANSI_CHARSET
+  [000E36FF] Font.Color
+  [000E3713] Font.Height
+  [000E3721] Font.Name
+  [000E372C] MS Sans Serif
+  [000E373A] Font.Style
+  [000E3747] ParentFont
+  [000E3753] TabOrder
+  [000E3767] SpaceButClick
+  [000E3775] OnMouseMove
+  [000E3782] FormMouseMove
+  [000E379A] AlterBut
+  [000E37C7] Alter state of Tutor
+  [000E37DC] HelpContext
+  [000E37F3] C&trl+Sp
+  [000E37FC] Font.Charset
+  [000E380A] ANSI_CHARSET
+  [000E3817] Font.Color
+  [000E382B] Font.Height
+  [000E3839] Font.Name
+  [000E3844] MS Sans Serif
+  [000E3852] Font.Style
+  [000E385F] ParentFont
+  [000E386B] ParentShowHint
+  [000E387B] ShowHint
+  [000E3885] TabOrder
+  [000E3899] AlterButClick
+  [000E38A7] OnMouseMove
+  [000E38B4] FormMouseMove
+  [000E38F8] Normal state of Tutor
+  [000E390E] HelpContext
+  [000E392D] Font.Charset
+  [000E393B] ANSI_CHARSET
+  [000E3948] Font.Color
+  [000E395C] Font.Height
+  [000E396A] Font.Name
+  [000E3975] MS Sans Serif
+  [000E3983] Font.Style
+  [000E3990] ParentFont
+  [000E399C] ParentShowHint
+  [000E39AC] ShowHint
+  [000E39B6] TabOrder
+  [000E39D2] OnMouseMove
+  [000E39DF] FormMouseMove
+  [000E3A24] Font Dialog Box
+  [000E3A34] HelpContext
+  [000E3A4B] C&trl+Sp
+  [000E3A54] Font.Charset
+  [000E3A62] ANSI_CHARSET
+  [000E3A6F] Font.Color
+  [000E3A83] Font.Height
+  [000E3A91] Font.Name
+  [000E3A9C] MS Sans Serif
+  [000E3AAA] Font.Style
+  [000E3AB7] ParentFont
+  [000E3AC3] TabOrder
+  [000E3AD7] AlterButClick
+  [000E3AE5] OnMouseMove
+  [000E3AF2] FormMouseMove
+  [000E3B0A] PrintBut
+  [000E3B37] &Displays Conjuncts of current language
+  [000E3B5F] HelpContext
+  [000E3B7D] Font.Charset
+  [000E3B8B] ANSI_CHARSET
+  [000E3B98] Font.Color
+  [000E3BAC] Font.Height
+  [000E3BBA] Font.Name
+  [000E3BC5] MS Sans Serif
+  [000E3BD3] Font.Style
+  [000E3BE0] ParentFont
+  [000E3BEC] TabOrder
+  [000E3C00] PrintButClick
+  [000E3C0E] OnMouseMove
+  [000E3C1B] FormMouseMove
+  [000E3C66] Back Space
+  [000E3C71] HelpContext
+  [000E3C8B] Font.Charset
+  [000E3C99] ANSI_CHARSET
+  [000E3CA6] Font.Color
+  [000E3CBA] Font.Height
+  [000E3CC8] Font.Name
+  [000E3CD3] MS Sans Serif
+  [000E3CE1] Font.Style
+  [000E3CEE] ParentFont
+  [000E3CFA] TabOrder
+  [000E3D0E] SpaceButClick
+  [000E3D1C] OnMouseMove
+  [000E3D29] FormMouseMove
+  [000E3D41] Button48
+  [000E3D6E] HelpContext
+  [000E3D89] Font.Charset
+  [000E3D97] ANSI_CHARSET
+  [000E3DA4] Font.Color
+  [000E3DB8] Font.Height
+  [000E3DC6] Font.Name
+  [000E3DD1] MS Sans Serif
+  [000E3DDF] Font.Style
+  [000E3DEC] ParentFont
+  [000E3DF8] ParentShowHint
+  [000E3E08] ShowHint
+  [000E3E12] TabOrder
+  [000E3E2F] SpaceButClick
+  [000E3E47] Button49
+  [000E3E6E] HelpContext
+  [000E3E8B] Font.Charset
+  [000E3E99] ANSI_CHARSET
+  [000E3EA6] Font.Color
+  [000E3EBA] Font.Height
+  [000E3EC8] Font.Name
+  [000E3ED3] MS Sans Serif
+  [000E3EE1] Font.Style
+  [000E3EEE] ParentFont
+  [000E3EFA] ParentShowHint
+  [000E3F0A] ShowHint
+  [000E3F14] TabOrder
+  [000E3F31] Button49Click
+  [000E3F75] &Displays Conjuncts of current language
+  [000E3F9D] HelpContext
+  [000E3FB9] Font.Charset
+  [000E3FC7] ANSI_CHARSET
+  [000E3FD4] Font.Color
+  [000E3FE8] Font.Height
+  [000E3FF6] Font.Name
+  [000E4001] MS Sans Serif
+  [000E400F] Font.Style
+  [000E401C] ParentFont
+  [000E4028] ParentShowHint
+  [000E4038] ShowHint
+  [000E4042] TabOrder
+  [000E4056] OnMouseMove
+  [000E4063] FormMouseMove
+  [000E4073] TPrintDialog
+  [000E4080] PrintDialog
+  [000E4095] poWarning
+  [000E40B5] TNAGFORM
+  [000E40D4] BorderIcons
+  [000E40E2] BorderStyle
+  [000E40EF] bsDialog
+  [000E4100] !DEMO Version of ShreeLipi Samhita
+  [000E4123] ClientHeight
+  [000E4133] ClientWidth
+  [000E4142] Font.Charset
+  [000E4150] DEFAULT_CHARSET
+  [000E4160] Font.Color
+  [000E416C] clWindowText
+  [000E4179] Font.Height
+  [000E4187] Font.Name
+  [000E4192] MS Sans Serif
+  [000E41A0] Font.Style
+  [000E41AD] Position
+  [000E41B7] poScreenCenter
+  [000E41C6] PixelsPerInch
+  [000E41D6] TextHeight
+  [000E4219] )This is Demo Version of ShreeLipi Samhita
+  [000E4244] Font.Charset
+  [000E4252] DEFAULT_CHARSET
+  [000E4262] Font.Color
+  [000E426E] clWindowText
+  [000E427B] Font.Height
+  [000E4289] Font.Name
+  [000E4294] MS Sans Serif
+  [000E42A2] Font.Style
+  [000E42B6] ParentFont
+  [000E42FB] Click to Continue
+  [000E430D] Font.Charset
+  [000E431B] DEFAULT_CHARSET
+  [000E432B] Font.Color
+  [000E4337] clWindowText
+  [000E4344] Font.Height
+  [000E4352] Font.Name
+  [000E435D] MS Sans Serif
+  [000E436B] Font.Style
+  [000E4378] ModalResult
+  [000E4386] ParentFont
+  [000E4392] TabOrder
+  [000E43A5] TSHRSETUPFORM
+  [000E43B3] SHRSETUPFORM
+  [000E43CF] BorderIcons
+  [000E43DC] biSystemMenu
+  [000E43EA] BorderStyle
+  [000E43F7] bsDialog
+  [000E4409] Shree Script Setup
+  [000E441C] ClientHeight
+  [000E442C] ClientWidth
+  [000E4442] clBtnFace
+  [000E444C] Font.Charset
+  [000E445A] DEFAULT_CHARSET
+  [000E446A] Font.Color
+  [000E4476] clWindowText
+  [000E4483] Font.Height
+  [000E4491] Font.Name
+  [000E44A2] Font.Style
+  [000E44AF] OldCreateOrder
+  [000E44BF] Position
+  [000E44C9] poScreenCenter
+  [000E44D8] ShowHint
+  [000E44E2] OnActivate
+  [000E44EE] FormActivate
+  [000E44FB] OnCreate
+  [000E4505] FormCreate
+  [000E4519] FormPaint
+  [000E4523] PixelsPerInch
+  [000E4533] TextHeight
+  [000E4575] Click to apply the changes
+  [000E459D] ModalResult
+  [000E45AB] ParentShowHint
+  [000E45BB] ShowHint
+  [000E45C5] TabOrder
+  [000E45D9] OKBTNClick
+  [000E45EE] CANCELBTN
+  [000E461E] Click to cancel the changes
+  [000E4653] ModalResult
+  [000E4661] ParentShowHint
+  [000E4671] ShowHint
+  [000E467B] TabOrder
+  [000E468F] CANCELBTNClick
+  [000E46D6] Click to get help
+  [000E46F7] ParentShowHint
+  [000E4707] ShowHint
+  [000E4711] TabOrder
+  [000E4725] HELPBTNClick
+  [000E4734] TPageControl
+  [000E4741] PageControl1
+  [000E476E] ActivePage
+  [000E477A] TabSheet2
+  [000E4791] TabOrder
+  [000E479C] OnChange
+  [000E47A6] PageControl1Change
+  [000E47BA] TTabSheet
+  [000E47C4] TabSheet1
+  [000E47E7] SrcLabel
+  [000E480F] AutoSize
+  [000E4822] Source List:
+  [000E482F] Font.Charset
+  [000E483D] DEFAULT_CHARSET
+  [000E484D] Font.Color
+  [000E4861] Font.Height
+  [000E486F] Font.Name
+  [000E487A] MS Sans Serif
+  [000E4888] Font.Style
+  [000E489C] ParentFont
+  [000E48B1] IsControl
+  [000E48C5] DstLabel
+  [000E48ED] AutoSize
+  [000E4900] Destination List:
+  [000E4912] Font.Charset
+  [000E4920] DEFAULT_CHARSET
+  [000E4930] Font.Color
+  [000E4944] Font.Height
+  [000E4952] Font.Name
+  [000E495D] MS Sans Serif
+  [000E496B] Font.Style
+  [000E497F] ParentFont
+  [000E4994] IsControl
+  [000E49A1] TSpeedButton
+  [000E49AE] IncludeBtn
+  [000E49E3] Font.Charset
+  [000E49F1] DEFAULT_CHARSET
+  [000E4A01] Font.Color
+  [000E4A15] Font.Height
+  [000E4A23] Font.Name
+  [000E4A2E] MS Sans Serif
+  [000E4A3C] Font.Style
+  [000E4A50] ParentFont
+  [000E4A6E] IncludeBtnClick
+  [000E4A7E] IsControl
+  [000E4A8B] TSpeedButton
+  [000E4A98] IncAllBtn
+  [000E4ACD] Font.Charset
+  [000E4ADB] DEFAULT_CHARSET
+  [000E4AEB] Font.Color
+  [000E4AFF] Font.Height
+  [000E4B0D] Font.Name
+  [000E4B18] MS Sans Serif
+  [000E4B26] Font.Style
+  [000E4B3A] ParentFont
+  [000E4B58] IncAllBtnClick
+  [000E4B67] IsControl
+  [000E4B74] TSpeedButton
+  [000E4B81] ExcludeBtn
+  [000E4BBF] Font.Charset
+  [000E4BCD] DEFAULT_CHARSET
+  [000E4BDD] Font.Color
+  [000E4BF1] Font.Height
+  [000E4BFF] Font.Name
+  [000E4C0A] MS Sans Serif
+  [000E4C18] Font.Style
+  [000E4C2C] ParentFont
+  [000E4C4A] ExcludeBtnClick
+  [000E4C5A] IsControl
+  [000E4C67] TSpeedButton
+  [000E4C74] ExAllBtn
+  [000E4CB2] Font.Charset
+  [000E4CC0] DEFAULT_CHARSET
+  [000E4CD0] Font.Color
+  [000E4CE4] Font.Height
+  [000E4CF2] Font.Name
+  [000E4CFD] MS Sans Serif
+  [000E4D0B] Font.Style
+  [000E4D1F] ParentFont
+  [000E4D3D] ExAllBtnClick
+  [000E4D4B] IsControl
+  [000E4D8E] Language Order
+  [000E4D9D] Font.Charset
+  [000E4DAB] DEFAULT_CHARSET
+  [000E4DBB] Font.Color
+  [000E4DC7] clWindowText
+  [000E4DD4] Font.Height
+  [000E4DE2] Font.Name
+  [000E4DF3] Font.Style
+  [000E4E07] ParentFont
+  [000E4E55] &Escapement  :
+  [000E4E64] FocusControl
+  [000E4E72] cbEscape
+  [000E4E7D] TGroupBox
+  [000E4E87] GroupBox1
+  [000E4EAF] HelpContext
+  [000E4EC6] Activation Key
+  [000E4ED5] TabOrder
+  [000E4EE1] TRadioButton
+  [000E4EEE] SCROLLRadioButton
+  [000E4F23] *Click to set Scroll Lock as activation key
+  [000E4F58] &Scroll Lock
+  [000E4F6E] TabOrder
+  [000E4F84] TRadioButton
+  [000E4F91] CAPSRadioButton
+  [000E4FC4] )Click to set Capsl Lock as activation key
+  [000E4FF8] Ca&ps Lock
+  [000E5003] TabOrder
+  [000E5010] TRadioButton
+  [000E501D] NUMRadioButton
+  [000E504F] 'Click to set Num Lock as activation key
+  [000E5081] &Num Lock
+  [000E508B] TabOrder
+  [000E5099] TListBox
+  [000E50CA] Font.Charset
+  [000E50D8] DEFAULT_CHARSET
+  [000E50E8] Font.Color
+  [000E50FC] Font.Height
+  [000E510A] Font.Name
+  [000E5115] MS Sans Serif
+  [000E5123] Font.Style
+  [000E5137] ItemHeight
+  [000E5144] MultiSelect
+  [000E5151] ParentFont
+  [000E515D] TabOrder
+  [000E5171] IsControl
+  [000E517E] TListBox
+  [000E51AF] Font.Charset
+  [000E51BD] DEFAULT_CHARSET
+  [000E51CD] Font.Color
+  [000E51E1] Font.Height
+  [000E51EF] Font.Name
+  [000E51FA] MS Sans Serif
+  [000E5208] Font.Style
+  [000E521C] ItemHeight
+  [000E5229] MultiSelect
+  [000E5236] ParentFont
+  [000E5242] TabOrder
+  [000E5256] IsControl
+  [000E5263] TComboBox
+  [000E526D] cbEscape
+  [000E529A] "Click to change the Escapement key
+  [000E52BE] HelpContext
+  [000E52CC] ItemHeight
+  [000E52D9] TabOrder
+  [000E52E4] OnKeyDown
+  [000E52EF] cbEscapeKeyDown
+  [000E5308] cbEscapeKeyUp
+  [000E5316] Items.Strings
+  [000E5326] Ctrl + Space
+  [000E5334] Ctrl + F2
+  [000E533F] Ctrl + F3
+  [000E534A] Ctrl + F4
+  [000E5355] Ctrl + F5
+  [000E5360] Ctrl + F6
+  [000E536B] Ctrl + F7
+  [000E5376] Ctrl + F8
+  [000E5381] Ctrl + F9
+  [000E538C] Ctrl + F10
+  [000E5398] Ctrl + F11
+  [000E53A4] Ctrl + F12
+  [000E53B0] Shift + F2
+  [000E53BC] Shift + F3
+  [000E53C8] Shift + F4
+  [000E53D4] Shift + F5
+  [000E53E0] Shift + F6
+  [000E53EC] Shift + F7
+  [000E53F8] Shift + F8
+  [000E5404] Shift + F9
+  [000E5410] Shift + F10
+  [000E541D] Shift + F11
+  [000E542A] Shift + F12
+  [000E5437] Ctrl + 0
+  [000E5441] Ctrl + 1
+  [000E544B] Ctrl + 2
+  [000E5455] Ctrl + 3
+  [000E545F] Ctrl + 4
+  [000E5469] Ctrl + 5
+  [000E5473] Ctrl + 6
+  [000E547D] Ctrl + 7
+  [000E5487] Ctrl + 8
+  [000E5491] Ctrl + 9
+  [000E549B] Ctrl + A
+  [000E54A5] Ctrl + B
+  [000E54AF] Ctrl + C
+  [000E54B9] Ctrl + D
+  [000E54C3] Ctrl + E
+  [000E54CD] Ctrl + F
+  [000E54D7] Ctrl + G
+  [000E54E1] Ctrl + H
+  [000E54EB] Ctrl + I
+  [000E54F5] Ctrl + J
+  [000E54FF] Ctrl + K
+  [000E5509] Ctrl + L
+  [000E5513] Ctrl + M
+  [000E551D] Ctrl + N
+  [000E5527] Ctrl + O
+  [000E5531] Ctrl + P
+  [000E553B] Ctrl + Q
+  [000E5545] Ctrl + R
+  [000E554F] Ctrl + S
+  [000E5559] Ctrl + T
+  [000E5563] Ctrl + U
+  [000E556D] Ctrl + V
+  [000E5577] Ctrl + W
+  [000E5581] Ctrl + X
+  [000E558B] Ctrl + Y
+  [000E5595] Ctrl + Z
+  [000E559F] Ctrl + Shift + 0
+  [000E55B1] Ctrl + Shift + 1
+  [000E55C3] Ctrl + Shift + 2
+  [000E55D5] Ctrl + Shift + 3
+  [000E55E7] Ctrl + Shift + 4
+  [000E55F9] Ctrl + Shift + 5
+  [000E560B] Ctrl + Shift + 6
+  [000E561D] Ctrl + Shift + 7
+  [000E562F] Ctrl + Shift + 8
+  [000E5641] Ctrl + Shift + 9
+  [000E5653] Ctrl + Shift + A
+  [000E5665] Ctrl + Shift + B
+  [000E5677] Ctrl + Shift + C
+  [000E5689] Ctrl + Shift + D
+  [000E569B] Ctrl + Shift + E
+  [000E56AD] Ctrl + Shift + F
+  [000E56BF] Ctrl + Shift + G
+  [000E56D1] Ctrl + Shift + H
+  [000E56E3] Ctrl + Shift + I
+  [000E56F5] Ctrl + Shift + J
+  [000E5707] Ctrl + Shift + K
+  [000E5719] Ctrl + Shift + L
+  [000E572B] Ctrl + Shift + M
+  [000E573D] Ctrl + Shift + N
+  [000E574F] Ctrl + Shift + O
+  [000E5761] Ctrl + Shift + P
+  [000E5773] Ctrl + Shift + Q
+  [000E5785] Ctrl + Shift + R
+  [000E5797] Ctrl + Shift + S
+  [000E57A9] Ctrl + Shift + T
+  [000E57BB] Ctrl + Shift + U
+  [000E57CD] Ctrl + Shift + V
+  [000E57DF] Ctrl + Shift + W
+  [000E57F1] Ctrl + Shift + X
+  [000E5803] Ctrl + Shift + Y
+  [000E5815] Ctrl + Shift + Z
+  [000E5859] TTabSheet
+  [000E5863] TabSheet2
+  [000E58B3] Default &Font :
+  [000E58C3] FocusControl
+  [000E58D1] FONTNAMECB
+  [000E591C] FocusControl
+  [000E592A] FONTSTYLECB
+  [000E5974] FocusControl
+  [000E5982] FONTSIZECB
+  [000E59C4] Current Sc&ript :
+  [000E59D6] FocusControl
+  [000E59E4] SCRIPTComboBox
+  [000E5A2A] &Keyboard Layout
+  [000E5A3B] FocusControl
+  [000E5A49] KBDComboBox
+  [000E5A8D] Font &Layout
+  [000E5A9A] FocusControl
+  [000E5AA8] FONTLAYOUTComboBox
+  [000E5AC6] TGroupBox
+  [000E5AD0] PREVIEWGRPBOX
+  [000E5B07]  Sample 
+  [000E5B17] clBtnFace
+  [000E5B28] Font.Charset
+  [000E5B36] DEFAULT_CHARSET
+  [000E5B46] Font.Color
+  [000E5B52] clWindowText
+  [000E5B5F] Font.Height
+  [000E5B6D] Font.Name
+  [000E5B7F] Font.Style
+  [000E5B8C] ParentColor
+  [000E5B99] ParentCtl3D
+  [000E5BA6] ParentFont
+  [000E5BB2] ParentShowHint
+  [000E5BC2] ShowHint
+  [000E5BCC] TabOrder
+  [000E5BD8] TPaintBox
+  [000E5BE2] PREVIEWPAINTBOX
+  [000E5C18] alClient
+  [000E5C28] clBtnFace
+  [000E5C32] Font.Charset
+  [000E5C40] DEFAULT_CHARSET
+  [000E5C50] Font.Color
+  [000E5C5C] clWindowText
+  [000E5C69] Font.Height
+  [000E5C77] Font.Name
+  [000E5C89] Font.Style
+  [000E5C96] ParentColor
+  [000E5CA3] ParentFont
+  [000E5CAF] ParentShowHint
+  [000E5CBF] ShowHint
+  [000E5CD2] PREVIEWPAINTBOXPaint
+  [000E5CEA] TComboBox
+  [000E5CF4] FONTNAMECB
+  [000E5D23] /Click to select the default font for the script
+  [000E5D54] HelpContext
+  [000E5D69] csSimple
+  [000E5D79] ItemHeight
+  [000E5D86] ParentCtl3D
+  [000E5D93] ParentShowHint
+  [000E5DA3] ShowHint
+  [000E5DAD] TabOrder
+  [000E5DB8] OnChange
+  [000E5DC2] FONTNAMECBChange
+  [000E5DDB] FONTNAMECBExit
+  [000E5DEC] TComboBox
+  [000E5DF6] FONTSTYLECB
+  [000E5E26] 0Click to select the style for the specified font
+  [000E5E58] HelpContext
+  [000E5E6D] csSimple
+  [000E5E7D] ItemHeight
+  [000E5E8A] ParentCtl3D
+  [000E5E97] ParentShowHint
+  [000E5EA7] ShowHint
+  [000E5EB1] TabOrder
+  [000E5EBC] OnChange
+  [000E5EC6] FONTNAMECBChange
+  [000E5ED7] Items.Strings
+  [000E5EFE] BoldItalic
+  [000E5F0C] TComboBox
+  [000E5F16] FONTSIZECB
+  [000E5F45] /Click to select the size for the specified font
+  [000E5F76] HelpContext
+  [000E5F8B] csSimple
+  [000E5F9B] ItemHeight
+  [000E5FA8] MaxLength
+  [000E5FB4] ParentCtl3D
+  [000E5FC1] ParentShowHint
+  [000E5FD1] ShowHint
+  [000E5FDB] TabOrder
+  [000E5FE6] OnChange
+  [000E5FF0] FONTNAMECBChange
+  [000E6009] FONTSIZECBExit
+  [000E6018] OnKeyPress
+  [000E6024] FONTSIZECBKeyPress
+  [000E6037] Items.Strings
+  [000E6094] TComboBox
+  [000E609E] SCRIPTComboBox
+  [000E60D1] 0Choose the script for which setup is to be made.
+  [000E6103] HelpContext
+  [000E6118] csDropDownList
+  [000E6127] DropDownCount
+  [000E6137] ItemHeight
+  [000E6144] TabOrder
+  [000E614F] OnChange
+  [000E6159] SCRIPTComboBoxChange
+  [000E616E] Items.Strings
+  [000E617E] Malayalam
+  [000E6189] Devnagri
+  [000E6195] TCheckBox
+  [000E619F] CheckBox1
+  [000E61CE] Click to toggle hyphenation
+  [000E61EA] HelpContext
+  [000E6201] Hy&phenation
+  [000E620E] TabOrder
+  [000E621B] TComboBox
+  [000E6225] KBDComboBox
+  [000E6255] #Click to select the keyboard layout
+  [000E627A] HelpContext
+  [000E628F] csDropDownList
+  [000E629E] DropDownCount
+  [000E62AE] ItemHeight
+  [000E62BB] TabOrder
+  [000E62C6] Items.Strings
+  [000E62E1] TComboBox
+  [000E62EB] FONTLAYOUTComboBox
+  [000E6324] Click to select the Font layout
+  [000E6344] HelpContext
+  [000E6359] csDropDownList
+  [000E6368] ItemHeight
+  [000E6375] TabOrder
+  [000E6389] OnChange
+  [000E6393] FONTLAYOUTComboBoxChange
+  [000E63AC] Items.Strings
+  [000E63BC] Shree-Lipi
+  [000E63DB] APPLYButton
+  [000E640C] &Click to apply the changes in settings
+  [000E6434] HelpContext
+  [000E6452] TabOrder
+  [000E6466] APPLYButtonClick
+  [000E647A] TTabSheet
+  [000E6484] TabSheet3
+  [000E6497] Keyboard Tutor
+  [000E64A7] TCheckBox
+  [000E64B1] CheckBox2
+  [000E64DF] &Click to show key contents on tool tip
+  [000E6507] HelpContext
+  [000E651E] &Show Key contents on tool tip
+  [000E654D] cbChecked
+  [000E6557] TabOrder
+  [000E6564] TGroupBox
+  [000E656E] GroupBox2
+  [000E6598] HelpContext
+  [000E65AF] Position on Screen
+  [000E65C2] TabOrder
+  [000E65CE] TRadioButton
+  [000E65DB] RadioButton1
+  [000E660B] *Click to set position of tutor to Top Left
+  [000E6637] HelpContext
+  [000E664E] Top &Left
+  [000E6658] TabOrder
+  [000E6665] TRadioButton
+  [000E6672] RadioButton2
+  [000E66A2] +Click to set position of tutor to Top Right
+  [000E66CF] HelpContext
+  [000E66E6] Top &Right
+  [000E66FA] TabOrder
+  [000E6710] TRadioButton
+  [000E671D] RadioButton3
+  [000E674D] -Click to set position of tutor to Bottom Left
+  [000E677C] HelpContext
+  [000E6793] &Bottom Left
+  [000E67A0] TabOrder
+  [000E67AD] TRadioButton
+  [000E67BA] RadioButton4
+  [000E67EA] .Click to set position of tutor to Bottom Right
+  [000E681A] HelpContext
+  [000E6831] Bottom Ri&ght
+  [000E683F] TabOrder
+  [000E684C] TRadioButton
+  [000E6859] RadioButton5
+  [000E688A] /Click to set position of tutor to Screen Center
+  [000E68BB] HelpContext
+  [000E68D2] Screen Cen&ter
+  [000E68E1] TabOrder
+  [000E6926] Click to see the About
+  [000E694C] TabOrder
+  [000E6960] Button1Click

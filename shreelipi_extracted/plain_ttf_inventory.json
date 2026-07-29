@@ -1,0 +1,737 @@
+[
+  {
+    "path": "LNGFONTS/BAN/SHRELBT0592I.TTF",
+    "name": "SHRELBT0592I.TTF",
+    "size": 65100
+  },
+  {
+    "path": "LNGFONTS/BAN/Shrebb__.ttf",
+    "name": "Shrebb__.ttf",
+    "size": 83548
+  },
+  {
+    "path": "LNGFONTS/BAN/SHRELBT0592.TTF",
+    "name": "SHRELBT0592.TTF",
+    "size": 77200
+  },
+  {
+    "path": "LNGFONTS/BAN/SHBTL.TTF",
+    "name": "SHBTL.TTF",
+    "size": 79856
+  },
+  {
+    "path": "LNGFONTS/BAN/Shrebl__.ttf",
+    "name": "Shrebl__.ttf",
+    "size": 96880
+  },
+  {
+    "path": "LNGFONTS/BAN/SHBTB.TTF",
+    "name": "SHBTB.TTF",
+    "size": 67584
+  },
+  {
+    "path": "LNGFONTS/BAN/SHBT.TTF",
+    "name": "SHBT.TTF",
+    "size": 68072
+  },
+  {
+    "path": "LNGFONTS/BAN/Shreb___.ttf",
+    "name": "Shreb___.ttf",
+    "size": 81044
+  },
+  {
+    "path": "LNGFONTS/BAN/SHRELBT0594I.TTF",
+    "name": "SHRELBT0594I.TTF",
+    "size": 64896
+  },
+  {
+    "path": "LNGFONTS/BAN/SHRELBT0594.TTF",
+    "name": "SHRELBT0594.TTF",
+    "size": 76664
+  },
+  {
+    "path": "LNGFONTS/KAN/SHKGP851.ttf",
+    "name": "SHKGP851.ttf",
+    "size": 83848
+  },
+  {
+    "path": "LNGFONTS/KAN/SHKGP850.ttf",
+    "name": "SHKGP850.ttf",
+    "size": 86660
+  },
+  {
+    "path": "LNGFONTS/TAM/TAM0803.TTF",
+    "name": "TAM0803.TTF",
+    "size": 111448
+  },
+  {
+    "path": "LNGFONTS/TAM/BTAM800.TTF",
+    "name": "BTAM800.TTF",
+    "size": 68224
+  },
+  {
+    "path": "LNGFONTS/TAM/TSC0803.ttf",
+    "name": "TSC0803.ttf",
+    "size": 89176
+  },
+  {
+    "path": "LNGFONTS/TAM/TSC0802.ttf",
+    "name": "TSC0802.ttf",
+    "size": 88216
+  },
+  {
+    "path": "LNGFONTS/TAM/BTAM802.TTF",
+    "name": "BTAM802.TTF",
+    "size": 67328
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-BarathiX-I.ttf",
+    "name": "TAC-BarathiX-I.ttf",
+    "size": 208144
+  },
+  {
+    "path": "LNGFONTS/TAM/TAM0802.TTF",
+    "name": "TAM0802.TTF",
+    "size": 107092
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-ValluvarX-I.ttf",
+    "name": "TAC-ValluvarX-I.ttf",
+    "size": 219124
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KabilarX-B.ttf",
+    "name": "TAC-KabilarX-B.ttf",
+    "size": 143680
+  },
+  {
+    "path": "LNGFONTS/TAM/TSC0801.ttf",
+    "name": "TSC0801.ttf",
+    "size": 90980
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-ValluvarX-BI.ttf",
+    "name": "TAC-ValluvarX-BI.ttf",
+    "size": 218252
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-ValluvarX.ttf",
+    "name": "TAC-ValluvarX.ttf",
+    "size": 373936
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-BarathiX-B.ttf",
+    "name": "TAC-BarathiX-B.ttf",
+    "size": 337120
+  },
+  {
+    "path": "LNGFONTS/TAM/TAM0800.TTF",
+    "name": "TAM0800.TTF",
+    "size": 97516
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KabilarX-I.ttf",
+    "name": "TAC-KabilarX-I.ttf",
+    "size": 97176
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KambarX-BI.ttf",
+    "name": "TAC-KambarX-BI.ttf",
+    "size": 111748
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-Kaveri-B.ttf",
+    "name": "TAC-Kaveri-B.ttf",
+    "size": 330632
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-ValluvarX-B.ttf",
+    "name": "TAC-ValluvarX-B.ttf",
+    "size": 373404
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-BarathiX.ttf",
+    "name": "TAC-BarathiX.ttf",
+    "size": 361200
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-Kaveri.ttf",
+    "name": "TAC-Kaveri.ttf",
+    "size": 356052
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-BarathiX-BI.ttf",
+    "name": "TAC-BarathiX-BI.ttf",
+    "size": 200976
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-Kaveri-I.ttf",
+    "name": "TAC-Kaveri-I.ttf",
+    "size": 207264
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KambarX-I.ttf",
+    "name": "TAC-KambarX-I.ttf",
+    "size": 113732
+  },
+  {
+    "path": "LNGFONTS/TAM/BTAM801.TTF",
+    "name": "BTAM801.TTF",
+    "size": 60416
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KabilarX.ttf",
+    "name": "TAC-KabilarX.ttf",
+    "size": 146924
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KabilarX-BI.ttf",
+    "name": "TAC-KabilarX-BI.ttf",
+    "size": 94896
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-Kaveri-BI.ttf",
+    "name": "TAC-Kaveri-BI.ttf",
+    "size": 200092
+  },
+  {
+    "path": "LNGFONTS/TAM/BTAM803.TTF",
+    "name": "BTAM803.TTF",
+    "size": 64256
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KambarX-B.ttf",
+    "name": "TAC-KambarX-B.ttf",
+    "size": 154992
+  },
+  {
+    "path": "LNGFONTS/TAM/TAC-KambarX.ttf",
+    "name": "TAC-KambarX.ttf",
+    "size": 161992
+  },
+  {
+    "path": "LNGFONTS/TAM/TAM0801.TTF",
+    "name": "TAM0801.TTF",
+    "size": 103404
+  },
+  {
+    "path": "LNGFONTS/TAM/TSC0800.ttf",
+    "name": "TSC0800.ttf",
+    "size": 88028
+  },
+  {
+    "path": "LNGFONTS/ASS/SHRIM560.TTF",
+    "name": "SHRIM560.TTF",
+    "size": 106176
+  },
+  {
+    "path": "LNGFONTS/TEL/S090016A.TTF",
+    "name": "S090016A.TTF",
+    "size": 75208
+  },
+  {
+    "path": "LNGFONTS/DEV/SHRDM715.TTF",
+    "name": "SHRDM715.TTF",
+    "size": 58440
+  },
+  {
+    "path": "LNGFONTS/DEV/SHRDM709.TTF",
+    "name": "SHRDM709.TTF",
+    "size": 56512
+  },
+  {
+    "path": "LNGFONTS/DEV/SHRDM714.TTF",
+    "name": "SHRDM714.TTF",
+    "size": 58852
+  },
+  {
+    "path": "LNGFONTS/DEV/SHDB715.TTF",
+    "name": "SHDB715.TTF",
+    "size": 72448
+  },
+  {
+    "path": "LNGFONTS/DEV/SHDB714.TTF",
+    "name": "SHDB714.TTF",
+    "size": 72200
+  },
+  {
+    "path": "LNGFONTS/DEV/SHRDM708.TTF",
+    "name": "SHRDM708.TTF",
+    "size": 56676
+  },
+  {
+    "path": "LNGFONTS/DEV/SHDB709.TTF",
+    "name": "SHDB709.TTF",
+    "size": 80224
+  },
+  {
+    "path": "LNGFONTS/DEV/SHDB708.TTF",
+    "name": "SHDB708.TTF",
+    "size": 66504
+  },
+  {
+    "path": "LNGFONTS/MAL/SHMB501.TTF",
+    "name": "SHMB501.TTF",
+    "size": 103108
+  },
+  {
+    "path": "LNGFONTS/MAL/Shremw28.ttf",
+    "name": "Shremw28.ttf",
+    "size": 107840
+  },
+  {
+    "path": "LNGFONTS/MAL/SHMB502.TTF",
+    "name": "SHMB502.TTF",
+    "size": 103244
+  },
+  {
+    "path": "LNGFONTS/MAL/SHMB506.TTF",
+    "name": "SHMB506.TTF",
+    "size": 114912
+  },
+  {
+    "path": "DEFFONTS/PUN/WPUN001.TTF",
+    "name": "WPUN001.TTF",
+    "size": 38360
+  },
+  {
+    "path": "DEFFONTS/PUN/Shree-Pun7-002W.TTF",
+    "name": "Shree-Pun7-002W.TTF",
+    "size": 38364
+  },
+  {
+    "path": "DEFFONTS/PUN/WPUN002.TTF",
+    "name": "WPUN002.TTF",
+    "size": 38380
+  },
+  {
+    "path": "DEFFONTS/PUN/SHREM951.TTF",
+    "name": "SHREM951.TTF",
+    "size": 38436
+  },
+  {
+    "path": "DEFFONTS/PUN/Shree-Pun7-001W.TTF",
+    "name": "Shree-Pun7-001W.TTF",
+    "size": 38320
+  },
+  {
+    "path": "DEFFONTS/DIA/Shree-Dia-1900W.TTF",
+    "name": "Shree-Dia-1900W.TTF",
+    "size": 69340
+  },
+  {
+    "path": "DEFFONTS/DIA/Shree-Diai-1900W.TTF",
+    "name": "Shree-Diai-1900W.TTF",
+    "size": 46476
+  },
+  {
+    "path": "DEFFONTS/ORI/WORI02T.TTF",
+    "name": "WORI02T.TTF",
+    "size": 4232
+  },
+  {
+    "path": "DEFFONTS/ORI/WORI01T.TTF",
+    "name": "WORI01T.TTF",
+    "size": 4272
+  },
+  {
+    "path": "DEFFONTS/ORI/Shree-Ori7-002W.TTF",
+    "name": "Shree-Ori7-002W.TTF",
+    "size": 100088
+  },
+  {
+    "path": "DEFFONTS/ORI/SHREM601.TTF",
+    "name": "SHREM601.TTF",
+    "size": 129344
+  },
+  {
+    "path": "DEFFONTS/ORI/WORI002.TTF",
+    "name": "WORI002.TTF",
+    "size": 100392
+  },
+  {
+    "path": "DEFFONTS/ORI/WORI001.TTF",
+    "name": "WORI001.TTF",
+    "size": 100604
+  },
+  {
+    "path": "DEFFONTS/ORI/Shree-Ori7-001W.TTF",
+    "name": "Shree-Ori7-001W.TTF",
+    "size": 100332
+  },
+  {
+    "path": "DEFFONTS/ARA/Shree664S.ttf",
+    "name": "Shree664S.ttf",
+    "size": 86016
+  },
+  {
+    "path": "DEFFONTS/BAN/Shree-Ban7-001W.TTF",
+    "name": "Shree-Ban7-001W.TTF",
+    "size": 82884
+  },
+  {
+    "path": "DEFFONTS/BAN/WBAN701T.TTF",
+    "name": "WBAN701T.TTF",
+    "size": 4820
+  },
+  {
+    "path": "DEFFONTS/BAN/WBan001.TTF",
+    "name": "WBan001.TTF",
+    "size": 84624
+  },
+  {
+    "path": "DEFFONTS/BAN/WBan002.TTF",
+    "name": "WBan002.TTF",
+    "size": 81268
+  },
+  {
+    "path": "DEFFONTS/BAN/WBAN7001.TTF",
+    "name": "WBAN7001.TTF",
+    "size": 84288
+  },
+  {
+    "path": "DEFFONTS/BAN/WBAN702T.TTF",
+    "name": "WBAN702T.TTF",
+    "size": 4816
+  },
+  {
+    "path": "DEFFONTS/BAN/SHREM560.TTF",
+    "name": "SHREM560.TTF",
+    "size": 106516
+  },
+  {
+    "path": "DEFFONTS/BAN/Shree-Ban7-002W.TTF",
+    "name": "Shree-Ban7-002W.TTF",
+    "size": 79232
+  },
+  {
+    "path": "DEFFONTS/BAN/WBAN7002.TTF",
+    "name": "WBAN7002.TTF",
+    "size": 81052
+  },
+  {
+    "path": "DEFFONTS/KAN/WKAN7002.TTF",
+    "name": "WKAN7002.TTF",
+    "size": 91516
+  },
+  {
+    "path": "DEFFONTS/KAN/Shree-Kan7-002W.TTF",
+    "name": "Shree-Kan7-002W.TTF",
+    "size": 91488
+  },
+  {
+    "path": "DEFFONTS/KAN/WKAN002.TTF",
+    "name": "WKAN002.TTF",
+    "size": 89664
+  },
+  {
+    "path": "DEFFONTS/KAN/SHREM854.TTF",
+    "name": "SHREM854.TTF",
+    "size": 113552
+  },
+  {
+    "path": "DEFFONTS/KAN/WKAN7001.TTF",
+    "name": "WKAN7001.TTF",
+    "size": 94672
+  },
+  {
+    "path": "DEFFONTS/KAN/Shree-Kan7-001W.TTF",
+    "name": "Shree-Kan7-001W.TTF",
+    "size": 94420
+  },
+  {
+    "path": "DEFFONTS/KAN/WKAN001.TTF",
+    "name": "WKAN001.TTF",
+    "size": 92744
+  },
+  {
+    "path": "DEFFONTS/TAM/WTAM7001.TTF",
+    "name": "WTAM7001.TTF",
+    "size": 98908
+  },
+  {
+    "path": "DEFFONTS/TAM/TAMS81.TTF",
+    "name": "TAMS81.TTF",
+    "size": 130304
+  },
+  {
+    "path": "DEFFONTS/TAM/WTAM001.TTF",
+    "name": "WTAM001.TTF",
+    "size": 97240
+  },
+  {
+    "path": "DEFFONTS/TAM/WTAM002.TTF",
+    "name": "WTAM002.TTF",
+    "size": 97240
+  },
+  {
+    "path": "DEFFONTS/TAM/Shree-Tam7-001W.TTF",
+    "name": "Shree-Tam7-001W.TTF",
+    "size": 90612
+  },
+  {
+    "path": "DEFFONTS/TAM/Shree-Tam7-002W.TTF",
+    "name": "Shree-Tam7-002W.TTF",
+    "size": 89696
+  },
+  {
+    "path": "DEFFONTS/TAM/WTAM7002.TTF",
+    "name": "WTAM7002.TTF",
+    "size": 98680
+  },
+  {
+    "path": "DEFFONTS/ASS/WASS7002.TTF",
+    "name": "WASS7002.TTF",
+    "size": 83088
+  },
+  {
+    "path": "DEFFONTS/ASS/WASS7001.TTF",
+    "name": "WASS7001.TTF",
+    "size": 84440
+  },
+  {
+    "path": "DEFFONTS/ASS/WAss001.TTF",
+    "name": "WAss001.TTF",
+    "size": 83976
+  },
+  {
+    "path": "DEFFONTS/ASS/WAss002.TTF",
+    "name": "WAss002.TTF",
+    "size": 80520
+  },
+  {
+    "path": "DEFFONTS/ASS/Shree-Ass7-002W.TTF",
+    "name": "Shree-Ass7-002W.TTF",
+    "size": 83100
+  },
+  {
+    "path": "DEFFONTS/ASS/Shree-Ass7-001W.TTF",
+    "name": "Shree-Ass7-001W.TTF",
+    "size": 84452
+  },
+  {
+    "path": "DEFFONTS/SND/Shree680S.ttf",
+    "name": "Shree680S.ttf",
+    "size": 93056
+  },
+  {
+    "path": "DEFFONTS/GUJ/SHREMB43.TTF",
+    "name": "SHREMB43.TTF",
+    "size": 96880
+  },
+  {
+    "path": "DEFFONTS/GUJ/WGUJ001.TTF",
+    "name": "WGUJ001.TTF",
+    "size": 73660
+  },
+  {
+    "path": "DEFFONTS/GUJ/Shree-Guj7-002W.TTF",
+    "name": "Shree-Guj7-002W.TTF",
+    "size": 66080
+  },
+  {
+    "path": "DEFFONTS/GUJ/Shree-Guj7-001W.TTF",
+    "name": "Shree-Guj7-001W.TTF",
+    "size": 68004
+  },
+  {
+    "path": "DEFFONTS/GUJ/WGUJ7002.TTF",
+    "name": "WGUJ7002.TTF",
+    "size": 70412
+  },
+  {
+    "path": "DEFFONTS/GUJ/WGUJ002.TTF",
+    "name": "WGUJ002.TTF",
+    "size": 72212
+  },
+  {
+    "path": "DEFFONTS/GUJ/WGUJ7001.TTF",
+    "name": "WGUJ7001.TTF",
+    "size": 71772
+  },
+  {
+    "path": "DEFFONTS/TEL/Shree-Tel7-001W.TTF",
+    "name": "Shree-Tel7-001W.TTF",
+    "size": 86860
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL702T.TTF",
+    "name": "WTEL702T.TTF",
+    "size": 5364
+  },
+  {
+    "path": "DEFFONTS/TEL/Shree-Tel7-002W.TTF",
+    "name": "Shree-Tel7-002W.TTF",
+    "size": 84084
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL001.TTF",
+    "name": "WTEL001.TTF",
+    "size": 87916
+  },
+  {
+    "path": "DEFFONTS/TEL/SHREMG42.TTF",
+    "name": "SHREMG42.TTF",
+    "size": 107172
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL7002.TTF",
+    "name": "WTEL7002.TTF",
+    "size": 83792
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL002.TTF",
+    "name": "WTEL002.TTF",
+    "size": 84748
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL701T.TTF",
+    "name": "WTEL701T.TTF",
+    "size": 5416
+  },
+  {
+    "path": "DEFFONTS/TEL/WTEL7001.TTF",
+    "name": "WTEL7001.TTF",
+    "size": 86448
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV7001.TTF",
+    "name": "WDEV7001.TTF",
+    "size": 77392
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV002E.TTF",
+    "name": "WDEV002E.TTF",
+    "size": 77168
+  },
+  {
+    "path": "DEFFONTS/DEV/Shree-Dev7-002W.TTF",
+    "name": "Shree-Dev7-002W.TTF",
+    "size": 67792
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV002.TTF",
+    "name": "WDEV002.TTF",
+    "size": 77436
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV001.TTF",
+    "name": "WDEV001.TTF",
+    "size": 77804
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV7002E.TTF",
+    "name": "WDEV7002E.TTF",
+    "size": 75976
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV001E.TTF",
+    "name": "WDEV001E.TTF",
+    "size": 77748
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV7002.TTF",
+    "name": "WDEV7002.TTF",
+    "size": 76608
+  },
+  {
+    "path": "DEFFONTS/DEV/SHREM726.TTF",
+    "name": "SHREM726.TTF",
+    "size": 97308
+  },
+  {
+    "path": "DEFFONTS/DEV/WDEV7001E.TTF",
+    "name": "WDEV7001E.TTF",
+    "size": 76692
+  },
+  {
+    "path": "DEFFONTS/DEV/Shree-Dev7-001W.TTF",
+    "name": "Shree-Dev7-001W.TTF",
+    "size": 70632
+  },
+  {
+    "path": "DEFFONTS/MAL/WMAL002.TTF",
+    "name": "WMAL002.TTF",
+    "size": 92036
+  },
+  {
+    "path": "DEFFONTS/MAL/WMAL001.TTF",
+    "name": "WMAL001.TTF",
+    "size": 92264
+  },
+  {
+    "path": "DEFFONTS/MAL/WMAL7002.TTF",
+    "name": "WMAL7002.TTF",
+    "size": 94416
+  },
+  {
+    "path": "DEFFONTS/MAL/Shree-Mal7-001W.TTF",
+    "name": "Shree-Mal7-001W.TTF",
+    "size": 87008
+  },
+  {
+    "path": "DEFFONTS/MAL/WMAL7001.TTF",
+    "name": "WMAL7001.TTF",
+    "size": 94756
+  },
+  {
+    "path": "DEFFONTS/MAL/Shree-Mal7-002W.TTF",
+    "name": "Shree-Mal7-002W.TTF",
+    "size": 85876
+  },
+  {
+    "path": "DEFFONTS/SAN/Shree-San7-002W.TTF",
+    "name": "Shree-San7-002W.TTF",
+    "size": 68912
+  },
+  {
+    "path": "DEFFONTS/SAN/SHREE-SAN7-001W.TTF",
+    "name": "SHREE-SAN7-001W.TTF",
+    "size": 69184
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0601 0602 Bold-B.TTF",
+    "name": "SHREE_ORI_OTF_0601 0602 Bold-B.TTF",
+    "size": 191272
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0601 0601 Regular-I.TTF",
+    "name": "SHREE_ORI_OTF_0601 0601 Regular-I.TTF",
+    "size": 200236
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0601 0602 Bold-BI.TTF",
+    "name": "SHREE_ORI_OTF_0601 0602 Bold-BI.TTF",
+    "size": 197552
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0603 0603 Regular.TTF",
+    "name": "SHREE_ORI_OTF_0603 0603 Regular.TTF",
+    "size": 200960
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0603 0603 Regular-I.TTF",
+    "name": "SHREE_ORI_OTF_0603 0603 Regular-I.TTF",
+    "size": 207840
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0601 0601 Regular.TTF",
+    "name": "SHREE_ORI_OTF_0601 0601 Regular.TTF",
+    "size": 193808
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0603 0604 Bold-B.TTF",
+    "name": "SHREE_ORI_OTF_0603 0604 Bold-B.TTF",
+    "size": 200748
+  },
+  {
+    "path": "UniFonts/ori/SHREE_ORI_OTF_0603 0604 Bold-BI.TTF",
+    "name": "SHREE_ORI_OTF_0603 0604 Bold-BI.TTF",
+    "size": 207544
+  },
+  {
+    "path": "COMMON/ROOPA/COMMON/SHREE499.TTF",
+    "name": "SHREE499.TTF",
+    "size": 46976
+  }
+]

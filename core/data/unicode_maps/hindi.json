@@ -1,0 +1,10 @@
+{
+  "language": "hindi",
+  "unicode_block": "U+0900-U+097F",
+  "devanagari_to_target": {
+    "ऎ": "ए",
+    "ऒ": "ओ",
+    "ॆ": "े",
+    "ॊ": "ो"
+  }
+}

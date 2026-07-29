@@ -1,0 +1,32 @@
+object SL5FORM1: TSL5FORM1
+  Left = 821
+  Top = 181
+  Width = 503
+  Height = 389
+  Hint = 'LICENSED TO'
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  ActiveControl = reTest
+  Caption = 'Shree-Lipi 7.0 From Modular'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clBlack
+  Font.Height = 245
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  Icon.Data = {binary 766 bytes}
+  KeyPreview = True
+  Menu = MainMenu1
+  OldCreateOrder = True
+  ShowHint = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnHelp = FormHelp
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+end

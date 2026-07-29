@@ -1,0 +1,382 @@
+{
+  "description": "Shree-Lipi FONTS (main font library) comprehensive inventory from SL74DVD",
+  "notes": "These are the core Shree-Lipi proprietary font files with no standard extension. They appear to be in Shree-Lipi's proprietary encrypted format.",
+  "script_names": {
+    "Ass": "Assamese",
+    "Ban": "Bangla",
+    "Dev": "Devanagari",
+    "Dia": "Diacritical",
+    "Eng": "English",
+    "Guj": "Gujarati",
+    "Kan": "Kannada",
+    "Kas": "Kashmiri",
+    "Kon": "Konkani",
+    "Mal": "Malayalam",
+    "Man": "Manipuri",
+    "Mar": "Marathi",
+    "Nep": "Nepali",
+    "Ori": "Odia",
+    "Pun": "Punjabi",
+    "San": "Sanskrit",
+    "Sin": "Sindhi",
+    "Sym": "Symbols",
+    "Tam": "Tamil",
+    "Tel": "Telugu",
+    "Urd": "Urdu"
+  },
+  "scripts": {
+    "ARA": {
+      "total_files": 12,
+      "total_size_bytes": 281595,
+      "total_size_mb": 0.27,
+      "extensions": {
+        "(none)": 12
+      },
+      "font_number_range": "664-675",
+      "sample_files": [
+        "SL_0664",
+        "SL_0665",
+        "SL_0666",
+        "SL_0667",
+        "SL_0668"
+      ]
+    },
+    "ASS": {
+      "total_files": 139,
+      "total_size_bytes": 6553329,
+      "total_size_mb": 6.25,
+      "extensions": {
+        "(none)": 139
+      },
+      "font_number_range": "550-5132",
+      "sample_files": [
+        "SL_0550",
+        "SL_0552",
+        "SL_0553",
+        "SL_0554",
+        "SL_0556"
+      ]
+    },
+    "Ban": {
+      "total_files": 139,
+      "total_size_bytes": 6666772,
+      "total_size_mb": 6.36,
+      "extensions": {
+        "(none)": 139
+      },
+      "font_number_range": "550-5132",
+      "sample_files": [
+        "SL_0550",
+        "SL_0552",
+        "SL_0553",
+        "SL_0554",
+        "SL_0556"
+      ]
+    },
+    "DIA": {
+      "total_files": 15,
+      "total_size_bytes": 394291,
+      "total_size_mb": 0.38,
+      "extensions": {
+        "(none)": 15
+      },
+      "font_number_range": "1900-1914",
+      "sample_files": [
+        "SL_1900",
+        "SL_1901",
+        "SL_1902",
+        "SL_1903",
+        "SL_1904"
+      ]
+    },
+    "Dev": {
+      "total_files": 1324,
+      "total_size_bytes": 52563968,
+      "total_size_mb": 50.13,
+      "extensions": {
+        "(none)": 1324
+      },
+      "font_number_range": "700-6050",
+      "sample_files": [
+        "SL_0700",
+        "SL_0701",
+        "SL_0702",
+        "SL_0703",
+        "SL_0704"
+      ]
+    },
+    "ENG": {
+      "total_files": 509,
+      "total_size_bytes": 6941673,
+      "total_size_mb": 6.62,
+      "extensions": {
+        "(none)": 509
+      },
+      "font_number_range": "2-6298",
+      "sample_files": [
+        "SL_0002",
+        "SL_0010",
+        "SL_0011",
+        "SL_0012",
+        "SL_0013"
+      ]
+    },
+    "ENS": {
+      "total_files": 9,
+      "total_size_bytes": 80259,
+      "total_size_mb": 0.08,
+      "extensions": {
+        "(none)": 9
+      },
+      "font_number_range": "2140-2148",
+      "sample_files": [
+        "SL_2140",
+        "SL_2141",
+        "SL_2142",
+        "SL_2143",
+        "SL_2144"
+      ]
+    },
+    "GUJ": {
+      "total_files": 624,
+      "total_size_bytes": 26731693,
+      "total_size_mb": 25.49,
+      "extensions": {
+        "(none)": 624
+      },
+      "font_number_range": "750-5799",
+      "sample_files": [
+        "SL_0750",
+        "SL_0751",
+        "SL_0752",
+        "SL_0753",
+        "SL_0754"
+      ]
+    },
+    "IDIA": {
+      "total_files": 15,
+      "total_size_bytes": 261973,
+      "total_size_mb": 0.25,
+      "extensions": {
+        "(none)": 15
+      },
+      "font_number_range": "1900-1914",
+      "sample_files": [
+        "SL_1900",
+        "SL_1901",
+        "SL_1902",
+        "SL_1903",
+        "SL_1904"
+      ]
+    },
+    "KAN": {
+      "total_files": 421,
+      "total_size_bytes": 19275964,
+      "total_size_mb": 18.38,
+      "extensions": {
+        "(none)": 421
+      },
+      "font_number_range": "850-5370",
+      "sample_files": [
+        "SL_0850",
+        "SL_0851",
+        "SL_0852",
+        "SL_0853",
+        "SL_0854"
+      ]
+    },
+    "MAL": {
+      "total_files": 317,
+      "total_size_bytes": 16811124,
+      "total_size_mb": 16.03,
+      "extensions": {
+        "(none)": 317
+      },
+      "font_number_range": "501-4479",
+      "sample_files": [
+        "SL_0501",
+        "SL_0502",
+        "SL_0503",
+        "SL_0504",
+        "SL_0505"
+      ]
+    },
+    "MUS": {
+      "total_files": 1,
+      "total_size_bytes": 3897,
+      "total_size_mb": 0.0,
+      "extensions": {
+        "(none)": 1
+      },
+      "font_number_range": "2001-2001",
+      "sample_files": [
+        "SL_2001"
+      ]
+    },
+    "ORI": {
+      "total_files": 113,
+      "total_size_bytes": 6602696,
+      "total_size_mb": 6.3,
+      "extensions": {
+        "(none)": 113
+      },
+      "font_number_range": "600-3062",
+      "sample_files": [
+        "SL_0600",
+        "SL_0601",
+        "SL_0602",
+        "SL_0603",
+        "SL_0604"
+      ]
+    },
+    "PUN": {
+      "total_files": 179,
+      "total_size_bytes": 3042139,
+      "total_size_mb": 2.9,
+      "extensions": {
+        "(none)": 179
+      },
+      "font_number_range": "950-5823",
+      "sample_files": [
+        "SL_0950",
+        "SL_0951",
+        "SL_0952",
+        "SL_0953",
+        "SL_0954"
+      ]
+    },
+    "RUS": {
+      "total_files": 5,
+      "total_size_bytes": 52222,
+      "total_size_mb": 0.05,
+      "extensions": {
+        "(none)": 5
+      },
+      "font_number_range": "73-450",
+      "sample_files": [
+        "SL_0073",
+        "SL_0074",
+        "SL_0173",
+        "SL_0174",
+        "SL_0450"
+      ]
+    },
+    "SAN": {
+      "total_files": 17,
+      "total_size_bytes": 585786,
+      "total_size_mb": 0.56,
+      "extensions": {
+        "(none)": 17
+      },
+      "font_number_range": "960-1963",
+      "sample_files": [
+        "SL_0960",
+        "SL_0962",
+        "SL_0964",
+        "SL_0966",
+        "SL_1950"
+      ]
+    },
+    "SLS": {
+      "total_files": 19,
+      "total_size_bytes": 773609,
+      "total_size_mb": 0.74,
+      "extensions": {
+        "(none)": 19
+      },
+      "font_number_range": "540-1708",
+      "sample_files": [
+        "SL_0540",
+        "SL_0541",
+        "SL_0542",
+        "SL_0543",
+        "SL_0544"
+      ]
+    },
+    "SND": {
+      "total_files": 16,
+      "total_size_bytes": 432137,
+      "total_size_mb": 0.41,
+      "extensions": {
+        "(none)": 16
+      },
+      "font_number_range": "680-695",
+      "sample_files": [
+        "SL_0680",
+        "SL_0681",
+        "SL_0682",
+        "SL_0683",
+        "SL_0684"
+      ]
+    },
+    "SNDENG": {
+      "total_files": 9,
+      "total_size_bytes": 80259,
+      "total_size_mb": 0.08,
+      "extensions": {
+        "(none)": 9
+      },
+      "font_number_range": "2140-2148",
+      "sample_files": [
+        "SL_2140",
+        "SL_2141",
+        "SL_2142",
+        "SL_2143",
+        "SL_2144"
+      ]
+    },
+    "SYM": {
+      "total_files": 143,
+      "total_size_bytes": 12282838,
+      "total_size_mb": 11.71,
+      "extensions": {
+        "(none)": 143
+      },
+      "font_number_range": "3-4859",
+      "sample_files": [
+        "SL_0003",
+        "SL_0004",
+        "SL_0005",
+        "SL_0006",
+        "SL_0007"
+      ]
+    },
+    "TAM": {
+      "total_files": 544,
+      "total_size_bytes": 29375277,
+      "total_size_mb": 28.01,
+      "extensions": {
+        "(none)": 544
+      },
+      "font_number_range": "800-5493",
+      "sample_files": [
+        "SL_0800",
+        "SL_0801",
+        "SL_0802",
+        "SL_0803",
+        "SL_0804"
+      ]
+    },
+    "TEL": {
+      "total_files": 375,
+      "total_size_bytes": 14726620,
+      "total_size_mb": 14.04,
+      "extensions": {
+        "(none)": 375
+      },
+      "font_number_range": "900-5527",
+      "sample_files": [
+        "SL_0900",
+        "SL_0902",
+        "SL_0904",
+        "SL_0906",
+        "SL_0908"
+      ]
+    }
+  },
+  "summary": {
+    "total_scripts": 22,
+    "total_files": 4945,
+    "total_size_mb": 195.05
+  }
+}

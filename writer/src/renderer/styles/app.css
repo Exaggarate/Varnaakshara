@@ -1,0 +1,1327 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Varnaakshara Writer — Hybrid UI (Word Ribbon + InDesign Panels + Pasteboard)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── CSS Variables ────────────────────────────────────────────────────────── */
+:root {
+  /* Chrome / Ribbon (light) */
+  --chrome-bg: #f3f3f3;
+  --chrome-border: #d1d1d1;
+  --chrome-text: #333;
+  --chrome-hover: #e0e0e0;
+  --chrome-active: #d0d0d0;
+  --tab-active-bg: #fff;
+  --tab-inactive-bg: transparent;
+  --tab-active-text: #0078d4;
+  --tab-inactive-text: #666;
+
+  /* Ribbon */
+  --ribbon-bg: #fff;
+  --ribbon-border: #e0e0e0;
+  --ribbon-section-border: #e8e8e8;
+  --ribbon-btn-hover: #e8f0fe;
+  --ribbon-btn-active: #d0e2f7;
+  --ribbon-label: #888;
+
+  /* Pasteboard (InDesign-style) */
+  --pasteboard-bg: #535353;
+  --pasteboard-dot: rgba(255,255,255,0.06);
+
+  /* Page */
+  --page-bg: #ffffff;
+  --page-shadow: rgba(0,0,0,0.18);
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --accent: #0078d4;
+  --accent-hover: #106ebe;
+
+  /* Panels (dark) */
+  --panel-bg: #2d2d2d;
+  --panel-header-bg: #252525;
+  --panel-border: #3a3a3a;
+  --panel-text: #ccc;
+  --panel-text-bright: #eee;
+  --panel-input-bg: #383838;
+  --panel-input-border: #4a4a4a;
+  --panel-btn-bg: #404040;
+  --panel-btn-hover: #505050;
+  --panel-btn-active: #0078d4;
+  --panel-accent: #4db8ff;
+  --panel-section-bg: #333;
+
+  /* Status Bar */
+  --statusbar-bg: #007acc;
+  --statusbar-text: #fff;
+  --statusbar-hover: rgba(255,255,255,0.1);
+
+  /* Scrollbar */
+  --scrollbar-track: #404040;
+  --scrollbar-thumb: #606060;
+  --scrollbar-thumb-hover: #808080;
+}
+
+/* ── Full Dark Override ───────────────────────────────────────────────────── */
+[data-theme='dark'] {
+  --chrome-bg: #1e1e1e;
+  --chrome-border: #333;
+  --chrome-text: #ccc;
+  --chrome-hover: #333;
+  --chrome-active: #444;
+  --tab-active-bg: #2d2d2d;
+  --tab-inactive-text: #888;
+
+  --ribbon-bg: #2d2d2d;
+  --ribbon-border: #3a3a3a;
+  --ribbon-section-border: #404040;
+  --ribbon-btn-hover: #3a3a3a;
+  --ribbon-btn-active: #444;
+  --ribbon-label: #777;
+
+  --pasteboard-bg: #1a1a1a;
+  --pasteboard-dot: rgba(255,255,255,0.04);
+
+  --page-bg: #252525;
+  --page-shadow: rgba(0,0,0,0.4);
+  --text-primary: #ddd;
+  --text-secondary: #999;
+
+  --statusbar-bg: #1a1a1a;
+}
+
+/* ── Reset ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  background: var(--chrome-bg);
+  color: var(--chrome-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── App Layout ───────────────────────────────────────────────────────────── */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── Title Bar ────────────────────────────────────────────────────────────── */
+.title-bar {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: var(--chrome-bg);
+  border-bottom: 1px solid var(--chrome-border);
+  padding: 0 8px;
+  -webkit-app-region: drag;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.title-bar-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.title-bar-text {
+  font-size: 12px;
+  color: var(--chrome-text);
+  opacity: 0.8;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-bar-controls {
+  display: flex;
+  -webkit-app-region: no-drag;
+}
+
+.title-bar-controls button {
+  background: none;
+  border: none;
+  color: var(--chrome-text);
+  width: 46px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background 0.1s;
+}
+
+.title-bar-controls button:hover {
+  background: var(--chrome-hover);
+}
+
+.title-bar-controls button.close:hover {
+  background: #e81123;
+  color: #fff;
+}
+
+/* ── Ribbon Tabs ──────────────────────────────────────────────────────────── */
+.ribbon-tabs {
+  display: flex;
+  align-items: flex-end;
+  height: 34px;
+  background: var(--chrome-bg);
+  padding: 0 12px;
+  gap: 0;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.ribbon-tab {
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333 !important;
+  background: var(--tab-inactive-bg);
+  border: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.ribbon-tab:hover {
+  color: #111 !important;
+  background: var(--chrome-hover);
+  border-color: var(--chrome-border);
+}
+
+.ribbon-tab.active {
+  color: #0078d4 !important;
+  background: #fff;
+  border-bottom-color: #0078d4;
+  border-left-color: var(--chrome-border);
+  border-right-color: var(--chrome-border);
+  border-top-color: var(--chrome-border);
+  font-weight: 800;
+}
+
+/* ── Ribbon Strip ─────────────────────────────────────────────────────────── */
+.ribbon-strip {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background: var(--ribbon-bg);
+  border-bottom: 1px solid var(--ribbon-border);
+  padding: 4px 12px;
+  gap: 2px;
+  flex-shrink: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ribbon-strip::-webkit-scrollbar {
+  height: 3px;
+}
+
+.ribbon-strip::-webkit-scrollbar-thumb {
+  background: var(--ribbon-border);
+  border-radius: 3px;
+}
+
+/* ── Ribbon Section ───────────────────────────────────────────────────────── */
+.ribbon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 10px;
+  border-right: 1px solid var(--ribbon-section-border);
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.ribbon-section:last-child {
+  border-right: none;
+}
+
+.ribbon-section-content {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.ribbon-section-label {
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* ── Ribbon Buttons ───────────────────────────────────────────────────────── */
+.ribbon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: none;
+  color: var(--chrome-text);
+  cursor: pointer;
+  transition: all 0.1s;
+  min-width: 28px;
+  height: 100%;
+  font-size: 13px;
+}
+
+.ribbon-btn:hover {
+  background: var(--ribbon-btn-hover);
+  border-color: var(--ribbon-border);
+}
+
+.ribbon-btn.active {
+  background: var(--ribbon-btn-active);
+  border-color: var(--accent);
+}
+
+.ribbon-btn-icon {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.ribbon-btn-label {
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inline ribbon buttons (smaller, side-by-side) */
+.ribbon-btn-inline {
+  flex-direction: row;
+  height: auto;
+  padding: 3px 6px;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.ribbon-btn-inline .ribbon-btn-icon {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* ── Ribbon Select ────────────────────────────────────────────────────────── */
+.ribbon-select {
+  padding: 3px 6px;
+  border: 1px solid var(--ribbon-border);
+  border-radius: 3px;
+  background: var(--ribbon-bg);
+  color: var(--chrome-text);
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.ribbon-select:hover {
+  border-color: var(--accent);
+}
+
+.ribbon-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.ribbon-select-font {
+  width: 160px;
+}
+
+.ribbon-select-size {
+  width: 52px;
+}
+
+/* ── Ribbon Color Picker ──────────────────────────────────────────────────── */
+.ribbon-color-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ribbon-color-btn input[type="color"] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.ribbon-color-indicator {
+  width: 16px;
+  height: 3px;
+  border-radius: 1px;
+  margin-top: 1px;
+}
+
+/* ── Main Content Area ────────────────────────────────────────────────────── */
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Pasteboard (InDesign-style canvas) ───────────────────────────────────── */
+.editor-pasteboard {
+  flex: 1;
+  overflow: auto;
+  background: var(--pasteboard-bg);
+  background-image:
+    radial-gradient(var(--pasteboard-dot) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px;
+}
+
+.editor-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Right Panels Container ───────────────────────────────────────────────── */
+.panels-container {
+  width: 280px;
+  background: var(--panel-bg);
+  border-left: 1px solid var(--panel-border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-shrink: 0;
+  transition: width 0.2s ease;
+}
+
+.panels-container.collapsed {
+  width: 36px;
+  overflow: hidden;
+}
+
+.panels-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panels-container::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+.panels-container::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+.panels-container::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* ── Panel Toggle Button ──────────────────────────────────────────────────── */
+.panel-toggle-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: var(--panel-header-bg);
+  border-bottom: 1px solid var(--panel-border);
+  cursor: pointer;
+}
+
+.panel-toggle-bar .toggle-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--panel-text-bright);
+  font-weight: 600;
+}
+
+.panel-toggle-bar .toggle-icon {
+  color: var(--panel-text);
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+.panels-container.collapsed .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* ── Panel ────────────────────────────────────────────────────────────────── */
+.panel {
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--panel-header-bg);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.panel-header:hover {
+  background: var(--panel-btn-bg);
+}
+
+.panel-header-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--panel-text-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panel-header-icon {
+  font-size: 11px;
+  color: var(--panel-text);
+  transition: transform 0.2s;
+}
+
+.panel-header-icon.collapsed {
+  transform: rotate(-90deg);
+}
+
+.panel-body {
+  padding: 10px 12px;
+  background: var(--panel-section-bg);
+  color: var(--panel-text-bright);
+}
+
+.panel-body.collapsed {
+  display: none;
+}
+
+/* ── Panel Form Controls ──────────────────────────────────────────────────── */
+.panel-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.panel-row:last-child {
+  margin-bottom: 0;
+}
+
+.panel-label {
+  font-size: 11px;
+  color: var(--panel-text);
+  min-width: 50px;
+  flex-shrink: 0;
+}
+
+.panel-input {
+  flex: 1;
+  padding: 5px 8px;
+  background: var(--panel-input-bg);
+  border: 1px solid var(--panel-input-border);
+  border-radius: 3px;
+  color: var(--panel-text-bright);
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.panel-input:focus {
+  border-color: var(--panel-accent);
+}
+
+.panel-select {
+  flex: 1;
+  padding: 5px 8px;
+  background: var(--panel-input-bg);
+  border: 1px solid var(--panel-input-border);
+  border-radius: 3px;
+  color: var(--panel-text-bright);
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.panel-textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px 8px;
+  background: var(--panel-input-bg);
+  border: 1px solid var(--panel-input-border);
+  border-radius: 3px;
+  color: var(--panel-text-bright);
+  font-size: 12px;
+  resize: vertical;
+  outline: none;
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+}
+
+.panel-textarea:focus {
+  border-color: var(--panel-accent);
+}
+
+.panel-btn {
+  padding: 5px 12px;
+  background: var(--panel-btn-bg);
+  border: 1px solid var(--panel-input-border);
+  border-radius: 3px;
+  color: var(--panel-text-bright);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.1s;
+  white-space: nowrap;
+}
+
+.panel-btn:hover {
+  background: var(--panel-btn-hover);
+}
+
+.panel-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.panel-btn.primary:hover {
+  background: var(--accent-hover);
+}
+
+/* ── Language Grid (in panel) ─────────────────────────────────────────────── */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.lang-btn {
+  padding: 4px 2px;
+  background: var(--panel-btn-bg);
+  border: 1px solid var(--panel-input-border);
+  border-radius: 3px;
+  color: var(--panel-text-bright);
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.1s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lang-btn:hover {
+  background: var(--panel-btn-hover);
+  color: var(--panel-text-bright);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── Status Bar ───────────────────────────────────────────────────────────── */
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  background: var(--statusbar-bg);
+  padding: 0 12px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.status-bar-left,
+.status-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-bar-item {
+  font-size: 11px;
+  color: var(--statusbar-text);
+  padding: 0 6px;
+  cursor: default;
+  transition: background 0.1s;
+  border-radius: 2px;
+  line-height: 22px;
+}
+
+.status-bar-item:hover {
+  background: var(--statusbar-hover);
+}
+
+.status-bar-separator {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.25);
+}
+
+.status-bar-lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  line-height: 22px;
+}
+
+.status-bar-lang:hover {
+  background: var(--statusbar-hover);
+}
+
+.status-bar-lang .lang-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4ec94e;
+}
+
+/* ── Zoom Slider (status bar) ─────────────────────────────────────────────── */
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.zoom-controls input[type="range"] {
+  width: 80px;
+  height: 3px;
+  -webkit-appearance: none;
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  outline: none;
+}
+
+.zoom-controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* ── Focus Mode (F11) ─────────────────────────────────────────────────────── */
+.app-container.focus-mode .title-bar,
+.app-container.focus-mode .ribbon-tabs,
+.app-container.focus-mode .ribbon-strip,
+.app-container.focus-mode .panels-container {
+  display: none;
+}
+
+.app-container.focus-mode .editor-pasteboard {
+  background: var(--page-bg);
+  background-image: none;
+}
+
+.app-container.focus-mode .status-bar {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.app-container.focus-mode:hover .status-bar {
+  opacity: 1;
+}
+
+/* ── Ruler (optional, between ribbon and pasteboard) ──────────────────────── */
+.ruler {
+  height: 20px;
+  background: var(--chrome-bg);
+  border-bottom: 1px solid var(--ribbon-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.ruler-inner {
+  width: 816px;
+  height: 100%;
+  background: #fff;
+  position: relative;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+[data-theme='dark'] .ruler {
+  background: var(--chrome-bg);
+}
+
+[data-theme='dark'] .ruler-inner {
+  background: #383838;
+  border-color: #555;
+}
+
+/* ── Ribbon Dropdown ──────────────────────────────────────────────────────── */
+.ribbon-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background: var(--ribbon-bg);
+  border: 1px solid var(--ribbon-border);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 4px 0;
+  min-width: 140px;
+  animation: fadeIn 0.1s ease;
+}
+
+.ribbon-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 5px 12px;
+  border: none;
+  background: none;
+  color: var(--chrome-text);
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.1s;
+  white-space: nowrap;
+}
+
+.ribbon-dropdown-item:hover {
+  background: var(--ribbon-btn-hover);
+}
+
+.ribbon-dropdown-item.active {
+  background: var(--ribbon-btn-active);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.ribbon-dropdown-label {
+  padding: 4px 12px 2px;
+  font-size: 10px;
+  color: var(--ribbon-label);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* ── Styles Gallery ──────────────────────────────────────────────────────── */
+.ribbon-section-gallery {
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.styles-gallery-scroll {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 0;
+  scroll-behavior: smooth;
+}
+
+.styles-gallery-scroll::-webkit-scrollbar {
+  height: 3px;
+}
+
+.styles-gallery-scroll::-webkit-scrollbar-thumb {
+  background: var(--ribbon-border);
+  border-radius: 3px;
+}
+
+.style-gallery-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border: 1px solid var(--ribbon-section-border);
+  border-radius: 3px;
+  background: var(--ribbon-bg);
+  color: var(--chrome-text);
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 70px;
+  height: 48px;
+  flex-shrink: 0;
+  transition: all 0.1s;
+  font-family: 'Noto Serif', Georgia, serif;
+}
+
+.style-gallery-card:hover {
+  background: var(--ribbon-btn-hover);
+  border-color: var(--accent);
+}
+
+.style-gallery-card.active {
+  border-color: var(--accent);
+  background: var(--ribbon-btn-active);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+/* ── Animations ───────────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ribbon-strip {
+  animation: fadeIn 0.15s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   InDesign-Style Tabbed Panel System
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Panels Container (overrides for tabbed layout) ───────────────────────── */
+.panels-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.panels-container:not(.collapsed) {
+  overflow: hidden;       /* prevent double scrollbar */
+}
+
+/* ── Active Panel Title Bar ───────────────────────────────────────────────── */
+.panels-active-title {
+  padding: 6px 12px;
+  background: var(--panel-header-bg);
+  border-bottom: 1px solid var(--panel-border);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--panel-text-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  flex-shrink: 0;
+}
+
+/* ── Scrollable Panel Content ─────────────────────────────────────────────── */
+.panels-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.panels-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panels-content::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+.panels-content::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+.panels-content::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* ── Bottom Icon Tab Strip ────────────────────────────────────────────────── */
+.panels-tab-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  background: var(--panel-header-bg);
+  border-top: 1px solid var(--panel-border);
+  flex-shrink: 0;
+  gap: 0;
+  padding: 0 4px;
+}
+
+.panels-tab-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 32px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--panel-text);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  padding: 0 2px;
+  position: relative;
+  gap: 0;
+}
+
+.panels-tab-icon .tab-icon-emoji {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.panels-tab-icon .tab-icon-fallback {
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.panels-tab-icon:hover {
+  color: var(--panel-text-bright);
+  background: var(--panel-btn-bg);
+}
+
+.panels-tab-icon.active {
+  color: var(--panel-accent);
+  border-bottom-color: var(--panel-accent);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Pages Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-pages {
+  padding: 10px 12px;
+}
+
+.panel-pages-info {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.panel-pages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.panel-page-thumb {
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.panel-page-thumb-inner {
+  background: #fff;
+  border: 1px solid var(--panel-input-border);
+  border-radius: 2px;
+  padding: 8px 6px;
+  aspect-ratio: 8.5 / 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.15s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.panel-page-thumb:hover .panel-page-thumb-inner {
+  border-color: var(--panel-accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.panel-page-thumb.active .panel-page-thumb-inner {
+  border-color: var(--panel-accent);
+  border-width: 2px;
+  box-shadow: 0 0 0 1px var(--panel-accent), 0 2px 8px rgba(77,184,255,0.25);
+}
+
+.panel-page-thumb-label {
+  display: block;
+  font-size: 10px;
+  color: var(--panel-text);
+  margin-top: 4px;
+}
+
+.panel-page-thumb.active .panel-page-thumb-label {
+  color: var(--panel-accent);
+  font-weight: 600;
+}
+
+.panel-pages-footer {
+  padding-top: 6px;
+  border-top: 1px solid var(--panel-border);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Glyphs Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-glyphs {
+  padding: 10px 12px;
+}
+
+.panel-glyphs-section {
+  margin-top: 10px;
+}
+
+.panel-glyphs-section-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--panel-text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.glyph-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+  gap: 1px;
+  background: var(--panel-border);
+  border: 1px solid var(--panel-border);
+  border-radius: 2px;
+}
+
+.glyph-cell {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--panel-section-bg);
+  color: var(--panel-text-bright);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s;
+  user-select: none;
+  line-height: 1;
+}
+
+.glyph-cell:hover {
+  background: var(--panel-btn-hover);
+  color: #fff;
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0 0 4px rgba(77,184,255,0.4);
+}
+
+.glyph-cell:active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Styles Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-styles {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-styles-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--panel-border);
+  flex-shrink: 0;
+}
+
+.panel-styles-tab {
+  flex: 1;
+  padding: 7px 8px;
+  background: var(--panel-header-bg);
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--panel-text);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.panel-styles-tab:hover {
+  color: var(--panel-text-bright);
+  background: var(--panel-btn-bg);
+}
+
+.panel-styles-tab.active {
+  color: var(--panel-accent);
+  border-bottom-color: var(--panel-accent);
+  background: var(--panel-section-bg);
+}
+
+.panel-styles-list {
+  padding: 6px 0;
+}
+
+.panel-style-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+  border-left: 3px solid transparent;
+}
+
+.panel-style-item:hover {
+  background: var(--panel-btn-bg);
+  border-left-color: var(--panel-accent);
+}
+
+.panel-style-preview {
+  color: var(--panel-text-bright);
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.panel-style-meta {
+  font-size: 9px;
+  color: var(--panel-text);
+  opacity: 0.7;
+}
+
+.panel-styles-footer {
+  padding: 6px 12px;
+  border-top: 1px solid var(--panel-border);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Swatches Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-swatches {
+  padding: 10px 12px;
+}
+
+.swatch-grid {
+  display: grid;
+  gap: 2px;
+  margin: 8px 0;
+}
+
+.swatch-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.1s;
+  position: relative;
+}
+
+.swatch-cell:hover {
+  transform: scale(1.15);
+  z-index: 1;
+  box-shadow: 0 0 0 2px var(--panel-accent), 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.swatch-cell:active {
+  transform: scale(0.95);
+}
+
+.panel-swatches-add {
+  padding-top: 8px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.panel-btn.active-view {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Languages Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-languages .lang-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Transliteration Panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+.panel-transliteration .panel-textarea {
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Responsive: Collapse Panels to Icon Strip on Narrow Windows
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .panels-container:not(.collapsed) {
+    width: 44px;
+    overflow: hidden;
+  }
+  .panels-container:not(.collapsed) .panels-content,
+  .panels-container:not(.collapsed) .panels-active-title,
+  .panels-container:not(.collapsed) .panel-toggle-bar .toggle-label {
+    display: none;
+  }
+  .panels-container:not(.collapsed) .panels-tab-strip {
+    flex-direction: column;
+    height: auto;
+    padding: 4px 0;
+  }
+  .panels-container:not(.collapsed) .panels-tab-icon {
+    width: 100%;
+    height: 36px;
+    border-bottom: none;
+    border-left: 2px solid transparent;
+  }
+  .panels-container:not(.collapsed) .panels-tab-icon.active {
+    border-left-color: var(--panel-accent);
+    border-bottom-color: transparent;
+  }
+}
+
+/* ── Selection Background ────────────────────────────────────────────────── */
+:root {
+  --selection-bg: rgba(0, 120, 212, 0.2);
+}
+
+/* ── Wine/Cross-platform Visibility Fixes ─────────────────────────────────── */
+
+/* Ensure ribbon button text is always visible */
+.ribbon-btn {
+  color: #333 !important;
+}
+
+/* Ensure inline ribbon button text is visible */
+.ribbon-btn-inline {
+  color: #333 !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Panel header text always bright */
+.panel-header-title {
+  color: var(--panel-text-bright);
+}
+
+/* Panel label text visible */
+.panel-label {
+  color: var(--panel-text-bright);
+}
+
+/* Ribbon select always readable */
+.ribbon-select {
+  color: #333 !important;
+  font-size: 12px;
+}

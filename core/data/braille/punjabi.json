@@ -1,0 +1,467 @@
+{
+  "language": "punjabi",
+  "type": "Bharati Braille",
+  "source": "gurmukhi_braille.json",
+  "unicode_to_braille": {
+    "ਕ": {
+      "braille": "⠅",
+      "dots": "13",
+      "name": "pa"
+    },
+    "ਖ": {
+      "braille": "⠨",
+      "dots": "46",
+      "name": "pha"
+    },
+    "ਗ": {
+      "braille": "⠛",
+      "dots": "1245",
+      "name": "ba"
+    },
+    "ਘ": {
+      "braille": "⠣",
+      "dots": "126",
+      "name": "bha"
+    },
+    "ਙ": {
+      "braille": "⠬",
+      "dots": "346",
+      "name": "0x7e"
+    },
+    "ਚ": {
+      "braille": "⠉",
+      "dots": "14",
+      "name": "ya"
+    },
+    "ਛ": {
+      "braille": "⠡",
+      "dots": "16",
+      "name": "ra"
+    },
+    "ਜ": {
+      "braille": "⠚",
+      "dots": "245",
+      "name": "la"
+    },
+    "ਝ": {
+      "braille": "⠴",
+      "dots": "356",
+      "name": "0x82"
+    },
+    "ਞ": {
+      "braille": "⠒",
+      "dots": "25",
+      "name": "sha"
+    },
+    "ਟ": {
+      "braille": "⠾",
+      "dots": "23456",
+      "name": "0x84"
+    },
+    "ਠ": {
+      "braille": "⠺",
+      "dots": "2456",
+      "name": "sa"
+    },
+    "ਡ": {
+      "braille": "⠫",
+      "dots": "1246",
+      "name": "ha"
+    },
+    "ਢ": {
+      "braille": "⠿",
+      "dots": "123456",
+      "name": "lla"
+    },
+    "ਣ": {
+      "braille": "⠼",
+      "dots": "3456",
+      "name": "0x88"
+    },
+    "ਤ": {
+      "braille": "⠞",
+      "dots": "2345",
+      "name": "0x89"
+    },
+    "ਥ": {
+      "braille": "⠹",
+      "dots": "1456",
+      "name": "0x8a"
+    },
+    "ਦ": {
+      "braille": "⠙",
+      "dots": "145",
+      "name": "0x8b"
+    },
+    "ਧ": {
+      "braille": "⠮",
+      "dots": "2346",
+      "name": "0x8c"
+    },
+    "ਨ": {
+      "braille": "⠝",
+      "dots": "1345",
+      "name": "0x8d"
+    },
+    "ਪ": {
+      "braille": "⠏",
+      "dots": "1234",
+      "name": "0x90"
+    },
+    "ਫ": {
+      "braille": "⠖",
+      "dots": "235",
+      "name": "gnya"
+    },
+    "ਬ": {
+      "braille": "⠃",
+      "dots": "12",
+      "name": "0x92"
+    },
+    "ਭ": {
+      "braille": "⠘",
+      "dots": "45",
+      "name": "0x93"
+    },
+    "ਮ": {
+      "braille": "⠍",
+      "dots": "134",
+      "name": "0x94"
+    },
+    "ਯ": {
+      "braille": "⠽",
+      "dots": "13456",
+      "name": "ddha_nukta"
+    },
+    "ਰ": {
+      "braille": "⠗",
+      "dots": "1235",
+      "name": "0x96"
+    },
+    "ਲ": {
+      "braille": "⠇",
+      "dots": "123",
+      "name": "i_matra"
+    },
+    "ਲ਼": {
+      "braille": "⠸",
+      "dots": "456",
+      "name": "ii_matra"
+    },
+    "ਵ": {
+      "braille": "⠧",
+      "dots": "1236",
+      "name": "uu_matra"
+    },
+    "ਸ਼": {
+      "braille": "⠩",
+      "dots": "146",
+      "name": "ri_matra"
+    },
+    "ਸ": {
+      "braille": "⠎",
+      "dots": "234",
+      "name": "e_matra"
+    },
+    "ਹ": {
+      "braille": "⠓",
+      "dots": "125",
+      "name": "ee_matra"
+    },
+    "ਅ": {
+      "braille": "⠁",
+      "dots": "1",
+      "name": "ka"
+    },
+    "ਾ": {
+      "braille": "⠜",
+      "dots": "345",
+      "name": "kha"
+    },
+    "ਿ": {
+      "braille": "⠊",
+      "dots": "24",
+      "name": "ga"
+    },
+    "ੀ": {
+      "braille": "⠔",
+      "dots": "35",
+      "name": "gha"
+    },
+    "ੁ": {
+      "braille": "⠥",
+      "dots": "136",
+      "name": "nga"
+    },
+    "ੂ": {
+      "braille": "⠳",
+      "dots": "1256",
+      "name": "ca"
+    },
+    "ੇ": {
+      "braille": "⠑",
+      "dots": "15",
+      "name": "dda"
+    },
+    "ੈ": {
+      "braille": "⠌",
+      "dots": "34",
+      "name": "ddha"
+    },
+    "ੋ": {
+      "braille": "⠕",
+      "dots": "135",
+      "name": "tha"
+    },
+    "ੌ": {
+      "braille": "⠪",
+      "dots": "246",
+      "name": "da"
+    },
+    "੧": {
+      "braille": "⠁",
+      "dots": "1",
+      "name": "digit_1/a"
+    },
+    "੨": {
+      "braille": "⠃",
+      "dots": "12",
+      "name": "digit_2/aa"
+    },
+    "੩": {
+      "braille": "⠉",
+      "dots": "14",
+      "name": "digit_3/i"
+    },
+    "੪": {
+      "braille": "⠙",
+      "dots": "145",
+      "name": "digit_4/ii"
+    },
+    "੫": {
+      "braille": "⠑",
+      "dots": "15",
+      "name": "digit_5/u"
+    },
+    "੬": {
+      "braille": "⠋",
+      "dots": "124",
+      "name": "digit_6/uu"
+    },
+    "੭": {
+      "braille": "⠛",
+      "dots": "1245",
+      "name": "digit_7/ri"
+    },
+    "੮": {
+      "braille": "⠓",
+      "dots": "125",
+      "name": "digit_8/rii"
+    },
+    "੯": {
+      "braille": "⠊",
+      "dots": "24",
+      "name": "digit_9/li"
+    },
+    "੦": {
+      "braille": "⠚",
+      "dots": "245",
+      "name": "digit_0/lii"
+    },
+    " ": {
+      "braille": "⠀",
+      "dots": "",
+      "name": "space"
+    },
+    ",": {
+      "braille": "⠂",
+      "dots": "2",
+      "name": "comma"
+    },
+    ";": {
+      "braille": "⠆",
+      "dots": "23",
+      "name": "numeral_comma"
+    },
+    ":": {
+      "braille": "⠐⠂",
+      "dots": "5-2",
+      "name": "double_digit_combo"
+    },
+    ".": {
+      "braille": "⠨",
+      "dots": "46",
+      "name": "period/full_stop"
+    },
+    "!": {
+      "braille": "⠖",
+      "dots": "235",
+      "name": "exclamation"
+    },
+    "?": {
+      "braille": "⠦",
+      "dots": "236",
+      "name": "colon"
+    },
+    "(": {
+      "braille": "⠶",
+      "dots": "2356",
+      "name": "left_paren"
+    },
+    ")": {
+      "braille": "⠶",
+      "dots": "2356",
+      "name": "right_paren"
+    },
+    "[": {
+      "braille": "⠠⠶",
+      "dots": "6-2356",
+      "name": "semicolon_input"
+    },
+    "]": {
+      "braille": "⠶⠄",
+      "dots": "2356-3",
+      "name": "question_sq_bracket"
+    },
+    "\"": {
+      "braille": "⠦",
+      "dots": "236",
+      "name": "double_quote"
+    },
+    "\\": {
+      "braille": "⠸⠡",
+      "dots": "456-16",
+      "name": "at_sign_input"
+    },
+    "+": {
+      "braille": "⠬",
+      "dots": "346",
+      "name": "plus"
+    },
+    "-": {
+      "braille": "⠤",
+      "dots": "36",
+      "name": "hyphen"
+    },
+    "*": {
+      "braille": "⠈⠡",
+      "dots": "4-16",
+      "name": "asterisk"
+    },
+    "/": {
+      "braille": "⠸⠌",
+      "dots": "456-34",
+      "name": "slash"
+    },
+    "<": {
+      "braille": "⠐⠅",
+      "dots": "5-13",
+      "name": "paren_combo"
+    },
+    "=": {
+      "braille": "⠨⠅",
+      "dots": "46-13",
+      "name": "brackets_combo"
+    },
+    ">": {
+      "braille": "⠨⠂",
+      "dots": "46-2",
+      "name": "brace"
+    },
+    "{": {
+      "braille": "⠰⠶",
+      "dots": "56-2356",
+      "name": "equals_sign"
+    },
+    "}": {
+      "braille": "⠶⠆",
+      "dots": "2356-23",
+      "name": "question_mark"
+    },
+    "%": {
+      "braille": "⠈⠴",
+      "dots": "4-356",
+      "name": "percent"
+    },
+    "#": {
+      "braille": "⠨⠼",
+      "dots": "46-3456",
+      "name": "hash"
+    },
+    "$": {
+      "braille": "⠈⠎",
+      "dots": "4-234",
+      "name": "dollar"
+    },
+    "&": {
+      "braille": "⠈⠯",
+      "dots": "4-12346",
+      "name": "ampersand"
+    },
+    "_": {
+      "braille": "⠨",
+      "dots": "46",
+      "name": "avagraha"
+    },
+    "@": {
+      "braille": "⠈⠁",
+      "dots": "4-1",
+      "name": "excl_combo_2"
+    },
+    "|": {
+      "braille": "⠳",
+      "dots": "1256",
+      "name": "greater_than"
+    },
+    "`": {
+      "braille": "⠠⠦",
+      "dots": "6-236",
+      "name": "left_angle_bracket"
+    },
+    "'": {
+      "braille": "⠄",
+      "dots": "3",
+      "name": "apostrophe"
+    },
+    "₹": {
+      "braille": "⠠⠗⠎",
+      "dots": "6-1235-234",
+      "name": "chandrabindu_combo"
+    },
+    "ऽ": {
+      "braille": "⠂",
+      "dots": "2",
+      "name": "visarga"
+    },
+    "ੴ": {
+      "braille": "⠕⠈⠍",
+      "dots": "135-4-134",
+      "name": "om_symbol"
+    },
+    "ਁ": {
+      "braille": "⠄",
+      "dots": "3",
+      "name": "anusvara"
+    },
+    "ਂ": {
+      "braille": "⠰",
+      "dots": "56",
+      "name": "visarga_alt"
+    },
+    "ਃ": {
+      "braille": "⠠",
+      "dots": "6",
+      "name": "chandrabindu"
+    },
+    "^": {
+      "braille": "⠸⠣",
+      "dots": "456-126",
+      "name": "colon"
+    },
+    "~": {
+      "braille": "⠈⠱",
+      "dots": "4-156",
+      "name": "at_sign"
+    }
+  }
+}

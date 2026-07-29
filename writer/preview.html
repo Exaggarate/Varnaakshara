@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varnaakshara Writer — Hybrid UI Preview</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --chrome-bg: #f3f3f3;
+  --chrome-border: #d1d1d1;
+  --chrome-text: #333;
+  --chrome-hover: #e0e0e0;
+  --tab-active-text: #0078d4;
+  --tab-inactive-text: #666;
+  --ribbon-bg: #fff;
+  --ribbon-border: #e0e0e0;
+  --ribbon-section-border: #e8e8e8;
+  --ribbon-btn-hover: #e8f0fe;
+  --ribbon-label: #888;
+  --pasteboard-bg: #535353;
+  --page-bg: #fff;
+  --accent: #0078d4;
+  --panel-bg: #2d2d2d;
+  --panel-header-bg: #252525;
+  --panel-border: #3a3a3a;
+  --panel-text: #ccc;
+  --panel-text-bright: #eee;
+  --panel-input-bg: #383838;
+  --panel-input-border: #4a4a4a;
+  --panel-btn-bg: #404040;
+  --panel-btn-hover: #505050;
+  --panel-accent: #4db8ff;
+  --panel-section-bg: #333;
+  --statusbar-bg: #007acc;
+}
+
+html, body { height: 100%; overflow: hidden; font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 13px; background: var(--chrome-bg); color: var(--chrome-text); -webkit-font-smoothing: antialiased; }
+
+.app { display: flex; flex-direction: column; height: 100vh; }
+
+/* Title Bar */
+.title-bar { display: flex; align-items: center; height: 32px; background: var(--chrome-bg); border-bottom: 1px solid var(--chrome-border); padding: 0 8px; user-select: none; }
+.title-bar-icon { width: 16px; height: 16px; margin-right: 8px; font-size: 14px; color: var(--accent); }
+.title-bar-text { flex: 1; text-align: center; font-size: 12px; opacity: 0.8; }
+.title-bar-controls { display: flex; }
+.title-bar-controls button { background: none; border: none; color: var(--chrome-text); width: 46px; height: 32px; cursor: pointer; font-size: 10px; }
+.title-bar-controls button:hover { background: var(--chrome-hover); }
+.title-bar-controls button.close:hover { background: #e81123; color: #fff; }
+
+/* Ribbon Tabs */
+.ribbon-tabs { display: flex; height: 30px; background: var(--chrome-bg); padding: 0 12px; }
+.ribbon-tab { padding: 6px 16px; font-size: 12px; font-weight: 500; color: var(--tab-inactive-text); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; text-transform: uppercase; letter-spacing: 0.3px; }
+.ribbon-tab:hover { color: var(--chrome-text); background: var(--chrome-hover); }
+.ribbon-tab.active { color: var(--tab-active-text); background: var(--ribbon-bg); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* Ribbon Strip */
+.ribbon-strip { display: flex; align-items: center; height: 80px; background: var(--ribbon-bg); border-bottom: 1px solid var(--ribbon-border); padding: 4px 12px; gap: 2px; }
+.ribbon-section { display: flex; flex-direction: column; align-items: center; padding: 4px 10px; border-right: 1px solid var(--ribbon-section-border); height: 100%; }
+.ribbon-section:last-child { border-right: none; }
+.ribbon-section-content { display: flex; align-items: center; gap: 2px; flex: 1; }
+.ribbon-section-label { font-size: 9px; color: var(--ribbon-label); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+.ribbon-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px 8px; border: 1px solid transparent; border-radius: 3px; background: none; color: var(--chrome-text); cursor: pointer; min-width: 28px; height: 100%; font-size: 13px; }
+.ribbon-btn:hover { background: var(--ribbon-btn-hover); border-color: var(--ribbon-border); }
+.ribbon-btn.active { background: #d0e2f7; border-color: var(--accent); }
+.ribbon-btn-icon { font-size: 18px; line-height: 1; margin-bottom: 2px; }
+.ribbon-btn-label { font-size: 9px; white-space: nowrap; }
+.ribbon-btn-inline { flex-direction: row; height: auto; padding: 3px 6px; gap: 4px; font-size: 13px; }
+.ribbon-btn-inline .ribbon-btn-icon { font-size: 14px; margin-bottom: 0; }
+.ribbon-select { padding: 3px 6px; border: 1px solid var(--ribbon-border); border-radius: 3px; background: var(--ribbon-bg); color: var(--chrome-text); font-size: 12px; outline: none; }
+.ribbon-select:focus { border-color: var(--accent); }
+.ribbon-select-font { width: 160px; }
+.ribbon-select-size { width: 52px; }
+.ribbon-color-indicator { width: 16px; height: 3px; border-radius: 1px; margin-top: 1px; }
+
+/* Ruler */
+.ruler { height: 20px; background: var(--chrome-bg); border-bottom: 1px solid var(--ribbon-border); display: flex; align-items: center; justify-content: center; }
+.ruler-inner { width: 816px; height: 100%; background: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc; position: relative; }
+.ruler-ticks { display: flex; width: 100%; height: 100%; align-items: flex-end; }
+.ruler-tick { flex: 1; border-left: 1px solid #ddd; height: 6px; }
+.ruler-tick:nth-child(4n+1) { height: 12px; border-color: #bbb; }
+
+/* Main Area */
+.app-main { display: flex; flex: 1; overflow: hidden; }
+
+/* Pasteboard */
+.pasteboard { flex: 1; overflow: auto; background: var(--pasteboard-bg); background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 20px 20px; display: flex; justify-content: center; padding: 32px 24px; }
+.page { width: 816px; min-height: 1056px; background: var(--page-bg); box-shadow: 0 2px 12px rgba(0,0,0,0.25); border-radius: 1px; padding: 96px; position: relative; }
+.page-content { font-family: 'Noto Serif', Georgia, serif; font-size: 12pt; line-height: 1.6; color: #1a1a1a; outline: none; min-height: 600px; }
+.page-content h1 { font-size: 22pt; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; }
+.page-content h2 { font-size: 16pt; font-weight: 600; margin: 16px 0 8px; color: #333; }
+.page-content p { margin-bottom: 8px; }
+.page-content .highlight { background: #fff3cd; padding: 2px 4px; border-radius: 2px; }
+.page-placeholder { position: absolute; top: 96px; left: 96px; color: #bbb; font-size: 12pt; font-style: italic; pointer-events: none; }
+
+/* Panels */
+.panels { width: 280px; background: var(--panel-bg); border-left: 1px solid var(--panel-border); display: flex; flex-direction: column; overflow-y: auto; flex-shrink: 0; }
+.panels::-webkit-scrollbar { width: 6px; }
+.panels::-webkit-scrollbar-track { background: #404040; }
+.panels::-webkit-scrollbar-thumb { background: #606060; border-radius: 3px; }
+.panel-toggle { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; background: var(--panel-header-bg); border-bottom: 1px solid var(--panel-border); cursor: pointer; }
+.panel-toggle span { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--panel-text); font-weight: 600; }
+.panel { border-bottom: 1px solid var(--panel-border); }
+.panel-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: var(--panel-header-bg); cursor: pointer; user-select: none; }
+.panel-header:hover { background: var(--panel-btn-bg); }
+.panel-header-title { font-size: 11px; font-weight: 600; color: var(--panel-text-bright); text-transform: uppercase; letter-spacing: 0.5px; }
+.panel-header-icon { font-size: 11px; color: var(--panel-text); transition: transform 0.2s; }
+.panel-body { padding: 10px 12px; background: var(--panel-section-bg); }
+.panel-body.hidden { display: none; }
+.panel-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.panel-row:last-child { margin-bottom: 0; }
+.panel-label { font-size: 11px; color: var(--panel-text); min-width: 50px; }
+.panel-input { flex: 1; padding: 5px 8px; background: var(--panel-input-bg); border: 1px solid var(--panel-input-border); border-radius: 3px; color: var(--panel-text-bright); font-size: 12px; outline: none; }
+.panel-input:focus { border-color: var(--panel-accent); }
+.panel-select { flex: 1; padding: 5px 8px; background: var(--panel-input-bg); border: 1px solid var(--panel-input-border); border-radius: 3px; color: var(--panel-text-bright); font-size: 12px; }
+.panel-textarea { width: 100%; min-height: 50px; padding: 6px 8px; background: var(--panel-input-bg); border: 1px solid var(--panel-input-border); border-radius: 3px; color: var(--panel-text-bright); font-size: 12px; resize: vertical; outline: none; font-family: 'Noto Sans', sans-serif; }
+.panel-textarea:focus { border-color: var(--panel-accent); }
+.panel-btn { padding: 5px 12px; background: var(--panel-btn-bg); border: 1px solid var(--panel-input-border); border-radius: 3px; color: var(--panel-text-bright); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.panel-btn:hover { background: var(--panel-btn-hover); }
+.panel-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.panel-btn.primary:hover { background: #106ebe; }
+.lang-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.lang-btn { padding: 4px 2px; background: var(--panel-btn-bg); border: 1px solid var(--panel-input-border); border-radius: 3px; color: var(--panel-text); font-size: 10px; cursor: pointer; text-align: center; }
+.lang-btn:hover { background: var(--panel-btn-hover); color: var(--panel-text-bright); }
+.lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.panel-hint { font-size: 10px; color: var(--panel-text); opacity: 0.7; line-height: 1.4; }
+
+/* Status Bar */
+.status-bar { display: flex; align-items: center; justify-content: space-between; height: 24px; background: var(--statusbar-bg); padding: 0 12px; user-select: none; }
+.sb-left, .sb-right { display: flex; align-items: center; gap: 4px; }
+.sb-item { font-size: 11px; color: #fff; padding: 0 6px; line-height: 22px; border-radius: 2px; }
+.sb-item:hover { background: rgba(255,255,255,0.1); }
+.sb-sep { width: 1px; height: 14px; background: rgba(255,255,255,0.25); }
+.sb-lang { display: flex; align-items: center; gap: 4px; padding: 0 8px; cursor: pointer; line-height: 22px; border-radius: 2px; }
+.sb-lang:hover { background: rgba(255,255,255,0.1); }
+.lang-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ec94e; }
+.zoom-ctrl { display: flex; align-items: center; gap: 6px; }
+.zoom-ctrl input[type="range"] { width: 80px; height: 3px; -webkit-appearance: none; background: rgba(255,255,255,0.3); border-radius: 2px; outline: none; }
+.zoom-ctrl input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 10px; height: 10px; border-radius: 50%; background: #fff; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- Title Bar -->
+  <div class="title-bar">
+    <div class="title-bar-icon">✦</div>
+    <div class="title-bar-text">ನಮಸ್ಕಾರ — ಪರಿಚಯ.vkd — Varnaakshara Writer</div>
+    <div class="title-bar-controls">
+      <button>─</button>
+      <button>□</button>
+      <button class="close">✕</button>
+    </div>
+  </div>
+
+  <!-- Ribbon Tabs -->
+  <div class="ribbon-tabs">
+    <button class="ribbon-tab active" onclick="switchTab(this)">HOME</button>
+    <button class="ribbon-tab" onclick="switchTab(this)">INSERT</button>
+    <button class="ribbon-tab" onclick="switchTab(this)">LAYOUT</button>
+    <button class="ribbon-tab" onclick="switchTab(this)">REVIEW</button>
+    <button class="ribbon-tab" onclick="switchTab(this)">TOOLS</button>
+  </div>
+
+  <!-- Ribbon Strip -->
+  <div class="ribbon-strip">
+    <!-- Clipboard -->
+    <div class="ribbon-section">
+      <div class="ribbon-section-content">
+        <button class="ribbon-btn"><span class="ribbon-btn-icon">↶</span><span class="ribbon-btn-label">Undo</span></button>
+        <button class="ribbon-btn"><span class="ribbon-btn-icon">↷</span><span class="ribbon-btn-label">Redo</span></button>
+      </div>
+      <span class="ribbon-section-label">Clipboard</span>
+    </div>
+    <!-- Font -->
+    <div class="ribbon-section">
+      <div class="ribbon-section-content" style="flex-direction:column;align-items:stretch;gap:3px">
+        <div style="display:flex;gap:4px">
+          <select class="ribbon-select ribbon-select-font">
+            <option selected>Noto Serif Kannada</option>
+            <option>Noto Sans Devanagari</option>
+            <option>Noto Sans Telugu</option>
+            <option>Noto Sans Tamil</option>
+            <option>Georgia</option>
+            <option>Times New Roman</option>
+          </select>
+          <select class="ribbon-select ribbon-select-size">
+            <option>10</option><option>11</option><option selected>12</option><option>14</option><option>16</option><option>18</option><option>24</option>
+          </select>
+        </div>
+        <div style="display:flex;gap:2px">
+          <button class="ribbon-btn ribbon-btn-inline"><strong>B</strong></button>
+          <button class="ribbon-btn ribbon-btn-inline"><em>I</em></button>
+          <button class="ribbon-btn ribbon-btn-inline"><span style="text-decoration:underline">U</span></button>
+          <button class="ribbon-btn ribbon-btn-inline"><span style="text-decoration:line-through">S</span></button>
+          <button class="ribbon-btn ribbon-btn-inline" style="position:relative"><span style="font-weight:700">A</span><div class="ribbon-color-indicator" style="background:#e00"></div></button>
+          <button class="ribbon-btn ribbon-btn-inline" style="position:relative"><span style="background:#ff0;padding:0 2px;font-size:11px">ab</span><div class="ribbon-color-indicator" style="background:#ff0"></div></button>
+        </div>
+      </div>
+      <span class="ribbon-section-label">Font</span>
+    </div>
+    <!-- Paragraph -->
+    <div class="ribbon-section">
+      <div class="ribbon-section-content" style="flex-direction:column;gap:2px">
+        <div style="display:flex;gap:2px">
+          <button class="ribbon-btn ribbon-btn-inline active">☰ L</button>
+          <button class="ribbon-btn ribbon-btn-inline">☰ C</button>
+          <button class="ribbon-btn ribbon-btn-inline">☰ R</button>
+          <button class="ribbon-btn ribbon-btn-inline">☰ J</button>
+        </div>
+        <div style="display:flex;gap:2px">
+          <button class="ribbon-btn ribbon-btn-inline">• List</button>
+          <button class="ribbon-btn ribbon-btn-inline">1. List</button>
+        </div>
+      </div>
+      <span class="ribbon-section-label">Paragraph</span>
+    </div>
+    <!-- Insert -->
+    <div class="ribbon-section">
+      <div class="ribbon-section-content">
+        <button class="ribbon-btn"><span class="ribbon-btn-icon">⊞</span><span class="ribbon-btn-label">Table</span></button>
+        <button class="ribbon-btn"><span class="ribbon-btn-icon">🖼</span><span class="ribbon-btn-label">Image</span></button>
+        <button class="ribbon-btn"><span class="ribbon-btn-icon">🔗</span><span class="ribbon-btn-label">Link</span></button>
+      </div>
+      <span class="ribbon-section-label">Insert</span>
+    </div>
+  </div>
+
+  <!-- Ruler -->
+  <div class="ruler">
+    <div class="ruler-inner">
+      <div class="ruler-ticks" id="rulerTicks"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="app-main">
+    <!-- Pasteboard + Page -->
+    <div class="pasteboard">
+      <div class="page">
+        <div class="page-content" contenteditable="true">
+          <h1>ವರ್ಣಾಕ್ಷರ — ಪರಿಚಯ</h1>
+          <h2>Varnaakshara — Introduction</h2>
+          <p>ವರ್ಣಾಕ್ಷರ ಎಂಬುದು ಭಾರತೀಯ ಭಾಷೆಗಳಲ್ಲಿ ಟೈಪ್ ಮಾಡಲು ಸಹಾಯ ಮಾಡುವ ಒಂದು <span class="highlight">ಫೋನೆಟಿಕ್ ಇನ್‌ಪುಟ್ ಮೆಥಡ್</span> ಆಗಿದೆ. ಇದು ಬರಹ ಸಾಫ್ಟ್‌ವೇರ್‌ನ ಮುಂದುವರಿಕೆಯಾಗಿ, ಆಧುನಿಕ ತಂತ್ರಜ್ಞಾನದೊಂದಿಗೆ ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆ.</p>
+          <p>Varnaakshara is a <strong>phonetic transliteration Input Method Engine</strong> for Windows that lets you type in 12 Indian languages using a standard English keyboard. Type in Roman letters — see Indian script appear in real-time.</p>
+          <p></p>
+          <p>namaskAra → <strong>ನಮಸ್ಕಾರ</strong> (Kannada)</p>
+          <p>namastE → <strong>नमस्ते</strong> (Hindi)</p>
+          <p>shrI → <strong>శ్రీ</strong> (Telugu)</p>
+          <p>vanakkam → <strong>வணக்கம்</strong> (Tamil)</p>
+          <p></p>
+          <h2>ವೈಶಿಷ್ಟ್ಯಗಳು — Features</h2>
+          <p>• 12 ಭಾರತೀಯ ಭಾಷೆಗಳ ಬೆಂಬಲ — ಕನ್ನಡ, ಹಿಂದಿ, ತೆಲುಗು, ತಮಿಳು, ಮಲಯಾಳಂ, ಮರಾಠಿ, ಸಂಸ್ಕೃತ, ಬೆಂಗಾಲಿ, ಅಸ್ಸಾಮೀ, ಗುಜರಾತಿ, ಪಂಜಾಬಿ, ಒಡಿಯಾ</p>
+          <p>• ಸಿಸ್ಟಂ-ವೈಡ್ IME — ಯಾವುದೇ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ</p>
+          <p>• ಯೂನಿಕೋಡ್ ↔ ANSI (ಬರಹ) ಪರಿವರ್ತನೆ</p>
+          <p>• ಪಂಚಮ ವರ್ಗ ಅನುಸ್ವಾರ ಬದಲಾವಣೆ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panels (Dark) -->
+    <div class="panels">
+      <div class="panel-toggle">
+        <span>Panels</span>
+        <span style="color:var(--panel-text);font-size:12px">▶</span>
+      </div>
+
+      <!-- Language Selector -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">🔤 Active Language</span>
+          <span class="panel-header-icon">▾</span>
+        </div>
+        <div class="panel-body">
+          <div class="lang-grid">
+            <button class="lang-btn active">ಕನ್ನಡ</button>
+            <button class="lang-btn">हिन्दी</button>
+            <button class="lang-btn">తెలుగు</button>
+            <button class="lang-btn">தமிழ்</button>
+            <button class="lang-btn">മലയാളം</button>
+            <button class="lang-btn">मराठी</button>
+            <button class="lang-btn">संस्कृतम्</button>
+            <button class="lang-btn">বাংলা</button>
+            <button class="lang-btn">অসমীয়া</button>
+            <button class="lang-btn">ગુજરાતી</button>
+            <button class="lang-btn">ਪੰਜਾਬੀ</button>
+            <button class="lang-btn">ଓଡ଼ିଆ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transliteration -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">अ → Transliterate</span>
+          <span class="panel-header-icon">▾</span>
+        </div>
+        <div class="panel-body">
+          <div class="panel-row">
+            <textarea class="panel-textarea" placeholder="Type Roman text here..." rows="2">namaskAra lOkavE</textarea>
+          </div>
+          <div class="panel-row" style="justify-content:flex-end">
+            <button class="panel-btn primary">Convert</button>
+            <button class="panel-btn">Insert ↵</button>
+          </div>
+          <div class="panel-row">
+            <textarea class="panel-textarea" rows="2" readonly style="color:#4ec94e;font-family:'Noto Sans Kannada',sans-serif">ನಮಸ್ಕಾರ ಲೋಕವೇ</textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Script Converter -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">↔ Script Converter</span>
+          <span class="panel-header-icon" style="transform:rotate(-90deg)">▾</span>
+        </div>
+        <div class="panel-body hidden">
+          <div class="panel-row">
+            <span class="panel-label">From</span>
+            <select class="panel-select"><option>Kannada</option><option>Hindi</option></select>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">To</span>
+            <select class="panel-select"><option>Hindi</option><option>Telugu</option></select>
+          </div>
+          <div class="panel-row">
+            <button class="panel-btn primary" style="flex:1">Convert Selection</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unicode ↔ ANSI -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">U⇌A Unicode ↔ ANSI</span>
+          <span class="panel-header-icon" style="transform:rotate(-90deg)">▾</span>
+        </div>
+        <div class="panel-body hidden">
+          <div class="panel-row"><button class="panel-btn" style="flex:1">Unicode → ANSI (Baraha)</button></div>
+          <div class="panel-row"><button class="panel-btn" style="flex:1">ANSI (Baraha) → Unicode</button></div>
+          <div class="panel-row"><span class="panel-hint">Converts selected text using Baraha font encoding tables</span></div>
+        </div>
+      </div>
+
+      <!-- Panchama Varga -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">ಞ Panchama Varga</span>
+          <span class="panel-header-icon" style="transform:rotate(-90deg)">▾</span>
+        </div>
+        <div class="panel-body hidden">
+          <div class="panel-row"><button class="panel-btn" style="flex:1">Apply Panchama Varga</button></div>
+          <div class="panel-row"><span class="panel-hint">Replaces anusvara with appropriate nasal consonant based on following consonant class</span></div>
+        </div>
+      </div>
+
+      <!-- Document -->
+      <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+          <span class="panel-header-title">📄 Document</span>
+          <span class="panel-header-icon" style="transform:rotate(-90deg)">▾</span>
+        </div>
+        <div class="panel-body hidden">
+          <div class="panel-row">
+            <span class="panel-label">Title</span>
+            <input class="panel-input" value="ವರ್ಣಾಕ್ಷರ — ಪರಿಚಯ">
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Author</span>
+            <input class="panel-input" placeholder="Author name">
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Language</span>
+            <select class="panel-select"><option selected>Kannada</option><option>Hindi</option><option>Telugu</option></select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <div class="sb-left">
+      <span class="sb-item">Page 1</span>
+      <span class="sb-sep"></span>
+      <span class="sb-item">142 words</span>
+      <span class="sb-sep"></span>
+      <span class="sb-item">1,284 chars</span>
+    </div>
+    <div class="sb-right">
+      <div class="sb-lang"><span class="lang-dot"></span><span class="sb-item">Kannada</span></div>
+      <span class="sb-sep"></span>
+      <span class="sb-item">Phonetic</span>
+      <span class="sb-sep"></span>
+      <div class="zoom-ctrl">
+        <span class="sb-item">100%</span>
+        <input type="range" min="50" max="200" value="100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Tab switching
+function switchTab(el) {
+  document.querySelectorAll('.ribbon-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// Panel collapse/expand
+function togglePanel(header) {
+  const body = header.nextElementSibling;
+  const icon = header.querySelector('.panel-header-icon');
+  body.classList.toggle('hidden');
+  icon.style.transform = body.classList.contains('hidden') ? 'rotate(-90deg)' : '';
+}
+
+// Language button switching
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// Generate ruler ticks
+const rulerTicks = document.getElementById('rulerTicks');
+for (let i = 0; i < 32; i++) {
+  const tick = document.createElement('div');
+  tick.className = 'ruler-tick';
+  rulerTicks.appendChild(tick);
+}
+</script>
+
+</body>
+</html>

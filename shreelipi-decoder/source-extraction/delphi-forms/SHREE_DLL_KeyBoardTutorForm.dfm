@@ -1,0 +1,30 @@
+object KeyBoardTutorForm: TKeyBoardTutorForm
+  Left = 306
+  Top = 276
+  ActiveControl = SpaceBut
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'Modular InfoTech Keyboard Tutor'
+  ClientHeight = 104
+  ClientWidth = 378
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = 245
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  Icon.Data = {binary 766 bytes}
+  KeyPreview = True
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnClick = FormClick
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
+  PixelsPerInch = 96
+  TextHeight = 13
+end

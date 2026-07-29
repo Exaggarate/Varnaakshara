@@ -1,0 +1,62 @@
+VARNAAKSHARA — LICENSE AGREEMENT
+Version 1.3.0
+
+Copyright (c) 2026 Varnaakshara. All rights reserved.
+
+════════════════════════════════════════════════════════════
+
+1. FREE TO USE
+
+   Varnaakshara is free for everyone — personal, educational,
+   commercial, government, or any other use. No registration,
+   no subscription, no hidden fees. Ever.
+
+2. NOT FOR SALE
+
+   You may not sell this software. You may share unmodified
+   copies of the installer freely.
+
+3. HOW IT WORKS
+
+   Varnaakshara uses a system-wide keyboard hook to intercept
+   your keystrokes and convert them into Indian script characters
+   in real time. This is how all transliteration IMEs work.
+
+   Your keystrokes are processed LOCALLY on your computer.
+   Nothing is sent to any server. No typing data is collected,
+   stored, or transmitted.
+
+4. INTERNET USAGE
+
+   The only internet connection Varnaakshara makes is to check
+   for software updates (via GitHub). No personal data, typing
+   data, or usage statistics are transmitted. You can disable
+   the update check in Settings.
+
+5. BUNDLED FONTS
+
+   This software includes a curated collection of Indian script
+   fonts sourced from freely available resources on the internet.
+   These fonts have been carefully selected, integrated, and
+   optimized for use with Varnaakshara to ensure proper rendering
+   of Indian scripts across all supported languages.
+
+   The bundled fonts are installed alongside the application and
+   will not modify or replace any existing fonts on your system.
+   Font families are provided in multiple weights (Regular,
+   Medium, SemiBold, Bold, Black) for professional publishing
+   and design workflows.
+
+6. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS BE
+   LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+   FROM THE USE OF THIS SOFTWARE.
+
+════════════════════════════════════════════════════════════
+
+By clicking "I Agree" you acknowledge that you have read and
+accept these terms.
+
+Thank you for using Varnaakshara — वर्णाक्षरः 🙏

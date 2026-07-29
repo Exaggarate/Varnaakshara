@@ -1,0 +1,10 @@
+{
+  "language": "marathi",
+  "derived_from": "hindi",
+  "devanagari_to_target": {
+    "ऎ": "ए",
+    "ऒ": "ओ",
+    "ॆ": "े",
+    "ॊ": "ो"
+  }
+}

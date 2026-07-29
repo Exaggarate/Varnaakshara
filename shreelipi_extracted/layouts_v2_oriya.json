@@ -1,0 +1,7231 @@
+{
+  "language": "Oriya",
+  "script_unicode_base": "U+0B00",
+  "total_layouts": 8,
+  "glyph_crossref_entries": 48,
+  "layouts": {
+    "CRTRONIC": {
+      "file": "CRTRONIC.ORI",
+      "normal": {
+        "!": {
+          "font_glyph": "0x31",
+          "font_glyph_char": "1",
+          "type": "font_glyph"
+        },
+        "\"": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "#": {
+          "font_glyph": "0x33",
+          "font_glyph_char": "3",
+          "type": "font_glyph"
+        },
+        "$": {
+          "font_glyph": "0x34",
+          "font_glyph_char": "4",
+          "type": "font_glyph"
+        },
+        "%": {
+          "font_glyph": "0x35",
+          "font_glyph_char": "5",
+          "type": "font_glyph"
+        },
+        "&": {
+          "font_glyph": "0x37",
+          "font_glyph_char": "7",
+          "type": "font_glyph"
+        },
+        "(": {
+          "font_glyph": "0x39",
+          "font_glyph_char": "9",
+          "type": "font_glyph"
+        },
+        ")": {
+          "font_glyph": "0x30",
+          "font_glyph_char": "0",
+          "type": "font_glyph"
+        },
+        "*": {
+          "font_glyph": "0x38",
+          "font_glyph_char": "8",
+          "type": "font_glyph"
+        },
+        "+": {
+          "font_glyph": "0x28",
+          "font_glyph_char": "(",
+          "type": "font_glyph"
+        },
+        ",": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "-": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        ".": {
+          "font_glyph": "0x79",
+          "font_glyph_char": "y",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE6",
+          "resolved_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "/": {
+          "font_glyph": "0x45",
+          "font_glyph_char": "E",
+          "type": "font_glyph"
+        },
+        "0": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "1": {
+          "font_glyph": "0x5A",
+          "font_glyph_char": "Z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB7",
+          "resolved_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "2": {
+          "font_glyph": "0x53",
+          "font_glyph_char": "S",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB4",
+          "resolved_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "3": {
+          "font_glyph": "0x52",
+          "font_glyph_char": "R",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC5",
+          "resolved_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "4": {
+          "font_glyph": "0x56",
+          "font_glyph_char": "V",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB9",
+          "resolved_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "5": {
+          "font_glyph": "0x7A",
+          "font_glyph_char": "z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCB",
+          "resolved_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "6": {
+          "font_glyph": "0x46",
+          "font_glyph_char": "F",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC3",
+          "resolved_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "7": {
+          "font_glyph": "0x58",
+          "font_glyph_char": "X",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB6",
+          "resolved_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "8": {
+          "font_glyph": "0x49",
+          "font_glyph_char": "I",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBE",
+          "resolved_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "9": {
+          "font_glyph": "0x50",
+          "font_glyph_char": "P",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC0",
+          "resolved_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        ":": {
+          "font_glyph": "0x4E",
+          "font_glyph_char": "N",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA9",
+          "resolved_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        ";": {
+          "font_glyph": "0x6E",
+          "font_glyph_char": "n",
+          "type": "font_glyph"
+        },
+        "=": {
+          "font_glyph": "0x29",
+          "font_glyph_char": ")",
+          "type": "font_glyph"
+        },
+        ">": {
+          "font_glyph": "0x59",
+          "font_glyph_char": "Y",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB1",
+          "resolved_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "?": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "@": {
+          "font_glyph": "0x32",
+          "font_glyph_char": "2",
+          "type": "font_glyph"
+        },
+        "A": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "C": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "D": {
+          "font_glyph": "0x27",
+          "font_glyph_char": "'",
+          "type": "font_glyph"
+        },
+        "E": {
+          "font_glyph": "0x3A",
+          "font_glyph_char": ":",
+          "type": "font_glyph"
+        },
+        "F": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "G": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "H": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "J": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "K": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "L": {
+          "font_glyph": "0x48",
+          "font_glyph_char": "H",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA7",
+          "resolved_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "N": {
+          "font_glyph": "0x44",
+          "font_glyph_char": "D",
+          "type": "font_glyph"
+        },
+        "O": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "P": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "Q": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "S": {
+          "font_glyph": "0x22",
+          "font_glyph_char": "\"",
+          "type": "font_glyph"
+        },
+        "T": {
+          "font_glyph": "0x40",
+          "font_glyph_char": "@",
+          "type": "font_glyph"
+        },
+        "U": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "W": {
+          "font_glyph": "0x3B",
+          "font_glyph_char": ";",
+          "type": "font_glyph"
+        },
+        "X": {
+          "font_glyph": "0x3E",
+          "font_glyph_char": ">",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAD",
+          "resolved_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "Y": {
+          "iscii": "0xE3",
+          "iscii_name": "u_matra",
+          "unicode": "ୁ",
+          "unicode_hex": "U+0B41"
+        },
+        "Z": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "[": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "\\": {
+          "font_glyph": "0x4B",
+          "font_glyph_char": "K",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD5",
+          "resolved_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "]": {
+          "font_glyph": "0x2C",
+          "font_glyph_char": ",",
+          "type": "font_glyph"
+        },
+        "^": {
+          "font_glyph": "0x36",
+          "font_glyph_char": "6",
+          "type": "font_glyph"
+        },
+        "_": {
+          "font_glyph": "0x2D",
+          "font_glyph_char": "-",
+          "type": "font_glyph"
+        },
+        "`": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "a": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "b": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "c": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "d": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "f": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "g": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "h": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "i": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "j": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "k": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "l": {
+          "font_glyph": "0x68",
+          "font_glyph_char": "h",
+          "type": "font_glyph"
+        },
+        "m": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "n": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "o": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "p": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "q": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "r": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "s": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "t": {
+          "font_glyph": "0x6A",
+          "font_glyph_char": "j",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCF",
+          "resolved_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "w": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "x": {
+          "font_glyph": "0x70",
+          "font_glyph_char": "p",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE2",
+          "resolved_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "y": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "z": {
+          "font_glyph": "0x7F",
+          "font_glyph_char": "",
+          "type": "font_glyph"
+        },
+        "{": {
+          "font_glyph": "0x2D",
+          "font_glyph_char": "-",
+          "type": "font_glyph"
+        },
+        "|": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "}": {
+          "font_glyph": "0x2F",
+          "font_glyph_char": "/",
+          "type": "font_glyph"
+        }
+      },
+      "shifted": {
+        "!": {
+          "font_glyph": "0x31",
+          "font_glyph_char": "1",
+          "type": "font_glyph"
+        },
+        "\"": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "#": {
+          "font_glyph": "0x33",
+          "font_glyph_char": "3",
+          "type": "font_glyph"
+        },
+        "$": {
+          "font_glyph": "0x34",
+          "font_glyph_char": "4",
+          "type": "font_glyph"
+        },
+        "%": {
+          "font_glyph": "0x35",
+          "font_glyph_char": "5",
+          "type": "font_glyph"
+        },
+        "&": {
+          "font_glyph": "0x37",
+          "font_glyph_char": "7",
+          "type": "font_glyph"
+        },
+        "(": {
+          "font_glyph": "0x39",
+          "font_glyph_char": "9",
+          "type": "font_glyph"
+        },
+        ")": {
+          "font_glyph": "0x30",
+          "font_glyph_char": "0",
+          "type": "font_glyph"
+        },
+        "*": {
+          "font_glyph": "0x38",
+          "font_glyph_char": "8",
+          "type": "font_glyph"
+        },
+        "+": {
+          "font_glyph": "0x28",
+          "font_glyph_char": "(",
+          "type": "font_glyph"
+        },
+        ",": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "-": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        ".": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "/": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "0": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "1": {
+          "iscii": "0xB7",
+          "iscii_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "2": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "3": {
+          "iscii": "0xC5",
+          "iscii_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "4": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "5": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "6": {
+          "iscii": "0xC3",
+          "iscii_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "7": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "8": {
+          "iscii": "0xBE",
+          "iscii_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "9": {
+          "iscii": "0xC0",
+          "iscii_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        ":": {
+          "iscii": "0xA9",
+          "iscii_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        ";": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "=": {
+          "font_glyph": "0x29",
+          "font_glyph_char": ")",
+          "type": "font_glyph"
+        },
+        ">": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "?": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "@": {
+          "font_glyph": "0x32",
+          "font_glyph_char": "2",
+          "type": "font_glyph"
+        },
+        "A": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "C": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "D": {
+          "font_glyph": "0x27",
+          "font_glyph_char": "'",
+          "type": "font_glyph"
+        },
+        "E": {
+          "font_glyph": "0x3A",
+          "font_glyph_char": ":",
+          "type": "font_glyph"
+        },
+        "F": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "G": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "H": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        "J": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        "K": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "L": {
+          "iscii": "0xA7",
+          "iscii_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "N": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "O": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "P": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "Q": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "S": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        "T": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "U": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "W": {
+          "font_glyph": "0x3B",
+          "font_glyph_char": ";",
+          "type": "font_glyph"
+        },
+        "X": {
+          "iscii": "0xAD",
+          "iscii_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "Y": {
+          "iscii": "0x83",
+          "type": "special_code"
+        },
+        "Z": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "[": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "\\": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "]": {
+          "font_glyph": "0x2C",
+          "font_glyph_char": ",",
+          "type": "font_glyph"
+        },
+        "^": {
+          "font_glyph": "0x36",
+          "font_glyph_char": "6",
+          "type": "font_glyph"
+        },
+        "_": {
+          "font_glyph": "0x2D",
+          "font_glyph_char": "-",
+          "type": "font_glyph"
+        },
+        "`": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "a": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "b": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "c": {
+          "iscii": "0xBC",
+          "iscii_name": "nya",
+          "unicode": "ଞ",
+          "unicode_hex": "U+0B1E"
+        },
+        "d": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "f": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "g": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "h": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "i": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "j": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "k": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "l": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "m": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "n": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "o": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "p": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "q": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "r": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "s": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "t": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "u": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "v": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "w": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "x": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "y": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "z": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "{": {
+          "font_glyph": "0x2D",
+          "font_glyph_char": "-",
+          "type": "font_glyph"
+        },
+        "|": {
+          "iscii": "0x8B",
+          "type": "special_code"
+        },
+        "}": {
+          "font_glyph": "0x2F",
+          "font_glyph_char": "/",
+          "type": "font_glyph"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCE"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ra"
+          ],
+          "unicode": "ୈର"
+        },
+        {
+          "iscii_bytes": [
+            "0xD5",
+            "0xE8",
+            "0xCF",
+            "0xDC"
+          ],
+          "iscii_names": [
+            "sa",
+            "ai_matra",
+            "la",
+            "DC"
+          ],
+          "unicode": "ସୈଲ[0xDC]"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra"
+          ],
+          "unicode": "ତୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xEA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "short_o_matra",
+            "candra_e_matra"
+          ],
+          "unicode": "୊୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCF"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "la"
+          ],
+          "unicode": "ୈଲ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xC4"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "da"
+          ],
+          "unicode": "ୈଦ"
+        },
+        {
+          "iscii_bytes": [
+            "0xAA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "vocalic_r",
+            "candra_e_matra"
+          ],
+          "unicode": "ଋ୅"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 50,
+        "glyph": 21,
+        "passthrough": 1,
+        "unmapped": 9,
+        "special": 15
+      },
+      "normal_stats": {
+        "iscii": 9,
+        "glyph": 74,
+        "passthrough": 3,
+        "unmapped": 9,
+        "special": 1,
+        "resolved_glyphs": 42,
+        "unresolved_glyphs": 32
+      }
+    },
+    "DOE": {
+      "file": "DOE.ORI",
+      "normal": {
+        "\"": {
+          "font_glyph": "0x49",
+          "font_glyph_char": "I",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBE",
+          "resolved_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "#": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "$": {
+          "font_glyph": "0x40",
+          "font_glyph_char": "@",
+          "type": "font_glyph"
+        },
+        "%": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "&": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "'": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "*": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "+": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "/": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        ":": {
+          "font_glyph": "0x56",
+          "font_glyph_char": "V",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB9",
+          "resolved_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        ";": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "<": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "=": {
+          "font_glyph": "0x51",
+          "font_glyph_char": "Q",
+          "type": "font_glyph"
+        },
+        ">": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "?": {
+          "font_glyph": "0x75",
+          "font_glyph_char": "u",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCE",
+          "resolved_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "@": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "A": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "C": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "D": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "E": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "F": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "G": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "H": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "I": {
+          "font_glyph": "0x58",
+          "font_glyph_char": "X",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB6",
+          "resolved_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "K": {
+          "font_glyph": "0x53",
+          "font_glyph_char": "S",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB4",
+          "resolved_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "font_glyph": "0x46",
+          "font_glyph_char": "F",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC3",
+          "resolved_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "M": {
+          "font_glyph": "0x4B",
+          "font_glyph_char": "K",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD5",
+          "resolved_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "N": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "O": {
+          "font_glyph": "0x52",
+          "font_glyph_char": "R",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC5",
+          "resolved_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "P": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "Q": {
+          "font_glyph": "0x59",
+          "font_glyph_char": "Y",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB1",
+          "resolved_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "R": {
+          "font_glyph": "0x48",
+          "font_glyph_char": "H",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA7",
+          "resolved_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "S": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "T": {
+          "font_glyph": "0x4E",
+          "font_glyph_char": "N",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA9",
+          "resolved_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "U": {
+          "font_glyph": "0x5A",
+          "font_glyph_char": "Z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB7",
+          "resolved_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "W": {
+          "font_glyph": "0x3E",
+          "font_glyph_char": ">",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAD",
+          "resolved_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "X": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "Y": {
+          "font_glyph": "0x7A",
+          "font_glyph_char": "z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCB",
+          "resolved_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "Z": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "[": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "\\": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        "^": {
+          "iscii": "0xB2",
+          "iscii_name": "candra_o",
+          "unicode": "଑",
+          "unicode_hex": "U+0B11"
+        },
+        "_": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "b": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "c": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "e": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "f": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "g": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "h": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "i": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "m": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "n": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "o": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "p": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "r": {
+          "font_glyph": "0x68",
+          "font_glyph_char": "h",
+          "type": "font_glyph"
+        },
+        "s": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "t": {
+          "font_glyph": "0x6E",
+          "font_glyph_char": "n",
+          "type": "font_glyph"
+        },
+        "u": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "v": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "x": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "y": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "{": {
+          "font_glyph": "0x50",
+          "font_glyph_char": "P",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC0",
+          "resolved_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "|": {
+          "font_glyph": "0x44",
+          "font_glyph_char": "D",
+          "type": "font_glyph"
+        },
+        "}": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "iscii": "0xBE",
+          "iscii_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "#": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "$": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "%": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "&": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "'": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "*": {
+          "iscii": "0x8B",
+          "type": "special_code"
+        },
+        "+": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "/": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        ":": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        ";": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "<": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "=": {
+          "iscii": "0x8C",
+          "type": "special_code"
+        },
+        ">": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "?": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "@": {
+          "iscii": "0x8D",
+          "type": "special_code"
+        },
+        "A": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "C": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "D": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "E": {
+          "iscii": "0xA5",
+          "iscii_name": "aa",
+          "unicode": "ଆ",
+          "unicode_hex": "U+0B06"
+        },
+        "F": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "G": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "H": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "I": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "K": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "iscii": "0xC3",
+          "iscii_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "M": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "N": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "O": {
+          "iscii": "0xC5",
+          "iscii_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "P": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "Q": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "R": {
+          "iscii": "0xA7",
+          "iscii_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "S": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "T": {
+          "iscii": "0xA9",
+          "iscii_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "U": {
+          "iscii": "0xB7",
+          "iscii_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "W": {
+          "iscii": "0xAD",
+          "iscii_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "X": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        "Y": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "Z": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "[": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "\\": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        "^": {
+          "iscii": "0x8E",
+          "type": "special_code"
+        },
+        "_": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "b": {
+          "iscii": "0x8F",
+          "type": "special_code"
+        },
+        "c": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "d": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "e": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "f": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "g": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "h": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "i": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "j": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "m": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "n": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "o": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "p": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "r": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "s": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "t": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "u": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "v": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "x": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "y": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "{": {
+          "iscii": "0xC0",
+          "iscii_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "|": {
+          "iscii": "0x90",
+          "type": "special_code"
+        },
+        "}": {
+          "iscii": "0xBC",
+          "iscii_name": "nya",
+          "unicode": "ଞ",
+          "unicode_hex": "U+0B1E"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xB3",
+            "0xE8",
+            "0xD6"
+          ],
+          "iscii_names": [
+            "ka",
+            "ai_matra",
+            "ha"
+          ],
+          "unicode": "କୈହ"
+        },
+        {
+          "iscii_bytes": [
+            "0xD5",
+            "0xE8",
+            "0xCF"
+          ],
+          "iscii_names": [
+            "sa",
+            "ai_matra",
+            "la"
+          ],
+          "unicode": "ସୈଲ"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra"
+          ],
+          "unicode": "ତୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xC0",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "ddha",
+            "candra_e_matra"
+          ],
+          "unicode": "ଢ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8",
+            "0xCF"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra",
+            "la"
+          ],
+          "unicode": "ତୈଲ"
+        },
+        {
+          "iscii_bytes": [
+            "0xB0",
+            "0xE8",
+            "0xCA"
+          ],
+          "iscii_names": [
+            "o",
+            "ai_matra",
+            "ba"
+          ],
+          "unicode": "ଓୈବ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ai_matra"
+          ],
+          "unicode": "ୈୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xC4"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "da"
+          ],
+          "unicode": "ୈଦ"
+        },
+        {
+          "iscii_bytes": [
+            "0xAA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "vocalic_r",
+            "candra_e_matra"
+          ],
+          "unicode": "ଋ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCD"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ya"
+          ],
+          "unicode": "ୈଯ"
+        },
+        {
+          "iscii_bytes": [
+            "0xEA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "short_o_matra",
+            "candra_e_matra"
+          ],
+          "unicode": "୊୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xBF",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "dda",
+            "candra_e_matra"
+          ],
+          "unicode": "ଡ୅"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 51,
+        "glyph": 0,
+        "passthrough": 17,
+        "unmapped": 11,
+        "special": 17
+      },
+      "normal_stats": {
+        "iscii": 12,
+        "glyph": 53,
+        "passthrough": 19,
+        "unmapped": 11,
+        "special": 1,
+        "resolved_glyphs": 43,
+        "unresolved_glyphs": 10
+      }
+    },
+    "ENG": {
+      "file": "ENG.ORI",
+      "normal": {
+        "#": {
+          "font_glyph": "0x7E",
+          "font_glyph_char": "~",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE9",
+          "resolved_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "$": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "&": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "<": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        ">": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "@": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "A": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "D": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "F": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "G": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "H": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "I": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "J": {
+          "font_glyph": "0x75",
+          "font_glyph_char": "u",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCE",
+          "resolved_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "L": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "Q": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "R": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        "S": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "T": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "V": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "W": {
+          "iscii": "0xE3",
+          "iscii_name": "u_matra",
+          "unicode": "ୁ",
+          "unicode_hex": "U+0B41"
+        },
+        "X": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "Y": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "Z": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "_": {
+          "iscii": "0xEE",
+          "iscii_name": "iscii_EE",
+          "type": "extended_iscii"
+        },
+        "`": {
+          "iscii": "0xFE",
+          "iscii_name": "iscii_FE",
+          "type": "extended_iscii"
+        },
+        "a": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "j": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "p": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "r": {
+          "font_glyph": "0x6A",
+          "font_glyph_char": "j",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCF",
+          "resolved_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "t": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "v": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "w": {
+          "font_glyph": "0x5F",
+          "font_glyph_char": "_",
+          "type": "font_glyph"
+        },
+        "x": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "y": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "z": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "~": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        "#": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "$": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "&": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "<": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        ">": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "@": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "A": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "D": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "F": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "G": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "H": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "I": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "J": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "L": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "Q": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "R": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        "S": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "T": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "V": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "W": {
+          "iscii": "0x83",
+          "type": "special_code"
+        },
+        "X": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "Y": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "Z": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "_": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "a": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "j": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "p": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "r": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "t": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "v": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "w": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "x": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "y": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        "z": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "~": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xB3",
+            "0xE8",
+            "0xD6"
+          ],
+          "iscii_names": [
+            "ka",
+            "ai_matra",
+            "ha"
+          ],
+          "unicode": "କୈହ"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra"
+          ],
+          "unicode": "ତୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ai_matra"
+          ],
+          "unicode": "ୈୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xBF",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "dda",
+            "candra_e_matra"
+          ],
+          "unicode": "ଡ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xC4"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "da"
+          ],
+          "unicode": "ୈଦ"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 39,
+        "glyph": 3,
+        "passthrough": 26,
+        "unmapped": 12,
+        "special": 16
+      },
+      "normal_stats": {
+        "iscii": 15,
+        "glyph": 40,
+        "passthrough": 27,
+        "unmapped": 11,
+        "special": 3,
+        "resolved_glyphs": 32,
+        "unresolved_glyphs": 8
+      }
+    },
+    "INSCRIPT": {
+      "file": "INSCRIPT.ORI",
+      "normal": {
+        "\"": {
+          "font_glyph": "0x49",
+          "font_glyph_char": "I",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBE",
+          "resolved_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "#": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "$": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "%": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "&": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "'": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "*": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "+": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "/": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        ":": {
+          "font_glyph": "0x56",
+          "font_glyph_char": "V",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB9",
+          "resolved_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        ";": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "<": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "=": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        ">": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "?": {
+          "font_glyph": "0x75",
+          "font_glyph_char": "u",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCE",
+          "resolved_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "@": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "A": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "B": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "C": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "D": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "E": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "F": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "G": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "H": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "I": {
+          "font_glyph": "0x58",
+          "font_glyph_char": "X",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB6",
+          "resolved_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "J": {
+          "font_glyph": "0x2A",
+          "font_glyph_char": "*",
+          "type": "font_glyph"
+        },
+        "K": {
+          "font_glyph": "0x53",
+          "font_glyph_char": "S",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB4",
+          "resolved_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "font_glyph": "0x46",
+          "font_glyph_char": "F",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC3",
+          "resolved_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "M": {
+          "font_glyph": "0x4B",
+          "font_glyph_char": "K",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD5",
+          "resolved_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "N": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "O": {
+          "font_glyph": "0x52",
+          "font_glyph_char": "R",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC5",
+          "resolved_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "P": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "Q": {
+          "font_glyph": "0x59",
+          "font_glyph_char": "Y",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB1",
+          "resolved_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "R": {
+          "font_glyph": "0x48",
+          "font_glyph_char": "H",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA7",
+          "resolved_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "S": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "T": {
+          "font_glyph": "0x4E",
+          "font_glyph_char": "N",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA9",
+          "resolved_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "U": {
+          "font_glyph": "0x5A",
+          "font_glyph_char": "Z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB7",
+          "resolved_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "V": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "W": {
+          "font_glyph": "0x3E",
+          "font_glyph_char": ">",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAD",
+          "resolved_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "X": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "Y": {
+          "font_glyph": "0x7A",
+          "font_glyph_char": "z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCB",
+          "resolved_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "Z": {
+          "font_glyph": "0x5F",
+          "font_glyph_char": "_",
+          "type": "font_glyph"
+        },
+        "[": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "\\": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        "]": {
+          "font_glyph": "0x7E",
+          "font_glyph_char": "~",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE9",
+          "resolved_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "^": {
+          "iscii": "0xB2",
+          "iscii_name": "candra_o",
+          "unicode": "଑",
+          "unicode_hex": "U+0B11"
+        },
+        "_": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "a": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "b": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "c": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "e": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "f": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "g": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "h": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "i": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "m": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "n": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "o": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "p": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "q": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "r": {
+          "font_glyph": "0x68",
+          "font_glyph_char": "h",
+          "type": "font_glyph"
+        },
+        "s": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "t": {
+          "font_glyph": "0x6E",
+          "font_glyph_char": "n",
+          "type": "font_glyph"
+        },
+        "u": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "v": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "w": {
+          "iscii": "0xE7",
+          "iscii_name": "e_matra",
+          "unicode": "େ",
+          "unicode_hex": "U+0B47"
+        },
+        "x": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "y": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "z": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "{": {
+          "font_glyph": "0x50",
+          "font_glyph_char": "P",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC0",
+          "resolved_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "|": {
+          "font_glyph": "0x44",
+          "font_glyph_char": "D",
+          "type": "font_glyph"
+        },
+        "}": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "iscii": "0xBE",
+          "iscii_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "#": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "$": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "%": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "&": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "'": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "*": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "+": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "/": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        ":": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        ";": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "<": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "=": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        ">": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "?": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "@": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "A": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "B": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "C": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "D": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "E": {
+          "iscii": "0xA5",
+          "iscii_name": "aa",
+          "unicode": "ଆ",
+          "unicode_hex": "U+0B06"
+        },
+        "F": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "G": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "H": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "I": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "J": {
+          "font_glyph": "0x2A",
+          "font_glyph_char": "*",
+          "type": "font_glyph"
+        },
+        "K": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "iscii": "0xC3",
+          "iscii_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "M": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "N": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "O": {
+          "iscii": "0xC5",
+          "iscii_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "P": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "Q": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "R": {
+          "iscii": "0xA7",
+          "iscii_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "S": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "T": {
+          "iscii": "0xA9",
+          "iscii_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "U": {
+          "iscii": "0xB7",
+          "iscii_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "V": {
+          "iscii": "0x82",
+          "type": "special_code"
+        },
+        "W": {
+          "iscii": "0xAD",
+          "iscii_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "X": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        "Y": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "Z": {
+          "iscii": "0x8B",
+          "type": "special_code"
+        },
+        "[": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "\\": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        "]": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "^": {
+          "iscii": "0x8C",
+          "type": "special_code"
+        },
+        "_": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "a": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "b": {
+          "iscii": "0x8D",
+          "type": "special_code"
+        },
+        "c": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "d": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "e": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "f": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "g": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "h": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "i": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "j": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "m": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "n": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "o": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "p": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "q": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "r": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "s": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "t": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "u": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "v": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "w": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "x": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "y": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "z": {
+          "font_glyph": "0x3A",
+          "font_glyph_char": ":",
+          "type": "font_glyph"
+        },
+        "{": {
+          "iscii": "0xC0",
+          "iscii_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "|": {
+          "iscii": "0x8E",
+          "type": "special_code"
+        },
+        "}": {
+          "iscii": "0xBC",
+          "iscii_name": "nya",
+          "unicode": "ଞ",
+          "unicode_hex": "U+0B1E"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xAA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "vocalic_r",
+            "candra_e_matra"
+          ],
+          "unicode": "ଋ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xEA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "short_o_matra",
+            "candra_e_matra"
+          ],
+          "unicode": "୊୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8",
+            "0xCF"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra",
+            "la"
+          ],
+          "unicode": "ତୈଲ"
+        },
+        {
+          "iscii_bytes": [
+            "0xB0",
+            "0xE8",
+            "0xCA"
+          ],
+          "iscii_names": [
+            "o",
+            "ai_matra",
+            "ba"
+          ],
+          "unicode": "ଓୈବ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ai_matra"
+          ],
+          "unicode": "ୈୈ"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 55,
+        "glyph": 2,
+        "passthrough": 17,
+        "unmapped": 3,
+        "special": 19
+      },
+      "normal_stats": {
+        "iscii": 18,
+        "glyph": 54,
+        "passthrough": 19,
+        "unmapped": 3,
+        "special": 2,
+        "resolved_glyphs": 44,
+        "unresolved_glyphs": 10
+      }
+    },
+    "NEWROMA": {
+      "file": "NEWROMA.ORI",
+      "normal": {
+        ";": {
+          "iscii": "0xA0",
+          "iscii_name": "iscii_A0",
+          "type": "extended_iscii"
+        },
+        "=": {
+          "font_glyph": "0x64",
+          "font_glyph_char": "d",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE8",
+          "resolved_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        ">": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "A": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x7A",
+          "font_glyph_char": "z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCB",
+          "resolved_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "C": {
+          "font_glyph": "0x56",
+          "font_glyph_char": "V",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB9",
+          "resolved_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "D": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "font_glyph": "0x70",
+          "font_glyph_char": "p",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE2",
+          "resolved_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "F": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "G": {
+          "font_glyph": "0x58",
+          "font_glyph_char": "X",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB6",
+          "resolved_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "H": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "I": {
+          "font_glyph": "0x68",
+          "font_glyph_char": "h",
+          "type": "font_glyph"
+        },
+        "J": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "K": {
+          "font_glyph": "0x53",
+          "font_glyph_char": "S",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB4",
+          "resolved_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "P": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "Q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "R": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "S": {
+          "font_glyph": "0x4B",
+          "font_glyph_char": "K",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD5",
+          "resolved_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "T": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "font_glyph": "0x6E",
+          "font_glyph_char": "n",
+          "type": "font_glyph"
+        },
+        "X": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "Y": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "Z": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "`": {
+          "iscii": "0xFE",
+          "iscii_name": "iscii_FE",
+          "type": "extended_iscii"
+        },
+        "a": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "j": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "p": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "r": {
+          "font_glyph": "0x6A",
+          "font_glyph_char": "j",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCF",
+          "resolved_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "t": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "w": {
+          "font_glyph": "0x5F",
+          "font_glyph_char": "_",
+          "type": "font_glyph"
+        },
+        "x": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "y": {
+          "font_glyph": "0x75",
+          "font_glyph_char": "u",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCE",
+          "resolved_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "z": {
+          "iscii": "0xE3",
+          "iscii_name": "u_matra",
+          "unicode": "ୁ",
+          "unicode_hex": "U+0B41"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        ";": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "=": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        ">": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "A": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "C": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "D": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "F": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "G": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "H": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "I": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "J": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "K": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "P": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "Q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "R": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "S": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "T": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "X": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "Y": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "Z": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "a": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "j": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "p": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "r": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "t": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "w": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "x": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "y": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "z": {
+          "iscii": "0x83",
+          "type": "special_code"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xBF",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "dda",
+            "candra_e_matra"
+          ],
+          "unicode": "ଡ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xC4"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "da"
+          ],
+          "unicode": "ୈଦ"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 37,
+        "glyph": 3,
+        "passthrough": 23,
+        "unmapped": 20,
+        "special": 13
+      },
+      "normal_stats": {
+        "iscii": 8,
+        "glyph": 43,
+        "passthrough": 24,
+        "unmapped": 19,
+        "special": 2,
+        "resolved_glyphs": 33,
+        "unresolved_glyphs": 10
+      }
+    },
+    "PHONETIC": {
+      "file": "PHONETIC.ORI",
+      "normal": {
+        "#": {
+          "font_glyph": "0x7E",
+          "font_glyph_char": "~",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE9",
+          "resolved_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "$": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "&": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "<": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        ">": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "@": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "A": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "D": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "F": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "G": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "H": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "I": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "J": {
+          "font_glyph": "0x75",
+          "font_glyph_char": "u",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCE",
+          "resolved_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "L": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "Q": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "R": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        "S": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "T": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "V": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "W": {
+          "iscii": "0xE3",
+          "iscii_name": "u_matra",
+          "unicode": "ୁ",
+          "unicode_hex": "U+0B41"
+        },
+        "X": {
+          "font_glyph": "0x41",
+          "font_glyph_char": "A",
+          "type": "font_glyph"
+        },
+        "Y": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "Z": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "_": {
+          "iscii": "0xEE",
+          "iscii_name": "iscii_EE",
+          "type": "extended_iscii"
+        },
+        "`": {
+          "iscii": "0xFE",
+          "iscii_name": "iscii_FE",
+          "type": "extended_iscii"
+        },
+        "a": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "j": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "p": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "r": {
+          "font_glyph": "0x6A",
+          "font_glyph_char": "j",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCF",
+          "resolved_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "t": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "v": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "w": {
+          "font_glyph": "0x5F",
+          "font_glyph_char": "_",
+          "type": "font_glyph"
+        },
+        "x": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "y": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "z": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "~": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        "#": {
+          "iscii": "0xE9",
+          "iscii_name": "candra_e_matra",
+          "unicode": "୅",
+          "unicode_hex": "U+0B45"
+        },
+        "$": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "&": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "<": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        ">": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "@": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "A": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "D": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "E": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "F": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "G": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "H": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "I": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "J": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "L": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "M": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "Q": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "R": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        "S": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "T": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "U": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "V": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "W": {
+          "iscii": "0x83",
+          "type": "special_code"
+        },
+        "X": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "Y": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "Z": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "_": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "a": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "g": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "j": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "m": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xE5",
+          "iscii_name": "vocalic_r_matra",
+          "unicode": "ୃ",
+          "unicode_hex": "U+0B43"
+        },
+        "p": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x26",
+          "font_glyph_char": "&",
+          "type": "font_glyph"
+        },
+        "r": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "t": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "v": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "w": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "x": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "y": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        "z": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "~": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xB3",
+            "0xE8",
+            "0xD6"
+          ],
+          "iscii_names": [
+            "ka",
+            "ai_matra",
+            "ha"
+          ],
+          "unicode": "କୈହ"
+        },
+        {
+          "iscii_bytes": [
+            "0xC2",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ta",
+            "ai_matra"
+          ],
+          "unicode": "ତୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xE8"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ai_matra"
+          ],
+          "unicode": "ୈୈ"
+        },
+        {
+          "iscii_bytes": [
+            "0xBF",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "dda",
+            "candra_e_matra"
+          ],
+          "unicode": "ଡ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xC4"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "da"
+          ],
+          "unicode": "ୈଦ"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 39,
+        "glyph": 3,
+        "passthrough": 26,
+        "unmapped": 12,
+        "special": 16
+      },
+      "normal_stats": {
+        "iscii": 15,
+        "glyph": 40,
+        "passthrough": 27,
+        "unmapped": 11,
+        "special": 3,
+        "resolved_glyphs": 32,
+        "unresolved_glyphs": 8
+      }
+    },
+    "ROMA": {
+      "file": "ROMA.ORI",
+      "normal": {
+        "&": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        ",": {
+          "font_glyph": "0x47",
+          "font_glyph_char": "G",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA6",
+          "resolved_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        ".": {
+          "font_glyph": "0x48",
+          "font_glyph_char": "H",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA7",
+          "resolved_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "<": {
+          "font_glyph": "0x2C",
+          "font_glyph_char": ",",
+          "type": "font_glyph"
+        },
+        ">": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "A": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "font_glyph": "0x7A",
+          "font_glyph_char": "z",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCB",
+          "resolved_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "C": {
+          "font_glyph": "0x56",
+          "font_glyph_char": "V",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB9",
+          "resolved_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "D": {
+          "font_glyph": "0x52",
+          "font_glyph_char": "R",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC5",
+          "resolved_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "E": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "F": {
+          "font_glyph": "0x44",
+          "font_glyph_char": "D",
+          "type": "font_glyph"
+        },
+        "G": {
+          "font_glyph": "0x58",
+          "font_glyph_char": "X",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB6",
+          "resolved_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "H": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        },
+        "I": {
+          "font_glyph": "0x68",
+          "font_glyph_char": "h",
+          "type": "font_glyph"
+        },
+        "J": {
+          "font_glyph": "0x43",
+          "font_glyph_char": "C",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBB",
+          "resolved_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "K": {
+          "font_glyph": "0x53",
+          "font_glyph_char": "S",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB4",
+          "resolved_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "font_glyph": "0x4D",
+          "font_glyph_char": "M",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD2",
+          "resolved_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "M": {
+          "font_glyph": "0x69",
+          "font_glyph_char": "i",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA2",
+          "resolved_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "font_glyph": "0x4A",
+          "font_glyph_char": "J",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC1",
+          "resolved_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "P": {
+          "font_glyph": "0x57",
+          "font_glyph_char": "W",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC9",
+          "resolved_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "Q": {
+          "font_glyph": "0x49",
+          "font_glyph_char": "I",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBE",
+          "resolved_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "R": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "S": {
+          "font_glyph": "0x4B",
+          "font_glyph_char": "K",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD5",
+          "resolved_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "T": {
+          "font_glyph": "0x46",
+          "font_glyph_char": "F",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC3",
+          "resolved_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "U": {
+          "font_glyph": "0x6E",
+          "font_glyph_char": "n",
+          "type": "font_glyph"
+        },
+        "V": {
+          "iscii": "0xB2",
+          "iscii_name": "candra_o",
+          "unicode": "଑",
+          "unicode_hex": "U+0B11"
+        },
+        "W": {
+          "font_glyph": "0x50",
+          "font_glyph_char": "P",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC0",
+          "resolved_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "X": {
+          "font_glyph": "0x5E",
+          "font_glyph_char": "^",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAA",
+          "resolved_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "Y": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "Z": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "[": {
+          "font_glyph": "0x42",
+          "font_glyph_char": "B",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA8",
+          "resolved_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "\\": {
+          "font_glyph": "0x54",
+          "font_glyph_char": "T",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB0",
+          "resolved_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "`": {
+          "font_glyph": "0x70",
+          "font_glyph_char": "p",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE2",
+          "resolved_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "a": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "font_glyph": "0x71",
+          "font_glyph_char": "q",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCA",
+          "resolved_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "font_glyph": "0x76",
+          "font_glyph_char": "v",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB8",
+          "resolved_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "font_glyph": "0x72",
+          "font_glyph_char": "r",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC4",
+          "resolved_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "font_glyph": "0x6C",
+          "font_glyph_char": "l",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE1",
+          "resolved_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "font_glyph": "0x64",
+          "font_glyph_char": "d",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xE8",
+          "resolved_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "g": {
+          "font_glyph": "0x78",
+          "font_glyph_char": "x",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB5",
+          "resolved_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "font_glyph": "0x6F",
+          "font_glyph_char": "o",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD8",
+          "resolved_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "font_glyph": "0x67",
+          "font_glyph_char": "g",
+          "type": "font_glyph"
+        },
+        "j": {
+          "font_glyph": "0x63",
+          "font_glyph_char": "c",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBA",
+          "resolved_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "font_glyph": "0x73",
+          "font_glyph_char": "s",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB3",
+          "resolved_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "font_glyph": "0x6D",
+          "font_glyph_char": "m",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD1",
+          "resolved_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "m": {
+          "font_glyph": "0x61",
+          "font_glyph_char": "a",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCC",
+          "resolved_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "font_glyph": "0x65",
+          "font_glyph_char": "e",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC6",
+          "resolved_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "p": {
+          "font_glyph": "0x77",
+          "font_glyph_char": "w",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC8",
+          "resolved_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "font_glyph": "0x55",
+          "font_glyph_char": "U",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBD",
+          "resolved_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "r": {
+          "font_glyph": "0x6A",
+          "font_glyph_char": "j",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xCF",
+          "resolved_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "font_glyph": "0x74",
+          "font_glyph_char": "t",
+          "type": "font_glyph"
+        },
+        "t": {
+          "font_glyph": "0x66",
+          "font_glyph_char": "f",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xC2",
+          "resolved_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "font_glyph": "0x62",
+          "font_glyph_char": "b",
+          "type": "font_glyph"
+        },
+        "w": {
+          "font_glyph": "0x4F",
+          "font_glyph_char": "O",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xBF",
+          "resolved_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "x": {
+          "font_glyph": "0x4C",
+          "font_glyph_char": "L",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xD6",
+          "resolved_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "y": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "z": {
+          "font_glyph": "0x3C",
+          "font_glyph_char": "<",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xAC",
+          "resolved_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "{": {
+          "font_glyph": "0x4E",
+          "font_glyph_char": "N",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA9",
+          "resolved_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "|": {
+          "font_glyph": "0x59",
+          "font_glyph_char": "Y",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xB1",
+          "resolved_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "~": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        }
+      },
+      "shifted": {
+        "\"": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        "&": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        ",": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        ".": {
+          "iscii": "0xA7",
+          "iscii_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "<": {
+          "font_glyph": "0x2C",
+          "font_glyph_char": ",",
+          "type": "font_glyph"
+        },
+        ">": {
+          "font_glyph": "0x2E",
+          "font_glyph_char": ".",
+          "type": "font_glyph"
+        },
+        "A": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "B": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "C": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "D": {
+          "iscii": "0xC5",
+          "iscii_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "E": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "F": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "G": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "H": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        },
+        "I": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "J": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "K": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "L": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "M": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "N": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "O": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "P": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "Q": {
+          "iscii": "0xBE",
+          "iscii_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "R": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "S": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "T": {
+          "iscii": "0xC3",
+          "iscii_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "U": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "V": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "W": {
+          "iscii": "0xC0",
+          "iscii_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "X": {
+          "iscii": "0xAA",
+          "iscii_name": "vocalic_r",
+          "unicode": "ଋ",
+          "unicode_hex": "U+0B0B"
+        },
+        "Y": {
+          "iscii": "0xAD",
+          "iscii_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "Z": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "[": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "\\": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "`": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "a": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "b": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "c": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "d": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "e": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "f": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "g": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "h": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "i": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "j": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "k": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "l": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "m": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "n": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "o": {
+          "iscii": "0x00",
+          "iscii_name": "iscii_00",
+          "type": "extended_iscii"
+        },
+        "p": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "q": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "r": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "s": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "t": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "u": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "w": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "x": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "y": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        "z": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        "{": {
+          "iscii": "0xA9",
+          "iscii_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "|": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "~": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCE"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ra"
+          ],
+          "unicode": "ୈର"
+        },
+        {
+          "iscii_bytes": [
+            "0xEA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "short_o_matra",
+            "candra_e_matra"
+          ],
+          "unicode": "୊୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xBF",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "dda",
+            "candra_e_matra"
+          ],
+          "unicode": "ଡ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xB3",
+            "0xE8",
+            "0xD6"
+          ],
+          "iscii_names": [
+            "ka",
+            "ai_matra",
+            "ha"
+          ],
+          "unicode": "କୈହ"
+        },
+        {
+          "iscii_bytes": [
+            "0xAA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "vocalic_r",
+            "candra_e_matra"
+          ],
+          "unicode": "ଋ୅"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 49,
+        "glyph": 3,
+        "passthrough": 24,
+        "unmapped": 9,
+        "special": 11
+      },
+      "normal_stats": {
+        "iscii": 8,
+        "glyph": 53,
+        "passthrough": 25,
+        "unmapped": 9,
+        "special": 1,
+        "resolved_glyphs": 45,
+        "unresolved_glyphs": 8
+      }
+    },
+    "TYPEWRIT": {
+      "file": "TYPEWRIT.ORI",
+      "normal": {
+        "!": {
+          "iscii": "0xD3",
+          "iscii_name": "sha",
+          "unicode": "ଶ",
+          "unicode_hex": "U+0B36"
+        },
+        "\"": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "#": {
+          "font_glyph": "0x27",
+          "font_glyph_char": "'",
+          "type": "font_glyph"
+        },
+        "$": {
+          "font_glyph": "0x5C",
+          "font_glyph_char": "\\",
+          "type": "font_glyph"
+        },
+        "&": {
+          "iscii": "0xF5",
+          "iscii_name": "digit_5",
+          "unicode": "୫",
+          "unicode_hex": "U+0B6B"
+        },
+        "'": {
+          "font_glyph": "0x40",
+          "font_glyph_char": "@",
+          "type": "font_glyph"
+        },
+        "@": {
+          "font_glyph": "0x22",
+          "font_glyph_char": "\"",
+          "type": "font_glyph"
+        },
+        "[": {
+          "font_glyph": "0x24",
+          "font_glyph_char": "$",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xA4",
+          "resolved_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "\\": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "]": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "^": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "`": {
+          "font_glyph": "0x6B",
+          "font_glyph_char": "k",
+          "type": "resolved_glyph",
+          "resolved_iscii": "0xDA",
+          "resolved_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "{": {
+          "iscii": "0xD0",
+          "iscii_name": "lla",
+          "unicode": "ଳ",
+          "unicode_hex": "U+0B33"
+        },
+        "|": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "}": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "~": {
+          "iscii": "0xD4",
+          "iscii_name": "ssa",
+          "unicode": "ଷ",
+          "unicode_hex": "U+0B37"
+        }
+      },
+      "shifted": {
+        "!": {
+          "iscii": "0xEA",
+          "iscii_name": "short_o_matra",
+          "unicode": "୊",
+          "unicode_hex": "U+0B4A"
+        },
+        "\"": {
+          "iscii": "0xA1",
+          "iscii_name": "chandrabindu",
+          "unicode": "ଁ",
+          "unicode_hex": "U+0B01"
+        },
+        "#": {
+          "font_glyph": "0x27",
+          "font_glyph_char": "'",
+          "type": "font_glyph"
+        },
+        "$": {
+          "iscii": "0x84",
+          "type": "special_code"
+        },
+        "'": {
+          "iscii": "0x85",
+          "type": "special_code"
+        },
+        "<": {
+          "iscii": "0xAC",
+          "iscii_name": "e",
+          "unicode": "ଏ",
+          "unicode_hex": "U+0B0F"
+        },
+        ">": {
+          "iscii": "0xAD",
+          "iscii_name": "ai",
+          "unicode": "ଐ",
+          "unicode_hex": "U+0B10"
+        },
+        "@": {
+          "font_glyph": "0x60",
+          "font_glyph_char": "`",
+          "type": "font_glyph"
+        },
+        "A": {
+          "iscii": "0x86",
+          "type": "special_code"
+        },
+        "B": {
+          "iscii": "0xA8",
+          "iscii_name": "u",
+          "unicode": "ଉ",
+          "unicode_hex": "U+0B09"
+        },
+        "C": {
+          "iscii": "0xBB",
+          "iscii_name": "jha",
+          "unicode": "ଝ",
+          "unicode_hex": "U+0B1D"
+        },
+        "D": {
+          "iscii": "0x87",
+          "type": "special_code"
+        },
+        "E": {
+          "iscii": "0x88",
+          "type": "special_code"
+        },
+        "F": {
+          "iscii": "0xC3",
+          "iscii_name": "tha",
+          "unicode": "ଥ",
+          "unicode_hex": "U+0B25"
+        },
+        "G": {
+          "iscii": "0xA6",
+          "iscii_name": "i",
+          "unicode": "ଇ",
+          "unicode_hex": "U+0B07"
+        },
+        "H": {
+          "iscii": "0xA7",
+          "iscii_name": "ii",
+          "unicode": "ଈ",
+          "unicode_hex": "U+0B08"
+        },
+        "I": {
+          "iscii": "0xBE",
+          "iscii_name": "ttha",
+          "unicode": "ଠ",
+          "unicode_hex": "U+0B20"
+        },
+        "J": {
+          "iscii": "0xC1",
+          "iscii_name": "nna",
+          "unicode": "ଣ",
+          "unicode_hex": "U+0B23"
+        },
+        "K": {
+          "iscii": "0xD5",
+          "iscii_name": "sa",
+          "unicode": "ସ",
+          "unicode_hex": "U+0B38"
+        },
+        "L": {
+          "iscii": "0xD6",
+          "iscii_name": "ha",
+          "unicode": "ହ",
+          "unicode_hex": "U+0B39"
+        },
+        "M": {
+          "iscii": "0xD2",
+          "iscii_name": "va",
+          "unicode": "ଵ",
+          "unicode_hex": "U+0B35"
+        },
+        "N": {
+          "iscii": "0xA9",
+          "iscii_name": "uu",
+          "unicode": "ଊ",
+          "unicode_hex": "U+0B0A"
+        },
+        "O": {
+          "iscii": "0xBF",
+          "iscii_name": "dda",
+          "unicode": "ଡ",
+          "unicode_hex": "U+0B21"
+        },
+        "P": {
+          "iscii": "0xC0",
+          "iscii_name": "ddha",
+          "unicode": "ଢ",
+          "unicode_hex": "U+0B22"
+        },
+        "Q": {
+          "iscii": "0x89",
+          "type": "special_code"
+        },
+        "R": {
+          "iscii": "0xC5",
+          "iscii_name": "dha",
+          "unicode": "ଧ",
+          "unicode_hex": "U+0B27"
+        },
+        "S": {
+          "iscii": "0xB4",
+          "iscii_name": "kha",
+          "unicode": "ଖ",
+          "unicode_hex": "U+0B16"
+        },
+        "T": {
+          "iscii": "0xB0",
+          "iscii_name": "o",
+          "unicode": "ଓ",
+          "unicode_hex": "U+0B13"
+        },
+        "U": {
+          "iscii": "0xBD",
+          "iscii_name": "tta",
+          "unicode": "ଟ",
+          "unicode_hex": "U+0B1F"
+        },
+        "V": {
+          "iscii": "0xB9",
+          "iscii_name": "chha",
+          "unicode": "ଛ",
+          "unicode_hex": "U+0B1B"
+        },
+        "W": {
+          "iscii": "0xC9",
+          "iscii_name": "pha",
+          "unicode": "ଫ",
+          "unicode_hex": "U+0B2B"
+        },
+        "X": {
+          "iscii": "0xB6",
+          "iscii_name": "gha",
+          "unicode": "ଘ",
+          "unicode_hex": "U+0B18"
+        },
+        "Y": {
+          "iscii": "0xB1",
+          "iscii_name": "au",
+          "unicode": "ଔ",
+          "unicode_hex": "U+0B14"
+        },
+        "Z": {
+          "iscii": "0xB7",
+          "iscii_name": "nga",
+          "unicode": "ଙ",
+          "unicode_hex": "U+0B19"
+        },
+        "[": {
+          "iscii": "0xA4",
+          "iscii_name": "a",
+          "unicode": "ଅ",
+          "unicode_hex": "U+0B05"
+        },
+        "\\": {
+          "iscii": "0xCD",
+          "iscii_name": "ya",
+          "unicode": "ଯ",
+          "unicode_hex": "U+0B2F"
+        },
+        "]": {
+          "iscii": "0x8A",
+          "type": "special_code"
+        },
+        "^": {
+          "iscii": "0x8B",
+          "type": "special_code"
+        },
+        "_": {
+          "iscii": "0x8C",
+          "type": "special_code"
+        },
+        "`": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "a": {
+          "iscii": "0xCC",
+          "iscii_name": "ma",
+          "unicode": "ମ",
+          "unicode_hex": "U+0B2E"
+        },
+        "b": {
+          "iscii": "0xDD",
+          "iscii_name": "DD",
+          "type": "extended_iscii"
+        },
+        "c": {
+          "iscii": "0xBA",
+          "iscii_name": "ja",
+          "unicode": "ଜ",
+          "unicode_hex": "U+0B1C"
+        },
+        "d": {
+          "iscii": "0xE8",
+          "iscii_name": "ai_matra",
+          "unicode": "ୈ",
+          "unicode_hex": "U+0B48"
+        },
+        "e": {
+          "iscii": "0xC6",
+          "iscii_name": "na",
+          "unicode": "ନ",
+          "unicode_hex": "U+0B28"
+        },
+        "f": {
+          "iscii": "0xC2",
+          "iscii_name": "ta",
+          "unicode": "ତ",
+          "unicode_hex": "U+0B24"
+        },
+        "g": {
+          "iscii": "0xDB",
+          "iscii_name": "ext",
+          "type": "extended_iscii"
+        },
+        "h": {
+          "iscii": "0xDC",
+          "iscii_name": "DC",
+          "type": "extended_iscii"
+        },
+        "i": {
+          "iscii": "0xA2",
+          "iscii_name": "anusvara",
+          "unicode": "ଂ",
+          "unicode_hex": "U+0B02"
+        },
+        "j": {
+          "iscii": "0xCF",
+          "iscii_name": "la",
+          "unicode": "ଲ",
+          "unicode_hex": "U+0B32"
+        },
+        "k": {
+          "iscii": "0xDA",
+          "iscii_name": "avagraha",
+          "unicode": "ଽ",
+          "unicode_hex": "U+0B3D"
+        },
+        "l": {
+          "iscii": "0xE1",
+          "iscii_name": "i_matra",
+          "unicode": "ି",
+          "unicode_hex": "U+0B3F"
+        },
+        "m": {
+          "iscii": "0xD1",
+          "iscii_name": "llla",
+          "unicode": "଴",
+          "unicode_hex": "U+0B34"
+        },
+        "n": {
+          "iscii": "0xDE",
+          "iscii_name": "DE",
+          "type": "extended_iscii"
+        },
+        "o": {
+          "iscii": "0xD8",
+          "iscii_name": "halant",
+          "unicode": "୍",
+          "unicode_hex": "U+0B4D"
+        },
+        "p": {
+          "iscii": "0xE2",
+          "iscii_name": "ii_matra",
+          "unicode": "ୀ",
+          "unicode_hex": "U+0B40"
+        },
+        "q": {
+          "iscii": "0xCA",
+          "iscii_name": "ba",
+          "unicode": "ବ",
+          "unicode_hex": "U+0B2C"
+        },
+        "r": {
+          "iscii": "0xC4",
+          "iscii_name": "da",
+          "unicode": "ଦ",
+          "unicode_hex": "U+0B26"
+        },
+        "s": {
+          "iscii": "0xB3",
+          "iscii_name": "ka",
+          "unicode": "କ",
+          "unicode_hex": "U+0B15"
+        },
+        "t": {
+          "iscii": "0xD7",
+          "iscii_name": "reserved",
+          "type": "extended_iscii"
+        },
+        "u": {
+          "iscii": "0xCE",
+          "iscii_name": "ra",
+          "unicode": "ର",
+          "unicode_hex": "U+0B30"
+        },
+        "v": {
+          "iscii": "0xB8",
+          "iscii_name": "cha",
+          "unicode": "ଚ",
+          "unicode_hex": "U+0B1A"
+        },
+        "w": {
+          "iscii": "0xC8",
+          "iscii_name": "pa",
+          "unicode": "ପ",
+          "unicode_hex": "U+0B2A"
+        },
+        "x": {
+          "iscii": "0xB5",
+          "iscii_name": "ga",
+          "unicode": "ଗ",
+          "unicode_hex": "U+0B17"
+        },
+        "y": {
+          "iscii": "0xE6",
+          "iscii_name": "short_e_matra",
+          "unicode": "୆",
+          "unicode_hex": "U+0B46"
+        },
+        "z": {
+          "iscii": "0xCB",
+          "iscii_name": "bha",
+          "unicode": "ଭ",
+          "unicode_hex": "U+0B2D"
+        },
+        "{": {
+          "iscii": "0xDF",
+          "iscii_name": "DF",
+          "type": "extended_iscii"
+        },
+        "|": {
+          "iscii": "0xBC",
+          "iscii_name": "nya",
+          "unicode": "ଞ",
+          "unicode_hex": "U+0B1E"
+        },
+        "}": {
+          "iscii": "0x8D",
+          "type": "special_code"
+        },
+        "~": {
+          "iscii": "0xA3",
+          "iscii_name": "visarga",
+          "unicode": "ଃ",
+          "unicode_hex": "U+0B03"
+        }
+      },
+      "compose_sequences": [
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCF"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "la"
+          ],
+          "unicode": "ୈଲ"
+        },
+        {
+          "iscii_bytes": [
+            "0xAA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "vocalic_r",
+            "candra_e_matra"
+          ],
+          "unicode": "ଋ୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xEA",
+            "0xE9"
+          ],
+          "iscii_names": [
+            "short_o_matra",
+            "candra_e_matra"
+          ],
+          "unicode": "୊୅"
+        },
+        {
+          "iscii_bytes": [
+            "0xE8",
+            "0xCD"
+          ],
+          "iscii_names": [
+            "ai_matra",
+            "ya"
+          ],
+          "unicode": "ୈଯ"
+        }
+      ],
+      "shifted_stats": {
+        "iscii": 52,
+        "glyph": 2,
+        "passthrough": 22,
+        "unmapped": 4,
+        "special": 16
+      },
+      "normal_stats": {
+        "iscii": 9,
+        "glyph": 6,
+        "passthrough": 76,
+        "unmapped": 4,
+        "special": 1,
+        "resolved_glyphs": 2,
+        "unresolved_glyphs": 4
+      }
+    }
+  }
+}
