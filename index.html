@@ -101,7 +101,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
   padding:20px 0;background:var(--s1)}
 .marquee{display:flex;gap:48px;animation:scroll 30s linear infinite;width:max-content}
 @keyframes scroll{to{transform:translateX(-50%)}}
-.marquee span{font-size:1.8rem;color:#1a1a1a;white-space:nowrap;font-weight:300}
+.marquee span{font-size:1.8rem;color:#2a2a2d;white-space:nowrap;font-weight:300}
 
 /* ---- SECTIONS ---- */
 section{padding:120px 40px}
@@ -173,7 +173,17 @@ section{padding:120px 40px}
 
 footer{border-top:1px solid var(--border);padding:32px 40px;text-align:center}
 footer p{font-size:.72rem;color:#333}
-footer a{color:#444}
+footer a{color:#444;transition:color .2s}
+footer a:hover{color:var(--orange)}
+
+/* Back to top */
+.btt{position:fixed;bottom:28px;right:28px;z-index:99;width:40px;height:40px;border-radius:10px;
+  background:var(--s2);border:1px solid var(--border);color:var(--dim2);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .3s,background .2s;transform:translateY(10px)}
+.btt.show{opacity:1;pointer-events:auto;transform:none}
+.btt:hover{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btt svg{width:18px;height:18px}
 
 /* Comparison */
 .comp{margin-top:56px}
@@ -181,7 +191,7 @@ footer a{color:#444}
 .comp-col{background:var(--s1);border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .comp-h{padding:16px 18px;border-bottom:1px solid var(--border);font-weight:700;letter-spacing:-.02em}
 .comp-h b{color:var(--orange)}
-.comp-r{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.comp-r{display:grid;grid-template-columns:1fr;gap:1px;background:var(--border)}
 .comp-i{padding:12px 14px;background:var(--bg);display:flex;justify-content:space-between;gap:12px;align-items:baseline}
 .comp-i .k{font-size:.75rem;color:var(--dim2)}
 .comp-i .v{font-size:.8rem;color:var(--text);font-weight:600}
@@ -380,6 +390,7 @@ footer a{color:#444}
       <div class="sci"><span class="k">Ctrl+9</span><span class="v">Odia</span></div>
       <div class="sci"><span class="k">Ctrl+0</span><span class="v">Punjabi</span></div>
       <div class="sci"><span class="k">Ctrl+-</span><span class="v">Assamese</span></div>
+      <div class="sci"><span class="k">Ctrl+=</span><span class="v">Marathi</span></div>
     </div>
   </div>
 </section>
@@ -442,6 +453,10 @@ footer a{color:#444}
   </div>
 </section>
 
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
 <footer>
   <p>
     Varnaakshara ·
@@ -466,7 +481,7 @@ const s=new THREE.Scene();
 const cam=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,.1,100);
 cam.position.set(3,0,5);
 
-const geo=new THREE.IcosahedronGeometry(2,80);
+const geo=new THREE.IcosahedronGeometry(2,40);
 const mat=new THREE.ShaderMaterial({
   uniforms:{uTime:{value:0},uMouse:{value:new THREE.Vector2(0,0)},
     uC1:{value:new THREE.Color('#ea580c')},uC2:{value:new THREE.Color('#f59e0b')},uC3:{value:new THREE.Color('#dc2626')}},
@@ -595,6 +610,51 @@ gujarati:{
   signs:{a:'',aa:'ા',A:'ા',i:'િ',ee:'ી',I:'ી',u:'ુ',oo:'ૂ',U:'ૂ',e:'ે',ai:'ૈ',o:'ો',au:'ૌ'},
   virama:'્',anusvara:'ં',visarga:'ઃ',
   nums:{}
+},
+malayalam:{
+  vowels:{a:'അ',aa:'ആ',A:'ആ',i:'ഇ',ee:'ഈ',I:'ഈ',u:'ഉ',oo:'ഊ',U:'ഊ',e:'എ',E:'ഏ',ai:'ഐ',o:'ഒ',O:'ഓ',au:'ഔ'},
+  consonants:{k:'ക',kh:'ഖ',K:'ഖ',g:'ഗ',gh:'ഘ',G:'ഘ',ch:'ച',Ch:'ഛ',j:'ജ',jh:'ഝ',J:'ഝ',
+    T:'ട',Th:'ഠ',D:'ഡ',Dh:'ഢ',N:'ണ',t:'ത',th:'ഥ',d:'ദ',dh:'ധ',n:'ന',p:'പ',ph:'ഫ',b:'ബ',bh:'ഭ',m:'മ',
+    y:'യ',r:'ര',l:'ല',v:'വ',w:'വ',sh:'ശ',Sh:'ഷ',s:'സ',h:'ഹ',L:'ള',zh:'ഴ',R:'റ'},
+  signs:{a:'',aa:'ാ',A:'ാ',i:'ി',ee:'ീ',I:'ീ',u:'ു',oo:'ൂ',U:'ൂ',e:'െ',E:'േ',ai:'ൈ',o:'ൊ',O:'ോ',au:'ൌ'},
+  virama:'്',anusvara:'ം',visarga:'ഃ',
+  nums:{}
+},
+marathi:{
+  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',e:'ए',ai:'ऐ',o:'ओ',au:'औ'},
+  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ',
+    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
+    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ'},
+  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',e:'े',ai:'ै',o:'ो',au:'ौ'},
+  virama:'्',anusvara:'ं',visarga:'ः',
+  nums:{}
+},
+sanskrit:{
+  vowels:{a:'अ',aa:'आ',A:'आ',i:'इ',ee:'ई',I:'ई',u:'उ',oo:'ऊ',U:'ऊ',e:'ए',ai:'ऐ',o:'ओ',au:'औ'},
+  consonants:{k:'क',kh:'ख',K:'ख',g:'ग',gh:'घ',G:'घ',ch:'च',Ch:'छ',j:'ज',jh:'झ',J:'झ',
+    T:'ट',Th:'ठ',D:'ड',Dh:'ढ',N:'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',
+    y:'य',r:'र',l:'ल',v:'व',w:'व',sh:'श',Sh:'ष',s:'स',h:'ह',L:'ळ',ksh:'क्ष',x:'क्ष',jn:'ज्ञ','GY':'ज्ञ'},
+  signs:{a:'',aa:'ा',A:'ा',i:'ि',ee:'ी',I:'ी',u:'ु',oo:'ू',U:'ू',e:'े',ai:'ै',o:'ो',au:'ौ'},
+  virama:'्',anusvara:'ं',visarga:'ः',
+  nums:{}
+},
+odia:{
+  vowels:{a:'ଅ',aa:'ଆ',A:'ଆ',i:'ଇ',ee:'ଈ',I:'ଈ',u:'ଉ',oo:'ଊ',U:'ଊ',e:'ଏ',ai:'ଐ',o:'ଓ',au:'ଔ'},
+  consonants:{k:'କ',kh:'ଖ',K:'ଖ',g:'ଗ',gh:'ଘ',G:'ଘ',ch:'ଚ',Ch:'ଛ',j:'ଜ',jh:'ଝ',J:'ଝ',
+    T:'ଟ',Th:'ଠ',D:'ଡ',Dh:'ଢ',N:'ଣ',t:'ତ',th:'ଥ',d:'ଦ',dh:'ଧ',n:'ନ',p:'ପ',ph:'ଫ',b:'ବ',bh:'ଭ',m:'ମ',
+    y:'ଯ',r:'ର',l:'ଲ',v:'ୱ',w:'ୱ',sh:'ଶ',Sh:'ଷ',s:'ସ',h:'ହ',L:'ଳ'},
+  signs:{a:'',aa:'ା',A:'ା',i:'ି',ee:'ୀ',I:'ୀ',u:'ୁ',oo:'ୂ',U:'ୂ',e:'େ',ai:'ୈ',o:'ୋ',au:'ୌ'},
+  virama:'୍',anusvara:'ଂ',visarga:'ଃ',
+  nums:{}
+},
+punjabi:{
+  vowels:{a:'ਅ',aa:'ਆ',A:'ਆ',i:'ਇ',ee:'ਈ',I:'ਈ',u:'ਉ',oo:'ਊ',U:'ਊ',e:'ਏ',ai:'ਐ',o:'ਓ',au:'ਔ'},
+  consonants:{k:'ਕ',kh:'ਖ',K:'ਖ',g:'ਗ',gh:'ਘ',G:'ਘ',ch:'ਚ',Ch:'ਛ',j:'ਜ',jh:'ਝ',J:'ਝ',
+    T:'ਟ',Th:'ਠ',D:'ਡ',Dh:'ਢ',N:'ਣ',t:'ਤ',th:'ਥ',d:'ਦ',dh:'ਧ',n:'ਨ',p:'ਪ',ph:'ਫ',b:'ਬ',bh:'ਭ',m:'ਮ',
+    y:'ਯ',r:'ਰ',l:'ਲ',v:'ਵ',w:'ਵ',sh:'ਸ਼',s:'ਸ',h:'ਹ',L:'ਲ਼'},
+  signs:{a:'',aa:'ਾ',A:'ਾ',i:'ਿ',ee:'ੀ',I:'ੀ',u:'ੁ',oo:'ੂ',U:'ੂ',e:'ੇ',ai:'ੈ',o:'ੋ',au:'ੌ'},
+  virama:'੍',anusvara:'ਂ',visarga:'ਃ',
+  nums:{}
 }
 };
 
@@ -700,11 +760,13 @@ const io=new IntersectionObserver(es=>{es.forEach(e=>{
 })},{threshold:.05});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-// ===== NAV HIDE =====
+// ===== NAV HIDE + BACK TO TOP =====
 let ly=0;
+const btt=document.getElementById('btt');
 window.addEventListener('scroll',()=>{
   const y=window.scrollY;
   document.querySelector('nav').style.transform=y>ly&&y>80?'translateY(-100%)':'none';
+  if(btt)btt.classList.toggle('show',y>400);
   ly=y;
 },{passive:true});
 </script>
