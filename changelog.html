@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changelog — Varnaakshara</title>
+<meta name="description" content="Varnaakshara release history and changelog. See what's new in each version.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ea580c'><path d='M12 0l3.09 6.26L22 7.27l-5 4.87L18.18 19 12 15.77 5.82 19 7 12.14l-5-4.87 6.91-1.01z'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09090b;--s1:#111113;--s2:#18181b;--card:#1c1c1f;
+  --border:rgba(255,255,255,.07);--text:#fafafa;--dim:#a1a1aa;--dim2:#71717a;
+  --orange:#ea580c;--amber:#f59e0b;
+  --sans:'Inter',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;
+  --mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth;background:var(--bg);color:var(--text);font-family:var(--sans)}
+body{overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(234,88,12,.3)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:#333;border-radius:99px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
+  display:flex;align-items:center;justify-content:space-between;padding:0 40px;
+  background:rgba(9,9,11,.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border)}
+.nl{font-weight:700;font-size:.9rem;letter-spacing:-.02em}
+.nl a{color:inherit;text-decoration:none}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:.8rem;color:var(--dim2);transition:color .2s}
+.nr a:hover{color:var(--text)}
+.nr .cta{color:var(--bg);background:var(--text);padding:6px 18px;border-radius:8px;font-weight:600;font-size:.78rem;transition:all .2s}
+.nr .cta:hover{background:var(--orange);color:#fff}
+
+/* HERO */
+.page-hero{padding:120px 40px 60px;text-align:center}
+.stag{font-size:.65rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;font-weight:500}
+.page-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:12px}
+.page-hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--orange)}
+.page-hero p{color:var(--dim);font-size:.95rem;max-width:480px;margin:0 auto;line-height:1.7}
+
+/* TIMELINE */
+.timeline{max-width:720px;margin:0 auto;padding:0 40px 100px}
+.release{position:relative;padding:0 0 56px 36px;border-left:1px solid var(--border)}
+.release:last-child{border-left-color:transparent;padding-bottom:0}
+.release::before{content:'';position:absolute;left:-5px;top:6px;width:9px;height:9px;
+  border-radius:50%;background:var(--s2);border:2px solid var(--orange)}
+.release.latest::before{background:var(--orange);box-shadow:0 0 12px rgba(234,88,12,.4)}
+.release-header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.release-tag{font-size:1.3rem;font-weight:700;letter-spacing:-.02em}
+.release-badge{font-size:.6rem;font-weight:600;padding:3px 8px;border-radius:999px;
+  background:rgba(234,88,12,.1);border:1px solid rgba(234,88,12,.25);color:var(--orange);text-transform:uppercase;letter-spacing:.05em}
+.release-date{font-size:.75rem;color:var(--dim2);font-family:var(--mono)}
+.release-name{font-size:.85rem;color:var(--dim);margin-bottom:16px}
+.release-body{background:var(--s1);border:1px solid var(--border);border-radius:12px;padding:24px 28px;overflow:hidden}
+.release-body h3{font-size:.85rem;font-weight:600;margin:16px 0 8px;color:var(--text)}
+.release-body h3:first-child{margin-top:0}
+.release-body ul{list-style:none;padding:0}
+.release-body li{position:relative;padding:4px 0 4px 16px;font-size:.82rem;color:var(--dim);line-height:1.6}
+.release-body li::before{content:'';position:absolute;left:0;top:12px;width:4px;height:4px;
+  border-radius:50%;background:var(--orange)}
+.release-body li strong{color:var(--text);font-weight:600}
+.release-body p{font-size:.82rem;color:var(--dim);line-height:1.6;margin:6px 0}
+.release-body code{font-family:var(--mono);font-size:.75rem;background:var(--bg);padding:2px 6px;
+  border-radius:4px;border:1px solid var(--border);color:var(--orange)}
+.release-dl{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:8px 16px;
+  border-radius:8px;background:var(--bg);border:1px solid var(--border);font-size:.78rem;
+  font-weight:600;color:var(--dim);transition:all .2s}
+.release-dl:hover{border-color:var(--orange);color:var(--orange)}
+.release-dl svg{width:14px;height:14px}
+
+/* Footer */
+footer{border-top:1px solid var(--border);padding:32px 40px;text-align:center}
+footer p{font-size:.72rem;color:#333}
+footer a{color:#444;transition:color .2s}
+footer a:hover{color:var(--orange)}
+
+@media(max-width:900px){
+  nav{padding:0 16px}
+  .page-hero{padding:100px 20px 40px}
+  .timeline{padding:0 20px 60px}
+  .nr a:not(.cta){display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nl"><a href="/"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--orange)" style="vertical-align:-1px;margin-right:4px"><path d="M12 0l3.09 6.26L22 7.27l-5 4.87L18.18 19 12 15.77 5.82 19 7 12.14l-5-4.87 6.91-1.01z"/></svg>Varnaakshara</a></div>
+  <div class="nr">
+    <a href="/">Home</a>
+    <a href="how-to-type.html">How to Type</a>
+    <a href="changelog.html" style="color:var(--text)">Changelog</a>
+    <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.3.0/Varnaakshara_Setup_v1.3.0.exe" class="cta">Download v1.3.0</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="stag">Release History</div>
+  <h1>What's <em>new</em></h1>
+  <p>Every release, every fix, every feature. Follow the journey from v1.0.0 to now.</p>
+</section>
+
+<div class="timeline">
+
+  <!-- v1.3.0 -->
+  <div class="release latest">
+    <div class="release-header">
+      <span class="release-tag">v1.3.0</span>
+      <span class="release-badge">Latest</span>
+      <span class="release-date">June 19, 2026</span>
+    </div>
+    <div class="release-name">Async Suggestions & Custom Mappings</div>
+    <div class="release-body">
+      <h3>🔧 Stability</h3>
+      <ul>
+        <li><strong>Async suggestion engine</strong> — dedicated worker thread with queue draining. Suggestions never block the keyboard hook.</li>
+        <li><strong>Qt thread safety</strong> — cross-thread popup calls use <code>QApplication.postEvent</code> with a custom invoker pattern</li>
+        <li><strong>Background word learning</strong> — SQLite writes happen off the main thread</li>
+      </ul>
+      <h3>✨ Features</h3>
+      <ul>
+        <li><strong>Word suggestions</strong> (experimental, opt-in) — learns from your typing over time</li>
+        <li><strong>Custom Mappings Editor</strong> — define your own transliteration overrides in-app</li>
+        <li><strong>Typing Reference</strong> — interactive dialog showing all key-to-character mappings</li>
+        <li><strong>Left-click tray</strong> opens menu (right-click also works, double-click toggles IME)</li>
+        <li>Starts in <strong>English mode</strong> by default — press F11 to activate</li>
+      </ul>
+      <h3>🎨 UI</h3>
+      <ul>
+        <li>High-DPI and multi-monitor support</li>
+        <li>Dark theme with proper Indic character rendering</li>
+        <li>Window icon set on all dialogs</li>
+      </ul>
+      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.3.0/Varnaakshara_Setup_v1.3.0.exe" class="release-dl">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download v1.3.0
+      </a>
+    </div>
+  </div>
+
+  <!-- v1.2.0 -->
+  <div class="release">
+    <div class="release-header">
+      <span class="release-tag">v1.2.0</span>
+      <span class="release-date">June 18, 2026</span>
+    </div>
+    <div class="release-name">Bug Fixes & Vedic Support</div>
+    <div class="release-body">
+      <h3>🐛 Major Bug Fixes</h3>
+      <ul>
+        <li><strong>Smart Backspace</strong> — diff-based, removes one transliteration step per press</li>
+        <li><strong>Danda fix</strong> — <code>|</code> and <code>||</code> no longer cause spurious virama</li>
+        <li><strong>Multi-char symbol priority</strong> — <code>||</code> and <code>##</code> checked before single chars</li>
+      </ul>
+      <h3>🐛 Minor Bug Fixes</h3>
+      <ul>
+        <li><strong>Avagraha fix</strong> — <code>&amp;</code> now correctly produces avagraha (अवग्रह)</li>
+        <li><strong>OM symbol fix</strong> — <code>OM.</code> produces Om symbol; <code>OM</code> alone stays as-is</li>
+      </ul>
+      <h3>✨ New Features</h3>
+      <ul>
+        <li><strong>Vedic swaras</strong> — <code>#</code>, <code>$</code>, <code>##</code> for svarita, anudatta, dirgha svarita</li>
+        <li><strong>Suggestion popup rewrite</strong> — 14pt font, 3-tier caret positioning</li>
+      </ul>
+      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.2.0/Varnaakshara_Setup_v1.2.0.exe" class="release-dl">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download v1.2.0
+      </a>
+    </div>
+  </div>
+
+  <!-- v1.1.0 -->
+  <div class="release">
+    <div class="release-header">
+      <span class="release-tag">v1.1.0</span>
+      <span class="release-date">June 15, 2026</span>
+    </div>
+    <div class="release-name">Stability & Auto-updater</div>
+    <div class="release-body">
+      <h3>🐛 Bug Fixes</h3>
+      <ul>
+        <li>Shift+symbols (<code>?</code>, <code>!</code>, <code>@</code>, <code>#</code>) now work correctly in all languages</li>
+        <li>Period stays as period — no longer converts to danda</li>
+        <li>Fixed crash when typing digits in Indic mode</li>
+      </ul>
+      <h3>✨ New Features</h3>
+      <ul>
+        <li><strong>Native script digits</strong> — typing 0-9 outputs native numerals</li>
+        <li><strong>Auto-updater</strong> — checks for updates on startup, one-click update</li>
+        <li>Post-update notification shows what changed</li>
+      </ul>
+      <h3>🔄 Improvements</h3>
+      <ul>
+        <li>Removed toast notifications on language switch — cleaner experience</li>
+        <li>Version displayed in About dialog and tray menu</li>
+      </ul>
+      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.1.0/Varnaakshara_Setup_v1.1.0.exe" class="release-dl">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download v1.1.0
+      </a>
+    </div>
+  </div>
+
+  <!-- v1.0.0 -->
+  <div class="release">
+    <div class="release-header">
+      <span class="release-tag">v1.0.0</span>
+      <span class="release-date">June 15, 2026</span>
+    </div>
+    <div class="release-name">Initial Release 🎉</div>
+    <div class="release-body">
+      <h3>🚀 Launch Features</h3>
+      <ul>
+        <li><strong>12 Indian languages</strong> — Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Sanskrit, Tamil, Telugu</li>
+        <li><strong>System-wide IME</strong> — works in any Windows application</li>
+        <li><strong>Baraha-compatible</strong> phonetic transliteration</li>
+        <li>Implicit schwa for Hindi/Marathi/Bengali</li>
+        <li>Proper Sanskrit halant handling</li>
+        <li>Candra vowels for Hindi loanwords (ऑफ़िस, डॉक्टर)</li>
+        <li>Includes Indic fonts for all 12 scripts</li>
+        <li>Start with Windows option</li>
+        <li>F11/F12 toggle, Ctrl+1-9 for direct language pick</li>
+      </ul>
+      <p><strong>No admin required</strong> — installs to your user profile. Free, offline, open source.</p>
+      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.0.0/Varnaakshara_Setup_v1.0.0.exe" class="release-dl">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download v1.0.0
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    Varnaakshara ·
+    <a href="/">Home</a> ·
+    <a href="how-to-type.html">How to Type</a> ·
+    <a href="https://github.com/Exaggarate/Varnaakshara" target="_blank" rel="noopener">GitHub</a>
+    <br>
+    MIT License · Made with ❤️ for भारत
+  </p>
+</footer>
+
+</body>
+</html>
