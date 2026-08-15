@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Varnaakshara — Indian Script IME for Windows</title>
+<title>Varnaakshara — Free Indian Script IME for Windows</title>
+<meta name="description" content="Type in 12 Indian languages using English transliteration. Free, open source, works in every app.">
+<meta property="og:title" content="Varnaakshara — Free Indian Script IME for Windows">
+<meta property="og:description" content="Type in 12 Indian languages using English transliteration. Free, open source, works in every app.">
+<meta property="og:url" content="https://varnaakshara.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ea580c'><path d='M12 0l3.09 6.26L22 7.27l-5 4.87L18.18 19 12 15.77 5.82 19 7 12.14l-5-4.87 6.91-1.01z'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,6 +175,19 @@ footer{border-top:1px solid var(--border);padding:32px 40px;text-align:center}
 footer p{font-size:.72rem;color:#333}
 footer a{color:#444}
 
+/* Comparison */
+.comp{margin-top:56px}
+.comp-g{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.comp-col{background:var(--s1);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.comp-h{padding:16px 18px;border-bottom:1px solid var(--border);font-weight:700;letter-spacing:-.02em}
+.comp-h b{color:var(--orange)}
+.comp-r{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.comp-i{padding:12px 14px;background:var(--bg);display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.comp-i .k{font-size:.75rem;color:var(--dim2)}
+.comp-i .v{font-size:.8rem;color:var(--text);font-weight:600}
+.comp-i .v.dim{color:var(--dim);font-weight:500}
+@media(max-width:900px){.comp-g{grid-template-columns:1fr}}
+
 /* Reveal */
 .rv{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
 .rv.v{opacity:1;transform:none}
@@ -205,7 +224,7 @@ footer a{color:#444}
     <a href="#demo">Demo</a>
     <a href="how-to-type.html">How to Type</a>
     <a href="#features">Features</a>
-    <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.1.0/Varnaakshara_Setup_v1.1.0.exe" class="cta">Download v1.1.0</a>
+    <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.3.0/Varnaakshara_Setup_v1.3.0.exe" class="cta">Download v1.3.0</a>
   </div>
 </nav>
 
@@ -217,9 +236,10 @@ footer a{color:#444}
       <h1>Type English.<br>Get <em>Indian scripts.</em></h1>
       <p class="hero-p">A system tray IME for Windows. Phonetic transliteration that works in every app — Word, Chrome, WhatsApp, everywhere.</p>
       <div class="hero-btns">
-        <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.1.0/Varnaakshara_Setup_v1.1.0.exe" class="hb hb-f">
+        <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.3.0/Varnaakshara_Setup_v1.3.0.exe" class="hb hb-f">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           Download</a>
+        <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid rgba(234,88,12,.25);background:rgba(234,88,12,.08);color:var(--orange);font-size:.7rem;font-weight:600;line-height:1">v1.3.0 — Latest</span>
         <a href="https://github.com/Exaggarate/Varnaakshara" class="hb hb-o" target="_blank">GitHub →</a>
       </div>
       <div class="hero-stats">
@@ -270,7 +290,7 @@ footer a{color:#444}
     <div class="sh">Three steps. <em>That's it.</em></div>
     <p class="sp">No language packs, no admin rights, no complex setup.</p></div>
     <div class="steps-row rv">
-      <div class="stp"><div class="stp-n">01 — Install</div><h3>Run the installer</h3><p>All 12 languages bundled with Indic fonts. Under 50 MB total.</p></div>
+      <div class="stp"><div class="stp-n">01 — Install</div><h3>Run the installer</h3><p>All 12 languages bundled with Indic fonts. Under 50 MB total. <span style="color:var(--dim2)">Windows SmartScreen may warn — click “More info” → “Run anyway”.</span></p></div>
       <div class="stp"><div class="stp-n">02 — Toggle</div><h3>Press F11 or F12</h3><p>Switch between English and your chosen Indic script. Or press <kbd>Ctrl+1-9</kbd> for a specific language.</p></div>
       <div class="stp"><div class="stp-n">03 — Type</div><h3>Type naturally</h3><p>Type <code>namaste</code> and get नमस्ते. Works in every Windows app — Word, Chrome, WhatsApp, Notepad.</p></div>
     </div>
@@ -366,24 +386,72 @@ footer a{color:#444}
 
 <div class="sep"></div>
 
+<!-- WHY -->
+<section class="comp">
+  <div class="mx">
+    <div class="rv">
+      <div class="stag">Why Varnaakshara?</div>
+      <div class="sh">A better deal, <em>by design.</em></div>
+      <p class="sp">A clean, privacy-first IME with everything included — no activation hoops, no upsells.</p>
+    </div>
+
+    <div class="comp-g rv">
+      <div class="comp-col">
+        <div class="comp-h"><b>Varnaakshara</b></div>
+        <div class="comp-r">
+          <div class="comp-i"><span class="k">Price</span><span class="v">Free</span></div>
+          <div class="comp-i"><span class="k">Languages</span><span class="v">12</span></div>
+          <div class="comp-i"><span class="k">Source</span><span class="v">Open source</span></div>
+          <div class="comp-i"><span class="k">Admin required</span><span class="v">No</span></div>
+          <div class="comp-i"><span class="k">Telemetry</span><span class="v">None</span></div>
+          <div class="comp-i"><span class="k">Font families</span><span class="v">136 included</span></div>
+        </div>
+      </div>
+
+      <div class="comp-col">
+        <div class="comp-h">Paid IME alternatives</div>
+        <div class="comp-r">
+          <div class="comp-i"><span class="k">Price</span><span class="v dim">$35–49</span></div>
+          <div class="comp-i"><span class="k">Languages</span><span class="v dim">Varies</span></div>
+          <div class="comp-i"><span class="k">Source</span><span class="v dim">Closed source</span></div>
+          <div class="comp-i"><span class="k">Admin required</span><span class="v dim">Yes</span></div>
+          <div class="comp-i"><span class="k">Telemetry</span><span class="v dim">Phone-home registration</span></div>
+          <div class="comp-i"><span class="k">Font families</span><span class="v dim">Limited</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
 <!-- CTA -->
 <section class="cta-sec">
   <div class="mx rv">
     <h2>Start typing in<br>your <em>mother tongue</em></h2>
     <p>Free. Open source. No ads, telemetry, or accounts.</p>
     <div style="display:flex;justify-content:center">
-      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.1.0/Varnaakshara_Setup_v1.1.0.exe" class="hb hb-f">
+      <a href="https://github.com/Exaggarate/Varnaakshara/releases/download/v1.3.0/Varnaakshara_Setup_v1.3.0.exe" class="hb hb-f">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
         Download Varnaakshara</a>
     </div>
     <div class="cta-m">
-      <span>43 MB</span><span>Windows 10/11</span><span>MIT License</span><span>v1.1.0</span>
+      <span>43 MB</span><span>Windows 10/11</span><span>MIT License</span><span>v1.3.0</span>
     </div>
     <p class="cta-n">SmartScreen may warn — click "More info" → "Run anyway".</p>
   </div>
 </section>
 
-<footer><p>Varnaakshara · <a href="https://github.com/Exaggarate/Varnaakshara" target="_blank">GitHub</a> · MIT License · Made for भारत</p></footer>
+<footer>
+  <p>
+    Varnaakshara ·
+    <a href="how-to-type.html">How to Type</a> ·
+    <a href="https://github.com/Exaggarate/Varnaakshara/issues" target="_blank" rel="noopener">GitHub Issues</a> ·
+    <a href="https://github.com/Exaggarate/Varnaakshara" target="_blank" rel="noopener">GitHub Repo</a>
+    <br>
+    MIT License · Made with ❤️ for भारत
+  </p>
+</footer>
 
 </div>
 
