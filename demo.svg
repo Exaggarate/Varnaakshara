@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <style>
+      @keyframes cursor{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes t1{0%,4%{width:0}5%{width:14px}7%{width:28px}9%{width:42px}11%{width:56px}13%{width:70px}15%{width:84px}17%{width:98px}18%,30%{width:98px}31%{width:0}}
+      @keyframes o1{0%,4%{opacity:0}5%{opacity:1}18%,30%{opacity:1}31%{opacity:0}}
+      @keyframes s1{0%,5%{width:0}6%{width:28px}8%{width:48px}10%{width:68px}12%{width:90px}14%{width:120px}16%{width:138px}18%,30%{width:138px}31%{width:0}}
+      @keyframes so1{0%,5%{opacity:0}6%{opacity:1}18%,30%{opacity:1}31%{opacity:0}}
+      @keyframes t2{0%,32%{width:0}33%{width:14px}35%{width:28px}37%{width:42px}39%{width:56px}41%{width:70px}43%{width:84px}45%{width:98px}46%{width:112px}47%,60%{width:112px}61%{width:0}}
+      @keyframes o2{0%,32%{opacity:0}33%{opacity:1}47%,60%{opacity:1}61%{opacity:0}}
+      @keyframes s2{0%,33%{width:0}34%{width:28px}36%{width:62px}38%{width:90px}40%{width:120px}42%{width:145px}44%{width:172px}46%{width:198px}47%,60%{width:198px}61%{width:0}}
+      @keyframes so2{0%,33%{opacity:0}34%{opacity:1}47%,60%{opacity:1}61%{opacity:0}}
+      @keyframes t3{0%,62%{width:0}63%{width:14px}65%{width:28px}67%{width:42px}69%{width:56px}71%{width:70px}73%{width:84px}75%{width:98px}76%{width:112px}77%{width:126px}78%,93%{width:126px}94%{width:0}}
+      @keyframes o3{0%,62%{opacity:0}63%{opacity:1}78%,93%{opacity:1}94%{opacity:0}}
+      @keyframes s3{0%,63%{width:0}64%{width:28px}66%{width:58px}68%{width:88px}70%{width:118px}72%{width:148px}74%{width:180px}76%{width:208px}77%{width:234px}78%,93%{width:234px}94%{width:0}}
+      @keyframes so3{0%,63%{opacity:0}64%{opacity:1}78%,93%{opacity:1}94%{opacity:0}}
+      @keyframes labelFade1{0%,4%{opacity:0}6%{opacity:1}30%{opacity:1}31%{opacity:0}}
+      @keyframes labelFade2{0%,32%{opacity:0}34%{opacity:1}60%{opacity:1}61%{opacity:0}}
+      @keyframes labelFade3{0%,62%{opacity:0}64%{opacity:1}93%{opacity:1}94%{opacity:0}}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="400" rx="16" fill="#09090b"/>
+  <rect x="0" y="0" width="720" height="44" rx="16" fill="#18181b"/>
+  <rect x="0" y="28" width="720" height="16" fill="#18181b"/>
+  <line x1="0" y1="44" x2="720" y2="44" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Window dots -->
+  <circle cx="20" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="22" r="6" fill="#eab308"/>
+  <circle cx="60" cy="22" r="6" fill="#22c55e"/>
+  <text x="360" y="27" text-anchor="middle" fill="#71717a" font-size="12" font-family="'JetBrains Mono',monospace">varnaakshara — live demo</text>
+
+  <!-- Input label -->
+  <text x="40" y="85" fill="#ea580c" font-size="11" font-weight="600" letter-spacing="1.5" font-family="'JetBrains Mono',monospace">INPUT</text>
+
+  <!-- Input box -->
+  <rect x="40" y="96" width="640" height="52" rx="10" fill="#111113" stroke="rgba(234,88,12,0.3)" stroke-width="1"/>
+
+  <!-- Typing text 1: namaste -->
+  <clipPath id="clip1"><rect x="56" y="108" height="28" style="animation:t1 12s infinite"/></clipPath>
+  <text x="56" y="130" fill="#a1a1aa" font-size="18" font-family="'JetBrains Mono',monospace" clip-path="url(#clip1)" style="animation:o1 12s infinite">namaste</text>
+
+  <!-- Typing text 2: vanakkam -->
+  <clipPath id="clip2"><rect x="56" y="108" height="28" style="animation:t2 12s infinite"/></clipPath>
+  <text x="56" y="130" fill="#a1a1aa" font-size="18" font-family="'JetBrains Mono',monospace" clip-path="url(#clip2)" style="animation:o2 12s infinite">vanakkam</text>
+
+  <!-- Typing text 3: namaskAra -->
+  <clipPath id="clip3"><rect x="56" y="108" height="28" style="animation:t3 12s infinite"/></clipPath>
+  <text x="56" y="130" fill="#a1a1aa" font-size="18" font-family="'JetBrains Mono',monospace" clip-path="url(#clip3)" style="animation:o3 12s infinite">namaskAra</text>
+
+  <!-- Cursor -->
+  <rect x="56" y="112" width="2" height="22" fill="#ea580c" style="animation:cursor 1s infinite"/>
+
+  <!-- Arrow -->
+  <text x="360" y="200" text-anchor="middle" fill="#333" font-size="24">⬇</text>
+
+  <!-- Output label -->
+  <text x="40" y="238" fill="#ea580c" font-size="11" font-weight="600" letter-spacing="1.5" font-family="'JetBrains Mono',monospace">OUTPUT</text>
+
+  <!-- Output box -->
+  <rect x="40" y="249" width="640" height="64" rx="10" fill="#111113" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Output text 1: Hindi -->
+  <clipPath id="sclip1"><rect x="56" y="260" height="40" style="animation:s1 12s infinite"/></clipPath>
+  <text x="56" y="290" fill="#fafafa" font-size="28" font-weight="500" clip-path="url(#sclip1)" style="animation:so1 12s infinite">नमस्ते</text>
+
+  <!-- Output text 2: Tamil -->
+  <clipPath id="sclip2"><rect x="56" y="260" height="40" style="animation:s2 12s infinite"/></clipPath>
+  <text x="56" y="290" fill="#fafafa" font-size="28" font-weight="500" clip-path="url(#sclip2)" style="animation:so2 12s infinite">வணக்கம்</text>
+
+  <!-- Output text 3: Kannada -->
+  <clipPath id="sclip3"><rect x="56" y="260" height="40" style="animation:s3 12s infinite"/></clipPath>
+  <text x="56" y="290" fill="#fafafa" font-size="28" font-weight="500" clip-path="url(#sclip3)" style="animation:so3 12s infinite">ನಮಸ್ಕಾರ</text>
+
+  <!-- Language labels -->
+  <text x="40" y="350" fill="#71717a" font-size="13" style="animation:labelFade1 12s infinite;opacity:0">
+    <tspan fill="#ea580c" font-weight="600">Hindi</tspan> — Type "namaste" → नमस्ते
+  </text>
+  <text x="40" y="350" fill="#71717a" font-size="13" style="animation:labelFade2 12s infinite;opacity:0">
+    <tspan fill="#ea580c" font-weight="600">Tamil</tspan> — Type "vanakkam" → வணக்கம்
+  </text>
+  <text x="40" y="350" fill="#71717a" font-size="13" style="animation:labelFade3 12s infinite;opacity:0">
+    <tspan fill="#ea580c" font-weight="600">Kannada</tspan> — Type "namaskAra" → ನಮಸ್ಕಾರ
+  </text>
+
+  <!-- Branding -->
+  <text x="680" y="385" text-anchor="end" fill="#262626" font-size="11">varnaakshara.com</text>
+</svg>
